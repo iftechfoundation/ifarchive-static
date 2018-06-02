@@ -1,0 +1,88 @@
+body {
+  color: black;
+  background: white;
+}
+
+.QuoteBox {
+  background: #FFFFBB; 
+  color: #000;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.QuoteBox p {
+  padding: 2px;
+}
+
+.PrimeLink {
+  font-weight: bold;
+}
+
+.Header {
+  background: #C0D0FF;
+}
+
+.ParentLinks {
+  background: #C0FFC0;
+}
+
+.Description {
+  background: #FFC0C0;
+}
+
+#indexpage .Description {
+  color: #800000;
+}
+
+#datepage .Description {
+  color: #006000;
+}
+
+#dirpage .Description {
+  color: #0000A0;
+}
+
+.Footer {
+  background: #C0C0FF;
+}
+
+.Body {
+  background: #FFC0FF;
+}
+
+.ParEven {
+  background: #E0E0E0;
+}
+.ParOdd {
+  background: #D0D0D0;
+}
+.Date {
+  font-size: 10px;
+}
+
+#subdirheader {
+  color: #FF0000;
+}
+#itemheader {
+  color: #D06000;
+}
+
+#footerlinks {
+  background: #B0B0F0;
+}
+
+.ArchiveMirrors {
+  background: #FFFF80;
+}
+
+.NewToIF {
+  background: #EFEF80;
+}
+.Submissions {
+  background: #DFDF80;
+}
+.Bibliography {
+  background: #CFCF80;
+}

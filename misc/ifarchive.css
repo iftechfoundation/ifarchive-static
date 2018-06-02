@@ -1,0 +1,489 @@
+/* general styles */
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	background-color: #333;
+	font: 62.5% Verdana, sans-serif;
+}
+
+.Page
+{
+	margin: 0px 30px;
+	padding: 0.1em 6em 4em 6em;
+	background-color: #faf5e9;
+	color: #382806;
+	_height: 100%;
+	border-left: 2px solid #fff;
+	border-right: 1px solid #78714b;
+}
+
+a
+{
+	color: #b50000;
+}
+
+a:visited
+{	
+	color: #803030;
+}
+
+a:hover
+{
+	color: #d11515;
+}
+
+blockquote
+{
+	background-color: #f5f0e6;
+	color: #000;
+	font: 120% Georgia, "Times New Roman", serif;
+	padding: 0px 10px;
+	margin: 0px;
+	border: 1px dotted #aaa;
+}
+
+p, li, dd
+{
+	font-size: 1.4em;
+	line-height: 140%;
+}
+
+h1
+{
+	color: black;
+	font-weight: normal;
+	font-size: 3.8em;
+	font-family: Georgia, "Times New Roman", serif;
+	margin-bottom: 0.4em;
+	text-align: center;
+}
+
+h3
+{
+	margin: 2em 0px 0px 0px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 2.4em;
+	font-weight: normal;
+	color: black;
+}
+
+hr
+{
+	display: none;
+}
+
+.LeftFloat
+{
+	float: left;
+	margin-right: 2em;
+}
+
+.RightFloat
+{
+	float: right;
+	margin-left: 2em;
+}
+
+.ClearFloat
+{
+	clear: both;
+}
+
+.Footer
+{
+	clear: both;
+	padding-top: 4em;
+	margin: 0px 5%;
+	font-size: 0.9em;
+	font-style: italic;
+	text-align: center;
+}
+
+.Footer a
+{
+	color: #5a0000;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.Footer a:hover
+{
+	color: #d11515;
+	text-decoration: underline;
+}
+
+.Header
+{
+	padding-top: 1em;
+}
+
+.Date
+{
+	font-size: 90%;
+	font-weight: normal;
+	color: #777;
+}
+
+/* elements that appear on several pages */
+
+#indexlist
+{
+	padding-left: 2.1em;
+}
+
+#alldirlist a,
+#datelist a
+{
+	font-weight: bold;
+}
+
+#alldirlist li,
+#datelist li
+{
+	font-size: 1.4em;
+	margin-bottom: 0.4em;
+}
+
+
+#subdirlist
+{
+	list-style-type: none;
+	padding-left: 0px;
+	margin-left: 0px;
+	padding-bottom: 2em;
+}
+
+#subdirlist li
+{
+	font-weight: bold;
+	font-size: 1.4em;
+	margin-bottom: 0.4em;
+}
+
+#itemlist, #subdirlist
+{
+	margin: 0px;
+}
+
+#itemlist dt
+{
+	font-weight: bold;
+	font-size: 1.4em;
+	margin-bottom: 0.2em;
+}
+
+#itemlist dd
+{
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+}
+
+/* home page */
+
+#frontpage
+{
+	position: relative;
+}
+
+#frontpage .Header
+{
+	margin-bottom: 4em;
+}
+
+#frontpage .Description blockquote
+{
+	margin: 0px;
+}
+
+#frontpage .PrimeLink a
+{
+	font-size: 120%;
+	font-weight: bold;
+}
+
+#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
+{
+	margin-right: 330px;
+	word-wrap: break-word;
+}
+
+#frontpage .RightCol
+{
+	position: absolute;
+	width: 270px;
+}
+
+#frontpage .RightCol h3
+{
+	color: black;
+	font-size: 1.8em;
+	font-style: italic;
+	margin: 0px;
+	padding-bottom: 0.1em;
+	border-bottom: 1px dotted #222;
+}
+
+#frontpage .RightCol p,
+#frontpage .RightCol li
+{
+	font-size: 1.2em;
+}
+
+#frontpage .RightCol
+{
+	padding-top: 330px;
+	background: url("cssimg/map.jpeg") top left no-repeat;
+	top: 11.5em;
+	right: 6em;
+	_right: 11em; /* IE misaligns this */
+}
+
+#frontpage .RightCol ul
+{
+	list-style: none;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+#frontpage .RightCol li
+{
+	margin-bottom: 1.2em;
+}
+
+#frontpage .NewToIF
+{
+	margin-top: 1em;
+}
+
+#frontpage .Submissions
+{
+	margin-top: 3em;
+}
+
+/* orthogonal list pages */
+
+#dirpage .Header,
+#datepage .Header
+{
+	margin-bottom: 3em;
+}
+
+#dirpage .Description,
+#datepage .Description
+{
+	width: 20% !important; /* overrides later declaration in #indexpage section */
+}
+
+#dirpage .Body,
+#datepage .Body
+{
+	padding-top: 1px;
+	margin-left: 20% !important; /* overrides later declaration in #indexpage section */
+}
+
+/* full index pages */
+
+#indexpage h1
+{
+	margin-bottom: 0px;
+}
+
+#indexpage .ParentLinks
+{
+	text-align: center;
+}
+
+#indexpage .ParentLinks a
+{
+	color: #5a0000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#indexpage .ParentLinks a:hover
+{
+	color: #d11515;
+	text-decoration: underline;
+}
+
+#indexpage .ParentLinks ul
+{
+	margin: 0.3em;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#indexpage .ParentLinks li
+{
+	display: inline;
+	font-size: 1.3em;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-right: 1.5em;
+}
+
+#indexpage .Description, #indexpage .Body
+{
+	margin-top: 3em;
+}
+
+#indexpage .Description, 
+#dirpage .Description,
+#datepage .Description
+{
+	float: left;
+	width: 35%;
+	font-size: 1.2em;
+	line-height: 140%;
+}
+
+#indexpage .Description p,
+#indexpage .Description li,
+#dirpage .Description p,
+#dirpage .Description li,
+#datepage .Description p,
+#datepage .Description li
+{
+	font-size: 100%;
+}
+
+#indexpage .Description a:hover
+{
+	text-decoration: underline;
+}
+
+#indexpage .Description ul
+{
+	padding-left: 2.1em;
+	margin-left: 0px;
+}
+
+#indexpage .Description li
+{
+	margin-bottom: 0.3em;
+}
+
+#indexpage .Body, 
+#dirpage .Body,
+#datepage .Body
+{
+	margin-left: 38%;
+	word-wrap: break-word;
+}
+
+#indexpage .Body a
+{
+	font-weight: bold;
+}
+
+#indexpage h3.ListHeader
+{
+	margin-top: 0px;
+	padding-bottom: 0.1em;
+	margin-bottom: 1em;
+	font-size: 1.8em;
+	font-style: italic;
+	border-bottom: 1px dotted #222;
+}
+
+#indexpage .Header a
+{
+	color: black;
+	text-decoration: none;
+}
+
+#indexpage .Header a:hover
+{
+	color: #d11515;
+	text-decoration: underline;
+}
+
+/* other pages */
+
+#licensepage blockquote
+{
+	font-family: inherit;
+	border: none;
+	background-color: inherit;
+	margin-left: 40px;
+	padding: 0px;
+}
+
+#licensepage ul
+{
+	font-size: 0.85em;
+	list-style: none;
+}
+
+/* Style customizations for narrow displays. */
+
+@media screen and (max-width: 750px) {
+
+.Page 
+{
+	padding: 0.1em 3em 2em 3em;
+}
+
+#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
+{
+	margin-right: 60%;
+}
+
+#frontpage .RightCol
+{
+	position: absolute;
+	width: 40%;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+.Page 
+{
+	margin: 0px 0px;
+}
+
+#indexpage .Description, 
+#dirpage .Description,
+#datepage .Description
+{
+	float: none;
+	width: 100% !important;
+}
+
+#indexpage .Body, 
+#dirpage .Body,
+#datepage .Body
+{
+	margin-left: 0px !important;
+}
+
+#frontpage .RightCol
+{
+	position: relative;
+	padding-top: 0px;
+	width: inherit;
+	top: 0px;
+	right: 0px;
+	margin-top: 3em;
+	background-image: none;
+}
+
+#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
+{
+	margin-right: 0px;
+}
+
+
+
+}

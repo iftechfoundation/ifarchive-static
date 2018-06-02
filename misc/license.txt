@@ -1,0 +1,39 @@
+* IF Archive Terms of Use
+
+The contents of the IF Archive (including donated games, tools,
+documents, and other material) are the intellectual property of their
+original creators. They are, where possible, archived and distributed
+with permission.
+
+Some material on the Archive includes a distribution license (such as
+an open-source or Creative Commons license). Such material is
+distributed under its licensed terms. Any material with no attached
+license is presumed to be licensed for personal use only.
+
+All ancillary content on this web site (metadata, indexes, and file
+descriptions -- everything other than donated files) is licensed under
+a Creative Commons Attribution 4.0 International License. You may
+redistribute and adapt this ancillary content freely as long as you
+attribute it to the Interactive Fiction Technology Foundation
+(www.iftechfoundation.org).
+
+We prefer that material be donated by the original author or someone
+with the legal right to accept these terms. However, we understand
+that some IF-related material, particularly from the early years, was
+distributed with no clear license or terms. We host this material as
+part of the common heritage of interactive fiction. If you donate work
+which you did not create, you warrant that to the best if your
+knowledge, it may be legitimately stored and distributed by the
+Archive. If you are a copyright owner and wish to dispute our use of
+your work, please contact us: <submit .at. ifarchive .dot. org>.
+
+Since the Archive includes material licensed for personal use only, it
+may not be compiled for commercial distribution. If you wish to
+commercially distribute a subset of the Archive's contents, you must
+obey the license of each and every file you distribute, and get
+permission from the author of every file with no attached license. The
+Archive maintainers are not able to give that permission. Note that
+"commercial distribution" includes selling games or game compilations
+on online auction sites.
+
+This page last updated July 26, 2017.

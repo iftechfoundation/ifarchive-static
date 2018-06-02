@@ -1,0 +1,152 @@
+body {
+  color: black;
+  background: white;
+  font-family: "Century Schoolbook", Georgia, "Bitstream Vera Serif", serif;
+  font-size: 14px;
+
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+h1 {
+  font-family: Futura, "Gill Sans", Verdana, "Bitstream Vera Sans", sans-serif;
+  font-weight: bold;
+  padding-top: 6px;
+  padding-bottom: 2px;
+  margin: 0px;
+}
+
+h2 {
+  font-family: Futura;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: Futura;
+  font-weight: bold;
+  color: #023;
+}
+
+hr {
+  height: 16px;
+  border: none;
+  background-image: url(cssimg/dot8.png);
+  background-repeat: repeat-x;
+  margin: 0px;
+}
+
+a {
+  color: #000080;
+  text-decoration: none;
+  border-bottom: 1px dotted #8888CC;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+dl {
+  padding-left: 0px;
+}
+
+li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 40px;
+  list-style-type: none;
+
+  text-indent: -20px;
+}
+
+#itemlist dt {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 20px;
+}
+
+dd {
+  padding-bottom: 4px;
+  padding-left: 60px;
+  margin-left: 0px;
+}
+
+.Date {
+  padding-left: 8px;
+  font-size: 11px;
+  font-weight: normal;
+  color: #448888;
+}
+
+.ParOdd {
+  background: #D4F0FF;
+}
+
+.ParEven {
+  background: #F4F8FF;
+}
+
+.QuoteBox {
+  font-family: Futura;
+  background: #DDEEFF;
+  color: #000;
+  border: 3px solid #CCDDFF; 
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.QuoteBox p {
+  padding: 2px;
+  margin: 8px;
+}
+
+.PrimeLink {
+  font-weight: bold;
+}
+
+body div div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Footer {
+  font-size: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#footercredits {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#footerlinks {
+  background: #9FD8FF;
+  padding-left: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+#footermodified {
+  padding-left: 20px;
+}
+
+#toplinklist {
+  background: #F4F8FF;
+}
+#helplinklist {
+  background: #F4F8FF;
+}
+#parentlist {
+  background: #F4F8FF;
+  font-size: 12px;
+}
+
+.Header {
+  background: #90D0F0;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 40px;
+  border-bottom: 6px solid #AFD8FF;
+}
+

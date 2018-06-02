@@ -1,0 +1,204 @@
+/* ---------------------------------------- */
+/* IF Archive CSS */
+/* ---------------------------------------- */
+
+* {
+	border: 0px solid red;
+}
+
+/* ---------------------------------------- */
+/* color */
+/* ---------------------------------------- */
+
+.QuoteBox{
+	color: #666;
+}
+
+a {
+	color:#06C;
+	text-decoration:none;
+}
+
+a:hover, .PrimeLink a:hover
+{
+	color: #F30;
+}
+
+.Footer {
+	color: #777;
+}
+
+/* ---------------------------------------- */
+/* Standard Selectors */
+/* ---------------------------------------- */
+body {
+	color: #000;
+	background: #FFF;
+	font-family: Helvetica;
+	margin: 30px 100px 10px 100px;
+	width:600px;
+	font-size: 0.9em;
+	line-height:1.2em;
+}
+
+h1 {
+	font-size: 1.8em;
+	font-weight: normal;
+	margin:0px;
+	padding:0px;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: normal;	
+}
+
+h3 {
+	font-size: 1.2em;
+	margin: 0px 0px 0.5em 0px;
+}
+
+p {
+	margin: 0px 0px 1.0em 0px;
+}
+
+hr {
+	display:none;
+}
+
+ul {
+	margin: 10px 0px 10px 0px;
+	list-style-type: square;
+}
+
+li
+{
+	margin-left: -40px;
+	margin-bottom: 0.5em;
+	list-style-position: outside;
+}
+
+.ListHeader#subdirheader, .ListHeader#itemheader {
+	font-size: 1.2em;
+	margin-top:1em;
+}
+
+#subdirlist, #alldirlist
+{
+	list-style-type: disc;
+	list-style-image: url(cssimg/folder2.png);
+
+}
+
+#subdirlist li, #alldirlist li
+{
+	margin-bottom: 0.5em;
+	margin-left: -14px;
+	line-height: 0.8em;
+}
+
+dl#itemlist {
+	line-height: 1.5em;
+}
+
+dd {margin-bottom:0.5em;}
+
+/* ---------------------------------------- */
+/* Sections */
+/* ---------------------------------------- */
+#frontpage {
+
+}
+
+.Header {
+	padding-bottom:10px;
+	margin:0px;
+	width:600px;	
+}
+
+.Description  {
+	border-bottom: 1px gray solid;
+	margin-bottom: 1em;
+	width:600px;	
+}
+
+.QuoteBox {
+	font-size: 0.8em;
+	font-family: Courier;
+	margin-left:0px;
+	margin-bottom:20px;
+}
+
+.QuoteBox p {
+}
+
+.QuoteBox p em {
+	line-height:2.0em;
+}
+
+.NewToIF, .Submissions, .Bibliography {
+	width: 330px;
+	margin-bottom: 2em;
+}
+
+.Body {
+}
+
+.ArchiveMirrors
+{
+	position: absolute;
+	width: 225px;
+	left: 430px;
+	margin-left:50px;
+}
+
+.ArchiveMirrors ul {
+	font-size: 0.8em;
+	word-spacing: -1px;
+}
+
+.Footer {
+	font-size: 0.7em;
+	line-height: 1.4em;
+	position:relative;
+	margin-top: 20px;
+}
+
+#footercredits{}
+
+#footerlinks{
+	padding:0px;
+	margin:0px;
+}
+#footermodified {
+
+}
+
+
+/* ---------------------------------------- */
+/* Links */
+/* ---------------------------------------- */
+.PrimeLink {
+  font-weight: bold;
+}
+
+.Primelink:before {content:"[";}
+.Primelink:after {content:"]";}
+
+a {
+	text-decoration:none;
+}
+
+a:hover {
+}
+
+#helplinklist {
+
+}
+
+/* ---------------------------------------- */
+/* Utility */
+/* ---------------------------------------- */
+.Description .PrimeLink+p{
+	display:none;
+}

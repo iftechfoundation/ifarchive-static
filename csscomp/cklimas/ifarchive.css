@@ -1,0 +1,344 @@
+/* general styles */
+
+body
+{
+	margin: 0px;
+	background-color: #333;
+	font: 62.5% Verdana, sans-serif;
+}
+
+#frontpage, #dirpage, #mirrorpage, #indexpage
+{
+	margin: 0px 5%;
+	padding: 0.1em 6em 4em 6em;
+	background: #faf5e9 url("cssimg/shadow.png") bottom left repeat-x;
+	color: #382806;
+}
+
+a
+{
+	color: #800000;
+	font-weight: normal;
+	
+	color: #b50000;
+}
+
+a:visited
+{
+	color: #400000;
+	
+	color: #803030;
+}
+
+a:hover
+{
+	color: #d11515;
+}
+
+p, li, dd
+{
+	font-size: 1.1em;
+	line-height: 140%;
+}
+
+h1
+{
+	color: black;
+	font-weight: normal;
+	font-size: 4em;
+	font-family: Georgia, "Times New Roman", serif;
+	margin-bottom: 0.4em;
+	text-align: center;
+}
+
+h3
+{
+	margin: 1em 0px 0px 0px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 2.4em;
+	font-weight: normal;
+	color: black;
+}
+
+hr
+{
+	display: none;
+}
+
+.Footer
+{
+	margin: 4em 12% 0px 12%;
+	font-size: 0.9em;
+	font-style: italic;
+	text-align: center;
+}
+
+.Footer a
+{
+	color: #5a0000;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.Footer a:hover
+{
+	color: #d11515;
+	text-decoration: underline;
+}
+
+/* home page */
+
+/* this verges on abuse, but hands-off HTML means
+   we do what we can with what we must            */
+
+#frontpage
+{
+	position: relative;
+}
+
+#frontpage .Header
+{
+	margin-bottom: 4em;
+}
+
+#frontpage .Description blockquote
+{
+	margin: 0px;
+}
+
+#frontpage .PrimeLink a
+{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Bibliography
+{
+	margin-right: 310px;
+}
+
+#frontpage .NewToIF, #frontpage .Submissions
+{
+	position: absolute;
+	width: 270px;
+}
+
+#frontpage .NewToIF h3, #frontpage .Submissions h3
+{
+	color: black;
+	font-size: 1.8em;
+	font-style: italic;
+	margin: 0px;
+	padding-bottom: 0.1em;
+	border-bottom: 1px dotted #222;
+}
+
+#frontpage .NewToIF p, #frontpage .Submissions p,
+#frontpage .NewToIF li
+{
+	font-size: 1em;
+}
+
+#frontpage .NewToIF
+{
+	padding-top: 330px;
+	background: url("cssimg/map.jpeg") top left no-repeat;
+	top: 11.5em;
+	right: 6em;
+	_right: 12em; /* IE misaligns this */
+}
+
+#frontpage .NewToIF ul
+{
+	list-style: none;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+#frontpage .NewToIF li
+{
+	margin-bottom: 1.2em;
+}
+
+#frontpage .Submissions
+{
+	top: 76em;
+	right: 6em;
+	_right: 12em; /* IE misaligns this */
+}
+
+#frontpage .Bibliography
+{
+	clear: both;
+	padding-top: 0.1em;
+}
+
+/* plain text page */
+
+
+/* directory list page */
+
+#dirpage #alldirlist
+{
+	padding-top: 0px;
+	margin: 0px;
+	padding-left: 1.75em;
+}
+
+#dirpage #alldirlist a
+{
+	font-weight: bold;
+}
+
+#dirpage #alldirlist li
+{
+	font-size: 1.2em;
+	margin-bottom: 0.2em;
+}
+
+/* full index pages */
+
+#indexpage blockquote
+{
+	display: none; /* this probably makes me an asshole */
+}
+
+#indexpage h1
+{
+	margin-bottom: 0px;
+}
+
+#indexpage .ParentLinks
+{
+	text-align: center;
+}
+
+#indexpage .ParentLinks a
+{
+	color: #5a0000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#indexpage .ParentLinks a:hover
+{
+	color: #d11515;
+	text-decoration: underline;
+}
+
+#indexpage .ParentLinks ul
+{
+	margin: 0.3em;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#indexpage .ParentLinks li
+{
+	display: inline;
+	font-size: 1.1em;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-right: 1.5em;
+}
+
+#indexpage .Description, #indexpage .Body
+{
+	margin-top: 3em;
+}
+
+#indexpage .Description
+{
+	float: left;
+	width: 30%;
+	font-size: 1em;
+	line-height: 140%;
+}
+
+/* there's some naked text in this div,
+   so we need to style nested <p>s into shape */
+
+#indexpage .Description p,
+#indexpage .Description li
+{
+	font-size: 100%;
+}
+
+#indexpage .Description a:hover
+{
+	text-decoration: underline;
+}
+
+#indexpage .Description ul
+{
+	padding-left: 1.6em;
+	margin-left: 0px;
+}
+
+#indexpage .Description li
+{
+	margin-bottom: 0.3em;
+}
+
+#indexpage .Body
+{
+	margin-left: 34%;
+}
+
+#indexpage .Body a
+{
+	font-weight: bold;
+}
+
+#indexpage h3.ListHeader
+{
+	margin-top: 0px;
+	padding-bottom: 0.1em;
+	margin-bottom: 1em;
+	font-size: 1.4em;
+	font-style: italic;
+	border-bottom: 1px dotted #222;
+}
+
+#indexpage #subdirlist
+{
+	list-style-type: none;
+	padding-left: 0px;
+	margin-left: 0px;
+	padding-bottom: 2em;
+}
+
+#indexpage #subdirlist li
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 0.4em;
+}
+
+#indexpage #itemlist, #indexpage #subdirlist
+{
+	margin: 0px;
+}
+
+#indexpage #itemlist dt
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 0.2em;
+}
+
+#indexpage #itemlist dt .date
+{
+	font-size: 0.8em;
+	font-weight: normal;
+	color: #777;
+}
+
+#indexpage #itemlist dd
+{
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-bottom: 1em;
+	font-size: 1.1em;
+}

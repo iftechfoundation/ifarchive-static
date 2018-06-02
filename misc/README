@@ -1,0 +1,10 @@
+This "misc" directory is for files which are not part of the Archive
+data, nor are generated indexes, but should still be replicated to
+mirrors. Files in this directory will be few and rarely updated.
+
+If you are running a mirror site, you should copy "index-mirror.html"
+to your top level as "index.html", and "htaccess" to your top level as
+".htaccess". You should edit index-mirror.html, changing "####" to
+your server's actual name.
+
+

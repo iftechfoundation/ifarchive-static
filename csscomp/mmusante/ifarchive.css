@@ -1,0 +1,165 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background: white;
+    font-family: Geneva, "Lucida Sans", Helvetica, Arial, sans-serif;
+}
+
+.Header h1 {
+    padding-bottom: 0;
+    padding-left: 0.5em;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: 1px solid black;
+    background: #eeeeff;
+}
+
+.QuoteBox {
+    background: #eeeeff;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.QuoteBox p {
+    padding: 0.5em;
+    color: black;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.PrimeLink {
+    font-weight: bold;
+    text-align: center;
+}
+
+.ParentLinks {
+    font-size: small;
+}
+
+.ParentLinks ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.ParentLinks ul li {
+    display: inline;
+    border: 1px solid black;
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.ParentLinks li {
+    background: #eeeeff;
+}
+
+.ParentLinks li:hover {
+    background: white;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #4040c0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style-type: square;
+}
+
+.ParentLinks hr {
+    border: 1px solid black;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.Description, .Body, .ArchiveMirrors, .NewToIF, .Submissions, .Bibliography {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background: #eeeeee;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.Body, .ArchiveMirrors, .NewToIF, .Submissions, .Bibliography {
+    text-align: center;
+}
+
+.Description {
+    margin-top: 1em;
+    border-top: 1px solid black;
+    padding-top: 0.5em;
+}
+
+.Description hr, .ArchiveMirrors hr, .NewToIF hr, .Submissions hr {
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    height: 1em;
+    border-left: 0;
+    border-right: 0;
+}
+
+.Body {
+    border-bottom: 1px solid black;
+}
+
+#alldirlist, #subdirlist, #mirrorlist, #helplinklist {
+    text-align: left;
+}
+
+.ArchiveMirrors p, .Submissions p, .Bibliography p {
+    text-align: left;
+}
+
+.Date {
+    font-size: small;
+    font-style: italic;
+}
+
+dd {
+    padding-bottom: 1em;
+}
+
+.Bibliography, #mirrorpage .Description {
+    border-bottom: 1px solid black;
+}
+
+.Footer {
+    font-size: small;
+    margin-left: 1em;
+}
+
+.Footer hr {
+    border: 0;
+}
+
+#itemlist {
+    text-align: left;
+    padding: 1em;
+    background: #eeeeee;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#footercredits {
+    width: 40%;
+    text-align: right;
+    float: right;
+    margin-right: 1em;
+}
+
+#footerlinks {
+    width: 40%;
+    float: left;
+}

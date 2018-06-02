@@ -1,0 +1,381 @@
+
+
+/* "IF Café" */
+
+/* by Paolo Pellegri (ppellegri@hotmail.com) */
+
+/* Web design for The Interactive Fiction Archive web site - Submitted to The IF Archive CSS Competition, January 2009 */
+/* Should work correctly on most modern browsers, including FireFox 2+, Safari 2+, IE 6+, Opera 9+, ... */
+
+/* Parts based on work by Eric Meyer - see http://meyerweb.com/eric/tools/css/reset/index.html */
+/* Parts based on work by Richard Rutter - see http://alistapart.com/articles/howtosizetextincss */
+
+
+
+/* all measures in em's are relative to the chosen base size unless stated otherwise */
+
+
+/* browser default reset */
+
+html,
+body,
+div,
+blockquote,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li,
+span,
+a,
+em
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+blockquote {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+
+/* colours and textures */
+
+/* background */
+
+/* B1: [20, 255, 235] = [ff, ea, d7] - old-paper yellowish white */
+/* B1-b: [20, 255, 245] = [ff, f4, eb] - slightly yellowish white */
+/* B2: [20, 255, 15] = [1e, 0e, 00] - very dark brown */
+
+/* text */
+
+/* T1: [20, 255, 30] = [3c, 1c, 00] - very dark brown */
+/* T2: [20, 50, 80] = [5f, 4f, 41] - medium "burned" brown */
+/* T3: [20, 75, 95] = [7e, 5d, 40] - medium reddish brown */
+/* T4: [20, 175, 60] = [65, 3a, 13] - medium brown */
+/* T5: = T2 */
+/* T6: [20, 75, 145] = [b2, 8f, 70] - light brown */
+/* T7: [235, 30, 120] = 866a77 - medium-light subdued violet */
+/* T8: [235, 30, 150] = [a3, 89, 95] - light subdued violet */
+
+/* lines and borders */
+
+/* L1: [20, 175, 210] = [f1, d0, b3] - very light subdued brown */
+/* L2: = T4 */
+/* L3: = T2 */
+/* L4: = L1 */
+
+
+body {
+	color: #3c1c00;   /* T1 - page text - dark without too much contrast */
+	/*background-color: #fff4eb;   /* B1-b - alternative page colour - use this instead of texture below if you want a cleaner, less "old-style" look */
+	/*background-color: #ffead7;   /* B1 - page colour - use this instead of texture below if you want to achieve almost the same effect while avoiding using images */
+	background-image: url('./cssimg/pagebackground.jpg');   /* page background texture - "rugged" fine writing paper effect */
+}
+
+h2 {
+	color: #5f4f41;   /* T2 - keeps headings within page from receiving too much attention */
+}
+
+h3 {
+	color: #5f4f41;   /* T2 - keeps headings within page from receiving too much attention */
+}
+
+a {
+	color: #7e5d40;   /* T3 - lighter and brighter than text */
+	border-bottom-color: #f1d0b3;   /* L1 - makes underline visible but not intruding */
+}
+
+a:hover {
+	color: #653a13;   /* T4 - darker and more saturated than normal link colour */
+	border-bottom-color: #653a13;   /* L2 - darker and more saturated than normal link colour */
+}
+
+.Header {
+	color: #5f4f41;   /* T5 - low contrast to fade into background once read */
+	background: #1e0e00;   /* B2 - very dark to break uniformity of page without becoming intrusive */
+	border-bottom-color: #5f4f41;   /* L3 - elegant (?) finishing for header, avoids sharp contrast where header and page meet - same as header colour */
+}
+
+.Description, .ArchiveMirrors, .NewToIF, .Submissions {
+	border-bottom-color: #f1d0b3;   /* L4 - barely visible to mark section boundary without distracting */
+}
+
+.Footer {
+	color: #b28f70;   /* T6 - less visible than page text */
+	border-top-color: #f1d0b3;   /* L4 - barely visible to mark section boundary without distracting */
+}
+
+.QuoteBox {
+	color: #866a77;   /* T7 - makes quotation feel more "distant" */
+}
+
+.Date {
+	color: #a38995;   /* T8 - different from and less important than link name to its left */
+}
+
+
+
+/* page layout */
+
+#frontpage, #mirrorpage, #indexpage, #dirpage {
+	text-align: center;   /* for IE6 - centers page horizontally in screen */
+}
+
+.Header {
+	width: 100%;   /* extends header background colour to full screen width */
+}
+
+.Header h1 {
+	width: 22.4em;   /* relative to size of <h1> - equals 56em for base size */
+	margin: 0 auto;   /* centers horizontally in page */
+}
+
+.Description, .ArchiveMirrors, .NewToIF, .Submissions, .Bibliography, .ParentLinks, .Body {
+	width: 56em;   /* relative to base size */
+	margin: 0 auto;   /* centers horizontally in page */
+}
+
+.Footer {
+	width: 100%;   /* extends footer border to full screen width */
+}
+
+#footercredits, #footerlinks, #footermodified {
+	width: 56.727em;   /* relative to footer font size - equals 52em for base size */
+	margin: 0 auto;   /* centers horizontally in page */
+}
+
+
+
+/* typography - blocks */
+
+.Header h1, .Description, .ArchiveMirrors, .NewToIF, .Submissions, .Bibliography, .ParentLinks, .Body {
+	text-align: left;   /* resets alignment to left - see layout for #frontpage, #mirrorpage, #indexpage, #dirpage above */
+}
+
+#footercredits, #footerlinks, #footermodified {
+	text-align: left;   /* resets alignment to left - see layout for #frontpage, #mirrorpage, #indexpage, #dirpage above */
+}
+
+.Header {
+	border-bottom-width: 6px;   /* elegant (?) finishing for header */
+	border-bottom-style: solid;   /* elegant (?) finishing for header */
+}
+
+.Description, .ArchiveMirrors, .NewToIF, .Submissions {
+	border-bottom-width: 1px;   /* section divider */
+	border-bottom-style: solid;   /* section divider */
+	padding-bottom: 3em;   /* 36px - room before section divider */
+}
+
+.Bibliography, .Body {
+	padding-bottom: 3em;   /* 36px - room before footer's top border (these sections always appear at end of page content) */
+}
+
+.Footer {
+	border-top-width: 1px;   /* divides footer from content above and closes page */
+	border-top-style: solid;   /* divides footer from content above and closes page */
+	padding-bottom: 4.364em;   /* 48px - relative to footer font size - leaves bottom margin at end of page */
+}
+
+.ParentLinks {
+	margin-top: 3em;   /* 36px - in general index page, ParentLinks is first section and therefore needs room above and below */
+	margin-bottom: 3em;   /* 36px - in general index page, ParentLinks is first section and therefore needs room above and below */
+}
+
+#mirrorpage .Description {
+	border-bottom: none;   /* in info page, border would collide with footer's top border */
+}
+
+#dirpage .Description {
+	margin-top: 3em;   /* 36px - in index of directories page, Description is first section and therefore needs room above and below */
+	margin-bottom: 3em;   /* 36px - in index of directories page, Description is first section and therefore needs room above and below */
+}
+
+.QuoteBox {
+	margin-top: 6em;   /* 72px - makes quotation stand out from the rest */
+	margin-bottom: 6em;   /* 72px - makes quotation stand out from the rest */
+}
+
+.PrimeLink {
+	margin-top: 3em;   /* 36px - makes link line more visible */
+	margin-bottom: 3em;   /* 36px - makes link line more visible */
+}
+
+
+
+/* typography - types */
+
+body {
+	font-family: Constantia, Georgia, "Palatino Linotype", Palatino, "Times New Roman", Times, serif;   /* all text but quotations */
+}
+
+.QuoteBox {
+	font-family: Consolas, "Courier New", Courier, monospace;   /* typewriter effect */
+}
+
+
+
+/* typography - size and rhythm */
+
+body {
+	font-size: 100%;   /* default font size - 16px in most modern browsers */
+	line-height: 1.3125em;   /* 21px - relative to default size - base line-height */
+}
+
+h1 {
+	font-size: 2.5em;   /* 30px */
+	line-height: 1.6em;   /* 48px - relative to size of <h1> - sum of line-height and margins equals 6x base line-height */
+	margin-top: 1.733em;   /* 52px - relative to size of <h1> */
+	margin-bottom: 0.867em;   /* 26px - relative to size of <h1> */
+}
+
+h2 {
+	font-size: 1.833em;   /* 22px - relative to base size */
+	line-height: 1.636em;   /* 36px - relative to size of <h2> - sum of line-height and margins equals 5x base line-height */
+	margin-top: 2.09em;   /* 46px - relative to size of <h2> */
+	margin-bottom: 1.045em;   /* 23px - relative to size of <h2> */
+}
+
+h3 {
+	font-size: 1.333em;   /* 16px */
+	line-height: 1.6875em;   /* 27px - relative to size of <h3> - sum of line-height and margins equals 4x base line-height */
+	margin-top: 2.375em;   /* 38px - relative to size of <h3>  */
+	margin-bottom: 1.1875em;   /* 19px - relative to size of <h2> */
+}
+
+p, ul, li, dl, dt {
+	margin-top: 0.75em;   /* 9px - space to text above - equals base line-height minus base size */
+}
+
+#frontpage, #mirrorpage, #indexpage, #dirpage {
+	font-size: 0.75em;   /* 12px - relative to default size - this is the base font size */
+}
+
+.Header {
+	padding-top: 4.333em;   /* 52px - replicates <h1> top margin to effectively apply it (actual css margin is collapsed) */
+	padding-bottom: 2.167em;   /* 26px - replicates <h1> bottom margin to effectively apply it (actual css margin is collapsed) */
+}
+
+.Footer {
+	font-size: 0.917em;   /* 11px */
+}
+
+p#footercredits, p#footermodified {
+	margin-top: 1.091em;   /* 12px - relative to footer font size - pulls footer elements away from footer's top border */
+	margin-bottom: 0.273em;   /* 3px - relative to footer font size - pulls footer links away from preceding footer paragraph */
+}
+
+
+
+/* typography - decoration */
+
+h1, h2, h3 {
+	font-weight: normal;   /* nullifies bold browser default */
+}
+
+a {
+	text-decoration: none;   /* nullifies underline browser default */
+	border-bottom-width: 1px;   /* uses border to simulate underline */
+	border-bottom-style: solid;   /* uses border to simulate underline */
+}
+
+#footerlinks em {
+	font-style: normal;   /* visual emphasis is already provided by link colour */
+}
+
+
+
+/* typography - margins */
+
+h2 {
+	margin-left: 1.09em;   /* 24px - relative to size of <h2> - negative indentation to make heading stand out */
+	margin-right: 2.182em;   /* 48px - relative to size of <h2> - normal margin */
+}
+
+h3 {
+	margin-left: 1.5em;   /* 24px - relative to size of <h3> - negative indentation to make heading stand out */
+	margin-right: 3em;   /* 48px - relative to size of <h3> - normal margin */
+}
+
+p {
+	padding-left: 4em;   /* 48px - normal margin */
+	padding-right: 4em;   /* 48px - normal margin */
+}
+
+ul {
+	padding-left: 8em;   /* 96px - indentation to identify list - should actually be 6em, but see <li> below */
+	padding-right: 4em;   /* 48px - normal margin */
+}
+
+li {
+	text-indent: -2em;   /* -24px - combines with left padding of <ul> above to create an overhang */
+}
+
+dl {
+	padding-left: 6em;   /* 72px - indentation to identify list */
+	padding-right: 4em;   /* 48px - normal margin */
+}
+
+dd {
+	padding-left: 2em;   /* 24px - indentation relative to <dt> */
+}
+
+.Footer p {
+	padding-left: 0em;   /* nullifies margin as paragraph width is already set to correct value */
+	padding-right: 0em;   /* nullifies margin as paragraph width is already set to correct value */
+}
+
+.QuoteBox p {
+	padding-left: 6em;   /* makes quotation stand out from the rest */
+	padding-right: 6em;   /* makes quotation stand out from the rest */
+}
+
+ul#alldirlist, ul#subdirlist {
+	padding-left: 6em;   /* 72px - nullifies indentation because list is only content in section - should actually be 4em, but see <li> above */
+}
+
+dl#itemlist {
+	padding-left: 4em;   /* 48px - nullifies indentation because list is only content in section */
+}
+
+
+
+/* unused id's and classes */
+
+#toplinklist {
+}
+
+#helplinklist {
+}
+
+#parentlist {
+}
+
+.ParOdd {
+}
+
+.ParEven {
+}

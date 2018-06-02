@@ -1,0 +1,76 @@
+body {
+    color: #112;
+    font: 13px/1.5 "Helvetica Neue", Arial, Helvetica, "DejaVu Sans", sans-serif;
+    margin: 32px;
+}
+
+h1 {
+    color: #910000;
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    text-transform: none;
+    letter-spacing: -1px;
+    font: normal 233% "Times New Roman", Times, "DejaVu Serif", serif;
+    margin-bottom: 1em;
+}
+
+h3 {
+    color: #910000;
+}
+
+hr {
+    border-color: #910000;
+    border-style: solid;
+    border-width: 1px 0 0;
+    width: 50%;
+    height: 0;
+    margin: 2em auto;
+    clear: both;
+}
+
+a:link, a:visited {
+    color: #200083;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #ffc27a;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li.ParOdd {
+    background-color: #EEE;
+}
+
+span.Date {
+    color: #490000;
+}
+
+.QuoteBox {
+    background: #200083;
+    color: #e6e6e6;
+    width: 300px;
+    margin: 2em auto;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.QuoteBox p {
+    text-align: left;
+    padding: 1em;
+    font-style: italic;
+    font-family: "Times New Roman", Times, "DejaVu Serif", serif;
+}
+
+.PrimeLink {
+	text-align: center;
+}
+
+p#footermodified {
+    text-align: right;
+}

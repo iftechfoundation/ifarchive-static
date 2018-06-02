@@ -1,0 +1,109 @@
+body {
+  color: white;
+  background: black;
+  font-family: Geneva, "Lucida Sans", Helvetica, Arial, sans-serif;
+}
+
+a:link, a:visited {
+	color: coral;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.QuoteBox {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid burlywood;
+}
+
+.QuoteBox p {
+  background: cornsilk; 
+  text-align: center;
+  font-size: 70%;
+  color: #000;
+  margin: 1em;
+  padding: 3px;
+}
+
+.PrimeLink {
+  font-weight: bold;
+}
+
+dl .ParOdd {
+	background: #444;
+}
+
+dl .ParEven {
+	background: #222;
+}
+
+#frontpage .Description {
+	float: none;
+	width:  100%;
+	font-size: 100%;
+	text-align: center;
+}
+
+.Description, .IndexSidebar {
+	float: left;
+	font-size: 60%;
+	width: 33.33em; // 20em / 60% font size
+}
+
+.NewToIF li {
+	padding-bottom: 1em;
+}
+
+#toplinklist li, #helplinklist li {
+	padding-bottom: 1em;
+}
+
+.ArchiveMirrors, .Bibliography {
+	font-size: 80%;
+	margin-left: 26.25em;	// 21em x 80% font size
+}
+
+.Body {
+	margin-left: 21em;
+	border-left: 1px solid white;
+	padding-left: 1em;
+}
+
+.Body dt {
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	padding-top: 0.25em;
+}
+
+.Body dd {
+	margin-bottom: 1em;
+	margin-left: 0;
+	padding-left: 2em;
+	padding-bottom: 0.25em;
+}
+
+.Body dl, .Date {
+	font-size: 80%;
+}
+
+.Body dl {
+	margin-right: 5%;
+	padding: 1em;
+	border: 1px dotted white;
+}
+
+#mirrorpage .Description {
+	float: none;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 80%;
+}
+
+.Footer {
+	font-size: 50%;
+}

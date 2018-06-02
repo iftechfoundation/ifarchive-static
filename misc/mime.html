@@ -1,0 +1,77 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>A Note on Mime Types</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./ifarchive.css" type="text/css">
+</head>
+<body><div id="mimepage" class="Page">
+
+<div class="Header">
+<h1>A Note on Mime Types</h1>
+</div>
+
+<div class="Description">
+<p>
+IF systems have used a lot of file suffixes over the years. The torrent
+has slowed down; people aren't creating new formats with quite the
+enthusiasm that they did in the 1990s. But we still have a pretty large
+list to keep track of. We want to make sure that binary formats aren't
+served as <code>text/plain</code>.
+</p>
+
+<p>
+Here is the <a href="mime.conf">Apache configuration file</a> that is used
+by this web server. It covers all the file suffixes I could find in the
+archive. If you're configuring a modern Apache setup, just drop it into
+your Apache config directory
+<a href="https://wiki.apache.org/httpd/DistrosDefaultLayout">(see
+here for more information)</a>.
+If you want to use these settings on a shared
+virtual host where you do not have administrative access, you can rename
+the file to <code>.htaccess</code> and put it in your top-level web
+directory.
+</p>
+
+<p>
+Most of the wacky file formats are just 
+<code>application/octet-stream</code>. There's special handling for
+Z-code, Glulx, Blorb, and TADS 2 and 3 game files, since they're so common.
+These are
+<code>application/x-zmachine</code>,
+<code>application/x-glulx</code>,
+<code>application/x-blorb</code>,
+<code>application/x-tads</code>, and
+<code>application/x-t3vm-image</code>
+respectively.
+</p>
+
+<p>
+Note that <code>.zblorb</code> and <code>.gblorb</code> files don't have
+their own MIME types; they are served as "profiles" of
+<code>application/x-blorb</code>. I'm not sure any software understands
+profiles in this sense, but I like to think that it'll make something
+magically work right someday.
+</p>
+
+<p>
+If you have any comments, complaints, or suggestions, please send them to
+&lt;tech .at. ifarchive .dot. org&gt;.
+</p>
+
+</div>
+
+<div class="Footer">
+<hr>
+
+<p id="footermodified">
+This page last updated July 26, 2017.
+</p>
+
+<p id="footerlinks">
+<em><a href="../index.html">Back to front page</a></em>
+</p>
+</div>
+
+</div></body>
+</html>

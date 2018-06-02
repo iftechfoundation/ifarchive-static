@@ -1,0 +1,174 @@
+hr {
+	visibility: hidden;
+}
+
+body {
+	color: #333;
+	background: white;
+	padding: 0em;
+	margin: 1em;
+}
+
+p, .Date, dd, ul {
+	font-family: Georgia, "Minion Pro", serif;
+}
+
+h1, h3, a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+	line-height: 1.3;
+	margin: 0em 0em 0.5em 0em;
+	padding: 0em;
+}
+
+h1, h3 {
+	padding-top: 0.66em;
+	margin: 0em;
+	font-weight: normal;
+	color: #7a4573;	
+}
+
+.Header h1, .NewToIF h3, .Submissions h3 {
+	padding-top: 0em;
+}
+
+h1 {
+	font-size: 250%;
+	padding-bottom: 0.5em;
+}
+
+h3 {
+	font-size: 150%;
+	padding-bottom: 0.25em;
+}
+
+a {
+	font-style: normal;
+	font-size: 104%;
+}
+
+.QuoteBox, .NewToIF, .Submissions {
+	float: right;
+	clear: right;
+	width: 40%;
+}
+
+#indexpage .Description, #dirpage .Description {
+	float: right;
+	clear: both;
+	width: 40%;
+}
+
+.ArchiveMirrors, .Bibliography, .Header, .Footer, .Body, .Description {
+	float: left;
+	clear: left;
+	width: 55%;
+}
+
+.ParentLinks {
+	float: left;
+	clear: left;
+	width: 100%;
+	margin-top: -1em;
+	margin-bottom: 1em;
+}
+
+.NewToIF, .Submissions, #indexpage .Description, #dirpage .Description {
+	margin: 0em;
+	padding: 1em 1em 0em 1em;
+}
+
+.QuoteBox {
+	margin: 0em;
+	padding: 0em 1em;
+}
+
+.Footer {
+	font-size: 85%;
+}
+
+#dirpage .Description {
+	padding: 1em;
+}
+
+.NewToIF, .PrimeLink, #indexpage .Description, #dirpage .Description, .ParEven {
+	background-color: #edd2e9;
+}
+
+.QuoteBox p {
+	color: #777;
+	font-style: italic;
+	font-size: 150%;
+}
+
+.QuoteBox p em {
+	font-weight: bold;
+	text-align: right;
+	display: block;
+}
+
+.PrimeLink {
+	font-size: 150%;
+	padding: 0.66em;
+}
+
+ul {
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+#helplinklist {
+	font-style: italic;
+	padding: 0em 0em 0em 1em;
+	text-indent: -1em;
+	margin-bottom:-1em;
+	border-width:0px;
+}
+
+#helplinklist li {
+	padding-bottom: 1em;
+	border-width:0px;
+}
+
+#toplinklist {
+	padding-bottom: 1em;
+	border-width: 0px;
+}
+
+#toplinklist li {
+	border-width: 0px;
+}
+
+ul, dl {
+	padding: 0em;
+	margin: 0em 1em;
+	border-color: #7a4573;
+	border-style: dotted;
+	border-width:0px 1px 1px 1px;
+}
+
+li, dt {
+	padding: 0.25em 0.5em;
+	border-top: 1px dotted #7a4573;
+}
+
+dd {
+	padding-left:1.5em;
+	margin-left:0em;
+	padding-bottom: 0.25em;
+}
+
+#parentlist {
+	padding: 0em;
+	margin: 0em;
+	border-width: 0px;
+}
+
+#parentlist li {
+	display: inline;
+	border-width: 0px;
+	padding: 0em 1em 0em 0em;
+	margin: 0em;
+}
