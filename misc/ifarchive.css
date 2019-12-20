@@ -176,15 +176,31 @@ hr
 {
 	font-weight: bold;
 	font-size: 1.4em;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.4em;
 }
 
-#itemlist dd
+#itemlist dd {
+	margin-left: 0px;
+}
+
+#itemlist dd p
 {
+	margin-top: 0.4em;
 	margin-left: 0px;
 	padding-left: 0px;
 	margin-bottom: 1em;
-	font-size: 1.2em;
+	font-size: 0.9em;
+}
+
+#itemlist dd ul
+{
+	padding-left: 20px;
+}
+
+#itemlist dd li
+{
+	list-style: circle;
+	font-size: 0.9em;
 }
 
 /* home page */
