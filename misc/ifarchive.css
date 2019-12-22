@@ -131,6 +131,17 @@ hr
 	color: #777;
 }
 
+#itemlist dd.FileData
+{
+	font-size: 1.0em;
+	margin-left: 20px;
+}
+
+#itemlist dd.FileData a
+{
+	font-weight: normal;
+}
+
 /* elements that appear on several pages */
 
 #indexlist
