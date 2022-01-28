@@ -456,6 +456,49 @@ hr
 	list-style: none;
 }
 
+#unboxpage .Header a
+{
+	color: black;
+	text-decoration: none;
+}
+
+#unboxpage .Description
+{
+	text-align: center;
+}
+
+#unboxpage .StartForm
+{
+	margin: 25px 0;
+}
+
+#unboxpage .InputLine
+{
+	font-size: 175%;
+}
+
+#unboxpage .Button
+{
+	font-size: 175%;
+}
+
+#unboxpage .StartButton
+{
+	padding: 4px 8px;
+}
+
+#unboxpage .ListBox
+{
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#unboxpage .Error
+{
+	font-family: monospace;
+}
+
 /* Style customizations for narrow displays. */
 
 @media screen and (max-width: 750px) {
