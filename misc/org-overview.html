@@ -46,7 +46,7 @@ Description of that file.
 
 Description of another file.
 </code></pre>
-<p>Each file section starts with <code># filename</code>. The descriptions employ Markdown formatting, so you can use <code>*emphasis*</code> or <code>[links][...]</code> or any of the other usual Markdown stuff. (Really <code># filename</code> is just a Markdown header line. You could use <code>##</code> for subheaders if you had a really long description, although we generally don't.)</p>
+<p>Each file section starts with <code># filename</code>. The descriptions employ Markdown formatting, so you can use <code>*emphasis*</code> or <code>[links][...]</code> or any of the other usual Markdown stuff. (Really <code># filename</code> is just a Markdown header line. You could use <code>##</code> for subheaders if you had a really long description, but we generally don't.)</p>
 <p>The Index file always has UTF-8 formatting and you can use Unicode characters freely.</p>
 <h3>Where to put directory info</h3>
 <p>The <code>Index</code> format allows you to put descriptions on subdirectories as well as files. It looks exactly the same:</p>
@@ -78,17 +78,17 @@ tuid: p11b2c3d4e5f6g78
 Description of another file.
 </code></pre>
 <p>Metadata lines look like <code>key: value</code>. The lines at the top describe the whole directory; the lines under the <code># filename</code> describe that file. A file (or the directory) can have any amount of metadata.</p>
-<p>A blank line ends the metadata section. (A line without a colon also ends the metadata section, so you could omit the blank lines if the description had no colons in it. But that's confusing, so we try to use the blank line consistently.)</p>
+<p>Metadata lines do <em>not</em> have whitespace before them. A blank line ends the metadata section. (A line without a colon also ends the metadata section, so you could omit the blank lines if the description had no colons in it. But that's confusing, so we try to use the blank line consistently.)</p>
 <p>There are currently just two common metadata lines:</p>
 <ul>
 <li>
-<p><code>tuid: ID</code>: An IFDB ID -- sixteen alphanumeric characters. (IFDB calls its ID strings "TUIDs" internally.) This becomes an IFDB link on the index page.</p>
+<p><code>tuid: ID</code>: An IFDB ID – sixteen alphanumeric characters. (IFDB calls its ID strings "TUIDs" internally.) This becomes an IFDB link on the index page.</p>
 </li>
 <li>
 <p><code>ifwiki: PageName</code>: An IFWiki page title, minus the <code>https://www.ifwiki.org/</code> part. This becomes an IFWiki link on the index page.</p>
 </li>
 </ul>
-<p>(IFWiki page titles should be written the way they appear to users, not in the URL. Thus: <code>ifwiki: Zork: A Troll's Eye View</code> rather than <code>ifwiki: Zork:_A_Troll%27s_Eye_View</code>. However, a lot of the older <code>ifwiki</code> lines use underscores rather than spaces. This works, but spaces are preferred.)</p>
+<p>IFWiki page titles should be written the way they appear to users, not in the URL. Thus: <code>ifwiki: Zork: A Troll's Eye View</code> rather than <code>ifwiki: Zork:_A_Troll%27s_Eye_View</code>. (However, a lot of the older <code>ifwiki</code> lines use underscores rather than spaces. This works, but spaces are preferred.)</p>
 <p>Note that you will sometimes see a single file with many IFDB or IFWiki links. For example, in <a href="https://ifarchive.org/indexes/if-archive/scott-adams/games/scottfree/"><code>if-archive/scott-adams/games/scottfree/</code></a>, the file <code>AdamsGames.zip</code> is a package containing a whole bunch of Scott Adams games. So it has a whole bunch of TUIDs.</p>
 <p>There can also be two files with the <em>same</em> IFDB or IFWiki link! Walkthroughs and maps should refer to the IFDB/IFWiki entry for their game, so they will have the same metadata.</p>
 <p><em>Most of the existing TUIDs and IFWiki links were automatically generated from IFDB and IFWiki database dumps.</em> (We searched the data for Archive URLs and created backlinks.) These links are certainly incomplete and sometimes wrong. One of our goals in accepting more IF Archive volunteers is to keep the metadata more up to date.</p>
@@ -105,15 +105,15 @@ Description of another file.
 <ul>
 <li><a href="https://ifarchive.org/indexes/if-archive/games/competition95/"><code>competition95</code></a>: Files are stored directly in the comp directory. Descriptions and metadata for each game file.</li>
 <li><a href="https://ifarchive.org/indexes/if-archive/games/competition96/"><code>competition96</code></a>: One subdirectory for each game, containing unpacked game files. Descriptions and metadata for each subdir.</li>
-<li><a href="https://ifarchive.org/indexes/if-archive/games/competition97/"><code>competition97</code></a> -- <a href="https://ifarchive.org/indexes/if-archive/games/competition99/"><code>competition99</code></a>: One subdir for each <em>dev system</em> (<code>tads</code>, <code>inform</code>, etc). Sub-sub-directories for each game. The top-level Index file has descriptions for the sub-sub-directories -- that is, slashes in the headers (<code># inform/edifice</code>). This is a weird format not used anywhere else.</li>
-<li><a href="https://ifarchive.org/indexes/if-archive/games/competition2000/"><code>competition2000</code></a> -- <a href="https://ifarchive.org/indexes/if-archive/games/competition2013/"><code>competition2013</code></a>: One subdir for each dev system, but we drop the idea of descriptions for individual games. (Because there is now a competition <em>web site</em> that lists all the games -- people are no longer relying on browsing the Archive for this info.) Also we've switched to four-digit years.</li>
-<li><a href="https://ifarchive.org/indexes/if-archive/games/competition2014/"><code>competition2014</code></a> -- <a href="https://ifarchive.org/indexes/if-archive/games/competition2019/"><code>competition2019</code></a>: One subdir for each game. Still no descriptions or metadata.</li>
-<li><a href="https://ifarchive.org/indexes/if-archive/games/competition2020/"><code>competition2020</code></a> -- <a href="https://ifarchive.org/indexes/if-archive/games/competition2021/"><code>competition2021</code></a>: One subdir for each game, but they are now all contained in a top-level <code>Games</code> folder.</li>
-<li><a href="https://ifarchive.org/indexes/if-archive/games/competition2022/"><code>competition2022</code></a> -- <a href="https://ifarchive.org/indexes/if-archive/games/competition2023/"><code>competition2023</code></a>: One <em>zip file</em> for each game, contained in a top-level <code>Games</code> folder. (The new <a href="https://unbox.ifarchive.org">unbox</a> service allows us to host playable games in zip files rather than unpacked folders.</li>
+<li><a href="https://ifarchive.org/indexes/if-archive/games/competition97/"><code>competition97</code></a> – <a href="https://ifarchive.org/indexes/if-archive/games/competition99/"><code>competition99</code></a>: One subdir for each <em>dev system</em> (<code>tads</code>, <code>inform</code>, etc). Sub-sub-directories for each game. The top-level <a href="https://ifarchive.org/if-archive/games/competition97/Index">Index</a> file has descriptions for the sub-sub-directories – that is, slashes in the headers (<code># inform/edifice</code>). This is a weird format not used anywhere else.</li>
+<li><a href="https://ifarchive.org/indexes/if-archive/games/competition2000/"><code>competition2000</code></a> – <a href="https://ifarchive.org/indexes/if-archive/games/competition2013/"><code>competition2013</code></a>: One subdir for each dev system, but we drop the idea of descriptions for individual games. (Because there is now a competition <em>web site</em> that lists all the games – people are no longer relying on browsing the Archive for this info.) Also we've switched to four-digit years.</li>
+<li><a href="https://ifarchive.org/indexes/if-archive/games/competition2014/"><code>competition2014</code></a> – <a href="https://ifarchive.org/indexes/if-archive/games/competition2019/"><code>competition2019</code></a>: One subdir for each game. Still no descriptions or metadata.</li>
+<li><a href="https://ifarchive.org/indexes/if-archive/games/competition2020/"><code>competition2020</code></a> – <a href="https://ifarchive.org/indexes/if-archive/games/competition2021/"><code>competition2021</code></a>: One subdir for each game, but they are now all contained in a top-level <code>Games</code> folder.</li>
+<li><a href="https://ifarchive.org/indexes/if-archive/games/competition2022/"><code>competition2022</code></a> – <a href="https://ifarchive.org/indexes/if-archive/games/competition2023/"><code>competition2023</code></a>: One <em>zip file</em> for each game, contained in a top-level <code>Games</code> folder. (The new <a href="https://unbox.ifarchive.org">unbox</a> service allows us to host playable games in zip files rather than unpacked folders.</li>
 </ul>
 <p>(Note that in <a href="https://ifarchive.org/indexes/if-archive/games/competition2012/">2012</a>, someone added IFDB metadata for every game to the <code>Comp12.zip</code> file. But nobody repeated this feat in later years.)</p>
 <p>(Also: it would be tidier if all those historic game subdirs were zipped up, matching the 2022 convention. However, the "don't break URLs" rule has held us back from doing this.)</p>
-<p>In theory, we'd like game descriptions and metadata to be visible on every <em>top-level</em> competition page. (You shouldn't have to burrow down into <code>inform</code> or even <code>Games</code> to see that info.) But the way things are set up, this is awkward (see 97-99).</p>
+<p>In theory, we'd like game descriptions and metadata to be visible on every <em>top-level</em> competition page. (You shouldn't have to burrow down into <code>competition2000/inform</code> or <code>competition2020/Games</code> to see that info.) But the way things are set up, this is awkward (see 97-99).</p>
 <p>We should discuss plans before making any wholesale change to the 2000-2023 <code>Index</code> files.</p>
 
     </div>
