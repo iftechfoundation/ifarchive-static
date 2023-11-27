@@ -44,7 +44,7 @@ Description of that file.
 Description of another file.
 ```
 
-Each file section starts with `# filename`. The descriptions employ Markdown formatting, so you can use `*emphasis*` or `[links][...]` or any of the other usual Markdown stuff. (Really `# filename` is just a Markdown header line. You could use `##` for subheaders if you had a really long description, although we generally don't.)
+Each file section starts with `# filename`. The descriptions employ Markdown formatting, so you can use `*emphasis*` or `[links][...]` or any of the other usual Markdown stuff. (Really `# filename` is just a Markdown header line. You could use `##` for subheaders if you had a really long description, but we generally don't.)
 
 The Index file always has UTF-8 formatting and you can use Unicode characters freely.
 
@@ -128,7 +128,7 @@ IFComp (and the Archive) have evolved over the years (decades!) The way IFComp f
 
 - [`competition95`](https://ifarchive.org/indexes/if-archive/games/competition95/): Files are stored directly in the comp directory. Descriptions and metadata for each game file.
 - [`competition96`](https://ifarchive.org/indexes/if-archive/games/competition96/): One subdirectory for each game, containing unpacked game files. Descriptions and metadata for each subdir.
-- [`competition97`](https://ifarchive.org/indexes/if-archive/games/competition97/) – [`competition99`](https://ifarchive.org/indexes/if-archive/games/competition99/): One subdir for each *dev system* (`tads`, `inform`, etc). Sub-sub-directories for each game. The top-level Index file has descriptions for the sub-sub-directories – that is, slashes in the headers (`# inform/edifice`). This is a weird format not used anywhere else.
+- [`competition97`](https://ifarchive.org/indexes/if-archive/games/competition97/) – [`competition99`](https://ifarchive.org/indexes/if-archive/games/competition99/): One subdir for each *dev system* (`tads`, `inform`, etc). Sub-sub-directories for each game. The top-level [Index](https://ifarchive.org/if-archive/games/competition97/Index) file has descriptions for the sub-sub-directories – that is, slashes in the headers (`# inform/edifice`). This is a weird format not used anywhere else.
 - [`competition2000`](https://ifarchive.org/indexes/if-archive/games/competition2000/) – [`competition2013`](https://ifarchive.org/indexes/if-archive/games/competition2013/): One subdir for each dev system, but we drop the idea of descriptions for individual games. (Because there is now a competition *web site* that lists all the games – people are no longer relying on browsing the Archive for this info.) Also we've switched to four-digit years.
 - [`competition2014`](https://ifarchive.org/indexes/if-archive/games/competition2014/) – [`competition2019`](https://ifarchive.org/indexes/if-archive/games/competition2019/): One subdir for each game. Still no descriptions or metadata.
 - [`competition2020`](https://ifarchive.org/indexes/if-archive/games/competition2020/) – [`competition2021`](https://ifarchive.org/indexes/if-archive/games/competition2021/): One subdir for each game, but they are now all contained in a top-level `Games` folder.
@@ -140,6 +140,6 @@ IFComp (and the Archive) have evolved over the years (decades!) The way IFComp f
 
 (Also: it would be tidier if all those historic game subdirs were zipped up, matching the 2022 convention. However, the "don't break URLs" rule has held us back from doing this.)
 
-In theory, we'd like game descriptions and metadata to be visible on every *top-level* competition page. (You shouldn't have to burrow down into `inform` or even `Games` to see that info.) But the way things are set up, this is awkward (see 97-99).
+In theory, we'd like game descriptions and metadata to be visible on every *top-level* competition page. (You shouldn't have to burrow down into `competition2000/inform` or `competition2020/Games` to see that info.) But the way things are set up, this is awkward (see 97-99).
 
 We should discuss plans before making any wholesale change to the 2000-2023 `Index` files.
