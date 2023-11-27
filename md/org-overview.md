@@ -94,15 +94,15 @@ Description of another file.
 
 Metadata lines look like `key: value`. The lines at the top describe the whole directory; the lines under the `# filename` describe that file. A file (or the directory) can have any amount of metadata.
 
-A blank line ends the metadata section. (A line without a colon also ends the metadata section, so you could omit the blank lines if the description had no colons in it. But that's confusing, so we try to use the blank line consistently.)
+Metadata lines do *not* have whitespace before them. A blank line ends the metadata section. (A line without a colon also ends the metadata section, so you could omit the blank lines if the description had no colons in it. But that's confusing, so we try to use the blank line consistently.)
 
 There are currently just two common metadata lines:
 
-* `tuid: ID`: An IFDB ID -- sixteen alphanumeric characters. (IFDB calls its ID strings "TUIDs" internally.) This becomes an IFDB link on the index page.
+* `tuid: ID`: An IFDB ID – sixteen alphanumeric characters. (IFDB calls its ID strings "TUIDs" internally.) This becomes an IFDB link on the index page.
 
 * `ifwiki: PageName`: An IFWiki page title, minus the `https://www.ifwiki.org/` part. This becomes an IFWiki link on the index page.
 
-(IFWiki page titles should be written the way they appear to users, not in the URL. Thus: `ifwiki: Zork: A Troll's Eye View` rather than `ifwiki: Zork:_A_Troll%27s_Eye_View`. However, a lot of the older `ifwiki` lines use underscores rather than spaces. This works, but spaces are preferred.)
+IFWiki page titles should be written the way they appear to users, not in the URL. Thus: `ifwiki: Zork: A Troll's Eye View` rather than `ifwiki: Zork:_A_Troll%27s_Eye_View`. (However, a lot of the older `ifwiki` lines use underscores rather than spaces. This works, but spaces are preferred.)
 
 Note that you will sometimes see a single file with many IFDB or IFWiki links. For example, in [`if-archive/scott-adams/games/scottfree/`](https://ifarchive.org/indexes/if-archive/scott-adams/games/scottfree/), the file `AdamsGames.zip` is a package containing a whole bunch of Scott Adams games. So it has a whole bunch of TUIDs.
 
@@ -128,11 +128,11 @@ IFComp (and the Archive) have evolved over the years (decades!) The way IFComp f
 
 - [`competition95`](https://ifarchive.org/indexes/if-archive/games/competition95/): Files are stored directly in the comp directory. Descriptions and metadata for each game file.
 - [`competition96`](https://ifarchive.org/indexes/if-archive/games/competition96/): One subdirectory for each game, containing unpacked game files. Descriptions and metadata for each subdir.
-- [`competition97`](https://ifarchive.org/indexes/if-archive/games/competition97/) -- [`competition99`](https://ifarchive.org/indexes/if-archive/games/competition99/): One subdir for each *dev system* (`tads`, `inform`, etc). Sub-sub-directories for each game. The top-level Index file has descriptions for the sub-sub-directories -- that is, slashes in the headers (`# inform/edifice`). This is a weird format not used anywhere else.
-- [`competition2000`](https://ifarchive.org/indexes/if-archive/games/competition2000/) -- [`competition2013`](https://ifarchive.org/indexes/if-archive/games/competition2013/): One subdir for each dev system, but we drop the idea of descriptions for individual games. (Because there is now a competition *web site* that lists all the games -- people are no longer relying on browsing the Archive for this info.) Also we've switched to four-digit years.
-- [`competition2014`](https://ifarchive.org/indexes/if-archive/games/competition2014/) -- [`competition2019`](https://ifarchive.org/indexes/if-archive/games/competition2019/): One subdir for each game. Still no descriptions or metadata.
-- [`competition2020`](https://ifarchive.org/indexes/if-archive/games/competition2020/) -- [`competition2021`](https://ifarchive.org/indexes/if-archive/games/competition2021/): One subdir for each game, but they are now all contained in a top-level `Games` folder.
-- [`competition2022`](https://ifarchive.org/indexes/if-archive/games/competition2022/) -- [`competition2023`](https://ifarchive.org/indexes/if-archive/games/competition2023/): One *zip file* for each game, contained in a top-level `Games` folder. (The new [unbox][] service allows us to host playable games in zip files rather than unpacked folders.
+- [`competition97`](https://ifarchive.org/indexes/if-archive/games/competition97/) – [`competition99`](https://ifarchive.org/indexes/if-archive/games/competition99/): One subdir for each *dev system* (`tads`, `inform`, etc). Sub-sub-directories for each game. The top-level Index file has descriptions for the sub-sub-directories – that is, slashes in the headers (`# inform/edifice`). This is a weird format not used anywhere else.
+- [`competition2000`](https://ifarchive.org/indexes/if-archive/games/competition2000/) – [`competition2013`](https://ifarchive.org/indexes/if-archive/games/competition2013/): One subdir for each dev system, but we drop the idea of descriptions for individual games. (Because there is now a competition *web site* that lists all the games – people are no longer relying on browsing the Archive for this info.) Also we've switched to four-digit years.
+- [`competition2014`](https://ifarchive.org/indexes/if-archive/games/competition2014/) – [`competition2019`](https://ifarchive.org/indexes/if-archive/games/competition2019/): One subdir for each game. Still no descriptions or metadata.
+- [`competition2020`](https://ifarchive.org/indexes/if-archive/games/competition2020/) – [`competition2021`](https://ifarchive.org/indexes/if-archive/games/competition2021/): One subdir for each game, but they are now all contained in a top-level `Games` folder.
+- [`competition2022`](https://ifarchive.org/indexes/if-archive/games/competition2022/) – [`competition2023`](https://ifarchive.org/indexes/if-archive/games/competition2023/): One *zip file* for each game, contained in a top-level `Games` folder. (The new [unbox][] service allows us to host playable games in zip files rather than unpacked folders.
 
 [unbox]: https://unbox.ifarchive.org
 
