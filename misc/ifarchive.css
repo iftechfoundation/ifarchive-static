@@ -456,6 +456,18 @@ hr
 	list-style: none;
 }
 
+#uploadpage .QuoteBox
+{
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#uploadpage .FormTable
+{
+	font-size: 1.5em;
+}
+
 #uploadpage .FormTable .FormField
 {
 	width: 100%;
