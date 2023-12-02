@@ -463,6 +463,11 @@ hr
 	margin-right: auto;
 }
 
+#uploadpage code
+{
+	font: 100% "Courier Prime", "Courier", monospace;
+}
+
 #uploadpage .FormTable
 {
 	font-size: 1.5em;
