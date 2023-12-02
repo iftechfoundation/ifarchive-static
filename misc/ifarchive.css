@@ -460,6 +460,24 @@ hr
 {
     width: 100%;
     font-size: 1.0em;
+    padding: 2px 4px;
+}
+
+#uploadpage .FormButton {
+    font-size: 100%;
+    margin: 4px;
+    background-color: white;
+    border: 1px solid #AAA;
+    border-radius: 6px;
+    padding: 2px 8px;
+}
+
+#uploadpage .SubmitPara {
+    text-align: center;
+}
+
+#uploadpage .FormUploadWidget {
+    font-size: 100%;
 }
 
 #unboxpage .Header a
