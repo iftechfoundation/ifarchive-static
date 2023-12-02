@@ -456,6 +456,12 @@ hr
 	list-style: none;
 }
 
+#uploadpage .FormTable .FormField
+{
+    width: 100%;
+    font-size: 1.0em;
+}
+
 #unboxpage .Header a
 {
 	color: black;
