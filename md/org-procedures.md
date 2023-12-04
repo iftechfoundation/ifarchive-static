@@ -58,6 +58,12 @@ Development tool uploads are usually new versions of an existing tool. So you ca
 
 If you don't know where something goes, or if the "suggested dir" is clearly wrong, ask on the Slack.
 
+## After you move a file
+
+Email the user who uploaded the file, and tell them it's done. (The email address is in the file info.) Provide a link to the index page, a link to the file itself, and, if the file was zipped, the "view contents" link (for playing via Unbox).
+
+TO DO: There should also be a button to notify IFDB that the file has moved. (If the file was uploaded via the IFDB form, IFDB will know about it and can update its links automatcally.) This button does not yet exist.
+
 ### Replacing old versions
 
 We're supposed to be an archive. That means *don't delete old versions of files*.
