@@ -114,7 +114,13 @@ Description of another file.
 <p>(Note that in <a href="https://ifarchive.org/indexes/if-archive/games/competition2012/">2012</a>, someone added IFDB metadata for every game to the <code>Comp12.zip</code> file. But nobody repeated this feat in later years.)</p>
 <p>(Also: it would be tidier if all those historic game subdirs were zipped up, matching the 2022 convention. However, the "don't break URLs" rule has held us back from doing this.)</p>
 <p>In theory, we'd like game descriptions and metadata to be visible on every <em>top-level</em> competition page. (You shouldn't have to burrow down into <code>competition2000/inform</code> or <code>competition2020/Games</code> to see that info.) But the way things are set up, this is awkward (see 97-99).</p>
-<p>We should discuss plans before making any wholesale change to the 2000-2023 <code>Index</code> files.</p>
+<p>The current goal is to add entries to the top-level competition pages that look like:</p>
+<pre><code># Games/Dr Ludwig and the Devil.zip
+tuid: 4gvxr278ukyobiy
+
+Dr Ludwig and the Devil, by SV Linwood.
+</code></pre>
+<p>However, <em>this doesn't work yet</em> because of a bug in the index generator script. (See <a href="https://github.com/iftechfoundation/ifarchive-ifmap-py/issues/14">issue</a>.) I will update this file when that is fixed.</p>
 
     </div>
   </div>

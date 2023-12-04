@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IF Archive volunteer procedures</title>
+  <link rel="stylesheet" href="/misc/admintool.css" type="text/css">
+  
+</head>
+<body>
+  <div id="header">
+    <div id="headercol">
+      <h1>IF Archive volunteer procedures</h1>
+    </div>
+  </div>
+  <div id="body" class="StaticDocs">
+    <div id="bodycol">
+
+<p>First, have a look at the <a href="uploader-docs.html">Archive uploading info</a>. This is the public post which explains the upload procedure to our users.</p>
+<h2>General principles</h2>
+<p><em>Follow the existing patterns.</em> We have a lot of precedent. When in doubt, look for the way it was done last time.</p>
+<p><em>Don't move or rename files without a good reason.</em> Archive URLs are supposed to be permanent. (See <a href="org-overview.html">overview</a>.)</p>
+<p><em>We hate to throw away files.</em> We're supposed to be an archive. That means saving stuff.</p>
+<h2>The Incoming directory</h2>
+<p>Every uploaded file lands in the Incoming directory. If it's valid, it should be moved to the Unprocessed directory. If it's spam, trash, or malware, it should be deleted.</p>
+<p>Our current goal (as stated in the <a href="uploader-docs.html">public info page</a>) is to move files from Incoming to Unprocessed within 24 hours. We'll see if this is workable.</p>
+<p>The procedure is:</p>
+<ul>
+<li>Download the file and make sure it's the type it says it is.</li>
+<li>If it's obviously spam, delete it.</li>
+<li>If it's a Twine game (or any HTML with embedded Javascript), hit the Zip button to zip it up.</li>
+<li>Hit the Move button to move it to Unprocessed.</li>
+</ul>
+<p>Note that if there's too much data in Incoming, further uploads are blocked. (We don't advertise the exact limit, but it's measured in total file size, not number of files.) This is a good reason to move files promptly to Unprocessed.</p>
+<h3>Multiple copies uploaded</h3>
+<p>It's pretty common for someone to upload a file and then say "Whoops, that was the wrong file, here's the right one."</p>
+<ul>
+<li>Keep the right one and trash the wrong one(s).</li>
+<li>If the new filename looks like <code>My Game (correct version!).html</code> then rename it to the intended filename.</li>
+<li>If the new filename looks like <code>My Game.html.1701652627.9965498</code>, then trailing bit is a timestamp. (Sorry, it's ugly.) This is what happens if someone uploads the exact same filename twice. Use the latest version, and rename it to remove the timestamp.</li>
+</ul>
+<h2>The Trash directory</h2>
+<p>Deleted files go to the Trash directory. This means you can always get them back, if you don't wait too long. Trashed files older than 30 days are deleted forever.</p>
+<p>When you edit an Index file, the old version goes to the Trash directory. So if you screw up an edit, you can get the old version back. (This is why Trash has so many files named <code>Index-foo-bar.1</code>.)</p>
+<p>Similarly, when you zip up an HTML file, the original version goes to the Trash.</p>
+<h2>Special cases</h2>
+<p>A few services (IFWiki, IFDB, the IF Forum) have special privileges to upload files without using the standard upload form. That means files appear in Incoming <em>without any upload info</em>. (If you hit the "info" link, it will say "No upload information recorded for this file.")</p>
+<p>This should happen <em>only</em> for service backup files, which get archived as follows:</p>
+<ul>
+<li>IFDB backups: <a href="https://ifarchive.org/indexes/if-archive/info/ifdb/">if-archive/info/ifdb</a></li>
+<li>IFWiki backups: <a href="https://ifarchive.org/indexes/if-archive/info/ifwiki/">if-archive/info/ifwiki</a></li>
+<li>Forum backups: <a href="https://ifarchive.org/indexes/if-archive/info/intficforum/">if-archive/info/intficforum</a></li>
+</ul>
+<p>Note that IFComp uploads <em>do</em> come in through the standard upload form.</p>
+
+    </div>
+  </div>
+</body>
+</html>
