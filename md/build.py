@@ -43,3 +43,4 @@ def build(filename, title='IF Archive'):
     fl.close()
 
 build('org-overview.md', 'IF Archive organization and metadata')
+build('org-procedures.md', 'IF Archive volunteer procedures')
