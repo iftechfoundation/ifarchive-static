@@ -26,6 +26,8 @@ The procedure is:
 - If it's a Twine game (or any HTML with embedded Javascript), hit the Zip button to zip it up.
 - Hit the Move button to move it to Unprocessed.
 
+Note that if there's too much data in Incoming, further uploads are blocked. (We don't advertise the exact limit, but it's measured in total file size, not number of files.) This is a good reason to move files promptly to Unprocessed.
+
 ### Multiple copies uploaded
 
 It's pretty common for someone to upload a file and then say "Whoops, that was the wrong file, here's the right one."
@@ -41,4 +43,16 @@ Deleted files go to the Trash directory. This means you can always get them back
 When you edit an Index file, the old version goes to the Trash directory. So if you screw up an edit, you can get the old version back. (This is why Trash has so many files named `Index-foo-bar.1`.)
 
 Similarly, when you zip up an HTML file, the original version goes to the Trash.
+
+## Special cases
+
+A few services (IFWiki, IFDB, the IF Forum) have special privileges to upload files without using the standard upload form. That means files appear in Incoming *without any upload info*. (If you hit the "info" link, it will say "No upload information recorded for this file.")
+
+This should happen *only* for service backup files, which get archived as follows:
+
+- IFDB backups: [if-archive/info/ifdb](https://ifarchive.org/indexes/if-archive/info/ifdb/)
+- IFWiki backups: [if-archive/info/ifwiki](https://ifarchive.org/indexes/if-archive/info/ifwiki/)
+- Forum backups: [if-archive/info/intficforum](https://ifarchive.org/indexes/if-archive/info/intficforum/)
+
+Note that IFComp uploads *do* come in through the standard upload form.
 
