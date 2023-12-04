@@ -13,6 +13,8 @@ First, have a look at the [Archive uploading info][pubdocs]. This is the public 
 
 *We hate to throw away files.* We're supposed to be an archive. That means saving stuff.
 
+*No live scripting in files directly accessible on the Archive.* Twine games, and any other HTML with embedded scripting, should be zipped. That way they can be played via Unbox, but they don't pose a security risk to the Archive itself.
+
 ## The Incoming directory
 
 Every uploaded file lands in the Incoming directory. If it's valid, it should be moved to the Unprocessed directory. If it's spam, trash, or malware, it should be deleted.
