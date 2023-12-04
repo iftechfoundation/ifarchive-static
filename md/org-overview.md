@@ -142,4 +142,16 @@ IFComp (and the Archive) have evolved over the years (decades!) The way IFComp f
 
 In theory, we'd like game descriptions and metadata to be visible on every *top-level* competition page. (You shouldn't have to burrow down into `competition2000/inform` or `competition2020/Games` to see that info.) But the way things are set up, this is awkward (see 97-99).
 
-We should discuss plans before making any wholesale change to the 2000-2023 `Index` files.
+The current goal is to add entries to the top-level competition pages that look like:
+
+```
+# Games/Dr Ludwig and the Devil.zip
+tuid: 4gvxr278ukyobiy
+
+Dr Ludwig and the Devil, by SV Linwood.
+```
+
+However, *this doesn't work yet* because of a bug in the index generator script. (See [issue][slashbug].) I will update this file when that is fixed.
+
+[slashbug]: https://github.com/iftechfoundation/ifarchive-ifmap-py/issues/14
+
