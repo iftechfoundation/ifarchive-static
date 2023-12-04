@@ -44,15 +44,59 @@ When you edit an Index file, the old version goes to the Trash directory. So if 
 
 Similarly, when you zip up an HTML file, the original version goes to the Trash.
 
+## Moving files to their permanent homes
+
+For most uploads, this is easy. The "suggested dir" in the file info is very often correct.
+
+Games go in the `if-archive/games` subdirectory appropriate to their format. If they're not in English, there's usually a `if-archive/games/format/language` directory.
+
+(Note: There is not yet a button for "create subdirectory". If you need a new subdirectory, ask one of the admins.)
+
+Development tool uploads are usually new versions of an existing tool. So you can easily find where it's supposed to be.
+
+If you don't know where something goes, or if the "suggested dir" is clearly wrong, ask on the Slack.
+
+### Replacing old versions
+
+We're supposed to be an archive. That means *don't delete old versions of files*.
+
+If a new version of an existing file comes in, the old version should be moved to an `old` subdirectory. For example, if you're replacing a game in `if-archive/games/twine`, the old version goes to `if-archive/games/twine/old`.
+
+After moving the file to `old`, rename it to include the (old) version number. That way, if *another* new version comes in, there's no filename collision in the `old` dir.
+
+(If there is no `old` subdirectory, ask an admin to create one. I'm working on the "create subdir" feature, honest.)
+
+### IFComp games
+
+IFComp is a special case. The `if-archive/games/competition2023` folder always preserves the games *as they were released during IFComp*. These are never updated or replaced.
+
+Post-comp releases go in the appropriate `if-archive/games/format` dir.
+
+## Index files and metadata
+
+Again, see the [overview][] for an explanation.
+
+You can edit the description and metadata for any file (except those in Incoming, Unprocessed, or at the root level of the Archive).
+
+You do this by hitting the Edit Index button for the file entry. You can also hit the Edit Index button at the top of the page; this edits the description and metadata for the *directory* (distinct from any of its contents).
+
+There's a separate Edit Index File button which lets you edit the entire Index file for the directory -- the directory *and* all its contents. This is handy for making mass changes.
+
+As for what to put *in* the metadata -- follow established patterns.
+
+- Our current rule for games is to write "Title, by Author".
+- If there's a version number, include that. For Inform games, include both the release number and the serial number.
+- For post-comp releases of IFComp games, include a line "(the original competition entry is at PATH)".
+
 ## Special cases
 
 A few services (IFWiki, IFDB, the IF Forum) have special privileges to upload files without using the standard upload form. That means files appear in Incoming *without any upload info*. (If you hit the "info" link, it will say "No upload information recorded for this file.")
 
 This should happen *only* for service backup files, which get archived as follows:
 
-- IFDB backups: [if-archive/info/ifdb](https://ifarchive.org/indexes/if-archive/info/ifdb/)
-- IFWiki backups: [if-archive/info/ifwiki](https://ifarchive.org/indexes/if-archive/info/ifwiki/)
-- Forum backups: [if-archive/info/intficforum](https://ifarchive.org/indexes/if-archive/info/intficforum/)
+- IFDB backups: [`if-archive/info/ifdb`](https://ifarchive.org/indexes/if-archive/info/ifdb/)
+- IFWiki backups: [`if-archive/info/ifwiki`](https://ifarchive.org/indexes/if-archive/info/ifwiki/)
+- Forum backups: [`if-archive/info/intficforum`](https://ifarchive.org/indexes/if-archive/info/intficforum/)
 
 Note that IFComp uploads *do* come in through the standard upload form.
 
