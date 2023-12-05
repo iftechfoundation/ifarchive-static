@@ -58,6 +58,54 @@ Development tool uploads are usually new versions of an existing tool. So you ca
 
 If you don't know where something goes, or if the "suggested dir" is clearly wrong, ask on the Slack.
 
+### Files related to other files
+
+Sometimes we get two related uploads. For example, an author might upload a game file and its source code separately.
+
+The convention is to put the game in the appropriate `if-archive/games/format` folder, and the source in `if-archive/games/source/format`. The description for each one should refer to the other. For example:
+
+```
+# GameName.z5
+
+GameName, by Person.
+(source code is in games/source/inform/GameName.inf)
+```
+
+```
+# GameName.inf
+
+Source code for GameName, by Person.
+(the compiled game is in games/zcode/GameName.z5)
+```
+
+You would do something similar if a game is uploaded in two formats, or in a language translation.
+
+### Files that go in more than one place
+
+An author might upload a zip file which contains the game *and* its source code.
+
+In this case, you should put the file in `if-archive/games/format`, and then create a symlink in `if-archive/games/source/format` pointing to the file.
+
+(Note that the admintool does not yet have the ability to create a symlink.)
+
+The descriptions would look like:
+
+```
+# GameName.zip
+
+GameName, by Person.
+Archive contains the game and source code.
+(file is linked from games/source/inform/GameName.zip)
+```
+
+```
+# GameName.zip
+
+GameName, by Person.
+Archive contains the game and source code.
+(file is linked to games/zcode/GameName.zip)
+```
+
 ### After you move a file
 
 Email the user who uploaded the file, and tell them it's done. (The email address is in the file info.) Provide a link to the index page, a link to the file itself, and, if the file was zipped, the "view contents" link (for playing via Unbox).
