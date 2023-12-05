@@ -106,6 +106,8 @@ Archive contains the game and source code.
 (file is linked to games/zcode/GameName.zip)
 ```
 
+(Here the descriptions are exactly the same, except the original says "linked from" and the symlink says "linked to".)
+
 ### After you move a file
 
 Email the user who uploaded the file, and tell them it's done. (The email address is in the file info.) Provide a link to the index page, a link to the file itself, and, if the file was zipped, the "view contents" link (for playing via Unbox).
