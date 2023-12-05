@@ -142,9 +142,13 @@ There's a separate Edit Index File button which lets you edit the entire Index f
 
 As for what to put *in* the metadata -- follow established patterns.
 
-- Our current rule for games is to write "Title, by Author".
+- Our current rule for games is to write "Title, by Author." (With the period.)
 - If there's a version number, include that. For Inform games, include both the release number and the serial number.
 - For post-comp releases of IFComp games, include a line "(the original competition entry is at PATH)".
+
+Remember that Index file descriptions are [Markdown][]. Markdown removes single line breaks. So Index descriptions will appear on the page as one long paragraph, unless you deliberately leave a blank line. (Which we usually don't.)
+
+[Markdown]: https://daringfireball.net/projects/markdown/syntax
 
 ## Special cases
 
