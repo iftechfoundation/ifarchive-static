@@ -50,6 +50,38 @@
 <p>(Note: There is not yet a button for "create subdirectory". If you need a new subdirectory, ask one of the admins.)</p>
 <p>Development tool uploads are usually new versions of an existing tool. So you can easily find where it's supposed to be.</p>
 <p>If you don't know where something goes, or if the "suggested dir" is clearly wrong, ask on the Slack.</p>
+<h3>Files related to other files</h3>
+<p>Sometimes we get two related uploads. For example, an author might upload a game file and its source code separately.</p>
+<p>The convention is to put the game in the appropriate <code>if-archive/games/format</code> folder, and the source in <code>if-archive/games/source/format</code>. The description for each one should refer to the other. For example:</p>
+<pre><code># GameName.z5
+
+GameName, by Person.
+(source code is in games/source/inform/GameName.inf)
+</code></pre>
+<pre><code># GameName.inf
+
+Source code for GameName, by Person.
+(the compiled game is in games/zcode/GameName.z5)
+</code></pre>
+<p>You would do something similar if a game is uploaded in two formats, or in a language translation.</p>
+<h3>Files that go in more than one place</h3>
+<p>An author might upload a zip file which contains the game <em>and</em> its source code.</p>
+<p>In this case, you should put the file in <code>if-archive/games/format</code>, and then create a symlink in <code>if-archive/games/source/format</code> pointing to the file.</p>
+<p>(Note that the admintool does not yet have the ability to create a symlink.)</p>
+<p>The descriptions would look like:</p>
+<pre><code># GameName.zip
+
+GameName, by Person.
+Archive contains the game and source code.
+(file is linked from games/source/inform/GameName.zip)
+</code></pre>
+<pre><code># GameName.zip
+
+GameName, by Person.
+Archive contains the game and source code.
+(file is linked to games/zcode/GameName.zip)
+</code></pre>
+<p>(Here the descriptions are exactly the same, except the original says "linked from" and the symlink says "linked to".)</p>
 <h3>After you move a file</h3>
 <p>Email the user who uploaded the file, and tell them it's done. (The email address is in the file info.) Provide a link to the index page, a link to the file itself, and, if the file was zipped, the "view contents" link (for playing via Unbox).</p>
 <p>TO DO: There should also be a button to notify IFDB that the file has moved. (If the file was uploaded via the IFDB form, IFDB will know about it and can update its links automatcally.) This button does not yet exist.</p>
@@ -68,10 +100,11 @@
 <p>There's a separate Edit Index File button which lets you edit the entire Index file for the directory -- the directory <em>and</em> all its contents. This is handy for making mass changes.</p>
 <p>As for what to put <em>in</em> the metadata -- follow established patterns.</p>
 <ul>
-<li>Our current rule for games is to write "Title, by Author".</li>
+<li>Our current rule for games is to write "Title, by Author." (With the period.)</li>
 <li>If there's a version number, include that. For Inform games, include both the release number and the serial number.</li>
 <li>For post-comp releases of IFComp games, include a line "(the original competition entry is at PATH)".</li>
 </ul>
+<p>Remember that Index file descriptions are <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>. Markdown removes single line breaks. So Index descriptions will appear on the page as one long paragraph, unless you deliberately leave a blank line. (Which we usually don't.)</p>
 <h2>Special cases</h2>
 <p>A few services (IFWiki, IFDB, the IF Forum) have special privileges to upload files without using the standard upload form. That means files appear in Incoming <em>without any upload info</em>. (If you hit the "info" link, it will say "No upload information recorded for this file.")</p>
 <p>This should happen <em>only</em> for service backup files, which get archived as follows:</p>
