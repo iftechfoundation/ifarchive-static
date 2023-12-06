@@ -47,7 +47,6 @@
 <h2>Moving files to their permanent homes</h2>
 <p>For most uploads, this is easy. The "suggested dir" in the file info is very often correct.</p>
 <p>Games go in the <code>if-archive/games</code> subdirectory appropriate to their format. If they're not in English, there's usually a <code>if-archive/games/format/language</code> directory.</p>
-<p>(Note: There is not yet a button for "create subdirectory". If you need a new subdirectory, ask one of the admins.)</p>
 <p>Development tool uploads are usually new versions of an existing tool. So you can easily find where it's supposed to be.</p>
 <p>If you don't know where something goes, or if the "suggested dir" is clearly wrong, ask on the Slack.</p>
 <h3>Files related to other files</h3>
@@ -89,7 +88,6 @@ Archive contains the game and source code.
 <p>We're supposed to be an archive. That means <em>don't delete old versions of files</em>.</p>
 <p>If a new version of an existing file comes in, the old version should be moved to an <code>old</code> subdirectory. For example, if you're replacing a game in <code>if-archive/games/twine</code>, the old version goes to <code>if-archive/games/twine/old</code>.</p>
 <p>After moving the file to <code>old</code>, rename it to include the (old) version number. That way, if <em>another</em> new version comes in, there's no filename collision in the <code>old</code> dir.</p>
-<p>(If there is no <code>old</code> subdirectory, ask an admin to create one. I'm working on the "create subdir" feature, honest.)</p>
 <h3>IFComp games</h3>
 <p>IFComp is a special case. The <code>if-archive/games/competition2023</code> folder always preserves the games <em>as they were released during IFComp</em>. These are never updated or replaced.</p>
 <p>Post-comp releases go in the appropriate <code>if-archive/games/format</code> dir.</p>
