@@ -5,6 +5,10 @@ This script generates them properly. To run:
 
 % python3 md/build.py
 
+To upload:
+
+% scp misc/org-*.html upload.ifarchive.org:/var/ifarchive/htdocs/misc
+
 """
 
 import os.path
