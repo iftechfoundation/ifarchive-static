@@ -52,8 +52,6 @@ For most uploads, this is easy. The "suggested dir" in the file info is very oft
 
 Games go in the `if-archive/games` subdirectory appropriate to their format. If they're not in English, there's usually a `if-archive/games/format/language` directory.
 
-(Note: There is not yet a button for "create subdirectory". If you need a new subdirectory, ask one of the admins.)
-
 Development tool uploads are usually new versions of an existing tool. So you can easily find where it's supposed to be.
 
 If you don't know where something goes, or if the "suggested dir" is clearly wrong, ask on the Slack.
@@ -121,8 +119,6 @@ We're supposed to be an archive. That means *don't delete old versions of files*
 If a new version of an existing file comes in, the old version should be moved to an `old` subdirectory. For example, if you're replacing a game in `if-archive/games/twine`, the old version goes to `if-archive/games/twine/old`.
 
 After moving the file to `old`, rename it to include the (old) version number. That way, if *another* new version comes in, there's no filename collision in the `old` dir.
-
-(If there is no `old` subdirectory, ask an admin to create one. I'm working on the "create subdir" feature, honest.)
 
 ### IFComp games
 
