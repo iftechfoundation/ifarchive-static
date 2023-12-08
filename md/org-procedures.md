@@ -26,6 +26,11 @@ The procedure is:
 - Download the file and make sure it's the type it says it is.
 - If it's obviously spam, delete it.
 - If it's a Twine game (or any HTML with embedded Javascript), hit the Zip button to zip it up.
+- Rename the file if necessary to clean it up.
+- - Remove editorial notes like `-final-release-` or `-this-one-works-`.
+- - We prefer to store games with no version number, so that future updates keep the same URL. Remove version numbers as needed.
+- - Other software (interpreters, compilers, etc) keep their version numbers.
+- - When in doubt, look at how older files are stored and follow the existing pattern.
 - Hit the Move button to move it to Unprocessed.
 
 Note that if there's too much data in Incoming, further uploads are blocked. (We don't advertise the exact limit, but it's measured in total file size, not number of files.) This is a good reason to move files promptly to Unprocessed.
@@ -35,7 +40,7 @@ Note that if there's too much data in Incoming, further uploads are blocked. (We
 It's pretty common for someone to upload a file and then say "Whoops, that was the wrong file, here's the right one."
 
 - Keep the right one and trash the wrong one(s).
-- If the new filename looks like `My Game (correct version!).html` then rename it to the intended filename.
+- If the new filename looks like `My Game (correct version!).html` then rename it to the intended filename. (See above.)
 - If the new filename looks like `My Game.html.1701652627.9965498`, then trailing bit is a timestamp. (Sorry, it's ugly.) This is what happens if someone uploads the exact same filename twice. Use the latest version, and rename it to remove the timestamp.
 
 ## The Trash directory
