@@ -103,7 +103,14 @@ Archive contains the game and source code.
 </code></pre>
 <p>(Here the descriptions are exactly the same, except the original says "linked from" and the symlink says "linked to".)</p>
 <h3>After you move a file</h3>
+<p>Fill in the description and metadata.</p>
+<ul>
+<li>For a game, use "GameName, by Person." Add release and version number if available.</li>
+<li>For other files, the uploader's description is a good starting place.</li>
+<li>If you're replacing an older version (now in <code>old</code>) you can look at its metadata. Copy the <code>tuid</code> and <code>ifwiki</code> lines if they exist -- those will be the same for the new version.</li>
+</ul>
 <p>Email the user who uploaded the file, and tell them it's done. (The email address is in the file info.) Provide a link to the index page, a link to the file itself, and, if the file was zipped, the "view contents" link (for playing via Unbox).</p>
+<p>TO DO: It would be nice if the admintool had a "send email" button which filled in all of that stuff for you.</p>
 <p>TO DO: There should also be a button to notify IFDB that the file has moved. (If the file was uploaded via the IFDB form, IFDB will know about it and can update its links automatcally.) This button does not yet exist.</p>
 <h3>Replacing old versions</h3>
 <p>We're supposed to be an archive. That means <em>don't delete old versions of files</em>.</p>
