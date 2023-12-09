@@ -117,8 +117,10 @@ Archive contains the game and source code.
 <p>If a new version of an existing file comes in, the old version should be moved to an <code>old</code> subdirectory. For example, if you're replacing a game in <code>if-archive/games/twine</code>, the old version goes to <code>if-archive/games/twine/old</code>.</p>
 <p>After moving the file to <code>old</code>, rename it to include the (old) version number. That way, if <em>another</em> new version comes in, there's no filename collision in the <code>old</code> dir.</p>
 <h3>IFComp games</h3>
-<p>IFComp is a special case. The <code>if-archive/games/competition2023</code> folder always preserves the games <em>as they were released during IFComp</em>. These are never updated or replaced.</p>
-<p>Post-comp releases go in the appropriate <code>if-archive/games/format</code> dir.</p>
+<p>IFComp is a special case. The <code>if-archive/games/competition20XX</code> folder always preserves the games <em>as they were released during IFComp</em>.</p>
+<p>Mid-comp releases (before the end of voting) go in <code>if-archive/games/competition20XX/Games</code>. The older, start-of-comp release is moved to <code>if-archive/games/competition20XX/Games/old</code>.</p>
+<p>Releases after the end of voting ("post-comp") do <em>not</em> go in <code>competition20XX</code>. We want to preserve <code>competition20XX</code> exactly as it was when the results came out. Therefore, post-comp releases go in the appropriate <code>if-archive/games/format</code> dir. (Include a line in the description saying "Original IFComp release is at ...".)</p>
+<p>(Note that the difference between "mid-comp" and "post-comp" is about when the game was released on the IFComp web site, not when it was uploaded to the IF Archive. It's possible that a mid-comp release gets uploaded late. Check the compile date or serial number to be sure.)</p>
 <h2>Index files and metadata</h2>
 <p>Again, see the <a href="org-overview.html">overview</a> for an explanation.</p>
 <p>You can edit the description and metadata for any file (except those in Incoming, Unprocessed, or at the root level of the Archive).</p>

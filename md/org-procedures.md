@@ -135,9 +135,13 @@ After moving the file to `old`, rename it to include the (old) version number. T
 
 ### IFComp games
 
-IFComp is a special case. The `if-archive/games/competition2023` folder always preserves the games *as they were released during IFComp*. These are never updated or replaced.
+IFComp is a special case. The `if-archive/games/competition20XX` folder always preserves the games *as they were released during IFComp*.
 
-Post-comp releases go in the appropriate `if-archive/games/format` dir.
+Mid-comp releases (before the end of voting) go in `if-archive/games/competition20XX/Games`. The older, start-of-comp release is moved to `if-archive/games/competition20XX/Games/old`.
+
+Releases after the end of voting ("post-comp") do *not* go in `competition20XX`. We want to preserve `competition20XX` exactly as it was when the results came out. Therefore, post-comp releases go in the appropriate `if-archive/games/format` dir. (Include a line in the description saying "Original IFComp release is at ...".)
+
+(Note that the difference between "mid-comp" and "post-comp" is about when the game was released on the IFComp web site, not when it was uploaded to the IF Archive. It's possible that a mid-comp release gets uploaded late. Check the compile date or serial number to be sure.)
 
 ## Index files and metadata
 
