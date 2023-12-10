@@ -35,7 +35,8 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer5" />
+     inkscape:current-layer="layer5"
+     showgrid="false" />
   <defs
      id="defs1">
     <linearGradient
@@ -89,38 +90,6 @@
            type="discrete"
            tableValues="0,1" />
       </feComponentTransfer>
-      <feComponentTransfer
-         id="feComponentTransfer45"
-         in="result1"
-         result="result2">
-        <feFuncR
-           id="feFuncR45"
-           type="discrete"
-           tableValues="1" />
-        <feFuncG
-           id="feFuncG45"
-           type="discrete"
-           tableValues="1" />
-        <feFuncB
-           id="feFuncB45"
-           type="discrete"
-           tableValues="1" />
-        <feFuncA
-           id="feFuncA45"
-           type="discrete"
-           tableValues="0,0,0,1,0,0" />
-      </feComponentTransfer>
-      <feMerge
-         id="feMerge45">
-        <feMergeNode
-           inkscape:collect="always"
-           id="feMergeNode45"
-           in="result3" />
-        <feMergeNode
-           inkscape:collect="always"
-           id="feMergeNode46"
-           in="result2" />
-      </feMerge>
     </filter>
     <radialGradient
        inkscape:collect="always"
