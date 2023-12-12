@@ -33,6 +33,7 @@
 <ul>
 <li>Download the file and make sure it's the type it says it is.</li>
 <li>If it's obviously spam, delete it.</li>
+<li>If the file is larger than 100MB, start a discussion with the rest of the team. See "Deleting large non-spam files" below. Note, as long as it's not spam, it's a good idea to move incoming files to Unprocessed, even if we're not sure we'll keep the file permanently, just to ensure that further uploads don't get blocked.</li>
 <li>If it's a Twine game (or any HTML with embedded Javascript), hit the Zip button to zip it up.</li>
 <li>Rename the file if necessary to clean it up.</li>
 <li>
@@ -69,6 +70,25 @@
 <p>Deleted files go to the Trash directory. This means you can always get them back, if you don't wait too long. Trashed files older than 30 days are deleted forever.</p>
 <p>When you edit an Index file, the old version goes to the Trash directory. So if you screw up an edit, you can get the old version back. (This is why Trash has so many files named <code>Index-foo-bar.1</code>.)</p>
 <p>Similarly, when you zip up an HTML file, the original version goes to the Trash.</p>
+
+<h2>Deleting large non-spam files</h2>
+<p>As of December 2023, the archive contains dozens of gigabytes of files. A file that adds half a gigabyte to that total is a significant bump. The marginal cost of a gigabyte is small, but if we accept large files unthinkingly, we'd be on a path to having ten times as much storage within a year.</p>
+<p>We should take a closer look at files that are over 100MB, and discuss them with the rest of the team. You can email the webuploaders list, or you can chat about it on Slack. Ask questions like these:</p>
+<ul>
+<li>Does it make sense to ask the uploader/author to make the file(s) smaller?</li>
+<li>If the files contain large images or sounds, does the author have the rights to that material?</li>
+<li>Which of these aspects of interactive fiction apply to this file? (If it's a large file and none of these apply, e.g. an arcade shooter, then the file might be a good candidate to delete.)
+  <ul>
+    <li>Was the game accepted in an IF competition or jam?</li>
+    <li>Does the game contain a significant textual component?</li>
+    <li>Do players interact with the game using a parser?</li>
+    <li>Does the game use an IF tool in its creation? (Twine, Inform, TADS, etc.)</li>
+    <li>Is the game by a recognized IF author?</li>
+    <li>Does the game contain puzzles, or rooms to explore?</li>
+  </ul>
+</li>
+</ul>
+<p>The <a href="https://iftechfoundation.org/committees/ifarchive/">IF Archive Committee</a> should make the final call, possibly including contacting the author for more information, if necessary.</p>
 <h2>Moving files to their permanent homes</h2>
 <p>For most uploads, this is easy. The "suggested dir" in the file info is very often correct.</p>
 <p>Games go in the <code>if-archive/games</code> subdirectory appropriate to their format. If they're not in English, there's usually a <code>if-archive/games/format/language</code> directory.</p>
