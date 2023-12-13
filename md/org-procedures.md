@@ -168,7 +168,7 @@ Remember that Index file descriptions are [Markdown][]. Markdown removes single 
 
 ## What is interactive fiction anyway?
 
-This is a hard question. There is plenty of fuzzy territory; lots of ways to say "Well, that is *similar* to stuff we already consider IF.*
+This is a hard question. There is plenty of fuzzy territory; lots of ways to say "Well, that is *similar* to stuff we already consider IF.
 
 IFTF policy is that *IFTF is not in charge of nailing down these boundaries*. Most of our services are ultimately governed by (moderated) community standards: what games can be discussed on the forum, what games can be entered into IFComp, what games can be listed on IFDB and IFWiki.
 
