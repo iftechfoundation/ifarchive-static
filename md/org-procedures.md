@@ -166,6 +166,24 @@ Remember that Index file descriptions are [Markdown][]. Markdown removes single 
 
 [Markdown]: https://daringfireball.net/projects/markdown/syntax
 
+## What is interactive fiction anyway?
+
+This is a hard question. There is plenty of fuzzy territory; lots of ways to say "Well, that is *similar* to stuff we already consider IF.*
+
+IFTF policy is that *IFTF is not in charge of nailing down these boundaries*. Most of our services are ultimately governed by (moderated) community standards: what games can be discussed on the forum, what games can be entered into IFComp, what games can be listed on IFDB and IFWiki.
+
+That said, spam is real. If someone uploads a physics textbook or a graphical shoot-em-up game, that's probably not IF.
+
+Reasons that lean towards an item being IF or IF-related:
+
+- Primarily text, or has primarily text-based interactivity.
+- Part of an IF-centric competition or game jam.
+- Built using the IF tools that we handle. (Twine, Inform, TADS, etc.)
+- Built by people who are active in the IF community.
+- Already discussed on our other services (forum, IFDB, etc).
+
+None of these are rigid rules. There are always going to be people who try to game the system by uploading a file to the Archive *and* starting a forum thread *and* an IFDB entry, all at once. Raise the question on the Slack or mailing list if you're unsure.
+
 ## Special cases
 
 ### IFTF service backups
@@ -190,5 +208,5 @@ We should take a closer look at files that are over 100MB, and discuss them with
 
 - Does it make sense to ask the uploader/author to make the file(s) smaller?
 - If the files contain large images or sounds, does the author have the rights to that material? (Always a question, but as a practical matter, we look at images and music harder.)
-- Which aspects of interactive fiction apply to this file? (If it's a large file and it's clearly not IF, e.g. an arcade shooter, then the file might be a good candidate to delete.)
+- Which aspects of interactive fiction apply to this file? (Again, we have to be more strict about large files, simply because there are people who want to leech our storage space for large files.)
 
