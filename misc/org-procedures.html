@@ -26,6 +26,7 @@
 <p><em>Don't move or rename files without a good reason.</em> Archive URLs are supposed to be permanent. (See <a href="org-overview.html">overview</a>.)</p>
 <p><em>We hate to throw away files.</em> We're supposed to be an archive. That means saving stuff.</p>
 <p><em>No live scripting in files directly accessible on the Archive.</em> Twine games, and any other HTML with embedded scripting, should be zipped. That way they can be played via Unbox, but they don't pose a security risk to the Archive itself.</p>
+<p><em>The definition of "interactive fiction" is not rigid.</em></p>
 <h2>The Incoming directory</h2>
 <p>Every uploaded file lands in the Incoming directory. If it's valid, it should be moved to the Unprocessed directory. If it's spam, trash, or malware, it should be deleted.</p>
 <p>Our current goal (as stated in the <a href="uploader-docs.html">public info page</a>) is to move files from Incoming to Unprocessed within 24 hours. We'll see if this is workable.</p>
@@ -33,6 +34,7 @@
 <ul>
 <li>Download the file and make sure it's the type it says it is.</li>
 <li>If it's obviously spam, delete it.</li>
+<li>If the file is larger than 100MB, start a discussion with the rest of the team. See "Particularly large files", below. Note, as long as it's not spam, it's a good idea to move incoming files to Unprocessed, even if we're not sure we'll keep the file permanently, just to ensure that further uploads don't get blocked.</li>
 <li>If it's a Twine game (or any HTML with embedded Javascript), hit the Zip button to zip it up.</li>
 <li>Rename the file if necessary to clean it up.</li>
 <li>
@@ -137,7 +139,21 @@ Archive contains the game and source code.
 <li>For post-comp releases of IFComp games, include a line "(the original competition entry is at PATH)".</li>
 </ul>
 <p>Remember that Index file descriptions are <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>. Markdown removes single line breaks. So Index descriptions will appear on the page as one long paragraph, unless you deliberately leave a blank line. (Which we usually don't.)</p>
+<h2>What is interactive fiction anyway?</h2>
+<p>This is a hard question. There is plenty of fuzzy territory; lots of ways to say "Well, that is <em>similar</em> to stuff we already consider IF.*</p>
+<p>IFTF policy is that <em>IFTF is not in charge of nailing down these boundaries</em>. Most of our services are ultimately governed by (moderated) community standards: what games can be discussed on the forum, what games can be entered into IFComp, what games can be listed on IFDB and IFWiki.</p>
+<p>That said, spam is real. If someone uploads a physics textbook or a graphical shoot-em-up game, that's probably not IF.</p>
+<p>Reasons that lean towards an item being IF or IF-related:</p>
+<ul>
+<li>Primarily text, or has primarily text-based interactivity.</li>
+<li>Part of an IF-centric competition or game jam.</li>
+<li>Built using the IF tools that we handle. (Twine, Inform, TADS, etc.)</li>
+<li>Built by people who are active in the IF community.</li>
+<li>Already discussed on our other services (forum, IFDB, etc).</li>
+</ul>
+<p>None of these are rigid rules. There are always going to be people who try to game the system by uploading a file to the Archive <em>and</em> starting a forum thread <em>and</em> an IFDB entry, all at once. Raise the question on the Slack or mailing list if you're unsure.</p>
 <h2>Special cases</h2>
+<h3>IFTF service backups</h3>
 <p>A few services (IFWiki, IFDB, the IF Forum) have special privileges to upload files without using the standard upload form. That means files appear in Incoming <em>without any upload info</em>. (If you hit the "info" link, it will say "No upload information recorded for this file.")</p>
 <p>This should happen <em>only</em> for service backup files, which get archived as follows:</p>
 <ul>
@@ -145,7 +161,16 @@ Archive contains the game and source code.
 <li>IFWiki backups: <a href="https://ifarchive.org/indexes/if-archive/info/ifwiki/"><code>if-archive/info/ifwiki</code></a></li>
 <li>Forum backups: <a href="https://ifarchive.org/indexes/if-archive/info/intficforum/"><code>if-archive/info/intficforum</code></a></li>
 </ul>
-<p>Note that IFComp uploads <em>do</em> come in through the standard upload form.</p>
+<p>Note that IFComp uploads <em>do</em> sometimes come in through the standard upload form. These are enormous, so make sure these get moved to Unprocessed right away.</p>
+<h3>Particularly large files</h3>
+<p>Speaking of enormous...</p>
+<p>As of December 2023, the archive contains some 30 gigabytes of files. A file that adds half a gigabyte to that total is a significant bump. The marginal cost of a gigabyte is small, but if we accept large files unthinkingly, we'd be on a path to having ten times as many gigabytes pretty soon.</p>
+<p>We should take a closer look at files that are over 100MB, and discuss them with the rest of the team. You can email the webuploaders list, or you can chat about it on Slack. Ask questions like these:</p>
+<ul>
+<li>Does it make sense to ask the uploader/author to make the file(s) smaller?</li>
+<li>If the files contain large images or sounds, does the author have the rights to that material? (Always a question, but as a practical matter, we look at images and music harder.)</li>
+<li>Which aspects of interactive fiction apply to this file? (Again, we have to be more strict about large files, simply because there are people who want to leech our storage space for large files.)</li>
+</ul>
 
     </div>
   </div>
