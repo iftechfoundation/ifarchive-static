@@ -15,6 +15,8 @@ First, have a look at the [Archive uploading info][pubdocs]. This is the public 
 
 *No live scripting in files directly accessible on the Archive.* Twine games, and any other HTML with embedded scripting, should be zipped. That way they can be played via Unbox, but they don't pose a security risk to the Archive itself.
 
+*The definition of "interactive fiction" is not rigid.*
+
 ## The Incoming directory
 
 Every uploaded file lands in the Incoming directory. If it's valid, it should be moved to the Unprocessed directory. If it's spam, trash, or malware, it should be deleted.
@@ -25,7 +27,7 @@ The procedure is:
 
 - Download the file and make sure it's the type it says it is.
 - If it's obviously spam, delete it.
-- If the file is larger than 100MB, start a discussion with the rest of the team. See "Deleting large non-spam files" below. Note, as long as it's not spam, it's a good idea to move incoming files to Unprocessed, even if we're not sure we'll keep the file permanently, just to ensure that further uploads don't get blocked.
+- If the file is larger than 100MB, start a discussion with the rest of the team. See "Particularly large files", below. Note, as long as it's not spam, it's a good idea to move incoming files to Unprocessed, even if we're not sure we'll keep the file permanently, just to ensure that further uploads don't get blocked.
 - If it's a Twine game (or any HTML with embedded Javascript), hit the Zip button to zip it up.
 - Rename the file if necessary to clean it up.
 - - Remove editorial notes like `-final-release-` or `-this-one-works-`.
@@ -51,16 +53,6 @@ Deleted files go to the Trash directory. This means you can always get them back
 When you edit an Index file, the old version goes to the Trash directory. So if you screw up an edit, you can get the old version back. (This is why Trash has so many files named `Index-foo-bar.1`.)
 
 Similarly, when you zip up an HTML file, the original version goes to the Trash.
-
-## Deleting large non-spam files
-
-As of December 2023, the archive contains some 30 gigabytes of files. A file that adds half a gigabyte to that total is a significant bump. The marginal cost of a gigabyte is small, but if we accept large files unthinkingly, we'd be on a path to having ten times as much storage within a year.
-
-We should take a closer look at files that are over 100MB, and discuss them with the rest of the team. You can email the webuploaders list, or you can chat about it on Slack. Ask questions like these:
-
-- Does it make sense to ask the uploader/author to make the file(s) smaller?
-- If the files contain large images or sounds, does the author have the rights to that material? (Always a question, but as a practical matter, we look at images and music harder.)
-- Which aspects of interactive fiction apply to this file? (If it's a large file and it's clearly not IF, e.g. an arcade shooter, then the file might be a good candidate to delete.)
 
 ## Moving files to their permanent homes
 
@@ -176,6 +168,8 @@ Remember that Index file descriptions are [Markdown][]. Markdown removes single 
 
 ## Special cases
 
+### IFTF service backups
+
 A few services (IFWiki, IFDB, the IF Forum) have special privileges to upload files without using the standard upload form. That means files appear in Incoming *without any upload info*. (If you hit the "info" link, it will say "No upload information recorded for this file.")
 
 This should happen *only* for service backup files, which get archived as follows:
@@ -184,5 +178,17 @@ This should happen *only* for service backup files, which get archived as follow
 - IFWiki backups: [`if-archive/info/ifwiki`](https://ifarchive.org/indexes/if-archive/info/ifwiki/)
 - Forum backups: [`if-archive/info/intficforum`](https://ifarchive.org/indexes/if-archive/info/intficforum/)
 
-Note that IFComp uploads *do* come in through the standard upload form.
+Note that IFComp uploads *do* sometimes come in through the standard upload form. These are enormous, so make sure these get moved to Unprocessed right away.
+
+### Particularly large files
+
+Speaking of enormous...
+
+As of December 2023, the archive contains some 30 gigabytes of files. A file that adds half a gigabyte to that total is a significant bump. The marginal cost of a gigabyte is small, but if we accept large files unthinkingly, we'd be on a path to having ten times as many gigabytes pretty soon.
+
+We should take a closer look at files that are over 100MB, and discuss them with the rest of the team. You can email the webuploaders list, or you can chat about it on Slack. Ask questions like these:
+
+- Does it make sense to ask the uploader/author to make the file(s) smaller?
+- If the files contain large images or sounds, does the author have the rights to that material? (Always a question, but as a practical matter, we look at images and music harder.)
+- Which aspects of interactive fiction apply to this file? (If it's a large file and it's clearly not IF, e.g. an arcade shooter, then the file might be a good candidate to delete.)
 
