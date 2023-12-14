@@ -166,10 +166,14 @@ pre {
 }
 
 ul {
-    list-style: none;
-    padding-left: 16px;
+    list-style: url("cssbullet.png");
     margin-left: 10px;
+    padding-left: 9px;
     border-left: 3px solid #F0D0A0;
+}
+
+ul li {
+    text-indent: 20px hanging;
 }
 
 ul.InfoList {
@@ -184,18 +188,6 @@ ul.InfoList li {
 ul.UserInfoList li {
     margin-top: 4px;
     margin-bottom: 4px;
-}
-
-.StaticDocs ul li {
-    margin-left: 20px;
-    text-indent: -20px;
-}
-
-.StaticDocs ul.Bulleted li::before {
-    position: relative;
-    content: "\25A0";
-    left: -22px;
-    color: #E0C090;
 }
 
 .DirButtons {
@@ -241,9 +233,16 @@ ul.UserInfoList li {
     background-color: #EAFB80;
 }
 
+.SubdirButtons.Selected {
+    background: #FFA;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 .FileComments {
     margin-top: 10px;
     margin-bottom: 10px;
+    text-indent: 0px;
     font-size: 85%;
     white-space: pre-wrap;
     border-left: 3px solid #F0D0A0;
