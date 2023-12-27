@@ -272,8 +272,6 @@ hr
 
 #frontpage .RightCol
 {
-	padding-top: 330px;
-	background: url("cssimg/map.jpeg") top left no-repeat;
 	top: 11.5em;
 	right: 6em;
 	_right: 11em; /* IE misaligns this */
