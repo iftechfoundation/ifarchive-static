@@ -274,7 +274,6 @@ hr
 {
 	top: 11.5em;
 	right: 6em;
-	_right: 11em; /* IE misaligns this */
 }
 
 #frontpage .RightCol ul
