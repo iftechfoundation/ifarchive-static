@@ -78,6 +78,11 @@ hr
 	display: none;
 }
 
+.RightAlign
+{
+	text-align: right;
+}
+
 .LeftFloat
 {
 	float: left;
@@ -95,9 +100,19 @@ hr
 	clear: both;
 }
 
-.VertMargin
+.BottomMargin
 {
 	margin-bottom: 1.5em;
+}
+
+.NoBottomMargin
+{
+	margin-bottom: 0px;
+}
+
+.NoTopMargin
+{
+	margin-top: 0px;
 }
 
 .Hide
