@@ -31,6 +31,7 @@ mdenv = markdown.Markdown(extensions=[
 ])
 
 def build(filename, title='IF Archive'):
+    print('Writing %s...' % (filename,))
     fl = open(os.path.join(template_path, filename))
     dat = fl.read()
     fl.close()
