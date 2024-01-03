@@ -20,6 +20,7 @@
   <div id="body" class="StaticDocs">
     <div id="bodycol">
 
+<p class="RightAlign"><em>Last update: Jan 4, 2024</em></p>
 <p>First, have a look at the <a href="uploader-docs.html">Archive uploading info</a>. This is the public post which explains the upload procedure to our users.</p>
 <h2>General principles</h2>
 <p><em>Follow the existing patterns.</em> We have a lot of precedent. When in doubt, look for the way it was done last time.</p>
@@ -114,14 +115,22 @@ Archive contains the game and source code.
 <li>For a game, use "GameName, by Person." Add release and version number if available.</li>
 <li>For other files, the uploader's description is a good starting place.</li>
 <li>If you're replacing an older version (now in <code>old</code>) you can look at its metadata. Copy the <code>tuid</code> and <code>ifwiki</code> lines if they exist -- those will be the same for the new version.</li>
+<li>If the file has an "IFDB temp ID" field (it was uploaded via IFDB), hit the "Notify IFDB" button on the "(info)" page. This tells IFDB to update its file links to point at the game's final position. If you get "no pending link" then you may want to update IFDB by hand.</li>
 </ul>
 <p>Email the user who uploaded the file, and tell them it's done. (The email address is in the file info.) Provide a link to the index page, a link to the file itself, and, if the file was zipped, the "view contents" link (for playing via Unbox).</p>
 <p>TO DO: It would be nice if the admintool had a "send email" button which filled in all of that stuff for you.</p>
-<p>TO DO: There should also be a button to notify IFDB that the file has moved. (If the file was uploaded via the IFDB form, IFDB will know about it and can update its links automatcally.) This button does not yet exist.</p>
 <h3>Replacing old versions</h3>
 <p>We're supposed to be an archive. That means <em>don't delete old versions of files</em>.</p>
 <p>If a new version of an existing file comes in, the old version should be moved to an <code>old</code> subdirectory. For example, if you're replacing a game in <code>if-archive/games/twine</code>, the old version goes to <code>if-archive/games/twine/old</code>.</p>
 <p>After moving the file to <code>old</code>, rename it to include the (old) version number. That way, if <em>another</em> new version comes in, there's no filename collision in the <code>old</code> dir.</p>
+<p>After replacing an existing file, hit the "Uncache" button. This tells CloudFlare that a new version exists. (You don't have to do this when storing a new file -- only when there's an old version that CloudFlare might have cached.)</p>
+<p>Replacing a <code>.zip</code> file takes a certain amount of care, because zip files are <em>also</em> cached by the Unbox service. The best practice is:</p>
+<ul>
+<li>Replace the zip file.</li>
+<li>Hit "Rebuild".</li>
+<li>Hit "Uncache" on the file.</li>
+<li>Wait at least five minutes before visiting the Unbox "View contents" link! (This is the confusing bit. Unbox can take up to five minutes to notice a new file even after you've rebuilt and uncached. If you visit in that period, it might cache and display the <em>old</em> version. If that happens, roll your eyes, wait five minutes, and hit "Uncache" again.) (Or just don't visit "View contents" at all -- you don't really have to.)</li>
+</ul>
 <h3>IFComp games</h3>
 <p>IFComp is a special case. The <code>if-archive/games/competition20XX</code> folder always preserves the games <em>as they were released during IFComp</em>.</p>
 <p>Mid-comp releases (before the end of voting) go in <code>if-archive/games/competition20XX/Games</code>. The older, start-of-comp release is moved to <code>if-archive/games/competition20XX/Games/old</code>.</p>
