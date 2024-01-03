@@ -135,6 +135,15 @@ If a new version of an existing file comes in, the old version should be moved t
 
 After moving the file to `old`, rename it to include the (old) version number. That way, if *another* new version comes in, there's no filename collision in the `old` dir.
 
+After replacing an existing file, hit the "Uncache" button. This tells CloudFlare that a new version exists. (You don't have to do this when storing a new file -- only when there's an old version that CloudFlare might have cached.)
+
+Replacing a `.zip` file takes a certain amount of care, because zip files are *also* cached by the Unbox service. The best practice is:
+
+- Replace the zip file.
+- Hit "Rebuild".
+- Hit "Uncache" on the file.
+- Wait at least five minutes before visiting the Unbox "View contents" link! (This is the confusing bit. Unbox can take up to five minutes to notice a new file even after you've rebuilt and uncached. If you visit in that period, it might cache and display the *old* version. If that happens, roll your eyes, wait five minutes, and hit "Uncache" again.) (Or just don't visit "View contents" at all -- you don't really have to.)
+
 ### IFComp games
 
 IFComp is a special case. The `if-archive/games/competition20XX` folder always preserves the games *as they were released during IFComp*.
