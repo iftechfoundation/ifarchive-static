@@ -32,10 +32,10 @@ The procedure is:
 - If the file is larger than 100MB, start a discussion with the rest of the team. See "Particularly large files", below. Note, as long as it's not spam, it's a good idea to move incoming files to Unprocessed, even if we're not sure we'll keep the file permanently, just to ensure that further uploads don't get blocked.
 - If it's a Twine game (or any HTML with embedded Javascript), hit the Zip button to zip it up.
 - Rename the file if necessary to clean it up.
-- - Remove editorial notes like `-final-release-` or `-this-one-works-`.
-- - We prefer to store games with no version number, so that future updates keep the same URL. Remove version numbers as needed.
-- - Other software (interpreters, compilers, etc) keep their version numbers.
-- - When in doubt, look at how older files are stored and follow the existing pattern.
+    - Remove editorial notes like `-final-release-` or `-this-one-works-`.
+    - We prefer to store games with no version number, so that future updates keep the same URL. Remove version numbers as needed.
+    - Other software (interpreters, compilers, etc) keep their version numbers.
+    - When in doubt, look at how older files are stored and follow the existing pattern.
 - Hit the Move button to move it to Unprocessed.
 
 Note that if there's too much data in Incoming, further uploads are blocked. (We don't advertise the exact limit, but it's measured in total file size, not number of files.) This is a good reason to move files promptly to Unprocessed.
