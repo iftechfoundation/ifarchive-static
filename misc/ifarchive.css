@@ -314,14 +314,22 @@ a.PermaLink:hover
 
 /* home page */
 
-#frontpage
-{
-	position: relative;
-}
-
 #frontpage .Header
 {
 	margin-bottom: 4em;
+}
+
+#frontpage .Columns
+{
+	display: flex;
+	gap: 0 6em;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#frontpage .MainCol
+{
+	max-width: 80ch;
 }
 
 #frontpage .Description blockquote
@@ -337,13 +345,11 @@ a.PermaLink:hover
 
 #frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
 {
-	margin-right: 330px;
 	word-wrap: break-word;
 }
 
 #frontpage .RightCol
 {
-	position: absolute;
 	width: 270px;
 }
 
@@ -827,17 +833,6 @@ a.PermaLink:hover
 .Page 
 {
 	padding: 0.1em 3em 2em 3em;
-}
-
-#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
-{
-	margin-right: 60%;
-}
-
-#frontpage .RightCol
-{
-	position: absolute;
-	width: 40%;
 }
 
 }
