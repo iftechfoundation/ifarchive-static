@@ -318,6 +318,12 @@ hr
 	margin-top: 3em;
 }
 
+#frontpage .ColImage
+{
+	max-width: 100%;
+	aspect-ratio: auto 2/3;
+}
+
 /* orthogonal list pages */
 
 #dirpage .Header,
