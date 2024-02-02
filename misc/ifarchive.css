@@ -156,13 +156,13 @@ hr
 	color: #777;
 }
 
-#itemlist dd.FileData
+.ItemList dd.FileData
 {
 	font-size: 1.0em;
 	margin-left: 20px;
 }
 
-#itemlist dd.FileData a
+.ItemList dd.FileData a
 {
 	font-weight: normal;
 }
@@ -203,23 +203,23 @@ hr
 	margin-bottom: 0.4em;
 }
 
-#itemlist, #subdirlist
+.ItemList
 {
 	margin: 0px;
 }
 
-#itemlist dt
+.ItemList dt
 {
 	font-weight: bold;
 	font-size: 1.4em;
 	margin-bottom: 0.4em;
 }
 
-#itemlist dd {
+.ItemList dd {
 	margin-left: 0px;
 }
 
-#itemlist dd p
+.ItemList dd p
 {
 	margin-top: 0.4em;
 	margin-left: 0px;
@@ -228,12 +228,12 @@ hr
 	font-size: 0.9em;
 }
 
-#itemlist dd ul
+.ItemList dd ul
 {
 	padding-left: 20px;
 }
 
-#itemlist dd li
+.ItemList dd li
 {
 	list-style: circle;
 	font-size: 0.9em;
