@@ -73,6 +73,15 @@ h3
 	color: black;
 }
 
+h4
+{
+	margin: 2em 0px 0px 0px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 2.2em;
+	font-weight: normal;
+	color: black;
+}
+
 hr
 {
 	display: none;
@@ -154,6 +163,12 @@ hr
 	font-size: 90%;
 	font-weight: normal;
 	color: #777;
+}
+
+.SymLinkRef
+{
+	font-size: 90%;
+	font-weight: normal;
 }
 
 .ItemList dd.FileData
@@ -448,6 +463,16 @@ hr
 	font-size: 1.8em;
 	font-style: italic;
 	border-bottom: 1px dotted #222;
+}
+
+#indexpage h4.ListHeader
+{
+	margin-top: 1em;
+	padding-bottom: 0.1em;
+	margin-bottom: 1em;
+	font-size: 1.6em;
+	font-style: italic;
+	text-decoration: underline #222 dotted;
 }
 
 #indexpage .Header a
