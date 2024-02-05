@@ -208,7 +208,6 @@ hr
 	list-style-type: none;
 	padding-left: 0px;
 	margin-left: 0px;
-	padding-bottom: 2em;
 }
 
 #subdirlist li
@@ -227,11 +226,13 @@ hr
 {
 	font-weight: bold;
 	font-size: 1.4em;
+	margin-top: 0.4em;
 	margin-bottom: 0.4em;
+	text-indent: 20px hanging;
 }
 
 .ItemList dd {
-	margin-left: 0px;
+	margin-left: 20px;
 }
 
 .ItemList dd p
@@ -239,7 +240,7 @@ hr
 	margin-top: 0.4em;
 	margin-left: 0px;
 	padding-left: 0px;
-	margin-bottom: 1em;
+	margin-bottom: 0.4em;
 	font-size: 0.9em;
 }
 
@@ -457,7 +458,7 @@ hr
 
 #indexpage h3.ListHeader
 {
-	margin-top: 0px;
+	margin-top: 1em;
 	padding-bottom: 0.1em;
 	margin-bottom: 1em;
 	font-size: 1.8em;
