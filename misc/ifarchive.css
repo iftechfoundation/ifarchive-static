@@ -454,6 +454,11 @@ hr
 	margin-left: 0px;
 }
 
+#dirpage .Body dl
+{
+	margin-left: 20px;
+}
+
 #indexpage .Body, 
 #dirpage .Body,
 #datepage .Body
