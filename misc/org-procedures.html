@@ -63,6 +63,12 @@
 <p>Games go in the <code>if-archive/games</code> subdirectory appropriate to their format. If they're not in English, there's usually a <code>if-archive/games/format/language</code> directory.</p>
 <p>Development tool uploads are usually new versions of an existing tool. So you can easily find where it's supposed to be.</p>
 <p>If you don't know where something goes, or if the "suggested dir" is clearly wrong, ask on the Slack.</p>
+<h3>HTML games in various dev systems</h3>
+<p>HTML games in Twine, Ink, and Texture should be moved to <code>games/twine</code>, <code>games/ink</code>, and <code>games/texture</code>. All other HTML games should be moved to <code>games/html</code>.</p>
+<p>Most of the games in the archive are organized by <em>output format</em>. Multiple IF dev systems may generate output files in the same output format. For example, Inform, ZIL, and Dialog can all generate Z-Code files. All Z-Code games go into <code>if-archive/games/zcode</code>, regardless of the dev system that was used to create them.</p>
+<p>There are many dev systems that can generate output files in HTML format, including Twine, Adventuron, Ink, Texture, and even Inform. Unfortunately, we didn't make a very clear decision early on between whether to organize HTML files by dev system (<code>games/twine</code>) or by output format (<code>games/html</code>).</p>
+<p>So we're going to follow existing patterns, with Twine, Ink, and Texture games in their own folders, and all other HTML games in <code>games/html</code>.</p>
+<p>(Note that we always organize <code>games/source</code> by <em>dev system</em>. For example, we have separate directories for <code>games/source/inform</code> and <code>games/source/dialog</code> games. We'll continue to follow that pattern too.)</p>
 <h3>Files related to other files</h3>
 <p>Sometimes we get two related uploads. For example, an author might upload a game file and its source code separately.</p>
 <p>The convention is to put the game in the appropriate <code>if-archive/games/format</code> folder, and the source in <code>if-archive/games/source/format</code>. The description for each one should refer to the other. For example:</p>
@@ -80,7 +86,6 @@ Source code for GameName, by Person.
 <h3>Files that go in more than one place</h3>
 <p>An author might upload a zip file which contains the game <em>and</em> its source code.</p>
 <p>In this case, you should put the file in <code>if-archive/games/format</code>, and then create a symlink in <code>if-archive/games/source/format</code> pointing to the file.</p>
-<p>(Note that the admintool does not yet have the ability to create a symlink.)</p>
 <p>The descriptions would look like:</p>
 <pre><code># GameName.zip
 
