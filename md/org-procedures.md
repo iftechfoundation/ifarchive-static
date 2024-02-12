@@ -94,8 +94,6 @@ An author might upload a zip file which contains the game *and* its source code.
 
 In this case, you should put the file in `if-archive/games/format`, and then create a symlink in `if-archive/games/source/format` pointing to the file.
 
-(Note that the admintool does not yet have the ability to create a symlink.)
-
 The descriptions would look like:
 
 ```
