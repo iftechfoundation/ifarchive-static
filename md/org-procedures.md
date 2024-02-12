@@ -66,6 +66,18 @@ Development tool uploads are usually new versions of an existing tool. So you ca
 
 If you don't know where something goes, or if the "suggested dir" is clearly wrong, ask on the Slack.
 
+### HTML games in various dev systems
+
+HTML games in Twine, Ink, and Texture should be moved to `games/twine`, `games/ink`, and `games/texture`, but all other HTML games should be moved to `games/html`.
+
+Most of the games in the archive are organized by _output format_. Multiple IF dev systems may generate output files in the same output format, e.g. Inform, ZIL, and Dialog can all generate Z-Code files, and all games in Z-Code format would be organized into `if-archive/games/zcode`, regardless of the dev system that was used to create them.
+
+There are many dev systems that can generate output files in HTML format, including Twine, Adventuron, Ink, Texture, and even Inform. Unfortunately, we didn't make a very clear decision early on between whether to organize HTML files by dev system (`games/twine`) or whether to organize them by output format (`games/html`).
+
+So, now, we're going to follow existing patterns, continuing to put Twine, Ink, and Texture games in their own folder, moving all other HTML games into `games/html`.
+
+(Also note that we always organize `games/source` by _dev system_. For example, we have separate directories for `games/source/inform` and `games/source/dialog` games. We'll continue to follow existing patterns, organizing `games/source` by dev system.)
+
 ### Files related to other files
 
 Sometimes we get two related uploads. For example, an author might upload a game file and its source code separately.
