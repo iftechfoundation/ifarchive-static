@@ -1,5 +1,4 @@
-*Last update: Dec 3, 2023*
-{: .RightAlign }
+changedate: December 3, 2023
 
 We store files in directories. That's the job.
 

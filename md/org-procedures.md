@@ -1,5 +1,4 @@
-*Last update: Feb 11, 2024*
-{: .RightAlign }
+changedate: February 11, 2024
 
 First, have a look at the [Archive uploading info][pubdocs]. This is the public post which explains the upload procedure to our users.
 
