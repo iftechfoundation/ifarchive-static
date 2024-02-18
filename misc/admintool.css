@@ -71,6 +71,16 @@ body {
     font: 120% Georgia, "Times New Roman", serif;
 }
 
+.Footer
+{
+    clear: both;
+    padding-top: 4em;
+    margin: 0px 5%;
+    font-size: 0.85em;
+    font-style: italic;
+    text-align: center;
+}
+
 .FormInput {
     font-size: 100%;
     margin: 4px;
