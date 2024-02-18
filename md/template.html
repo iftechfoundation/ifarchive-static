@@ -28,9 +28,11 @@
 <div class="Footer">
 
 <hr>
+{% if changedate %}
 <p id="footermodified">
-{% block changedate %} {% endblock %}
+This page last updated {{ changedate }}.
 </p>
+{% endif %}
 <p id="footercredits">
 The <a href="/">IF Archive</a> is a public service of the
 <a href="https://iftechfoundation.org/">Interactive Fiction Technology Foundation</a>.

@@ -27,7 +27,7 @@ jenv = Environment(
 jenv.globals['appcssuri'] = app_css_uri
 
 mdenv = markdown.Markdown(extensions=[
-    'attr_list', 'def_list', 'fenced_code', 'tables',
+    'attr_list', 'def_list', 'fenced_code', 'tables', 'meta',
 ])
 
 def build(filename, title='IF Archive'):
@@ -37,6 +37,11 @@ def build(filename, title='IF Archive'):
     fl.close()
     mdenv.reset()
     body = mdenv.convert(dat)
+    metadata = mdenv.Meta
+
+    changedate = None
+    if 'changedate' in metadata:
+        changedate = ''.join(metadata['changedate'])
     
     tem = jenv.get_template('template.html')
 
@@ -44,7 +49,9 @@ def build(filename, title='IF Archive'):
     destfilename = os.path.join(dest_path, newname+'.html')
     
     fl = open(destfilename, 'w')
-    fl.write(tem.render(content=body, title=title))
+    fl.write(tem.render(
+        content=body, title=title,
+        changedate=changedate))
     fl.close()
 
 build('org-overview.md', 'IF Archive organization and metadata')
