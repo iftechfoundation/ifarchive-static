@@ -137,13 +137,15 @@ IFComp (and the Archive) have evolved over the years (decades!) The way IFComp f
 
 [unbox]: https://unbox.ifarchive.org
 
-(Note that in [2012](https://ifarchive.org/indexes/if-archive/games/competition2012/), someone added IFDB metadata for every game to the `Comp12.zip` file. But nobody repeated this feat in later years.)
+(Note that in [2012][comp2012], someone added IFDB metadata for every game to the `Comp12.zip` file. But nobody repeated this feat in later years.)
+
+[comp2012]: https://ifarchive.org/indexes/if-archive/games/competition2012/
 
 (Also: it would be tidier if all those historic game subdirs were zipped up, matching the 2022 convention. However, the "don't break URLs" rule has held us back from doing this.)
 
-In theory, we'd like game descriptions and metadata to be visible on every *top-level* competition page. (You shouldn't have to burrow down into `competition2000/inform` or `competition2020/Games` to see that info.) But the way things are set up, this is awkward (see 97-99).
+In theory, we'd like game descriptions and metadata to be visible on every *top-level* competition page. (You shouldn't have to burrow down into `competition2000/inform` or `competition2020/Games` to see that info.) But the way things are set up, this is awkward (see [1997][comp1997]-[1999][comp1999]).
 
-The current goal is to add entries to the top-level competition pages that look like:
+The goal for 2022 on is to add entries to the top-level competition pages that look like:
 
 ```
 # Games/Dr Ludwig and the Devil.zip
@@ -152,7 +154,8 @@ tuid: 4gvxr278ukyobiy
 Dr Ludwig and the Devil, by SV Linwood.
 ```
 
-However, *this doesn't work yet* because of a bug in the index generator script. (See [issue][slashbug].) I will update this file when that is fixed.
+Note the `/` in the pathname, which lets the top-level page reach down into the `Games` folder. As of February 2024, index system supports this. But it's only been done for [2023][comp2023] and that only has TUIDs, not title/author info.
 
-[slashbug]: https://github.com/iftechfoundation/ifarchive-ifmap-py/issues/14
-
+[comp1997]: https://ifarchive.org/indexes/if-archive/games/competition97/
+[comp1999]: https://ifarchive.org/indexes/if-archive/games/competition99/
+[comp2023]: https://ifarchive.org/indexes/if-archive/games/competition2023/
