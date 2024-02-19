@@ -20,7 +20,6 @@
   <div id="body" class="StaticDocs">
     <div id="bodycol">
 
-<p class="RightAlign"><em>Last update: Dec 3, 2023</em></p>
 <p>We store files in directories. That's the job.</p>
 <p>The server is a tree of directories, which you can browse from the <a href="https://ifarchive.org/indexes/if-archive/">top, here</a>. The full directory list is <a href="https://ifarchive.org/indexes/dirlist.html">viewable here</a>. (This <a href="https://ifarchive.org/if-archive/directory-tree"><code>directory-tree</code></a> file is supposed to show a map of the whole thing, but it hasn't been updated since 2013 so it's probably a bit wrong.)</p>
 <h2>Symlinks</h2>
@@ -118,14 +117,14 @@ Description of another file.
 </ul>
 <p>(Note that in <a href="https://ifarchive.org/indexes/if-archive/games/competition2012/">2012</a>, someone added IFDB metadata for every game to the <code>Comp12.zip</code> file. But nobody repeated this feat in later years.)</p>
 <p>(Also: it would be tidier if all those historic game subdirs were zipped up, matching the 2022 convention. However, the "don't break URLs" rule has held us back from doing this.)</p>
-<p>In theory, we'd like game descriptions and metadata to be visible on every <em>top-level</em> competition page. (You shouldn't have to burrow down into <code>competition2000/inform</code> or <code>competition2020/Games</code> to see that info.) But the way things are set up, this is awkward (see 97-99).</p>
-<p>The current goal is to add entries to the top-level competition pages that look like:</p>
+<p>In theory, we'd like game descriptions and metadata to be visible on every <em>top-level</em> competition page. (You shouldn't have to burrow down into <code>competition2000/inform</code> or <code>competition2020/Games</code> to see that info.) But the way things are set up, this is awkward (see <a href="https://ifarchive.org/indexes/if-archive/games/competition97/">1997</a>-<a href="https://ifarchive.org/indexes/if-archive/games/competition99/">1999</a>).</p>
+<p>The goal for 2022 on is to add entries to the top-level competition pages that look like:</p>
 <pre><code># Games/Dr Ludwig and the Devil.zip
 tuid: 4gvxr278ukyobiy
 
 Dr Ludwig and the Devil, by SV Linwood.
 </code></pre>
-<p>However, <em>this doesn't work yet</em> because of a bug in the index generator script. (See <a href="https://github.com/iftechfoundation/ifarchive-ifmap-py/issues/14">issue</a>.) I will update this file when that is fixed.</p>
+<p>Note the <code>/</code> in the pathname, which lets the top-level page reach down into the <code>Games</code> folder. As of February 2024, index system supports this. But it's only been done for <a href="https://ifarchive.org/indexes/if-archive/games/competition2023/">2023</a> and that only has TUIDs, not title/author info.</p>
 
     </div>
   </div>
@@ -133,9 +132,11 @@ Dr Ludwig and the Devil, by SV Linwood.
 <div class="Footer">
 
 <hr>
+
 <p id="footermodified">
- 
+This page last updated February 18, 2024.
 </p>
+
 <p id="footercredits">
 The <a href="/">IF Archive</a> is a public service of the
 <a href="https://iftechfoundation.org/">Interactive Fiction Technology Foundation</a>.
