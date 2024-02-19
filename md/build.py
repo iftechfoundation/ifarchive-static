@@ -60,3 +60,4 @@ def build(filename):
 
 build('org-overview.md')
 build('org-procedures.md')
+build('whole-archive.md')
