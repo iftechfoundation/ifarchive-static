@@ -30,7 +30,7 @@ mdenv = markdown.Markdown(extensions=[
     'attr_list', 'def_list', 'fenced_code', 'tables', 'meta',
 ])
 
-def build(filename, title='IF Archive'):
+def build(filename):
     print('Writing %s...' % (filename,))
     fl = open(os.path.join(template_path, filename))
     dat = fl.read()
@@ -38,6 +38,10 @@ def build(filename, title='IF Archive'):
     mdenv.reset()
     body = mdenv.convert(dat)
     metadata = mdenv.Meta
+
+    title = 'IF Archive'
+    if 'title' in metadata:
+        title = ''.join(metadata['title'])
 
     changedate = None
     if 'changedate' in metadata:
@@ -54,5 +58,5 @@ def build(filename, title='IF Archive'):
         changedate=changedate))
     fl.close()
 
-build('org-overview.md', 'IF Archive organization and metadata')
-build('org-procedures.md', 'IF Archive volunteer procedures')
+build('org-overview.md')
+build('org-procedures.md')
