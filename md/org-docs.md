@@ -110,8 +110,16 @@ Wipe the Cloudflare cache for this file. If you replace a file with a different 
 
 ### Create Subdirectory
 
-Create a subdirectory of a directory. This is not available for Incoming, Unprocessed, or Trash.
+Create a subdirectory of a directory. This is not available in Incoming, Unprocessed, or Trash.
 
 ### Delete Subdirectory
 
 This is only available for *empty* subdirectories.
+
+### Rebuild (index pages)
+
+This command is not attached to an individual file; it's on the site's front page. (The "Home" tab.) It regenerates the public index pages for all the directories you just edited. After you do a bunch of filing / description / metadata work, hit the "Rebuild" button before you leave the site.
+
+You should not need to set the "Rebuild all" checkbox. That's only there in case the index generator goes off the rails, or if we change the page templates or something.
+
+
