@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using the Archive Admin Tool</title>
+  <link href="/misc/icon-144.png" rel="apple-touch-icon" sizes="144x144" type="image/png">
+  <link href="/misc/icon-64.png" rel="icon" sizes="64x64" type="image/png">
+  <link href="/misc/icon-32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="/misc/icon-16.png" rel="icon" sizes="16x16" type="image/png">
+  <link rel="stylesheet" href="/misc/admintool.css" type="text/css">
+  
+</head>
+<body>
+  <div id="header">
+    <div id="headercol">
+      <h1>Using the Archive Admin Tool</h1>
+    </div>
+  </div>
+  <div id="body" class="StaticDocs">
+    <div id="bodycol">
+
+<p>The Admin Tool allows Archive volunteers to file Archive uploads and edit their descriptions. It's a fairly straightforward web interface.</p>
+<p>Note that there is no public login to the Admin Tool. Only Archive volunteers have accounts.</p>
+<p>This document assumes that you have full volunteer permissions. Current policy is that all volunteers have full permissions, but we may someday add people with more limited roles. (E.g., "description editing only".) People with limited roles won't see all of the controls described here.</p>
+<h2>Your account</h2>
+<p>Your account settings are available by clicking your name (in the upper right corner). You can change your password and set your time zone from this page.</p>
+<h2>Navigation</h2>
+<p>The main navigation bar lists where you can go. Most of these pages contain lists of files.</p>
+<ul>
+<li><strong>Home:</strong> The front page. The "Rebuild Index" button lives here.</li>
+<li><strong>UploadLog:</strong> Recent upload records from the <a href="https://upload.ifarchive.org/cgi-bin/upload.py">upload form</a>. You can browse earlier entries using the "Next 20 →" link at the bottom of the page.</li>
+<li><strong>Incoming:</strong> Newly uploaded files. Not publicly visible.</li>
+<li><strong>Unprocessed:</strong> Uploaded files which have been vetted but not yet moved to their final destination. This page is visible to the public as <a href="https://ifarchive.org/indexes/if-archive/unprocessed/">/unprocessed</a>.</li>
+<li><strong>Archive:</strong> The root directory of the Archive. You can navigate to all Archive folders (including /unprocessed) by selecting subdirectories from here.</li>
+<li><strong>Trash:</strong> Files which have been deleted are moved here. If you delete something by accident, this is where to look. Files in the Trash are deleted after 30 days. Not publicly visible.</li>
+<li><strong>AdminLog:</strong> Recent activity in the AdminTool by all the volunteers. You can see who's doing what.</li>
+</ul>
+<h2>Upload info</h2>
+<p>You can view the upload info for any file by clicking its "(info)" link. For convenience, the Incoming and Unprocessed pages show the upload info for each listed file. Archive pages don't, but that's what "(info)" is for.</p>
+<p>Most of the older files on the Archive have no upload info. That's because they were contributed before the <a href="https://upload.ifarchive.org/cgi-bin/upload.py">upload form</a> existed.</p>
+<p>Occasionally a file will have two or more upload records. This can occur if a file is uploaded twice, with identical content but different upload info. See "Multiple copies uploaded" in the <a href="org-procedures.html">Procedures doc</a>.</p>
+<p>Most of the upload record is taken straight from the <a href="https://upload.ifarchive.org/cgi-bin/upload.py">upload form</a>. The only possibly confusing elements:</p>
+<ul>
+<li>"Original filename": If a file is uploaded twice, one of the copies will be distinguished by a timestamp stuck on the filename. "Original filename" shows what the file was named on the originator's machine. Also, if a file is zipped up, "original filename" will show the ".html" version.</li>
+<li>"IFDB temp ID", "IFDB TUID": These only appear for files that were uploaded from IFDB's upload form (not the Archive one).</li>
+<li>"Admin notes": These are notes added by volunteers for each other. They are not publicly visible.</li>
+</ul>
+<h2>File commands</h2>
+<p>Note that not all file commands are available in every directory. In particular, the <a href="https://ifarchive.org/indexes/if-archive/">top-level Archive page</a> is quite locked down; only the "Edit Index" command is available. Visit a lower-level directory to see the full array of buttons.</p>
+<h3>Move</h3>
+<p>Move the file to another directory.</p>
+<h3>Rename</h3>
+<p>Rename the file in place.</p>
+<h3>Delete</h3>
+<p>Delete a file. (Really, this moves it to the Trash folder.)</p>
+<h3>Zip</h3>
+<p>Zip up a file. This option is only available for <code>.html</code> and <code>.svg</code> files, and only in the Incoming directory.</p>
+<p>We don't want "naked" HTML files publicly available on the Archive; they could contain malicious Javascript. Therefore, our policy is zip all such files in Incoming and <em>then</em> move them to Unprocessed. See the <a href="org-procedures.html">Procedures doc</a>.</p>
+<p>(Text articles in HTML format might not have scripting, and could be left unzipped. There are some such in the <a href="https://ifarchive.org/indexes/if-archive/articles/">/articles</a> directory. But games always have scripting.)</p>
+<h3>Edit Index</h3>
+<p>Edit the description and metadata of a file entry.</p>
+<p>The description uses <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> format. Metadata lines look like <code>key: value</code>. See the <a href="org-overview.html">Overview document</a> for a complete description.</p>
+<p>You can also edit the description and metadata of the whole directory. That's the "Edit Index" button at the top of the page.</p>
+<p>The "Edit Index File" button (also at the top) lets you edit <em>all</em> the index entries on the page as a single text file. (They're stored as a single text file, for example <a href="https://ifarchive.org/if-archive/Index">this one</a>. When you hit "Edit Index File" you're editing that text file directly.)</p>
+<h3>Create Symlink</h3>
+<p>Add a link referring to this file in another directory. We use this to make one file seem to be in two different places. (Say, if a package contains both a game and its source code.)</p>
+<p>When you push this button, you're in the location that will be linked <em>to</em>. You are then prompted to enter the directory where the file will be linked <em>from</em>.</p>
+<h3>Add Note</h3>
+<p>Add an administrative note to the file. These notes are never publicly visible; they are meant for the volunteer team only.</p>
+<p>This button is hidden away on the file's info page! Hit the "(info)" button to find it.</p>
+<p>(These notes cannot be edited or deleted, only added to.)</p>
+<h3>Notify IFDB</h3>
+<p>Tell IFDB that a file has been moved to its permanent home; its IFDB entry is adjusted to indicate this. See "After you move a file" in the <a href="org-procedures.html">Procedures doc</a>.</p>
+<p>This button is hidden away on the file's info page! Hit the "(info)" button to find it. It only appears for files with an "IFDB temp ID" entry. (That is, they were uploaded via IFDB's form.)</p>
+<h3>Uncache</h3>
+<p>Wipe the Cloudflare cache for this file. If you replace a file with a different file of the same name (say, because a new version was uploaded), you should push this. You don't need to push it for newly-arrived files.</p>
+<h3>Create Subdirectory</h3>
+<p>Create a subdirectory of a directory. This is not available for Incoming, Unprocessed, or Trash.</p>
+<h3>Delete Subdirectory</h3>
+<p>This is only available for <em>empty</em> subdirectories.</p>
+
+    </div>
+  </div>
+
+<div class="Footer">
+
+<hr>
+
+<p id="footercredits">
+The <a href="/">IF Archive</a> is a public service of the
+<a href="https://iftechfoundation.org/">Interactive Fiction Technology Foundation</a>.
+</p>
+<p id="footerlinks">
+<em><a href="/misc/license.html">Terms of Use</a></em> -
+<em><a href="/misc/about.html">About Us</a></em>
+</p>
+
+</div>
+
+</body>
+</html>
