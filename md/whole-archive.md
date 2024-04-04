@@ -1,5 +1,5 @@
 title: Downloading the entire IF Archive
-changedate: February 18, 2024
+changedate: April 3, 2024
 
 Occasionally we hear from someone who wants to download every file we've got.
 
@@ -11,12 +11,7 @@ That's fine! Feel free. However:
 
 ### Single-file download
 
-If you want to download everything in a single massive chunk, try this URL:
+In early 2024 we experimented with the idea of making the entire Archive downloadable in a single massive tar file. It wound up being about 30 gigabytes.
 
-*(30 gigabyte download; updated weekly.)*
+Sadly, the AWS bandwidth cost of this did not justify the added value. We are now considering other options, such as `rsync`.
 
-```
-https://iftf-ifarchive-download.s3.amazonaws.com/ifarchive-all.tar.gz
-```
-
-That's not a hyperlink because, seriously, you don't want to click on a 30-gigabyte link by accident. If you're serious about getting it, copy and paste that URL into your browser bar.
