@@ -31,4 +31,4 @@ We offer four rsync sources:
 
 (Sizes are as of early 2024. They all grow from year to year.)
 
-Since web use is our primary customer (and `rsync` is not protected by a CDN), the `rsync` service has a modest bandwidth limit. Fetching the entire Archive will take roughly 45 minutes.
+Since web use is our primary customer (and `rsync` is not protected by a CDN), the `rsync` service has a modest bandwidth limit. Fetching the entire Archive (the first time!) will take roughly 45 minutes.
