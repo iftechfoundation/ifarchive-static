@@ -1,5 +1,5 @@
 title: Downloading the entire IF Archive
-changedate: April 3, 2024
+changedate: April 9, 2024
 
 Occasionally we hear from someone who wants to download every file we've got.
 
