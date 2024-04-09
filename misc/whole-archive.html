@@ -30,9 +30,21 @@
 <p>Please do not thrash the server. If you want to download a zillion files, throttle your download speed or allow a moment of rest time between files.</p>
 </li>
 </ul>
-<h3>Single-file download</h3>
-<p>In early 2024 we experimented with the idea of making the entire Archive downloadable in a single massive tar file. It wound up being about 30 gigabytes.</p>
-<p>Sadly, the AWS bandwidth cost of this did not justify the added value. We are now considering other options, such as <code>rsync</code>.</p>
+<h3>Downloading with rsync</h3>
+<p>In early 2024 we experimented with the idea of making the entire Archive downloadable in a single massive tar file. It wound up being about 30 gigabytes. Sadly, the AWS bandwidth cost of this did not justify the added value.</p>
+<p>Instead, we now support <code>rsync</code> to fetch Archive files. The <code>rsync</code> protocol allows you to maintain a synchronized copy of the entire Archive. After the initial download, it will only fetch files that have changed.</p>
+<p>We offer four rsync sources:</p>
+<dl>
+<dt><code>rsync://rsync.ifarchive.org/ifarchive.org</code></dt>
+<dd>All the files in the Archive. (32 GB, that's "giga")</dd>
+<dt><code>rsync://rsync.ifarchive.org/indexes</code></dt>
+<dd>HTML index pages for each directory. (58 MB)</dd>
+<dt><code>rsync://rsync.ifarchive.org/metadata</code></dt>
+<dd>JSON/XML metadata files for each file with metadata. (68 MB)</dd>
+<dt><code>rsync://rsync.ifarchive.org/misc</code></dt>
+<dd>Miscellaneous files and documentation. (1 MB)</dd>
+</dl>
+<p>(Sizes are as of early 2024. They all grow from year to year.)</p>
 
     </div>
   </div>
