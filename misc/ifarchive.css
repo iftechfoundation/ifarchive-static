@@ -92,7 +92,7 @@ hr
 	text-align: right;
 }
 
-.LeftFloat
+.LeftFloat, .LeftFloatIfWide
 {
 	float: left;
 	margin-right: 2em;
@@ -632,6 +632,16 @@ hr
 }
 
 /* Style customizations for narrow displays. */
+
+@media screen and (max-width: 960px) {
+
+.LeftFloatIfWide
+{
+	float: none;
+	margin-right: 0px;
+}
+
+}
 
 @media screen and (max-width: 750px) {
 
