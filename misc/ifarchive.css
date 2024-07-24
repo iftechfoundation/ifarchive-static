@@ -340,6 +340,19 @@ hr
 	aspect-ratio: auto 2/3;
 }
 
+#frontpage .Donate
+{
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 4px;
+	color: white;
+	background-color: #D16525;
+	border: 1px solid #5A0000;
+	border-radius: 6px;
+	padding: 8px 10px;
+}
+
 /* orthogonal list pages */
 
 #dirpage .Header,
