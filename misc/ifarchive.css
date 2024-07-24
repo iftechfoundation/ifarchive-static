@@ -340,6 +340,13 @@ hr
 	aspect-ratio: auto 2/3;
 }
 
+#frontpage .IFTFLogo
+{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+}
+
 #frontpage .Donate
 {
 	font-family: Georgia, "Times New Roman", serif;
@@ -351,6 +358,12 @@ hr
 	border: 1px solid #5A0000;
 	border-radius: 6px;
 	padding: 8px 10px;
+	cursor: pointer;
+}
+
+#frontpage .Donate:hover
+{
+	background-color: #F17545;
 }
 
 /* orthogonal list pages */
