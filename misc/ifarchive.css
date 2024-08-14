@@ -190,13 +190,11 @@ hr
 }
 
 #alldirlist a,
-#datelist a
 {
 	font-weight: bold;
 }
 
 #alldirlist li,
-#datelist li
 {
 	font-size: 1.4em;
 	margin-bottom: 0.4em;
@@ -484,7 +482,8 @@ hr
 	margin-left: 0px;
 }
 
-#dirpage .Body dl
+#dirpage .Body dl,
+#datepage .Body dl
 {
 	margin-left: 20px;
 }
