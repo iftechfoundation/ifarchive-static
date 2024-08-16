@@ -171,6 +171,16 @@ hr
 	font-weight: normal;
 }
 
+a.PermaLink
+{
+	text-decoration: none;
+	color: #DAA;
+}
+a.PermaLink:hover
+{
+	color: #D11515;
+}
+
 .ItemList dd.FileData
 {
 	font-size: 1.0em;
