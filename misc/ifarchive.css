@@ -213,6 +213,10 @@ hr
 	font-weight: normal;
 	color: #777;
 }
+.DarkMode .Date
+{
+	color: #987;
+}
 
 .SymLinkRef
 {
