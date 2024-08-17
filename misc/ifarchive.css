@@ -28,8 +28,8 @@ body.DarkMode
 }
 .DarkMode .Page
 {
-	background-color: #160a05;
-	color: #f9d7c7;
+	background-color: #262205;
+	color: #f9dfc7;
 	border-left: 2px solid #000;
 	border-right: 1px solid #b48e87;
 }
@@ -60,9 +60,9 @@ blockquote
 }
 .DarkMode blockquote
 {
-	background-color: #190f0a;
-	color: #fff;
-	border: 1px dotted #555;
+	background-color: #2f2a05;
+	color: #fff8dd;
+	border: 1px dotted #666;
 }
 
 p, li, dd
@@ -82,7 +82,7 @@ h1
 }
 .DarkMode h1
 {
-	color: white;
+	color: #fff8dd;
 }
 
 h3
@@ -95,7 +95,7 @@ h3
 }
 .DarkMode h3
 {
-	color: white;
+	color: #fff8dd;
 }
 
 h4
@@ -108,7 +108,7 @@ h4
 }
 .DarkMode h4
 {
-	color: white;
+	color: #fff8dd;
 }
 
 hr
@@ -577,7 +577,7 @@ a.PermaLink:hover
 }
 .DarkMode #indexpage .Header a
 {
-	color: white;
+	color: #fff8dd;
 }
 
 #indexpage .Header a:hover
