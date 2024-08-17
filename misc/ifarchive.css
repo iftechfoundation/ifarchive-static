@@ -230,6 +230,15 @@ a.PermaLink:hover
 	color: #D11515;
 }
 
+.DarkMode a.PermaLink
+{
+	color: #884030;
+}
+.DarkMode a.PermaLink:hover
+{
+	color: #c02800;
+}
+
 .ItemList dd.FileData
 {
 	font-size: 1.0em;
