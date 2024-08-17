@@ -187,11 +187,19 @@ hr
 	font-weight: bold;
 	font-style: normal;
 }
+.DarkMode .Footer a
+{
+	color: #d05830;
+}
 
 .Footer a:hover
 {
 	color: #d11515;
 	text-decoration: underline;
+}
+.DarkMode .Footer a:hover
+{
+	color: #c02800;
 }
 
 .Header
@@ -565,7 +573,7 @@ a.PermaLink:hover
 }
 .DarkMode #indexpage h3.ListHeader
 {
-	border-bottom: 1px dotted #DDD;
+	border-bottom: 1px dotted #AAA;
 }
 
 #indexpage h4.ListHeader
