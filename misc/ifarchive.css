@@ -11,7 +11,7 @@ body
 	background-color: #333;
 	font: 62.5% Verdana, sans-serif;
 }
-.DarkMode body
+body.DarkMode
 {
 	background-color: #666;
 }
@@ -31,7 +31,7 @@ body
 	background-color: #160a05;
 	color: #f9d7c7;
 	border-left: 2px solid #000;
-	border-right: 1px solid #4b7178;
+	border-right: 1px solid #b48e87;
 }
 
 a
