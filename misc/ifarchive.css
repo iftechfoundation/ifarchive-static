@@ -13,7 +13,7 @@ body
 }
 .DarkMode body
 {
-	background-color: #888;
+	background-color: #666;
 }
 
 .Page
@@ -57,6 +57,12 @@ blockquote
 	padding: 0px 10px;
 	margin: 0px;
 	border: 1px dotted #aaa;
+}
+.DarkMode blockquote
+{
+	background-color: #190f0a;
+	color: #fff;
+	border: 1px dotted #555;
 }
 
 p, li, dd
