@@ -11,6 +11,10 @@ body
 	background-color: #333;
 	font: 62.5% Verdana, sans-serif;
 }
+.DarkMode body
+{
+	background-color: #888;
+}
 
 .Page
 {
@@ -21,6 +25,13 @@ body
 	_height: 100%;
 	border-left: 2px solid #fff;
 	border-right: 1px solid #78714b;
+}
+.DarkMode .Page
+{
+	background-color: #160a05;
+	color: #f9d7c7;
+	border-left: 2px solid #000;
+	border-right: 1px solid #4b7178;
 }
 
 a
@@ -63,6 +74,10 @@ h1
 	margin-bottom: 0.4em;
 	text-align: center;
 }
+.DarkMode h1
+{
+	color: white;
+}
 
 h3
 {
@@ -72,6 +87,10 @@ h3
 	font-weight: normal;
 	color: black;
 }
+.DarkMode h3
+{
+	color: white;
+}
 
 h4
 {
@@ -80,6 +99,10 @@ h4
 	font-size: 2.2em;
 	font-weight: normal;
 	color: black;
+}
+.DarkMode h4
+{
+	color: white;
 }
 
 hr
@@ -522,6 +545,10 @@ a.PermaLink:hover
 	font-style: italic;
 	border-bottom: 1px dotted #222;
 }
+.DarkMode #indexpage h3.ListHeader
+{
+	border-bottom: 1px dotted #DDD;
+}
 
 #indexpage h4.ListHeader
 {
@@ -532,17 +559,29 @@ a.PermaLink:hover
 	font-style: italic;
 	text-decoration: underline #222 dotted;
 }
+.DarkMode #indexpage h4.ListHeader
+{
+	text-decoration: underline #DDD dotted;
+}
 
 #indexpage .Header a
 {
 	color: black;
 	text-decoration: none;
 }
+.DarkMode #indexpage .Header a
+{
+	color: white;
+}
 
 #indexpage .Header a:hover
 {
 	color: #d11515;
 	text-decoration: underline;
+}
+.DarkMode #indexpage .Header a:hover
+{
+	color: #d11515;
 }
 
 /* other pages */
