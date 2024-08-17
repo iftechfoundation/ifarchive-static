@@ -38,15 +38,27 @@ a
 {
 	color: #b50000;
 }
+.DarkMode a
+{
+	color: #cc3800;
+}
 
 a:visited
 {	
 	color: #803030;
 }
+.DarkMode a:visited
+{	
+	color: #d05830;
+}
 
 a:hover
 {
 	color: #d11515;
+}
+.DarkMode a:hover
+{
+	color: #c02800;
 }
 
 blockquote
