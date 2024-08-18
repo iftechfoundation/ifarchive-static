@@ -40,7 +40,7 @@ a
 }
 .DarkMode a
 {
-	color: #e83f20;
+	color: #ff6840;
 }
 
 a:visited
@@ -49,7 +49,7 @@ a:visited
 }
 .DarkMode a:visited
 {	
-	color: #ec6840;
+	color: #ff8f70;
 }
 
 a:hover
@@ -58,7 +58,7 @@ a:hover
 }
 .DarkMode a:hover
 {
-	color: #c02800;
+	color: #ff4820;
 }
 
 blockquote
@@ -189,7 +189,7 @@ hr
 }
 .DarkMode .Footer a
 {
-	color: #ec6840;
+	color: #ff8f70;
 }
 
 .Footer a:hover
@@ -199,7 +199,7 @@ hr
 }
 .DarkMode .Footer a:hover
 {
-	color: #c02800;
+	color: #ff4820;
 }
 
 .Header
@@ -240,7 +240,7 @@ a.PermaLink:hover
 }
 .DarkMode a.PermaLink:hover
 {
-	color: #c02800;
+	color: #ff4820;
 }
 
 .ItemList dd.FileData
@@ -491,6 +491,10 @@ a.PermaLink:hover
 	color: #d11515;
 	text-decoration: underline;
 }
+.DarkMode #indexpage .ParentLinks a:hover
+{
+	color: #ff4820;
+}
 
 #indexpage .ParentLinks ul
 {
@@ -624,7 +628,7 @@ a.PermaLink:hover
 }
 .DarkMode #indexpage .Header a:hover
 {
-	color: #d11515;
+	color: #ff4820;
 }
 
 /* other pages */
