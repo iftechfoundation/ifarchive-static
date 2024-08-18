@@ -485,6 +485,10 @@ a.PermaLink:hover
 	text-decoration: none;
 	font-weight: bold;
 }
+.DarkMode #indexpage .ParentLinks a
+{
+	color: #ff8f70;
+}
 
 #indexpage .ParentLinks a:hover
 {
