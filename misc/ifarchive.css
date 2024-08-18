@@ -29,7 +29,7 @@ body.DarkMode
 .DarkMode .Page
 {
 	background-color: #262205;
-	color: #f9dfc7;
+	color: #fffdf0;
 	border-left: 2px solid #000;
 	border-right: 1px solid #946e67;
 }
@@ -73,7 +73,7 @@ blockquote
 .DarkMode blockquote
 {
 	background-color: #2f2a05;
-	color: #fff8dd;
+	color: #fffdf0;
 	border: 1px dotted #666;
 }
 
@@ -370,6 +370,10 @@ a.PermaLink:hover
 	margin: 0px;
 	padding-bottom: 0.1em;
 	border-bottom: 1px dotted #222;
+}
+.DarkMode #frontpage .RightCol h3
+{
+	color: #fff8dd;
 }
 
 #frontpage .RightCol p,
