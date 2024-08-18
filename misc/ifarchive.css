@@ -17,7 +17,7 @@ body
 	margin: 0px 30px;
 	padding: 0.1em 6em 4em 6em;
 	background-color: #faf5e9;
-	color: #382806;
+	color: #060500;
 	_height: 100%;
 	border-left: 2px solid #fff;
 	border-right: 1px solid #78714b;
@@ -56,7 +56,7 @@ p, li, dd
 
 h1
 {
-	color: black;
+	color: #382806;
 	font-weight: normal;
 	font-size: 3.8em;
 	font-family: Georgia, "Times New Roman", serif;
@@ -70,7 +70,7 @@ h3
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 2.4em;
 	font-weight: normal;
-	color: black;
+	color: #382806;
 }
 
 h4
@@ -79,7 +79,7 @@ h4
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 2.2em;
 	font-weight: normal;
-	color: black;
+	color: #382806;
 }
 
 hr
@@ -302,7 +302,7 @@ a.PermaLink:hover
 
 #frontpage .RightCol h3
 {
-	color: black;
+	color: #382806;
 	font-size: 1.8em;
 	font-style: italic;
 	margin: 0px;
@@ -535,7 +535,7 @@ a.PermaLink:hover
 
 #indexpage .Header a
 {
-	color: black;
+	color: #382806;
 	text-decoration: none;
 }
 
@@ -605,7 +605,7 @@ a.PermaLink:hover
 
 #unboxpage .Header a
 {
-	color: black;
+	color: #382806;
 	text-decoration: none;
 }
 
