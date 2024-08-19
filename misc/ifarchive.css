@@ -440,6 +440,10 @@ a.PermaLink:hover
 	padding: 8px 10px;
 	cursor: pointer;
 }
+.DarkMode #frontpage .Donate
+{
+	border: 1px solid #FFDD88;
+}
 
 #frontpage .Donate:hover
 {
