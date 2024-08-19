@@ -182,24 +182,24 @@ hr
 
 .FootWidget
 {
-    float: right;
-    border: 1px dotted #000;
-    border-radius: 2px;
-    padding: 4px 6px;
-    font-weight: bold;
-    cursor: pointer;
+	float: right;
+	border: 1px dotted #000;
+	border-radius: 2px;
+	padding: 4px 6px;
+	font-weight: bold;
+	cursor: pointer;
 }
 .FootWidget:hover
 {
-    background-color: #262205;
-    color: #fffdf0;
+	background-color: #262205;
+	color: #fffdf0;
 }
 
 .DarkMode .FootWidget
 {
-    border: 1px dotted #FFF;
-    background-color: #262205;
-    color: #fffdf0;
+	border: 1px dotted #FFF;
+	background-color: #262205;
+	color: #fffdf0;
 }
 .DarkMode .FootWidget:hover
 {
