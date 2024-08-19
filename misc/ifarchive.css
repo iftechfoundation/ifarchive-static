@@ -195,6 +195,18 @@ hr
     color: #fffdf0;
 }
 
+.DarkMode .FootWidget
+{
+    border: 1px dotted #FFF;
+    background-color: #262205;
+    color: #fffdf0;
+}
+.DarkMode .FootWidget:hover
+{
+	background-color: #faf5e9;
+	color: #060500;
+}
+
 .Footer a
 {
 	color: #5a0000;
