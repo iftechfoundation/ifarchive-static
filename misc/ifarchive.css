@@ -180,6 +180,21 @@ hr
 	text-align: center;
 }
 
+.FootWidget
+{
+    float: right;
+    border: 1px dotted #000;
+    border-radius: 2px;
+    padding: 4px 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.FootWidget:hover
+{
+    background-color: #262205;
+    color: #fffdf0;
+}
+
 .Footer a
 {
 	color: #5a0000;
