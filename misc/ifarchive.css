@@ -374,6 +374,7 @@ a.PermaLink:hover
 .DarkMode #frontpage .RightCol h3
 {
 	color: #fff8dd;
+	border-bottom: 1px dotted #AAA;
 }
 
 #frontpage .RightCol p,
@@ -420,6 +421,10 @@ a.PermaLink:hover
 {
 	margin-top: 8px;
 	margin-bottom: 8px;
+}
+.DarkMode #frontpage img
+{
+	filter: invert(100%);
 }
 
 #frontpage .LogoButtonBlock
