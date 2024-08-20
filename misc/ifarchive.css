@@ -745,7 +745,11 @@ a.PermaLink:hover
 }
 /* end @media */
 
-
+/* Our handling of dark-vs-light theme requires a bunch of regrettably
+   redundant declarations. All colors (declared above for light mode)
+   will be repeated below under the LightMode class, then their
+   dark equivalents under DarkMode. Then we repeat both *again*
+   with a color-scheme rule, under SysMode. */
 
 body.LightMode
 {
