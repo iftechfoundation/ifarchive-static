@@ -2,10 +2,15 @@
 
 function check_theme_cookie()
 {
-    var darkmode = false;
+    var darkmode = null;
     for (var val of document.cookie.split(';')) {
         if (val.trim() == 'theme=dark') {
-            darkmode = true;
+            darkmode = 'dark';
+            break;
+        }
+        if (val.trim() == 'theme=light') {
+            darkmode = 'light';
+            break;
         }
     }
 
@@ -14,13 +19,20 @@ function check_theme_cookie()
 
 function set_body_class(darkmode)
 {
-    if (!darkmode) {
+    if (darkmode == 'light') {
         document.body.classList.add('LightMode');
         document.body.classList.remove('DarkMode');
+        document.body.classList.remove('SysMode');
     }
-    else {
+    else if (darkmode == 'dark') {
         document.body.classList.add('DarkMode');
         document.body.classList.remove('LightMode');
+        document.body.classList.remove('SysMode');
+    }
+    else {
+        document.body.classList.add('SysMode');
+        document.body.classList.remove('LightMode');
+        document.body.classList.remove('DarkMode');
     }
 }
 
