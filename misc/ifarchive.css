@@ -11,10 +11,6 @@ body
 	background-color: #333;
 	font: 62.5% Verdana, sans-serif;
 }
-body.DarkMode
-{
-	background-color: #666;
-}
 
 .Page
 {
@@ -26,39 +22,20 @@ body.DarkMode
 	border-left: 2px solid #fff;
 	border-right: 1px solid #78714b;
 }
-.DarkMode .Page
-{
-	background-color: #262205;
-	color: #fffdf0;
-	border-left: 2px solid #000;
-	border-right: 1px solid #946e67;
-}
 
 a
 {
 	color: #b50000;
-}
-.DarkMode a
-{
-	color: #ff6840;
 }
 
 a:visited
 {	
 	color: #803030;
 }
-.DarkMode a:visited
-{	
-	color: #ff8f70;
-}
 
 a:hover
 {
 	color: #d11515;
-}
-.DarkMode a:hover
-{
-	color: #ff4820;
 }
 
 blockquote
@@ -69,12 +46,6 @@ blockquote
 	padding: 0px 10px;
 	margin: 0px;
 	border: 1px dotted #aaa;
-}
-.DarkMode blockquote
-{
-	background-color: #2f2a05;
-	color: #fffdf0;
-	border: 1px dotted #666;
 }
 
 p, li, dd
@@ -92,10 +63,6 @@ h1
 	margin-bottom: 0.4em;
 	text-align: center;
 }
-.DarkMode h1
-{
-	color: #fff8dd;
-}
 
 h3
 {
@@ -105,10 +72,6 @@ h3
 	font-weight: normal;
 	color: #382806;
 }
-.DarkMode h3
-{
-	color: #fff8dd;
-}
 
 h4
 {
@@ -117,10 +80,6 @@ h4
 	font-size: 2.2em;
 	font-weight: normal;
 	color: #382806;
-}
-.DarkMode h4
-{
-	color: #fff8dd;
 }
 
 hr
@@ -190,23 +149,13 @@ hr
 	font-size: 1.2em;
 	cursor: pointer;
 }
+
 .FootWidget:hover
 {
 	background-color: #262205;
 	color: #fffdf0;
 }
 
-.DarkMode .FootWidget
-{
-	border: 1px dotted #FFF;
-	background-color: #262205;
-	color: #fffdf0;
-}
-.DarkMode .FootWidget:hover
-{
-	background-color: #faf5e9;
-	color: #060500;
-}
 
 .Footer a
 {
@@ -215,19 +164,11 @@ hr
 	font-weight: bold;
 	font-style: normal;
 }
-.DarkMode .Footer a
-{
-	color: #ff8f70;
-}
 
 .Footer a:hover
 {
 	color: #d11515;
 	text-decoration: underline;
-}
-.DarkMode .Footer a:hover
-{
-	color: #ff4820;
 }
 
 .Header
@@ -240,10 +181,6 @@ hr
 	font-size: 90%;
 	font-weight: normal;
 	color: #777;
-}
-.DarkMode .Date
-{
-	color: #987;
 }
 
 .SymLinkRef
@@ -260,15 +197,6 @@ a.PermaLink
 a.PermaLink:hover
 {
 	color: #D11515;
-}
-
-.DarkMode a.PermaLink
-{
-	color: #984030;
-}
-.DarkMode a.PermaLink:hover
-{
-	color: #ff4820;
 }
 
 .ItemList dd.FileData
@@ -399,11 +327,6 @@ a.PermaLink:hover
 	padding-bottom: 0.1em;
 	border-bottom: 1px dotted #222;
 }
-.DarkMode #frontpage .RightCol h3
-{
-	color: #fff8dd;
-	border-bottom: 1px dotted #AAA;
-}
 
 #frontpage .RightCol p,
 #frontpage .RightCol li
@@ -450,9 +373,10 @@ a.PermaLink:hover
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
-.DarkMode #frontpage img
+
+#frontpage img
 {
-	filter: invert(100%);
+	filter: none;
 }
 
 #frontpage .LogoButtonBlock
@@ -472,10 +396,6 @@ a.PermaLink:hover
 	border-radius: 6px;
 	padding: 8px 10px;
 	cursor: pointer;
-}
-.DarkMode #frontpage .Donate
-{
-	border: 1px solid #FFDD88;
 }
 
 #frontpage .Donate:hover
@@ -522,19 +442,11 @@ a.PermaLink:hover
 	text-decoration: none;
 	font-weight: bold;
 }
-.DarkMode #indexpage .ParentLinks a
-{
-	color: #ff8f70;
-}
 
 #indexpage .ParentLinks a:hover
 {
 	color: #d11515;
 	text-decoration: underline;
-}
-.DarkMode #indexpage .ParentLinks a:hover
-{
-	color: #ff4820;
 }
 
 #indexpage .ParentLinks ul
@@ -633,10 +545,6 @@ a.PermaLink:hover
 	font-style: italic;
 	border-bottom: 1px dotted #222;
 }
-.DarkMode #indexpage h3.ListHeader
-{
-	border-bottom: 1px dotted #AAA;
-}
 
 #indexpage h4.ListHeader
 {
@@ -647,29 +555,17 @@ a.PermaLink:hover
 	font-style: italic;
 	text-decoration: underline #222 dotted;
 }
-.DarkMode #indexpage h4.ListHeader
-{
-	text-decoration: underline #DDD dotted;
-}
 
 #indexpage .Header a
 {
 	color: #382806;
 	text-decoration: none;
 }
-.DarkMode #indexpage .Header a
-{
-	color: #fff8dd;
-}
 
 #indexpage .Header a:hover
 {
 	color: #d11515;
 	text-decoration: underline;
-}
-.DarkMode #indexpage .Header a:hover
-{
-	color: #ff4820;
 }
 
 /* other pages */
@@ -845,3 +741,139 @@ a.PermaLink:hover
 
 }
 /* end @media */
+
+
+
+body.DarkMode
+{
+	background-color: #666;
+}
+
+.DarkMode .Page
+{
+	background-color: #262205;
+	color: #fffdf0;
+	border-left: 2px solid #000;
+	border-right: 1px solid #946e67;
+}
+
+.DarkMode a
+{
+	color: #ff6840;
+}
+
+.DarkMode a:visited
+{	
+	color: #ff8f70;
+}
+
+.DarkMode a:hover
+{
+	color: #ff4820;
+}
+
+.DarkMode blockquote
+{
+	background-color: #2f2a05;
+	color: #fffdf0;
+	border: 1px dotted #666;
+}
+
+.DarkMode h1
+{
+	color: #fff8dd;
+}
+
+.DarkMode h3
+{
+	color: #fff8dd;
+}
+
+.DarkMode h4
+{
+	color: #fff8dd;
+}
+
+.DarkMode .FootWidget
+{
+	border: 1px dotted #FFF;
+	background-color: #262205;
+	color: #fffdf0;
+}
+
+.DarkMode .FootWidget:hover
+{
+	background-color: #faf5e9;
+	color: #060500;
+}
+
+.DarkMode .Footer a
+{
+	color: #ff8f70;
+}
+
+.DarkMode .Footer a:hover
+{
+	color: #ff4820;
+}
+
+.DarkMode .Date
+{
+	color: #987;
+}
+
+.DarkMode a.PermaLink
+{
+	color: #984030;
+}
+
+.DarkMode a.PermaLink:hover
+{
+	color: #ff4820;
+}
+
+.DarkMode #frontpage .RightCol h3
+{
+	color: #fff8dd;
+	border-bottom: 1px dotted #AAA;
+}
+
+.DarkMode #frontpage img
+{
+	filter: invert(100%);
+}
+
+.DarkMode #frontpage .Donate
+{
+	border: 1px solid #FFDD88;
+}
+
+.DarkMode #indexpage .ParentLinks a
+{
+	color: #ff8f70;
+}
+
+.DarkMode #indexpage .ParentLinks a:hover
+{
+	color: #ff4820;
+}
+
+.DarkMode #indexpage h3.ListHeader
+{
+	border-bottom: 1px dotted #AAA;
+}
+
+.DarkMode #indexpage h4.ListHeader
+{
+	text-decoration: underline #DDD dotted;
+}
+
+.DarkMode #indexpage .Header a
+{
+	color: #fff8dd;
+}
+
+.DarkMode #indexpage .Header a:hover
+{
+	color: #ff4820;
+}
