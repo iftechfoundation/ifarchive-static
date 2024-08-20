@@ -145,6 +145,8 @@ hr
 {
 	float: right;
 	border: 1px dotted #000;
+	background-color: #060500;
+	color: #060500;
 	border-radius: 2px;
 	padding: 4px 6px;
 	font-weight: bold;
@@ -747,125 +749,125 @@ a.PermaLink:hover
 
 body.LightMode
 {
-	background-color: #666;
+	background-color: #333;
 }
 
 .LightMode .Page
 {
-	background-color: #262205;
-	color: #fffdf0;
-	border-left: 2px solid #000;
-	border-right: 1px solid #946e67;
+	background-color: #faf5e9;
+	color: #060500;
+	border-left: 2px solid #fff;
+	border-right: 1px solid #78714b;
 }
 
 .LightMode a
 {
-	color: #ff6840;
+	color: #b50000;
 }
 
 .LightMode a:visited
 {	
-	color: #ff8f70;
+	color: #803030;
 }
 
 .LightMode a:hover
 {
-	color: #ff4820;
+	color: #d11515;
 }
 
 .LightMode blockquote
 {
-	background-color: #2f2a05;
-	color: #fffdf0;
-	border: 1px dotted #666;
+	background-color: #f5f0e6;
+	color: #000;
+	border: 1px dotted #aaa;
 }
 
 .LightMode h1, .LightMode h2, .LightMode h3, .LightMode h4
 {
-	color: #fff8dd;
+	color: #382806;
 }
 
 .LightMode .FootWidget
 {
-	border: 1px dotted #FFF;
-	background-color: #262205;
-	color: #fffdf0;
+	border: 1px dotted #000;
+	background-color: #060500;
+	color: #060500;
 }
 
 .LightMode .FootWidget:hover
 {
-	background-color: #faf5e9;
-	color: #060500;
+	background-color: #262205;
+	color: #fffdf0;
 }
 
 .LightMode .Footer a
 {
-	color: #ff8f70;
+	color: #5a0000;
 }
 
 .LightMode .Footer a:hover
 {
-	color: #ff4820;
+	color: #d11515;
 }
 
 .LightMode .Date
 {
-	color: #987;
+	color: #777;
 }
 
 .LightMode a.PermaLink
 {
-	color: #984030;
+	color: #DAA;
 }
 
 .LightMode a.PermaLink:hover
 {
-	color: #ff4820;
+	color: #D11515;
 }
 
 .LightMode #frontpage .RightCol h3
 {
-	border-bottom: 1px dotted #AAA;
+	border-bottom: 1px dotted #222;
 }
 
 .LightMode #frontpage img
 {
-	filter: invert(100%);
+	filter: none;
 }
 
 .LightMode #frontpage .Donate
 {
-	border: 1px solid #FFDD88;
+	border: 1px solid #5A0000;
 }
 
 .LightMode #indexpage .ParentLinks a
 {
-	color: #ff8f70;
+	color: #5a0000;
 }
 
 .LightMode #indexpage .ParentLinks a:hover
 {
-	color: #ff4820;
+	color: #d11515;
 }
 
 .LightMode #indexpage h3.ListHeader
 {
-	border-bottom: 1px dotted #AAA;
+	border-bottom: 1px dotted #222;
 }
 
 .LightMode #indexpage h4.ListHeader
 {
-	text-decoration: underline #DDD dotted;
+	text-decoration: underline #222 dotted;
 }
 
 .LightMode #indexpage .Header a
 {
-	color: #fff8dd;
+	color: #382806;
 }
 
 .LightMode #indexpage .Header a:hover
 {
-	color: #ff4820;
+	color: #d11515;
 }
 
 
