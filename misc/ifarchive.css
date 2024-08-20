@@ -145,7 +145,7 @@ hr
 {
 	float: right;
 	border: 1px dotted #000;
-	background-color: #060500;
+	background-color: #faf5e9;
 	color: #060500;
 	border-radius: 2px;
 	padding: 4px 6px;
@@ -790,7 +790,7 @@ body.LightMode
 .LightMode .FootWidget
 {
 	border: 1px dotted #000;
-	background-color: #060500;
+	background-color: #faf5e9;
 	color: #060500;
 }
 
