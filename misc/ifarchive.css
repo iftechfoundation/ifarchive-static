@@ -743,7 +743,8 @@ a.PermaLink:hover
 }
 
 }
-/* end @media */
+
+/* End @media rules for narrow pages. */
 
 /* Our handling of dark-vs-light theme requires a bunch of regrettably
    redundant declarations. All colors (declared above for light mode)
@@ -998,3 +999,257 @@ body.DarkMode
 	color: #ff4820;
 }
 
+
+@media (prefers-color-scheme: light) {
+
+body.SysMode
+{
+	background-color: #333;
+}
+
+.SysMode .Page
+{
+	background-color: #faf5e9;
+	color: #060500;
+	border-left: 2px solid #fff;
+	border-right: 1px solid #78714b;
+}
+
+.SysMode a
+{
+	color: #b50000;
+}
+
+.SysMode a:visited
+{	
+	color: #803030;
+}
+
+.SysMode a:hover
+{
+	color: #d11515;
+}
+
+.SysMode blockquote
+{
+	background-color: #f5f0e6;
+	color: #000;
+	border: 1px dotted #aaa;
+}
+
+.SysMode h1, .SysMode h2, .SysMode h3, .SysMode h4
+{
+	color: #382806;
+}
+
+.SysMode .FootWidget
+{
+	border: 1px dotted #000;
+	background-color: #faf5e9;
+	color: #060500;
+}
+
+.SysMode .FootWidget:hover
+{
+	background-color: #262205;
+	color: #fffdf0;
+}
+
+.SysMode .Footer a
+{
+	color: #5a0000;
+}
+
+.SysMode .Footer a:hover
+{
+	color: #d11515;
+}
+
+.SysMode .Date
+{
+	color: #777;
+}
+
+.SysMode a.PermaLink
+{
+	color: #DAA;
+}
+
+.SysMode a.PermaLink:hover
+{
+	color: #D11515;
+}
+
+.SysMode #frontpage .RightCol h3
+{
+	border-bottom: 1px dotted #222;
+}
+
+.SysMode #frontpage img
+{
+	filter: none;
+}
+
+.SysMode #frontpage .Donate
+{
+	border: 1px solid #5A0000;
+}
+
+.SysMode #indexpage .ParentLinks a
+{
+	color: #5a0000;
+}
+
+.SysMode #indexpage .ParentLinks a:hover
+{
+	color: #d11515;
+}
+
+.SysMode #indexpage h3.ListHeader
+{
+	border-bottom: 1px dotted #222;
+}
+
+.SysMode #indexpage h4.ListHeader
+{
+	text-decoration: underline #222 dotted;
+}
+
+.SysMode #indexpage .Header a
+{
+	color: #382806;
+}
+
+.SysMode #indexpage .Header a:hover
+{
+	color: #d11515;
+}
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+body.SysMode
+{
+	background-color: #666;
+}
+
+.SysMode .Page
+{
+	background-color: #262205;
+	color: #fffdf0;
+	border-left: 2px solid #000;
+	border-right: 1px solid #946e67;
+}
+
+.SysMode a
+{
+	color: #ff6840;
+}
+
+.SysMode a:visited
+{	
+	color: #ff8f70;
+}
+
+.SysMode a:hover
+{
+	color: #ff4820;
+}
+
+.SysMode blockquote
+{
+	background-color: #2f2a05;
+	color: #fffdf0;
+	border: 1px dotted #666;
+}
+
+.SysMode h1, .SysMode h2, .SysMode h3, .SysMode h4
+{
+	color: #fff8dd;
+}
+
+.SysMode .FootWidget
+{
+	border: 1px dotted #FFF;
+	background-color: #262205;
+	color: #fffdf0;
+}
+
+.SysMode .FootWidget:hover
+{
+	background-color: #faf5e9;
+	color: #060500;
+}
+
+.SysMode .Footer a
+{
+	color: #ff8f70;
+}
+
+.SysMode .Footer a:hover
+{
+	color: #ff4820;
+}
+
+.SysMode .Date
+{
+	color: #987;
+}
+
+.SysMode a.PermaLink
+{
+	color: #984030;
+}
+
+.SysMode a.PermaLink:hover
+{
+	color: #ff4820;
+}
+
+.SysMode #frontpage .RightCol h3
+{
+	border-bottom: 1px dotted #AAA;
+}
+
+.SysMode #frontpage img
+{
+	filter: invert(100%);
+}
+
+.SysMode #frontpage .Donate
+{
+	border: 1px solid #FFDD88;
+}
+
+.SysMode #indexpage .ParentLinks a
+{
+	color: #ff8f70;
+}
+
+.SysMode #indexpage .ParentLinks a:hover
+{
+	color: #ff4820;
+}
+
+.SysMode #indexpage h3.ListHeader
+{
+	border-bottom: 1px dotted #AAA;
+}
+
+.SysMode #indexpage h4.ListHeader
+{
+	text-decoration: underline #DDD dotted;
+}
+
+.SysMode #indexpage .Header a
+{
+	color: #fff8dd;
+}
+
+.SysMode #indexpage .Header a:hover
+{
+	color: #ff4820;
+}
+
+}
