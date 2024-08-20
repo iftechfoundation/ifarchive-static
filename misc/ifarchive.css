@@ -780,22 +780,7 @@ body.DarkMode
 	border: 1px dotted #666;
 }
 
-.DarkMode h1
-{
-	color: #fff8dd;
-}
-
-.DarkMode h2
-{
-	color: #fff8dd;
-}
-
-.DarkMode h3
-{
-	color: #fff8dd;
-}
-
-.DarkMode h4
+.DarkMode h1, .DarkMode h2, .DarkMode h3, .DarkMode h4
 {
 	color: #fff8dd;
 }
