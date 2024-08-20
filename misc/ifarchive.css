@@ -745,6 +745,130 @@ a.PermaLink:hover
 
 
 
+body.LightMode
+{
+	background-color: #666;
+}
+
+.LightMode .Page
+{
+	background-color: #262205;
+	color: #fffdf0;
+	border-left: 2px solid #000;
+	border-right: 1px solid #946e67;
+}
+
+.LightMode a
+{
+	color: #ff6840;
+}
+
+.LightMode a:visited
+{	
+	color: #ff8f70;
+}
+
+.LightMode a:hover
+{
+	color: #ff4820;
+}
+
+.LightMode blockquote
+{
+	background-color: #2f2a05;
+	color: #fffdf0;
+	border: 1px dotted #666;
+}
+
+.LightMode h1, .LightMode h2, .LightMode h3, .LightMode h4
+{
+	color: #fff8dd;
+}
+
+.LightMode .FootWidget
+{
+	border: 1px dotted #FFF;
+	background-color: #262205;
+	color: #fffdf0;
+}
+
+.LightMode .FootWidget:hover
+{
+	background-color: #faf5e9;
+	color: #060500;
+}
+
+.LightMode .Footer a
+{
+	color: #ff8f70;
+}
+
+.LightMode .Footer a:hover
+{
+	color: #ff4820;
+}
+
+.LightMode .Date
+{
+	color: #987;
+}
+
+.LightMode a.PermaLink
+{
+	color: #984030;
+}
+
+.LightMode a.PermaLink:hover
+{
+	color: #ff4820;
+}
+
+.LightMode #frontpage .RightCol h3
+{
+	border-bottom: 1px dotted #AAA;
+}
+
+.LightMode #frontpage img
+{
+	filter: invert(100%);
+}
+
+.LightMode #frontpage .Donate
+{
+	border: 1px solid #FFDD88;
+}
+
+.LightMode #indexpage .ParentLinks a
+{
+	color: #ff8f70;
+}
+
+.LightMode #indexpage .ParentLinks a:hover
+{
+	color: #ff4820;
+}
+
+.LightMode #indexpage h3.ListHeader
+{
+	border-bottom: 1px dotted #AAA;
+}
+
+.LightMode #indexpage h4.ListHeader
+{
+	text-decoration: underline #DDD dotted;
+}
+
+.LightMode #indexpage .Header a
+{
+	color: #fff8dd;
+}
+
+.LightMode #indexpage .Header a:hover
+{
+	color: #ff4820;
+}
+
+
 body.DarkMode
 {
 	background-color: #666;
@@ -867,3 +991,4 @@ body.DarkMode
 {
 	color: #ff4820;
 }
+
