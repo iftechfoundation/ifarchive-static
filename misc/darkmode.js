@@ -105,7 +105,7 @@ function set_body_class(mode)
     }
 }
 
-window.addEventListener('load', function(ev) {
+document.addEventListener('DOMContentLoaded', function(ev) {
     var mode = get_theme_cookie();
     set_body_class(mode);
 
