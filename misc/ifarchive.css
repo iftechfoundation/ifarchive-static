@@ -1158,6 +1158,19 @@ body.SysMode
 	color: #d11515;
 }
 
+.SysMode #uploadpage .FormButton
+{
+	background-color: white;
+	color: black;
+}
+
+.SysMode #uploadpage .FormTable .FormField
+{
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1283,6 +1296,19 @@ body.SysMode
 .SysMode #indexpage .Header a:hover
 {
 	color: #ff4820;
+}
+
+.SysMode #uploadpage .FormButton
+{
+	background-color: black;
+	color: white;
+}
+
+.SysMode #uploadpage .FormTable .FormField
+{
+	background-color: black;
+	color: white;
+	border: 1px solid #555;
 }
 
 }
