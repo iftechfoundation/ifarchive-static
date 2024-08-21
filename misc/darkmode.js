@@ -30,7 +30,7 @@
    site-wide as long as this script is loaded.
 */
 
-const testmode = true; //###
+const testmode = false;
 
 function get_theme_cookie()
 {
