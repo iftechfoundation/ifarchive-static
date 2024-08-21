@@ -659,6 +659,10 @@ a.PermaLink:hover
 #unboxpage .Button
 {
 	font-size: 175%;
+	border-radius: 6px;
+	border: 1px solid black;
+	background: white;
+	color: black;
 }
 
 #unboxpage .StartButton
@@ -896,6 +900,13 @@ body.LightMode
 	border: 1px solid #BBB;
 }
 
+.LightMode #unboxpage .Button
+{
+	border: 1px solid black;
+	background: white;
+	color: black;
+}
+
 .LightMode #unboxpage .Header a
 {
 	color: #382806;
@@ -1036,6 +1047,13 @@ body.DarkMode
 	background-color: black;
 	color: white;
 	border: 1px solid #555;
+}
+
+.DarkMode #unboxpage .Button
+{
+	border: 1px solid white;
+	background: black;
+	color: white;
 }
 
 .DarkMode #unboxpage .Header a
@@ -1182,6 +1200,13 @@ body.SysMode
 	border: 1px solid #BBB;
 }
 
+.SysMode #unboxpage .Button
+{
+	border: 1px solid black;
+	background: white;
+	color: black;
+}
+
 .SysMode #unboxpage .Header a
 {
 	color: #382806;
@@ -1325,6 +1350,13 @@ body.SysMode
 	background-color: black;
 	color: white;
 	border: 1px solid #555;
+}
+
+.SysMode #unboxpage .Button
+{
+	border: 1px solid white;
+	background: black;
+	color: white;
 }
 
 .SysMode #unboxpage .Header a
