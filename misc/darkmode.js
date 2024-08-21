@@ -37,11 +37,12 @@ function set_theme_cookie(val)
 
 function toggle_theme(ev)
 {
-    var darkmode = get_theme_cookie();
-    if (darkmode == 'dark') {
+    var oldmode = get_theme_cookie();
+    var darkmode;
+    if (oldmode == 'dark') {
         darkmode = 'light';
     }
-    else if (darkmode = 'light') {
+    else if (oldmode == 'light') {
         darkmode = 'dark';
     }
     else {
