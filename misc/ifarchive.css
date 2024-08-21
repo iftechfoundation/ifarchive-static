@@ -749,7 +749,9 @@ a.PermaLink:hover
    redundant declarations. All colors (declared above for light mode)
    will be repeated below under the LightMode class, then their
    dark equivalents under DarkMode. Then we repeat both *again*
-   with a color-scheme rule, under SysMode. */
+   with a color-scheme rule, under SysMode.
+
+   See darkmode.js for an explanation of the CSS class handling. */
 
 body.LightMode
 {
