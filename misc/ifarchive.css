@@ -896,6 +896,11 @@ body.LightMode
 	border: 1px solid #BBB;
 }
 
+.LightMode #unboxpage .Header a
+{
+	color: #382806;
+}
+
 
 body.DarkMode
 {
@@ -1033,6 +1038,12 @@ body.DarkMode
 	border: 1px solid #555;
 }
 
+.DarkMode #unboxpage .Header a
+{
+	color: #fff8dd;
+}
+
+
 @media (prefers-color-scheme: light) {
 
 body.SysMode
@@ -1169,6 +1180,11 @@ body.SysMode
 	background-color: white;
 	color: black;
 	border: 1px solid #BBB;
+}
+
+.SysMode #unboxpage .Header a
+{
+	color: #382806;
 }
 
 }
@@ -1309,6 +1325,11 @@ body.SysMode
 	background-color: black;
 	color: white;
 	border: 1px solid #555;
+}
+
+.SysMode #unboxpage .Header a
+{
+	color: #fff8dd;
 }
 
 }
