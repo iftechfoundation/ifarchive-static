@@ -110,5 +110,7 @@ window.addEventListener('load', function(ev) {
     set_body_class(mode);
 
     var el = document.getElementById('toggletheme');
-    el.addEventListener('click', toggle_theme);
+    if (el) {
+        el.addEventListener('click', toggle_theme);
+    }
 });
