@@ -654,6 +654,9 @@ a.PermaLink:hover
 #unboxpage .InputLine
 {
 	font-size: 175%;
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
 }
 
 #unboxpage .Button
@@ -900,6 +903,13 @@ body.LightMode
 	border: 1px solid #BBB;
 }
 
+.LightMode #unboxpage .InputLine
+{
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
 .LightMode #unboxpage .Button
 {
 	border: 1px solid black;
@@ -1043,6 +1053,13 @@ body.DarkMode
 }
 
 .DarkMode #uploadpage .FormTable .FormField
+{
+	background-color: black;
+	color: white;
+	border: 1px solid #555;
+}
+
+.DarkMode #unboxpage .InputLine
 {
 	background-color: black;
 	color: white;
@@ -1200,6 +1217,13 @@ body.SysMode
 	border: 1px solid #BBB;
 }
 
+.SysMode #unboxpage .InputLine
+{
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
 .SysMode #unboxpage .Button
 {
 	border: 1px solid black;
@@ -1346,6 +1370,13 @@ body.SysMode
 }
 
 .SysMode #uploadpage .FormTable .FormField
+{
+	background-color: black;
+	color: white;
+	border: 1px solid #555;
+}
+
+.SysMode #unboxpage .InputLine
 {
 	background-color: black;
 	color: white;
