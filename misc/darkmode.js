@@ -114,6 +114,12 @@ document.addEventListener('DOMContentLoaded', function(ev) {
 
     var el = document.getElementById('toggletheme');
     if (el) {
+        el.classList.remove('Hide');
         el.addEventListener('click', toggle_theme);
+    }
+
+    el = document.getElementById('jsdash');
+    if (el) {
+        el.classList.remove('Hide');
     }
 });
