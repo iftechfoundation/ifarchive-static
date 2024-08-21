@@ -12,6 +12,9 @@
    not have user accounts, that preference must be stored in a cookie.
    That's where this script comes in.
 
+   (If JS is not available, we always use the system theme. If *neither*
+   JS nor media queries are available, it's light mode.)
+
    At load time, we check for a "theme=dark" or "theme=light" cookie. If
    found, we set the <body> class to "DarkMode" or "LightMode", which
    has fixed colors. If no cookie is present, we set the <body> class
