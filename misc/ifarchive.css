@@ -609,22 +609,29 @@ a.PermaLink:hover
 	width: 100%;
 	font-size: 1.0em;
 	padding: 2px 4px;
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
 }
 
-#uploadpage .FormButton {
+#uploadpage .FormButton
+{
 	font-size: 100%;
 	margin: 4px;
 	background-color: white;
+	color: black;
 	border: 1px solid #AAA;
 	border-radius: 6px;
 	padding: 2px 8px;
 }
 
-#uploadpage .SubmitPara {
+#uploadpage .SubmitPara
+{
 	text-align: center;
 }
 
-#uploadpage .FormUploadWidget {
+#uploadpage .FormUploadWidget
+{
 	font-size: 100%;
 }
 
@@ -876,6 +883,19 @@ body.LightMode
 	color: #d11515;
 }
 
+.LightMode #uploadpage .FormButton
+{
+	background-color: white;
+	color: black;
+}
+
+.LightMode #uploadpage .FormTable .FormField
+{
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
 
 body.DarkMode
 {
@@ -1000,6 +1020,18 @@ body.DarkMode
 	color: #ff4820;
 }
 
+.DarkMode #uploadpage .FormButton
+{
+	background-color: black;
+	color: white;
+}
+
+.DarkMode #uploadpage .FormTable .FormField
+{
+	background-color: black;
+	color: white;
+	border: 1px solid #555;
+}
 
 @media (prefers-color-scheme: light) {
 
