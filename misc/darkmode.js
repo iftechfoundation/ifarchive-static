@@ -4,20 +4,20 @@ const testmode = true; //###
 
 function get_theme_cookie()
 {
-    var darkmode = null;
+    var mode = null;
     
     for (var val of document.cookie.split(';')) {
         if (val.trim() == 'theme=dark') {
-            darkmode = 'dark';
+            mode = 'dark';
             break;
         }
         if (val.trim() == 'theme=light') {
-            darkmode = 'light';
+            mode = 'light';
             break;
         }
     }
 
-    return darkmode;
+    return mode;
 }
 
 function set_theme_cookie(val)
@@ -38,35 +38,35 @@ function set_theme_cookie(val)
 function toggle_theme(ev)
 {
     var oldmode = get_theme_cookie();
-    var darkmode;
+    var mode;
     if (oldmode == 'dark') {
-        darkmode = 'light';
+        mode = 'light';
     }
     else if (oldmode == 'light') {
-        darkmode = 'dark';
+        mode = 'dark';
     }
     else {
         var match = window.matchMedia('(prefers-color-scheme: dark)');
         if (match.matches) {
-            darkmode = 'light';
+            mode = 'light';
         }
         else {
-            darkmode = 'dark';
+            mode = 'dark';
         }
     }
 
-    set_theme_cookie(darkmode);
-    set_body_class(darkmode);
+    set_theme_cookie(mode);
+    set_body_class(mode);
 }
 
-function set_body_class(darkmode)
+function set_body_class(mode)
 {
-    if (darkmode == 'light') {
+    if (mode == 'light') {
         document.body.classList.add('LightMode');
         document.body.classList.remove('DarkMode');
         document.body.classList.remove('SysMode');
     }
-    else if (darkmode == 'dark') {
+    else if (mode == 'dark') {
         document.body.classList.add('DarkMode');
         document.body.classList.remove('LightMode');
         document.body.classList.remove('SysMode');
@@ -79,8 +79,8 @@ function set_body_class(darkmode)
 }
 
 window.addEventListener('load', function(ev) {
-    var darkmode = get_theme_cookie();
-    set_body_class(darkmode);
+    var mode = get_theme_cookie();
+    set_body_class(mode);
 
     var el = document.getElementById('toggletheme');
     el.addEventListener('click', toggle_theme);
