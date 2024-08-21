@@ -1,5 +1,7 @@
 'use strict';
 
+const testmode = true; //###
+
 function get_theme_cookie()
 {
     var darkmode = null;
@@ -20,7 +22,17 @@ function get_theme_cookie()
 
 function set_theme_cookie(val)
 {
-    //###
+    var cookie;
+    if (val == 'light' || val == 'dark') {
+        cookie = 'theme='+val+'; path=/; max-age=31536000';
+    }
+    else {
+        cookie = 'theme=none; path=/; max-age=0';
+    }
+    if (!testmode) {
+        cookie += '; domain=ifarchive.org'
+    }
+    document.cookie = cookie;
 }
 
 function toggle_theme(ev)
