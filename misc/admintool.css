@@ -1,6 +1,7 @@
 
 body {
     background-color: #FAF5E9;
+    color: black;
     font-family: "Verdana", sans-serif;
     margin: 0px;
 }
@@ -44,7 +45,7 @@ body {
 }
 
 #navbar {
-    background: #641;
+    background-color: #641;
     font-size: 85%;
     padding: 4px 8px;
     margin-bottom: 20px;
@@ -69,16 +70,6 @@ body {
 #body h1 {
     font-weight: normal;
     font: 120% Georgia, "Times New Roman", serif;
-}
-
-.Footer
-{
-    clear: both;
-    padding-top: 4em;
-    margin: 0px 5%;
-    font-size: 0.85em;
-    font-style: italic;
-    text-align: center;
 }
 
 .FormInput {
@@ -138,6 +129,12 @@ body {
 .FormButtonLabel {
     font-size: 85%;
     margin-left: 20px;
+}
+
+.FormSubaction {
+    margin-left: 20px;
+    margin-top: 2px;
+    margin-bottom: 4px;
 }
 
 a {
@@ -301,4 +298,399 @@ ul.UserInfoList li {
         margin-right: 20px;
     }
     
+}
+
+/* Our handling of dark-vs-light theme requires a bunch of regrettably
+   redundant declarations. All colors (declared above for light mode)
+   will be repeated below under the LightMode class, then their
+   dark equivalents under DarkMode. Then we repeat both *again*
+   with a color-scheme rule, under SysMode.
+
+   See darkmode.js for an explanation of the CSS class handling. */
+
+body.LightMode {
+    background-color: #FAF5E9;
+    color: black;
+}
+
+.LightMode #header {
+    background-color: #DAB886;
+}
+
+.LightMode #navbar {
+    background-color: #641;
+}
+
+.LightMode #navbar a {
+    color: white;
+}
+
+.LightMode #navbar .Selected {
+    background-color: #A71;
+    box-shadow: inset 0px 0px 4px #DD0;
+}
+
+.LightMode .FormInput {
+    color: black;
+    background-color: white;
+}
+
+.LightMode .FormTextArea {
+    color: black;
+    background-color: white;
+}
+
+.LightMode .FormButton {
+    background-color: white;
+    color: black;
+    border: 1px solid #AAA;
+}
+
+.LightMode .HotButton {
+    background-color: #EFA;
+}
+
+.LightMode a {
+    color: #B50000;
+}
+
+.LightMode #header a {
+    color: #850000;
+}
+
+.LightMode a:hover {
+    color: #D11515;
+}
+
+.LightMode hr {
+    background: #F0D0A0;
+}
+
+.LightMode code {
+    background: #ECE0B0;
+}
+
+.LightMode pre {
+    background: #ECE0B0;
+}
+
+.LightMode ul {
+    border-left: 3px solid #F0D0A0;
+}
+
+.LightMode ul li {
+    background-image: url("cssbullet.png");
+}
+
+.LightMode .FileList .Selected {
+    background: #FFA;
+}
+
+.LightMode .FileList .Selected .HotButton {
+    background-color: #EAFB80;
+}
+
+.LightMode .SubdirButtons.Selected {
+    background: #FFA;
+}
+
+.LightMode .FileComments {
+    border-left: 3px solid #F0D0A0;
+}
+
+.LightMode .ResultNote {
+    background: #FFA;
+}
+
+
+
+body.DarkMode {
+    background-color: #262205;
+    color: white;
+}
+
+.DarkMode #header {
+    background-color: #641;
+}
+
+.DarkMode #navbar {
+    background-color: #CAA876;
+}
+
+.DarkMode #navbar a {
+    color: black;
+}
+
+.DarkMode #navbar .Selected {
+    background-color: #BC8900;
+    box-shadow: inset 0px 0px 4px #650;
+}
+
+.DarkMode .FormInput {
+    color: white;
+    background-color: black;
+}
+
+.DarkMode .FormTextArea {
+    color: white;
+    background-color: black;
+}
+
+.DarkMode .FormButton {
+    background-color: black;
+    color: white;
+    border: 1px solid #909090;
+}
+
+.DarkMode .HotButton {
+    background-color: #456000;
+}
+
+.DarkMode a {
+    color: #FF6840;
+}
+
+.DarkMode #header a {
+    color: #FF8848;
+}
+
+.DarkMode a:hover {
+    color: #FF4820;
+}
+
+.DarkMode hr {
+    background: #765215;
+}
+
+.DarkMode code {
+    background: #6C4000;
+}
+
+.DarkMode pre {
+    background: #6C4000;
+}
+
+.DarkMode ul {
+    border-left: 3px solid #765215;
+}
+
+.DarkMode ul li {
+    background-image: url("cssbulletdark.png");
+}
+
+.DarkMode .FileList .Selected {
+    background: #550;
+}
+
+.DarkMode .FileList .Selected .HotButton {
+    background-color: #607800;
+}
+
+.DarkMode .SubdirButtons.Selected {
+    background: #550;
+}
+
+.DarkMode .FileComments {
+    border-left: 3px solid #765215;
+}
+
+.DarkMode .ResultNote {
+    background: #550;
+}
+
+
+@media (prefers-color-scheme: light) {
+
+body.SysMode {
+    background-color: #FAF5E9;
+    color: black;
+}
+
+.SysMode #header {
+    background-color: #DAB886;
+}
+
+.SysMode #navbar {
+    background-color: #641;
+}
+
+.SysMode #navbar a {
+    color: white;
+}
+
+.SysMode #navbar .Selected {
+    background-color: #A71;
+    box-shadow: inset 0px 0px 4px #DD0;
+}
+
+.SysMode .FormInput {
+    color: black;
+    background-color: white;
+}
+
+.SysMode .FormTextArea {
+    color: black;
+    background-color: white;
+}
+
+.SysMode .FormButton {
+    background-color: white;
+    color: black;
+    border: 1px solid #AAA;
+}
+
+.SysMode .HotButton {
+    background-color: #EFA;
+}
+
+.SysMode a {
+    color: #B50000;
+}
+
+.SysMode #header a {
+    color: #850000;
+}
+
+.SysMode a:hover {
+    color: #D11515;
+}
+
+.SysMode hr {
+    background: #F0D0A0;
+}
+
+.SysMode code {
+    background: #ECE0B0;
+}
+
+.SysMode pre {
+    background: #ECE0B0;
+}
+
+.SysMode ul {
+    border-left: 3px solid #F0D0A0;
+}
+
+.SysMode ul li {
+    background-image: url("cssbullet.png");
+}
+
+.SysMode .FileList .Selected {
+    background: #FFA;
+}
+
+.SysMode .FileList .Selected .HotButton {
+    background-color: #EAFB80;
+}
+
+.SysMode .SubdirButtons.Selected {
+    background: #FFA;
+}
+
+.SysMode .FileComments {
+    border-left: 3px solid #F0D0A0;
+}
+
+.SysMode .ResultNote {
+    background: #FFA;
+}
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+body.SysMode {
+    background-color: #262205;
+    color: white;
+}
+
+.SysMode #header {
+    background-color: #641;
+}
+
+.SysMode #navbar {
+    background-color: #CAA876;
+}
+
+.SysMode #navbar a {
+    color: black;
+}
+
+.SysMode #navbar .Selected {
+    background-color: #BC8900;
+    box-shadow: inset 0px 0px 4px #650;
+}
+
+.SysMode .FormInput {
+    color: white;
+    background-color: black;
+}
+
+.SysMode .FormTextArea {
+    color: white;
+    background-color: black;
+}
+
+.SysMode .FormButton {
+    background-color: black;
+    color: white;
+    border: 1px solid #909090;
+}
+
+.SysMode .HotButton {
+    background-color: #456000;
+}
+
+.SysMode a {
+    color: #FF6840;
+}
+
+.SysMode #header a {
+    color: #FF8848;
+}
+
+.SysMode a:hover {
+    color: #FF4820;
+}
+
+.SysMode hr {
+    background: #765215;
+}
+
+.SysMode code {
+    background: #6C4000;
+}
+
+.SysMode pre {
+    background: #6C4000;
+}
+
+.SysMode ul {
+    border-left: 3px solid #765215;
+}
+
+.SysMode ul li {
+    background-image: url("cssbulletdark.png");
+}
+
+.SysMode .FileList .Selected {
+    background: #550;
+}
+
+.SysMode .FileList .Selected .HotButton {
+    background-color: #607800;
+}
+
+.SysMode .SubdirButtons.Selected {
+    background: #550;
+}
+
+.SysMode .FileComments {
+    border-left: 3px solid #765215;
+}
+
+.SysMode .ResultNote {
+    background: #550;
+}
+
 }
