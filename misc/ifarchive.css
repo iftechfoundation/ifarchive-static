@@ -1091,7 +1091,7 @@ body.DarkMode
 @media (prefers-color-scheme: light) {
 
 /* --- begin mediaLightMode --- */
-    
+
 body.SysMode
 {
 	background-color: #333;
