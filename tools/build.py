@@ -3,7 +3,7 @@ We build some of our static misc HTML files from Markdown.
 
 This script generates them properly. To run:
 
-% python3 md/build.py
+% python3 tools/build.py
 
 To upload:
 
