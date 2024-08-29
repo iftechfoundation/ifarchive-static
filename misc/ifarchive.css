@@ -765,7 +765,12 @@ a.PermaLink:hover
    dark equivalents under DarkMode. Then we repeat both *again*
    with a color-scheme rule, under SysMode.
 
+   The magic --- comments assist automated updates of these repeated
+   declarations.
+
    See darkmode.js for an explanation of the CSS class handling. */
+
+/* --- begin LightMode --- */
 
 body.LightMode
 {
@@ -922,6 +927,9 @@ body.LightMode
 	color: #382806;
 }
 
+/* --- end LightMode --- */
+
+/* --- begin DarkMode --- */
 
 body.DarkMode
 {
@@ -1078,9 +1086,12 @@ body.DarkMode
 	color: #fff8dd;
 }
 
+/* --- end DarkMode --- */
 
 @media (prefers-color-scheme: light) {
 
+/* --- begin mediaLightMode --- */
+    
 body.SysMode
 {
 	background-color: #333;
@@ -1236,9 +1247,13 @@ body.SysMode
 	color: #382806;
 }
 
+/* --- end mediaLightMode --- */
+
 }
 
 @media (prefers-color-scheme: dark) {
+
+/* --- begin mediaDarkMode --- */
 
 body.SysMode
 {
@@ -1394,5 +1409,7 @@ body.SysMode
 {
 	color: #fff8dd;
 }
+
+/* --- end mediaDarkMode --- */
 
 }
