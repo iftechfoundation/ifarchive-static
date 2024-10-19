@@ -11,10 +11,10 @@
    URL it uses (really multiple URLs) so that Archive index pages pick
    up the change. To do this:
 
-   sudo /var/ifarchive/bin/uncache.py -u https://ifarchive.org/misc/admintool.css
-   sudo /var/ifarchive/bin/uncache.py -u http://ifarchive.org/misc/admintool.css
-   sudo /var/ifarchive/bin/uncache.py -u https://www.ifarchive.org/misc/admintool.css
-   sudo /var/ifarchive/bin/uncache.py -u http://www.ifarchive.org/misc/admintool.css
+   sudo /var/ifarchive/bin/uncache.py -u https://ifarchive.org/misc/ifarchive.css
+   sudo /var/ifarchive/bin/uncache.py -u http://ifarchive.org/misc/ifarchive.css
+   sudo /var/ifarchive/bin/uncache.py -u https://www.ifarchive.org/misc/ifarchive.css
+   sudo /var/ifarchive/bin/uncache.py -u http://www.ifarchive.org/misc/ifarchive.css
 
 */
 
