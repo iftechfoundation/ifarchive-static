@@ -1,3 +1,23 @@
+/* Stylesheet used by ifarchive.org. Lives at:
+   https://ifarchive.org/misc/ifarchive.css
+   
+   Nearly all the pages on the IF Archive rely on this stylesheet. That
+   includes the upload form and the Unbox service. See repos:
+
+   https://github.com/iftechfoundation/ifarchive-unbox
+   https://github.com/iftechfoundation/ifarchive-upload-py
+
+   If you update this file on the server, you'll want to cache-bust the
+   URL it uses (really multiple URLs) so that Archive index pages pick
+   up the change. To do this:
+
+   sudo /var/ifarchive/bin/uncache.py -u https://ifarchive.org/misc/admintool.css
+   sudo /var/ifarchive/bin/uncache.py -u http://ifarchive.org/misc/admintool.css
+   sudo /var/ifarchive/bin/uncache.py -u https://www.ifarchive.org/misc/admintool.css
+   sudo /var/ifarchive/bin/uncache.py -u http://www.ifarchive.org/misc/admintool.css
+
+*/
+
 /* general styles */
 
 html, body
