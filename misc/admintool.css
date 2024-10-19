@@ -1,3 +1,16 @@
+/* Stylesheet used by the ifarchive.org admin tool. Lives at:
+   https://ifarchive.org/misc/admintool.css
+
+   Note that this file is maintained in two repositories, which is a minor
+   nuisance. Happily we don't update this often. If you do, keep them in
+   sync.
+
+   https://github.com/iftechfoundation/ifarchive-static
+   https://github.com/iftechfoundation/ifarchive-admintool
+
+   (This does not require the same cache-busting as ifarchive.css, because
+   upload.ifarchive.org is not behind Cloudflare.)
+*/
 
 body {
     background-color: #FAF5E9;
