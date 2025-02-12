@@ -230,3 +230,12 @@ We should take a closer look at files that are over 100MB, and discuss them with
 - If the files contain large images or sounds, does the author have the rights to that material? (Always a question, but as a practical matter, we look at images and music harder.)
 - Which aspects of interactive fiction apply to this file? (Again, we have to be more strict about large files, simply because there are people who want to leech our storage space for large files.)
 
+### When people ask us to delete files
+
+These happen rarely enough that we should pretty much always discuss it on Slack.
+
+Ask questions like these:
+
+- Is the file's author/owner asking for it to be deleted? (We can't distribute copyrighted files without the owner's permission.)
+- Is it spam, trash, or malware? (We try to delete those before we make them publicly available on the archive, but if we miss one, we can delete it after the fact.)
+- Is the file a duplicate of another file in the archive? (An exact duplicate, or a near duplicate? If it's a near duplicate, are the differences historically important?)
