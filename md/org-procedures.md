@@ -230,9 +230,19 @@ We should take a closer look at files that are over 100MB, and discuss them with
 - If the files contain large images or sounds, does the author have the rights to that material? (Always a question, but as a practical matter, we look at images and music harder.)
 - Which aspects of interactive fiction apply to this file? (Again, we have to be more strict about large files, simply because there are people who want to leech our storage space for large files.)
 
-### When people ask us to delete files
+### Files uploaded by someone other than the author
 
-These happen rarely enough that we should pretty much always discuss it on Slack.
+In the early days, people uploaded all sorts of IF-related content to the archive. (Back when it was an FTP site!) There was a general agreement to not upload *commercial* games (like Infocom game files). But we didn't really have a notion of "open-source licensing".
+
+These days, we try to be more careful. The [terms of service](https://ifarchive.org/misc/license.html) say:
+
+> We prefer that material be donated by the original author or someone with the legal right to accept these terms. However, we understand that some IF-related material, particularly from the early years, was distributed with no clear license or terms. We host this material as part of the common heritage of interactive fiction. If you donate work which you did not create, you warrant that, to the best of your knowledge, it may be legitimately stored and distributed by the Archive. If you are a copyright owner and wish to dispute our use of your work, please contact us. If you wish to file a DMCA takedown notice, see below `[email to dmca@ifarchive.org]`.
+
+Do your best. Try to figure out whether the file was originally intended to be freely distributed. If the original author can be contacted, do that.
+
+### Deletion requests
+
+Very occasionally, someone asks us to delete a file. This happens rarely enough that we should pretty much always discuss it on Slack.
 
 Ask questions like these:
 
