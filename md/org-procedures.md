@@ -246,6 +246,11 @@ Very occasionally, someone asks us to delete a file. This happens rarely enough 
 
 Ask questions like these:
 
-- Is the file's author/owner asking for it to be deleted? (We can't distribute copyrighted files without the owner's permission.)
+- Is the file's original author asking for it to be deleted? (We prefer not to host files without the author's permission; see above.)
+- Is the file historically significant? (Competition entries; widely-discussed or influential games.)
 - Is it spam, trash, or malware? (We try to delete those before we make them publicly available on the archive, but if we miss one, we can delete it after the fact.)
 - Is the file a duplicate of another file in the archive? (An exact duplicate, or a near duplicate? If it's a near duplicate, are the differences historically important?)
+
+It may be worth raising these issues with the requester. Do they *really* want the file to be deleted? Would it be okay to remove their name from the game listing rather than deleting the game entirely?
+
+Sometimes people are confused about the difference between IFDB and the IF Archive. They may want to remove bad reviews of a game, rather than the game itself. Direct such people to IFDB.
