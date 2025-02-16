@@ -222,7 +222,7 @@ Note that IFComp uploads *do* sometimes come in through the standard upload form
 
 Speaking of enormous...
 
-As of December 2023, the archive contains some 30 gigabytes of files. A file that adds half a gigabyte to that total is a significant bump. The marginal cost of a gigabyte is small, but if we accept large files unthinkingly, we'd be on a path to having ten times as many gigabytes pretty soon.
+As of early 2025, the archive contains some 37 gigabytes of files. (Up from 30 gigabytes in 2023!) A file that adds half a gigabyte to that total is a significant bump. The marginal cost of a gigabyte is small, but if we accept large files unthinkingly, we'd be on a path to having ten times as many gigabytes pretty soon.
 
 We should take a closer look at files that are over 100MB, and discuss them with the rest of the team. You can email the webuploaders list, or you can chat about it on Slack. Ask questions like these:
 
