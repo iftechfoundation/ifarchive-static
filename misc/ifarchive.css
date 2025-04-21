@@ -655,6 +655,19 @@ a.PermaLink:hover
 	font-size: 100%;
 }
 
+#searchpage .ExampleTerm
+{
+    font-weight: bold;
+    font-style: italic;
+    font-family: monospace;
+    font-size: 1.4em;
+}
+
+#searchpage .ExampleOp
+{
+    font-weight: bold;
+}
+
 #searchpage .FormBox
 {
 	font-size: 1.5em;
