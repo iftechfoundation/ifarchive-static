@@ -700,6 +700,17 @@ a.PermaLink:hover
 	padding: 2px 8px;
 }
 
+#searchpage .PageControlBox
+{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#searchpage form.Inline
+{
+	display: inline-block;
+}
+
 #searchpage .Results
 {
 	list-style: none;
