@@ -1325,6 +1325,20 @@ body.SysMode
 	border: 1px solid #BBB;
 }
 
+.SysMode #searchpage .FormBox .FormField
+{
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
+.SysMode #searchpage .FormButton
+{
+	background-color: white;
+	color: black;
+	border: 1px solid #AAA;
+}
+
 .SysMode #unboxpage .InputLine
 {
 	background-color: white;
@@ -1486,6 +1500,20 @@ body.SysMode
 	background-color: black;
 	color: white;
 	border: 1px solid #555;
+}
+
+.SysMode #searchpage .FormBox .FormField
+{
+	background-color: black;
+	color: white;
+	border: 1px solid #555;
+}
+
+.SysMode #searchpage .FormButton
+{
+	background-color: black;
+	color: white;
+	border: 1px solid #888;
 }
 
 .SysMode #unboxpage .InputLine
