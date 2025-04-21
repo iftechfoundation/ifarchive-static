@@ -655,6 +655,32 @@ a.PermaLink:hover
 	font-size: 100%;
 }
 
+#searchpage .FormBox
+{
+	font-size: 1.5em;
+}
+
+#searchpage .FormBox .FormField
+{
+	width: 100%;
+	font-size: 1.0em;
+	padding: 2px 4px;
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
+#searchpage .FormButton
+{
+	font-size: 100%;
+	margin: 4px;
+	background-color: white;
+	color: black;
+	border: 1px solid #AAA;
+	border-radius: 6px;
+	padding: 2px 8px;
+}
+
 #unboxpage .Header a
 {
 	color: #382806;
