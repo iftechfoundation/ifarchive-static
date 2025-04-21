@@ -681,6 +681,23 @@ a.PermaLink:hover
 	padding: 2px 8px;
 }
 
+#searchpage .Results
+{
+	list-style: none;
+	padding-left: 0px;
+}
+
+#searchpage .Results dt
+{
+	margin-top: 1em;
+	font-size: 1.5em;
+}
+
+#searchpage .Results dd
+{
+	margin-left: 1em;
+}
+
 #unboxpage .Header a
 {
 	color: #382806;
