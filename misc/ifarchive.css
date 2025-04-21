@@ -660,6 +660,12 @@ a.PermaLink:hover
 	font-size: 1.5em;
 }
 
+#searchpage .FormBox form
+{
+	display: flex;
+	flex-direction: row;
+}
+
 #searchpage .FormBox .FormField
 {
 	width: 100%;
