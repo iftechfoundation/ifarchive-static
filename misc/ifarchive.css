@@ -700,6 +700,11 @@ a.PermaLink:hover
 	padding: 2px 8px;
 }
 
+#searchpage .FormButton:disabled
+{
+	color: #AAA;
+}
+
 #searchpage .PageControlBox
 {
 	font-size: 1.5em;
@@ -1015,6 +1020,11 @@ body.LightMode
 	border: 1px solid #AAA;
 }
 
+.LightMode #searchpage .FormButton:disabled
+{
+	color: #AAA;
+}
+
 .LightMode #unboxpage .InputLine
 {
 	background-color: white;
@@ -1186,6 +1196,11 @@ body.DarkMode
 	background-color: black;
 	color: white;
 	border: 1px solid #888;
+}
+
+.DarkMode #searchpage .FormButton:disabled
+{
+	color: #666;
 }
 
 .DarkMode #unboxpage .InputLine
@@ -1363,6 +1378,11 @@ body.SysMode
 	border: 1px solid #AAA;
 }
 
+.SysMode #searchpage .FormButton:disabled
+{
+	color: #AAA;
+}
+
 .SysMode #unboxpage .InputLine
 {
 	background-color: white;
@@ -1538,6 +1558,11 @@ body.SysMode
 	background-color: black;
 	color: white;
 	border: 1px solid #888;
+}
+
+.SysMode #searchpage .FormButton:disabled
+{
+	color: #666;
 }
 
 .SysMode #unboxpage .InputLine
