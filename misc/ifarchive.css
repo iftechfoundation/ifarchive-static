@@ -977,6 +977,20 @@ body.LightMode
 	border: 1px solid #BBB;
 }
 
+.LightMode #searchpage .FormBox .FormField
+{
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
+.LightMode #searchpage .FormButton
+{
+	background-color: white;
+	color: black;
+	border: 1px solid #AAA;
+}
+
 .LightMode #unboxpage .InputLine
 {
 	background-color: white;
@@ -1134,6 +1148,20 @@ body.DarkMode
 	background-color: black;
 	color: white;
 	border: 1px solid #555;
+}
+
+.DarkMode #searchpage .FormBox .FormField
+{
+	background-color: black;
+	color: white;
+	border: 1px solid #555;
+}
+
+.DarkMode #searchpage .FormButton
+{
+	background-color: black;
+	color: white;
+	border: 1px solid #888;
 }
 
 .DarkMode #unboxpage .InputLine
