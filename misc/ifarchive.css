@@ -1393,6 +1393,11 @@ body.SysMode
 	border: 1px solid #BBB;
 }
 
+.SysMode #searchpage .ExampleTerm
+{
+	color: #B00;
+}
+
 .SysMode #searchpage .FormBox .FormField
 {
 	background-color: white;
@@ -1573,6 +1578,11 @@ body.SysMode
 	background-color: black;
 	color: white;
 	border: 1px solid #555;
+}
+
+.SysMode #searchpage .ExampleTerm
+{
+	color: #F88;
 }
 
 .SysMode #searchpage .FormBox .FormField
