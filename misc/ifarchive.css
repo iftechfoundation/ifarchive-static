@@ -667,6 +667,7 @@ a.PermaLink:hover
 	font-style: italic;
 	font-family: monospace;
 	font-size: 1.4em;
+	color: #B00;
 }
 
 #searchpage .ExampleOp
@@ -1024,6 +1025,11 @@ body.LightMode
 	border: 1px solid #BBB;
 }
 
+.LightMode #searchpage .ExampleTerm
+{
+	color: #B00;
+}
+
 .LightMode #searchpage .FormBox .FormField
 {
 	background-color: white;
@@ -1200,6 +1206,11 @@ body.DarkMode
 	background-color: black;
 	color: white;
 	border: 1px solid #555;
+}
+
+.DarkMode #searchpage .ExampleTerm
+{
+	color: #F88;
 }
 
 .DarkMode #searchpage .FormBox .FormField
