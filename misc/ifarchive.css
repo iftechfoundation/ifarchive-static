@@ -661,18 +661,26 @@ a.PermaLink:hover
 	font-size: 100%;
 }
 
+#searchpage .Examples
+{
+	list-style: none;
+	padding-left: 0px;
+	margin-left: 2em;
+	text-indent: 2em hanging;
+}
+
 #searchpage .ExampleTerm
 {
 	font-weight: bold;
 	font-style: italic;
-	font-family: monospace;
-	font-size: 1.4em;
 	color: #B00;
 }
 
 #searchpage .ExampleOp
 {
 	font-weight: bold;
+	font-family: monospace;
+	font-size: 1.4em;
 }
 
 #searchpage dd.ShortDesc
