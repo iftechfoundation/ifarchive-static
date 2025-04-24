@@ -34,13 +34,14 @@ body
 
 .Page
 {
-	margin: 0px 30px;
+	margin: 0px auto;
 	padding: 0.1em 6em 4em 6em;
 	background-color: #faf5e9;
 	color: #060500;
 	_height: 100%;
 	border-left: 2px solid #fff;
 	border-right: 1px solid #78714b;
+	max-width: 80ch;
 }
 
 a
@@ -325,6 +326,11 @@ a.PermaLink:hover
 	gap: 0 6em;
 	justify-content: space-around;
 	flex-wrap: wrap;
+}
+
+#frontpage.Page
+{
+	max-width: 150ch;
 }
 
 #frontpage .MainCol
