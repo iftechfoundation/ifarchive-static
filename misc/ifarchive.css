@@ -20,20 +20,18 @@
 
 /* general styles */
 
-html, body
-{
+html,
+body {
 	height: 100%;
 }
 
-body
-{
+body {
 	margin: 0px;
 	background-color: #333;
 	font: 62.5% Verdana, sans-serif;
 }
 
-.Page
-{
+.Page {
 	margin: 0px 30px;
 	padding: 0.1em 6em 4em 6em;
 	background-color: #faf5e9;
@@ -43,23 +41,19 @@ body
 	border-right: 1px solid #78714b;
 }
 
-a
-{
+a {
 	color: #b50000;
 }
 
-a:visited
-{	
+a:visited {
 	color: #803030;
 }
 
-a:hover
-{
+a:hover {
 	color: #d11515;
 }
 
-blockquote
-{
+blockquote {
 	background-color: #f5f0e6;
 	color: #000;
 	font: 120% Georgia, "Times New Roman", serif;
@@ -68,19 +62,27 @@ blockquote
 	border: 1px dotted #aaa;
 }
 
-p, li, dd
-{
+p,
+li,
+dd,
+.Paragraph {
 	font-size: 1.4em;
 	line-height: 140%;
 }
 
-h1, h2, h3, h3
-{
+.Paragraph {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+h1,
+h2,
+h3,
+h3 {
 	color: #382806;
 }
 
-h1
-{
+h1 {
 	font-weight: normal;
 	font-size: 3.8em;
 	font-family: Georgia, "Times New Roman", serif;
@@ -88,71 +90,60 @@ h1
 	text-align: center;
 }
 
-h3
-{
+h3 {
 	margin: 2em 0px 0px 0px;
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 2.4em;
 	font-weight: normal;
 }
 
-h4
-{
+h4 {
 	margin: 2em 0px 0px 0px;
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 2.2em;
 	font-weight: normal;
 }
 
-hr
-{
+hr {
 	display: none;
 }
 
-.RightAlign
-{
+.RightAlign {
 	text-align: right;
 }
 
-.LeftFloat, .LeftFloatIfWide
-{
+.LeftFloat,
+.LeftFloatIfWide {
 	float: left;
 	margin-right: 2em;
 }
 
-.RightFloat
-{
+.RightFloat {
 	float: right;
 	margin-left: 2em;
 }
 
-.ClearFloat
-{
+.ClearFloat {
 	clear: both;
 }
 
-.BottomMargin
-{
+.BottomMargin {
 	margin-bottom: 1.5em;
 }
 
-.NoBottomMargin
-{
+.NoBottomMargin {
 	margin-bottom: 0px;
 }
 
-.NoTopMargin
-{
+.NoTopMargin {
 	margin-top: 0px;
 }
 
-.Hide
-{
+.Hide {
 	display: none;
 }
 
-.Footer
-{
+.Footer {
 	clear: both;
 	padding-top: 4em;
 	margin: 0px 5%;
@@ -161,8 +152,7 @@ hr
 	text-align: center;
 }
 
-.FootWidget
-{
+.FootWidget {
 	border: 1px dotted #000;
 	background-color: #faf5e9;
 	color: #060500;
@@ -173,70 +163,60 @@ hr
 	cursor: pointer;
 }
 
-.FootWidget:hover
-{
+.FootWidget:hover {
 	background-color: #262205;
 	color: #fffdf0;
 }
 
 
-.Footer a
-{
+.Footer a {
 	color: #5a0000;
 	text-decoration: none;
 	font-weight: bold;
 	font-style: normal;
 }
 
-.Footer a:hover
-{
+.Footer a:hover {
 	color: #d11515;
 	text-decoration: underline;
 }
 
-.Header
-{
+.Header {
 	padding-top: 1em;
 }
 
-.Date
-{
+.Date {
 	font-size: 90%;
 	font-weight: normal;
 	color: #777;
 }
 
-.SymLinkRef
-{
+.SymLinkRef {
 	font-size: 80%;
 	font-weight: normal;
 }
 
-a.PermaLink
-{
+a.PermaLink {
 	text-decoration: none;
 	color: #DAA;
 }
-a.PermaLink:hover
-{
+
+a.PermaLink:hover {
 	color: #D11515;
 }
 
-.ItemList dd.FileData
-{
+.ItemList dd.FileData {
 	font-size: 1.0em;
 	margin-left: 20px;
 }
 
-.ItemList dd.FileData a
-{
+.ItemList dd.FileData a {
 	font-weight: normal;
 }
 
 /* elements that appear on several pages */
 
-#indexlist
-{
+#indexlist {
 	margin-left: 0px;
 	padding-left: 0px;
 	text-indent: 10px hanging;
@@ -244,37 +224,33 @@ a.PermaLink:hover
 
 #alldirlist a,
 {
-	font-weight: bold;
+font-weight: bold;
 }
 
 #alldirlist li,
 {
-	font-size: 1.4em;
-	margin-bottom: 0.4em;
+font-size: 1.4em;
+margin-bottom: 0.4em;
 }
 
 
-#subdirlist
-{
+#subdirlist {
 	list-style-type: none;
 	padding-left: 0px;
 	margin-left: 0px;
 }
 
-#subdirlist li
-{
+#subdirlist li {
 	font-weight: bold;
 	font-size: 1.4em;
 	margin-bottom: 0.4em;
 }
 
-.ItemList
-{
+.ItemList {
 	margin: 0px;
 }
 
-.ItemList dt
-{
+.ItemList dt {
 	font-weight: bold;
 	font-size: 1.4em;
 	margin-top: 0.4em;
@@ -286,8 +262,7 @@ a.PermaLink:hover
 	margin-left: 20px;
 }
 
-.ItemList dd p
-{
+.ItemList dd p {
 	margin-top: 0.4em;
 	margin-left: 0px;
 	padding-left: 0px;
@@ -295,54 +270,48 @@ a.PermaLink:hover
 	font-size: 0.9em;
 }
 
-.ItemList dd ul
-{
+.ItemList dd ul {
 	padding-left: 20px;
 }
 
-.ItemList dd li
-{
+.ItemList dd li {
 	list-style: circle;
 	font-size: 0.9em;
 }
 
 /* home page */
 
-#frontpage
-{
+#frontpage {
 	position: relative;
 }
 
-#frontpage .Header
-{
+#frontpage .Header {
 	margin-bottom: 4em;
 }
 
-#frontpage .Description blockquote
-{
+#frontpage .Description blockquote {
 	margin: 0px;
 }
 
-#frontpage .PrimeLink a
-{
+#frontpage .PrimeLink a {
 	font-size: 120%;
 	font-weight: bold;
 }
 
-#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
-{
+#frontpage .Description,
+#frontpage .ArchiveMirrors,
+#frontpage .Submissions,
+#frontpage .Introduction {
 	margin-right: 330px;
 	word-wrap: break-word;
 }
 
-#frontpage .RightCol
-{
+#frontpage .RightCol {
 	position: absolute;
 	width: 270px;
 }
 
-#frontpage .RightCol h3
-{
+#frontpage .RightCol h3 {
 	font-size: 1.8em;
 	font-style: italic;
 	margin: 0px;
@@ -351,63 +320,52 @@ a.PermaLink:hover
 }
 
 #frontpage .RightCol p,
-#frontpage .RightCol li
-{
+#frontpage .RightCol li {
 	font-size: 1.2em;
 }
 
-#frontpage .RightCol
-{
+#frontpage .RightCol {
 	top: 11.5em;
 	right: 6em;
 }
 
-#frontpage .RightCol ul
-{
+#frontpage .RightCol ul {
 	list-style: none;
 	padding-left: 0px;
 	margin-left: 0px;
 }
 
-#frontpage .RightCol li
-{
+#frontpage .RightCol li {
 	margin-bottom: 1.2em;
 }
 
-#frontpage .NewToIF
-{
+#frontpage .NewToIF {
 	margin-top: 1em;
 }
 
-#frontpage .Submissions
-{
+#frontpage .Submissions {
 	margin-top: 3em;
 }
 
-#frontpage .ColImage
-{
+#frontpage .ColImage {
 	max-width: 100%;
 	aspect-ratio: auto 2/3;
 }
 
-#frontpage .IFTFLogo
-{
+#frontpage .IFTFLogo {
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
 
-#frontpage img
-{
+#frontpage img {
 	filter: none;
 }
 
-#frontpage .LogoButtonBlock
-{
+#frontpage .LogoButtonBlock {
 	text-align: center;
 }
 
-#frontpage .Donate
-{
+#frontpage .Donate {
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 1.4em;
 	font-weight: bold;
@@ -420,66 +378,58 @@ a.PermaLink:hover
 	cursor: pointer;
 }
 
-#frontpage .Donate:hover
-{
+#frontpage .Donate:hover {
 	background-color: #F17545;
 }
 
 /* orthogonal list pages */
 
 #dirpage .Header,
-#datepage .Header
-{
+#datepage .Header {
 	margin-bottom: 3em;
 }
 
 #dirpage .Description,
-#datepage .Description
-{
-	width: 20% !important; /* overrides later declaration in #indexpage section */
+#datepage .Description {
+	width: 20% !important;
+	/* overrides later declaration in #indexpage section */
 }
 
 #dirpage .Body,
-#datepage .Body
-{
+#datepage .Body {
 	padding-top: 1px;
-	margin-left: 20% !important; /* overrides later declaration in #indexpage section */
+	margin-left: 20% !important;
+	/* overrides later declaration in #indexpage section */
 }
 
 /* full index pages */
 
-#indexpage h1
-{
+#indexpage h1 {
 	margin-bottom: 0px;
 }
 
-#indexpage .ParentLinks
-{
+#indexpage .ParentLinks {
 	text-align: center;
 }
 
-#indexpage .ParentLinks a
-{
+#indexpage .ParentLinks a {
 	color: #5a0000;
 	text-decoration: none;
 	font-weight: bold;
 }
 
-#indexpage .ParentLinks a:hover
-{
+#indexpage .ParentLinks a:hover {
 	color: #d11515;
 	text-decoration: underline;
 }
 
-#indexpage .ParentLinks ul
-{
+#indexpage .ParentLinks ul {
 	margin: 0.3em;
 	margin-left: 0px;
 	padding-left: 0px;
 }
 
-#indexpage .ParentLinks li
-{
+#indexpage .ParentLinks li {
 	display: inline;
 	font-size: 1.3em;
 	margin-left: 0px;
@@ -487,15 +437,14 @@ a.PermaLink:hover
 	margin-right: 1.5em;
 }
 
-#indexpage .Description, #indexpage .Body
-{
+#indexpage .Description,
+#indexpage .Body {
 	margin-top: 3em;
 }
 
-#indexpage .Description, 
+#indexpage .Description,
 #dirpage .Description,
-#datepage .Description
-{
+#datepage .Description {
 	float: left;
 	width: 35%;
 	font-size: 1.2em;
@@ -507,59 +456,49 @@ a.PermaLink:hover
 #dirpage .Description p,
 #dirpage .Description li,
 #datepage .Description p,
-#datepage .Description li
-{
+#datepage .Description li {
 	font-size: 100%;
 }
 
-#indexpage .Description a:hover
-{
+#indexpage .Description a:hover {
 	text-decoration: underline;
 }
 
-#indexpage .Description ul
-{
+#indexpage .Description ul {
 	padding-left: 2.1em;
 	margin-left: 0px;
 }
 
-#indexpage .Description li
-{
+#indexpage .Description li {
 	margin-bottom: 0.3em;
 }
 
-#indexpage .Description .PropList
-{
+#indexpage .Description .PropList {
 	list-style: none;
 	padding-left: 0px;
 }
 
-#indexpage .Description .PropList li
-{
+#indexpage .Description .PropList li {
 	margin-left: 0px;
 }
 
 #dirpage .Body dl,
-#datepage .Body dl
-{
+#datepage .Body dl {
 	margin-left: 20px;
 }
 
-#indexpage .Body, 
+#indexpage .Body,
 #dirpage .Body,
-#datepage .Body
-{
+#datepage .Body {
 	margin-left: 38%;
 	word-wrap: break-word;
 }
 
-#indexpage .Body a
-{
+#indexpage .Body a {
 	font-weight: bold;
 }
 
-#indexpage h3.ListHeader
-{
+#indexpage h3.ListHeader {
 	margin-top: 1em;
 	padding-bottom: 0.1em;
 	margin-bottom: 1em;
@@ -568,8 +507,7 @@ a.PermaLink:hover
 	border-bottom: 1px dotted #222;
 }
 
-#indexpage h4.ListHeader
-{
+#indexpage h4.ListHeader {
 	margin-top: 1em;
 	padding-bottom: 0.1em;
 	margin-bottom: 1em;
@@ -578,22 +516,19 @@ a.PermaLink:hover
 	text-decoration: underline #222 dotted;
 }
 
-#indexpage .Header a
-{
+#indexpage .Header a {
 	color: #382806;
 	text-decoration: none;
 }
 
-#indexpage .Header a:hover
-{
+#indexpage .Header a:hover {
 	color: #d11515;
 	text-decoration: underline;
 }
 
 /* other pages */
 
-#licensepage blockquote
-{
+#licensepage blockquote {
 	font-family: inherit;
 	border: none;
 	background-color: inherit;
@@ -601,31 +536,26 @@ a.PermaLink:hover
 	padding: 0px;
 }
 
-#licensepage ul
-{
+#licensepage ul {
 	font-size: 0.85em;
 	list-style: none;
 }
 
-#uploadpage .QuoteBox
-{
+#uploadpage .QuoteBox {
 	max-width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#uploadpage code
-{
+#uploadpage code {
 	font: 100% "Courier Prime", "Courier", monospace;
 }
 
-#uploadpage .FormTable
-{
+#uploadpage .FormTable {
 	font-size: 1.5em;
 }
 
-#uploadpage .FormTable .FormField
-{
+#uploadpage .FormTable .FormField {
 	width: 100%;
 	font-size: 1.0em;
 	padding: 2px 4px;
@@ -634,8 +564,7 @@ a.PermaLink:hover
 	border: 1px solid #BBB;
 }
 
-#uploadpage .FormButton
-{
+#uploadpage .FormButton {
 	font-size: 100%;
 	margin: 4px;
 	background-color: white;
@@ -645,42 +574,119 @@ a.PermaLink:hover
 	padding: 2px 8px;
 }
 
-#uploadpage .SubmitPara
-{
+#uploadpage .SubmitPara {
 	text-align: center;
 }
 
-#uploadpage .FormUploadWidget
-{
+#uploadpage .FormUploadWidget {
 	font-size: 100%;
 }
 
-#unboxpage .Header a
-{
+#searchpage .Examples {
+	list-style: none;
+	padding-left: 0px;
+	margin-left: 2em;
+	text-indent: 2em hanging;
+}
+
+#searchpage .ExampleTerm {
+	font-weight: bold;
+	font-style: italic;
+	color: #B00;
+}
+
+#searchpage .ExampleOp {
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 1.4em;
+}
+
+#searchpage dd.ShortDesc {
+	font-size: 1.1em;
+}
+
+#searchpage .RightSpan {
+	display: block;
+	float: right;
+	font-size: 0.85em;
+}
+
+#searchpage .FormBox {
+	font-size: 1.5em;
+}
+
+#searchpage .FormBox form {
+	display: flex;
+	flex-direction: row;
+}
+
+#searchpage .FormBox .FormField {
+	width: 100%;
+	font-size: 1.0em;
+	padding: 2px 4px;
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
+#searchpage .FormButton {
+	font-size: 100%;
+	margin: 4px;
+	background-color: white;
+	color: black;
+	border: 1px solid #AAA;
+	border-radius: 6px;
+	padding: 2px 8px;
+}
+
+#searchpage .FormButton:disabled {
+	color: #AAA;
+}
+
+#searchpage .PageControlBox {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#searchpage form.Inline {
+	display: inline-block;
+}
+
+#searchpage .Results {
+	list-style: none;
+	padding-left: 0px;
+}
+
+#searchpage .Results dt {
+	margin-top: 1em;
+	font-size: 1.5em;
+}
+
+#searchpage .Results dd {
+	margin-left: 1em;
+}
+
+#unboxpage .Header a {
 	color: #382806;
 	text-decoration: none;
 }
 
-#unboxpage .Description
-{
+#unboxpage .Description {
 	text-align: center;
 }
 
-#unboxpage .StartForm
-{
+#unboxpage .StartForm {
 	margin: 25px 0;
 }
 
-#unboxpage .InputLine
-{
+#unboxpage .InputLine {
 	font-size: 175%;
 	background-color: white;
 	color: black;
 	border: 1px solid #BBB;
 }
 
-#unboxpage .Button
-{
+#unboxpage .Button {
 	font-size: 175%;
 	border-radius: 6px;
 	border: 1px solid black;
@@ -688,20 +694,17 @@ a.PermaLink:hover
 	color: black;
 }
 
-#unboxpage .StartButton
-{
+#unboxpage .StartButton {
 	padding: 4px 8px;
 }
 
-#unboxpage .ListBox
-{
+#unboxpage .ListBox {
 	display: inline-block;
 	margin: 0 auto;
 	text-align: left;
 }
 
-#unboxpage .Error
-{
+#unboxpage .Error {
 	font-family: monospace;
 }
 
@@ -709,71 +712,68 @@ a.PermaLink:hover
 
 @media screen and (max-width: 960px) {
 
-.LeftFloatIfWide
-{
-	float: none;
-	margin-right: 0px;
-}
+	.LeftFloatIfWide {
+		float: none;
+		margin-right: 0px;
+	}
 
 }
 
 @media screen and (max-width: 750px) {
 
-.Page 
-{
-	padding: 0.1em 3em 2em 3em;
-}
+	.Page {
+		padding: 0.1em 3em 2em 3em;
+	}
 
-#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
-{
-	margin-right: 60%;
-}
+	#frontpage .Description,
+	#frontpage .ArchiveMirrors,
+	#frontpage .Submissions,
+	#frontpage .Introduction {
+		margin-right: 60%;
+	}
 
-#frontpage .RightCol
-{
-	position: absolute;
-	width: 40%;
-}
+	#frontpage .RightCol {
+		position: absolute;
+		width: 40%;
+	}
 
 }
 
 @media screen and (max-width: 480px) {
 
-.Page 
-{
-	margin: 0px 0px;
-}
+	.Page {
+		margin: 0px 0px;
+	}
 
-#indexpage .Description, 
-#dirpage .Description,
-#datepage .Description
-{
-	float: none;
-	width: 100% !important;
-}
+	#indexpage .Description,
+	#dirpage .Description,
+	#datepage .Description {
+		float: none;
+		width: 100% !important;
+	}
 
-#indexpage .Body, 
-#dirpage .Body,
-#datepage .Body
-{
-	margin-left: 0px !important;
-}
+	#indexpage .Body,
+	#dirpage .Body,
+	#datepage .Body {
+		margin-left: 0px !important;
+	}
 
-#frontpage .RightCol
-{
-	position: relative;
-	padding-top: 0px;
-	width: inherit;
-	top: 0px;
-	right: 0px;
-	margin-top: 3em;
-	background-image: none;
-}
+	#frontpage .RightCol {
+		position: relative;
+		padding-top: 0px;
+		width: inherit;
+		top: 0px;
+		right: 0px;
+		margin-top: 3em;
+		background-image: none;
+	}
 
-#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
-{
-	margin-right: 0px;
-}
+	#frontpage .Description,
+	#frontpage .ArchiveMirrors,
+	#frontpage .Submissions,
+	#frontpage .Introduction {
+		margin-right: 0px;
+	}
 
 }
 
@@ -792,158 +792,153 @@ a.PermaLink:hover
 
 /* --- begin LightMode --- */
 
-body.LightMode
-{
+body.LightMode {
 	background-color: #333;
 }
 
-.LightMode .Page
-{
+.LightMode .Page {
 	background-color: #faf5e9;
 	color: #060500;
 	border-left: 2px solid #fff;
 	border-right: 1px solid #78714b;
 }
 
-.LightMode a
-{
+.LightMode a {
 	color: #b50000;
 }
 
-.LightMode a:visited
-{	
+.LightMode a:visited {
 	color: #803030;
 }
 
-.LightMode a:hover
-{
+.LightMode a:hover {
 	color: #d11515;
 }
 
-.LightMode blockquote
-{
+.LightMode blockquote {
 	background-color: #f5f0e6;
 	color: #000;
 	border: 1px dotted #aaa;
 }
 
-.LightMode h1, .LightMode h2, .LightMode h3, .LightMode h4
-{
+.LightMode h1,
+.LightMode h2,
+.LightMode h3,
+.LightMode h4 {
 	color: #382806;
 }
 
-.LightMode .FootWidget
-{
+.LightMode .FootWidget {
 	border: 1px dotted #000;
 	background-color: #faf5e9;
 	color: #060500;
 }
 
-.LightMode .FootWidget:hover
-{
+.LightMode .FootWidget:hover {
 	background-color: #262205;
 	color: #fffdf0;
 }
 
-.LightMode .Footer a
-{
+.LightMode .Footer a {
 	color: #5a0000;
 }
 
-.LightMode .Footer a:hover
-{
+.LightMode .Footer a:hover {
 	color: #d11515;
 }
 
-.LightMode .Date
-{
+.LightMode .Date {
 	color: #777;
 }
 
-.LightMode a.PermaLink
-{
+.LightMode a.PermaLink {
 	color: #DAA;
 }
 
-.LightMode a.PermaLink:hover
-{
+.LightMode a.PermaLink:hover {
 	color: #D11515;
 }
 
-.LightMode #frontpage .RightCol h3
-{
+.LightMode #frontpage .RightCol h3 {
 	border-bottom: 1px dotted #222;
 }
 
-.LightMode #frontpage img
-{
+.LightMode #frontpage img {
 	filter: none;
 }
 
-.LightMode #frontpage .Donate
-{
+.LightMode #frontpage .Donate {
 	border: 1px solid #5A0000;
 }
 
-.LightMode #indexpage .ParentLinks a
-{
+.LightMode #indexpage .ParentLinks a {
 	color: #5a0000;
 }
 
-.LightMode #indexpage .ParentLinks a:hover
-{
+.LightMode #indexpage .ParentLinks a:hover {
 	color: #d11515;
 }
 
-.LightMode #indexpage h3.ListHeader
-{
+.LightMode #indexpage h3.ListHeader {
 	border-bottom: 1px dotted #222;
 }
 
-.LightMode #indexpage h4.ListHeader
-{
+.LightMode #indexpage h4.ListHeader {
 	text-decoration: underline #222 dotted;
 }
 
-.LightMode #indexpage .Header a
-{
+.LightMode #indexpage .Header a {
 	color: #382806;
 }
 
-.LightMode #indexpage .Header a:hover
-{
+.LightMode #indexpage .Header a:hover {
 	color: #d11515;
 }
 
-.LightMode #uploadpage .FormButton
-{
+.LightMode #uploadpage .FormButton {
 	background-color: white;
 	color: black;
 }
 
-.LightMode #uploadpage .FormTable .FormField
-{
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
-}
-
-.LightMode #unboxpage .InputLine
-{
+.LightMode #uploadpage .FormTable .FormField {
 	background-color: white;
 	color: black;
 	border: 1px solid #BBB;
 }
 
-.LightMode #unboxpage .Button
-{
+.LightMode #searchpage .ExampleTerm {
+	color: #B00;
+}
+
+.LightMode #searchpage .FormBox .FormField {
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
+.LightMode #searchpage .FormButton {
+	background-color: white;
+	color: black;
+	border: 1px solid #AAA;
+}
+
+.LightMode #searchpage .FormButton:disabled {
+	color: #AAA;
+}
+
+.LightMode #unboxpage .InputLine {
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
+.LightMode #unboxpage .Button {
 	border: 1px solid black;
 	background: white;
 	color: black;
 }
 
-.LightMode #unboxpage .Header a
-{
+.LightMode #unboxpage .Header a {
 	color: #382806;
 }
 
@@ -951,158 +946,153 @@ body.LightMode
 
 /* --- begin DarkMode --- */
 
-body.DarkMode
-{
+body.DarkMode {
 	background-color: #666;
 }
 
-.DarkMode .Page
-{
+.DarkMode .Page {
 	background-color: #262205;
 	color: #fffdf0;
 	border-left: 2px solid #000;
 	border-right: 1px solid #946e67;
 }
 
-.DarkMode a
-{
+.DarkMode a {
 	color: #ff6840;
 }
 
-.DarkMode a:visited
-{	
+.DarkMode a:visited {
 	color: #ff8f70;
 }
 
-.DarkMode a:hover
-{
+.DarkMode a:hover {
 	color: #ff4820;
 }
 
-.DarkMode blockquote
-{
+.DarkMode blockquote {
 	background-color: #2f2a05;
 	color: #fffdf0;
 	border: 1px dotted #666;
 }
 
-.DarkMode h1, .DarkMode h2, .DarkMode h3, .DarkMode h4
-{
+.DarkMode h1,
+.DarkMode h2,
+.DarkMode h3,
+.DarkMode h4 {
 	color: #fff8dd;
 }
 
-.DarkMode .FootWidget
-{
+.DarkMode .FootWidget {
 	border: 1px dotted #FFF;
 	background-color: #262205;
 	color: #fffdf0;
 }
 
-.DarkMode .FootWidget:hover
-{
+.DarkMode .FootWidget:hover {
 	background-color: #faf5e9;
 	color: #060500;
 }
 
-.DarkMode .Footer a
-{
+.DarkMode .Footer a {
 	color: #ff8f70;
 }
 
-.DarkMode .Footer a:hover
-{
+.DarkMode .Footer a:hover {
 	color: #ff4820;
 }
 
-.DarkMode .Date
-{
+.DarkMode .Date {
 	color: #987;
 }
 
-.DarkMode a.PermaLink
-{
+.DarkMode a.PermaLink {
 	color: #984030;
 }
 
-.DarkMode a.PermaLink:hover
-{
+.DarkMode a.PermaLink:hover {
 	color: #ff4820;
 }
 
-.DarkMode #frontpage .RightCol h3
-{
+.DarkMode #frontpage .RightCol h3 {
 	border-bottom: 1px dotted #AAA;
 }
 
-.DarkMode #frontpage img
-{
+.DarkMode #frontpage img {
 	filter: invert(100%);
 }
 
-.DarkMode #frontpage .Donate
-{
+.DarkMode #frontpage .Donate {
 	border: 1px solid #FFDD88;
 }
 
-.DarkMode #indexpage .ParentLinks a
-{
+.DarkMode #indexpage .ParentLinks a {
 	color: #ff8f70;
 }
 
-.DarkMode #indexpage .ParentLinks a:hover
-{
+.DarkMode #indexpage .ParentLinks a:hover {
 	color: #ff4820;
 }
 
-.DarkMode #indexpage h3.ListHeader
-{
+.DarkMode #indexpage h3.ListHeader {
 	border-bottom: 1px dotted #AAA;
 }
 
-.DarkMode #indexpage h4.ListHeader
-{
+.DarkMode #indexpage h4.ListHeader {
 	text-decoration: underline #DDD dotted;
 }
 
-.DarkMode #indexpage .Header a
-{
+.DarkMode #indexpage .Header a {
 	color: #fff8dd;
 }
 
-.DarkMode #indexpage .Header a:hover
-{
+.DarkMode #indexpage .Header a:hover {
 	color: #ff4820;
 }
 
-.DarkMode #uploadpage .FormButton
-{
+.DarkMode #uploadpage .FormButton {
 	background-color: black;
 	color: white;
 }
 
-.DarkMode #uploadpage .FormTable .FormField
-{
-	background-color: black;
-	color: white;
-	border: 1px solid #555;
-}
-
-.DarkMode #unboxpage .InputLine
-{
+.DarkMode #uploadpage .FormTable .FormField {
 	background-color: black;
 	color: white;
 	border: 1px solid #555;
 }
 
-.DarkMode #unboxpage .Button
-{
+.DarkMode #searchpage .ExampleTerm {
+	color: #F88;
+}
+
+.DarkMode #searchpage .FormBox .FormField {
+	background-color: black;
+	color: white;
+	border: 1px solid #555;
+}
+
+.DarkMode #searchpage .FormButton {
+	background-color: black;
+	color: white;
+	border: 1px solid #888;
+}
+
+.DarkMode #searchpage .FormButton:disabled {
+	color: #666;
+}
+
+.DarkMode #unboxpage .InputLine {
+	background-color: black;
+	color: white;
+	border: 1px solid #555;
+}
+
+.DarkMode #unboxpage .Button {
 	border: 1px solid white;
 	background: black;
 	color: white;
 }
 
-.DarkMode #unboxpage .Header a
-{
+.DarkMode #unboxpage .Header a {
 	color: #fff8dd;
 }
 
@@ -1110,326 +1100,316 @@ body.DarkMode
 
 @media (prefers-color-scheme: light) {
 
-/* --- begin mediaLightMode --- */
+	/* --- begin mediaLightMode --- */
 
-body.SysMode
-{
-	background-color: #333;
-}
+	body.SysMode {
+		background-color: #333;
+	}
 
-.SysMode .Page
-{
-	background-color: #faf5e9;
-	color: #060500;
-	border-left: 2px solid #fff;
-	border-right: 1px solid #78714b;
-}
+	.SysMode .Page {
+		background-color: #faf5e9;
+		color: #060500;
+		border-left: 2px solid #fff;
+		border-right: 1px solid #78714b;
+	}
 
-.SysMode a
-{
-	color: #b50000;
-}
+	.SysMode a {
+		color: #b50000;
+	}
 
-.SysMode a:visited
-{	
-	color: #803030;
-}
+	.SysMode a:visited {
+		color: #803030;
+	}
 
-.SysMode a:hover
-{
-	color: #d11515;
-}
+	.SysMode a:hover {
+		color: #d11515;
+	}
 
-.SysMode blockquote
-{
-	background-color: #f5f0e6;
-	color: #000;
-	border: 1px dotted #aaa;
-}
+	.SysMode blockquote {
+		background-color: #f5f0e6;
+		color: #000;
+		border: 1px dotted #aaa;
+	}
 
-.SysMode h1, .SysMode h2, .SysMode h3, .SysMode h4
-{
-	color: #382806;
-}
+	.SysMode h1,
+	.SysMode h2,
+	.SysMode h3,
+	.SysMode h4 {
+		color: #382806;
+	}
 
-.SysMode .FootWidget
-{
-	border: 1px dotted #000;
-	background-color: #faf5e9;
-	color: #060500;
-}
+	.SysMode .FootWidget {
+		border: 1px dotted #000;
+		background-color: #faf5e9;
+		color: #060500;
+	}
 
-.SysMode .FootWidget:hover
-{
-	background-color: #262205;
-	color: #fffdf0;
-}
+	.SysMode .FootWidget:hover {
+		background-color: #262205;
+		color: #fffdf0;
+	}
 
-.SysMode .Footer a
-{
-	color: #5a0000;
-}
+	.SysMode .Footer a {
+		color: #5a0000;
+	}
 
-.SysMode .Footer a:hover
-{
-	color: #d11515;
-}
+	.SysMode .Footer a:hover {
+		color: #d11515;
+	}
 
-.SysMode .Date
-{
-	color: #777;
-}
+	.SysMode .Date {
+		color: #777;
+	}
 
-.SysMode a.PermaLink
-{
-	color: #DAA;
-}
+	.SysMode a.PermaLink {
+		color: #DAA;
+	}
 
-.SysMode a.PermaLink:hover
-{
-	color: #D11515;
-}
+	.SysMode a.PermaLink:hover {
+		color: #D11515;
+	}
 
-.SysMode #frontpage .RightCol h3
-{
-	border-bottom: 1px dotted #222;
-}
+	.SysMode #frontpage .RightCol h3 {
+		border-bottom: 1px dotted #222;
+	}
 
-.SysMode #frontpage img
-{
-	filter: none;
-}
+	.SysMode #frontpage img {
+		filter: none;
+	}
 
-.SysMode #frontpage .Donate
-{
-	border: 1px solid #5A0000;
-}
+	.SysMode #frontpage .Donate {
+		border: 1px solid #5A0000;
+	}
 
-.SysMode #indexpage .ParentLinks a
-{
-	color: #5a0000;
-}
+	.SysMode #indexpage .ParentLinks a {
+		color: #5a0000;
+	}
 
-.SysMode #indexpage .ParentLinks a:hover
-{
-	color: #d11515;
-}
+	.SysMode #indexpage .ParentLinks a:hover {
+		color: #d11515;
+	}
 
-.SysMode #indexpage h3.ListHeader
-{
-	border-bottom: 1px dotted #222;
-}
+	.SysMode #indexpage h3.ListHeader {
+		border-bottom: 1px dotted #222;
+	}
 
-.SysMode #indexpage h4.ListHeader
-{
-	text-decoration: underline #222 dotted;
-}
+	.SysMode #indexpage h4.ListHeader {
+		text-decoration: underline #222 dotted;
+	}
 
-.SysMode #indexpage .Header a
-{
-	color: #382806;
-}
+	.SysMode #indexpage .Header a {
+		color: #382806;
+	}
 
-.SysMode #indexpage .Header a:hover
-{
-	color: #d11515;
-}
+	.SysMode #indexpage .Header a:hover {
+		color: #d11515;
+	}
 
-.SysMode #uploadpage .FormButton
-{
-	background-color: white;
-	color: black;
-}
+	.SysMode #uploadpage .FormButton {
+		background-color: white;
+		color: black;
+	}
 
-.SysMode #uploadpage .FormTable .FormField
-{
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
-}
+	.SysMode #uploadpage .FormTable .FormField {
+		background-color: white;
+		color: black;
+		border: 1px solid #BBB;
+	}
 
-.SysMode #unboxpage .InputLine
-{
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
-}
+	.SysMode #searchpage .ExampleTerm {
+		color: #B00;
+	}
 
-.SysMode #unboxpage .Button
-{
-	border: 1px solid black;
-	background: white;
-	color: black;
-}
+	.SysMode #searchpage .FormBox .FormField {
+		background-color: white;
+		color: black;
+		border: 1px solid #BBB;
+	}
 
-.SysMode #unboxpage .Header a
-{
-	color: #382806;
-}
+	.SysMode #searchpage .FormButton {
+		background-color: white;
+		color: black;
+		border: 1px solid #AAA;
+	}
 
-/* --- end mediaLightMode --- */
+	.SysMode #searchpage .FormButton:disabled {
+		color: #AAA;
+	}
+
+	.SysMode #unboxpage .InputLine {
+		background-color: white;
+		color: black;
+		border: 1px solid #BBB;
+	}
+
+	.SysMode #unboxpage .Button {
+		border: 1px solid black;
+		background: white;
+		color: black;
+	}
+
+	.SysMode #unboxpage .Header a {
+		color: #382806;
+	}
+
+	/* --- end mediaLightMode --- */
 
 }
 
 @media (prefers-color-scheme: dark) {
 
-/* --- begin mediaDarkMode --- */
+	/* --- begin mediaDarkMode --- */
 
-body.SysMode
-{
-	background-color: #666;
-}
+	body.SysMode {
+		background-color: #666;
+	}
 
-.SysMode .Page
-{
-	background-color: #262205;
-	color: #fffdf0;
-	border-left: 2px solid #000;
-	border-right: 1px solid #946e67;
-}
+	.SysMode .Page {
+		background-color: #262205;
+		color: #fffdf0;
+		border-left: 2px solid #000;
+		border-right: 1px solid #946e67;
+	}
 
-.SysMode a
-{
-	color: #ff6840;
-}
+	.SysMode a {
+		color: #ff6840;
+	}
 
-.SysMode a:visited
-{	
-	color: #ff8f70;
-}
+	.SysMode a:visited {
+		color: #ff8f70;
+	}
 
-.SysMode a:hover
-{
-	color: #ff4820;
-}
+	.SysMode a:hover {
+		color: #ff4820;
+	}
 
-.SysMode blockquote
-{
-	background-color: #2f2a05;
-	color: #fffdf0;
-	border: 1px dotted #666;
-}
+	.SysMode blockquote {
+		background-color: #2f2a05;
+		color: #fffdf0;
+		border: 1px dotted #666;
+	}
 
-.SysMode h1, .SysMode h2, .SysMode h3, .SysMode h4
-{
-	color: #fff8dd;
-}
+	.SysMode h1,
+	.SysMode h2,
+	.SysMode h3,
+	.SysMode h4 {
+		color: #fff8dd;
+	}
 
-.SysMode .FootWidget
-{
-	border: 1px dotted #FFF;
-	background-color: #262205;
-	color: #fffdf0;
-}
+	.SysMode .FootWidget {
+		border: 1px dotted #FFF;
+		background-color: #262205;
+		color: #fffdf0;
+	}
 
-.SysMode .FootWidget:hover
-{
-	background-color: #faf5e9;
-	color: #060500;
-}
+	.SysMode .FootWidget:hover {
+		background-color: #faf5e9;
+		color: #060500;
+	}
 
-.SysMode .Footer a
-{
-	color: #ff8f70;
-}
+	.SysMode .Footer a {
+		color: #ff8f70;
+	}
 
-.SysMode .Footer a:hover
-{
-	color: #ff4820;
-}
+	.SysMode .Footer a:hover {
+		color: #ff4820;
+	}
 
-.SysMode .Date
-{
-	color: #987;
-}
+	.SysMode .Date {
+		color: #987;
+	}
 
-.SysMode a.PermaLink
-{
-	color: #984030;
-}
+	.SysMode a.PermaLink {
+		color: #984030;
+	}
 
-.SysMode a.PermaLink:hover
-{
-	color: #ff4820;
-}
+	.SysMode a.PermaLink:hover {
+		color: #ff4820;
+	}
 
-.SysMode #frontpage .RightCol h3
-{
-	border-bottom: 1px dotted #AAA;
-}
+	.SysMode #frontpage .RightCol h3 {
+		border-bottom: 1px dotted #AAA;
+	}
 
-.SysMode #frontpage img
-{
-	filter: invert(100%);
-}
+	.SysMode #frontpage img {
+		filter: invert(100%);
+	}
 
-.SysMode #frontpage .Donate
-{
-	border: 1px solid #FFDD88;
-}
+	.SysMode #frontpage .Donate {
+		border: 1px solid #FFDD88;
+	}
 
-.SysMode #indexpage .ParentLinks a
-{
-	color: #ff8f70;
-}
+	.SysMode #indexpage .ParentLinks a {
+		color: #ff8f70;
+	}
 
-.SysMode #indexpage .ParentLinks a:hover
-{
-	color: #ff4820;
-}
+	.SysMode #indexpage .ParentLinks a:hover {
+		color: #ff4820;
+	}
 
-.SysMode #indexpage h3.ListHeader
-{
-	border-bottom: 1px dotted #AAA;
-}
+	.SysMode #indexpage h3.ListHeader {
+		border-bottom: 1px dotted #AAA;
+	}
 
-.SysMode #indexpage h4.ListHeader
-{
-	text-decoration: underline #DDD dotted;
-}
+	.SysMode #indexpage h4.ListHeader {
+		text-decoration: underline #DDD dotted;
+	}
 
-.SysMode #indexpage .Header a
-{
-	color: #fff8dd;
-}
+	.SysMode #indexpage .Header a {
+		color: #fff8dd;
+	}
 
-.SysMode #indexpage .Header a:hover
-{
-	color: #ff4820;
-}
+	.SysMode #indexpage .Header a:hover {
+		color: #ff4820;
+	}
 
-.SysMode #uploadpage .FormButton
-{
-	background-color: black;
-	color: white;
-}
+	.SysMode #uploadpage .FormButton {
+		background-color: black;
+		color: white;
+	}
 
-.SysMode #uploadpage .FormTable .FormField
-{
-	background-color: black;
-	color: white;
-	border: 1px solid #555;
-}
+	.SysMode #uploadpage .FormTable .FormField {
+		background-color: black;
+		color: white;
+		border: 1px solid #555;
+	}
 
-.SysMode #unboxpage .InputLine
-{
-	background-color: black;
-	color: white;
-	border: 1px solid #555;
-}
+	.SysMode #searchpage .ExampleTerm {
+		color: #F88;
+	}
 
-.SysMode #unboxpage .Button
-{
-	border: 1px solid white;
-	background: black;
-	color: white;
-}
+	.SysMode #searchpage .FormBox .FormField {
+		background-color: black;
+		color: white;
+		border: 1px solid #555;
+	}
 
-.SysMode #unboxpage .Header a
-{
-	color: #fff8dd;
-}
+	.SysMode #searchpage .FormButton {
+		background-color: black;
+		color: white;
+		border: 1px solid #888;
+	}
 
-/* --- end mediaDarkMode --- */
+	.SysMode #searchpage .FormButton:disabled {
+		color: #666;
+	}
+
+	.SysMode #unboxpage .InputLine {
+		background-color: black;
+		color: white;
+		border: 1px solid #555;
+	}
+
+	.SysMode #unboxpage .Button {
+		border: 1px solid white;
+		background: black;
+		color: white;
+	}
+
+	.SysMode #unboxpage .Header a {
+		color: #fff8dd;
+	}
+
+	/* --- end mediaDarkMode --- */
 
 }
