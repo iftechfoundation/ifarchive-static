@@ -843,6 +843,21 @@ a.PermaLink:hover
 
 }
 
+@media screen and (max-width: 80ch) {
+	.Page, .SysMode .Page.Page {
+		border: none;
+	}
+}
+
+@media screen and (max-width: 150ch) {
+	#frontpage.Page,
+	#dirpage.Page,
+	#datepage.Page,
+	#indexpage.Page {
+		border: none;
+	}
+}
+
 @media screen and (max-width: 480px) {
 
 .Page 
