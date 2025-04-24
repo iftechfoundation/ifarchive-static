@@ -1002,6 +1002,19 @@ body.LightMode
 	border-bottom: 1px dotted #222;
 }
 
+.LightMode #frontpage .SearchForm .FormField
+{
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
+.LightMode #frontpage .SearchForm .FormButton
+{
+	background-color: white;
+	color: black;
+}
+
 .LightMode #frontpage img
 {
 	filter: none;
@@ -1183,6 +1196,19 @@ body.DarkMode
 .DarkMode #frontpage .RightCol h3
 {
 	border-bottom: 1px dotted #AAA;
+}
+
+.DarkMode #frontpage .SearchForm .FormField
+{
+	background-color: black;
+	color: white;
+	border: 1px solid #555;
+}
+
+.DarkMode #frontpage .SearchForm .FormButton
+{
+	background-color: black;
+	color: white;
 }
 
 .DarkMode #frontpage img
@@ -1370,6 +1396,19 @@ body.SysMode
 	border-bottom: 1px dotted #222;
 }
 
+.SysMode #frontpage .SearchForm .FormField
+{
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
+.SysMode #frontpage .SearchForm .FormButton
+{
+	background-color: white;
+	color: black;
+}
+
 .SysMode #frontpage img
 {
 	filter: none;
@@ -1555,6 +1594,19 @@ body.SysMode
 .SysMode #frontpage .RightCol h3
 {
 	border-bottom: 1px dotted #AAA;
+}
+
+.SysMode #frontpage .SearchForm .FormField
+{
+	background-color: black;
+	color: white;
+	border: 1px solid #555;
+}
+
+.SysMode #frontpage .SearchForm .FormButton
+{
+	background-color: black;
+	color: white;
 }
 
 .SysMode #frontpage img
