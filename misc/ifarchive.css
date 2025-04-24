@@ -633,7 +633,6 @@ a.PermaLink:hover
 
 #uploadpage .QuoteBox
 {
-	max-width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -905,6 +904,17 @@ a.PermaLink:hover
 {
 	margin-right: 0px;
 }
+
+	#uploadpage .FormTable,
+	#uploadpage .FormTable tbody,
+	#uploadpage .FormTable tr,
+	#uploadpage .FormTable td {
+		display: block;
+	}
+
+	#uploadpage .FormTable tr {
+		margin-bottom: 0.5em;
+	}
 
 }
 
