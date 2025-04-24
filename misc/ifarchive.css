@@ -445,6 +445,12 @@ a.PermaLink:hover
 
 /* orthogonal list pages */
 
+#dirpage.Page,
+#datepage.Page,
+#indexpage.Page {
+	max-width: 150ch;
+}
+
 #dirpage .Header,
 #datepage .Header
 {
