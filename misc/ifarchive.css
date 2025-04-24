@@ -822,6 +822,10 @@ a.PermaLink:hover
 	font-family: monospace;
 }
 
+#orgpage.Page p, #orgpage.Page li, #orgpage.Page dd, #orgpage.Page code {
+	font-size: 1rem;
+}
+
 /* Style customizations for narrow displays. */
 
 @media screen and (max-width: 960px) {
