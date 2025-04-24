@@ -352,6 +352,7 @@ a.PermaLink:hover
 	font-size: 1.8em;
 	font-style: italic;
 	margin: 0px;
+	margin-top: 1em;
 	padding-bottom: 0.1em;
 	border-bottom: 1px dotted #222;
 }
@@ -380,9 +381,30 @@ a.PermaLink:hover
 	margin-bottom: 1.2em;
 }
 
-#frontpage .NewToIF
+#frontpage .SearchForm
 {
-	margin-top: 1em;
+    text-align: center;
+}
+
+#frontpage .SearchForm .FormField
+{
+	width: 90%;
+	font-size: 1.3em;
+	padding: 2px 4px;
+	background-color: white;
+	color: black;
+	border: 1px solid #BBB;
+}
+
+#frontpage .SearchForm .FormButton
+{
+	font-size: 1.3em;
+	margin: 4px;
+	background-color: white;
+	color: black;
+	border: 1px solid #AAA;
+	border-radius: 6px;
+	padding: 2px 8px;
 }
 
 #frontpage .Submissions
