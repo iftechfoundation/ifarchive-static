@@ -30,8 +30,6 @@
    site-wide as long as this script is loaded.
 */
 
-const testmode = false;
-
 function get_theme_cookie()
 {
     var mode = null;
@@ -52,6 +50,9 @@ function get_theme_cookie()
 
 function set_theme_cookie(val)
 {
+    /* Use a domain-locked cookie only if we're in production. In test mode (domain probably "localhost"), we shouldn't. */
+    var lock = (window.location && (window.location.hostname == 'ifarchive.org' || window.location.hostname.endsWith('.ifarchive.org')));
+    
     var cookie;
     if (val == 'light' || val == 'dark') {
         cookie = 'theme='+val+'; path=/; max-age=31536000';
@@ -59,7 +60,7 @@ function set_theme_cookie(val)
     else {
         cookie = 'theme=none; path=/; max-age=0';
     }
-    if (!testmode) {
+    if (lock) {
         cookie += '; domain=ifarchive.org'
     }
     document.cookie = cookie;
