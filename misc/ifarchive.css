@@ -1160,6 +1160,11 @@ body.LightMode
 	color: #382806;
 }
 
+.LightMode #orgpage pre
+{
+	background: #ECE0B0;
+}
+
 /* --- end LightMode --- */
 
 /* --- begin DarkMode --- */
@@ -1354,6 +1359,11 @@ body.DarkMode
 .DarkMode #unboxpage .Header a
 {
 	color: #fff8dd;
+}
+
+.DarkMode #orgpage pre
+{
+	background: #6C4000;
 }
 
 /* --- end DarkMode --- */
@@ -1554,6 +1564,11 @@ body.SysMode
 	color: #382806;
 }
 
+.SysMode #orgpage pre
+{
+	background: #ECE0B0;
+}
+
 /* --- end mediaLightMode --- */
 
 }
@@ -1752,6 +1767,11 @@ body.SysMode
 .SysMode #unboxpage .Header a
 {
 	color: #fff8dd;
+}
+
+.SysMode #orgpage pre
+{
+	background: #6C4000;
 }
 
 /* --- end mediaDarkMode --- */
