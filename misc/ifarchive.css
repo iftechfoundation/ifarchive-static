@@ -934,15 +934,15 @@ a.PermaLink:hover
 
 @media screen and (max-width: 480px) {
 
-.Page 
-{
-	margin: 0px 0px;
-}
+	.Page 
+	{
+		margin: 0px 0px;
+	}
 
-#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
-{
-	margin-right: 0px;
-}
+	#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
+	{
+		margin-right: 0px;
+	}
 
 	#uploadpage .FormTable,
 	#uploadpage .FormTable tbody,
