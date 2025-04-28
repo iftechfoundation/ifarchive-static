@@ -34,13 +34,14 @@ body
 
 .Page
 {
-	margin: 0px 30px;
+	margin: 0px auto;
 	padding: 0.1em 6em 4em 6em;
 	background-color: #faf5e9;
 	color: #060500;
 	_height: 100%;
 	border-left: 2px solid #fff;
 	border-right: 1px solid #78714b;
+	max-width: 80ch;
 }
 
 a
@@ -314,14 +315,27 @@ a.PermaLink:hover
 
 /* home page */
 
-#frontpage
-{
-	position: relative;
-}
-
 #frontpage .Header
 {
 	margin-bottom: 4em;
+}
+
+#frontpage .Columns
+{
+	display: flex;
+	gap: 0 6em;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#frontpage.Page
+{
+	max-width: 150ch;
+}
+
+#frontpage .MainCol
+{
+	max-width: 80ch;
 }
 
 #frontpage .Description blockquote
@@ -337,13 +351,11 @@ a.PermaLink:hover
 
 #frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
 {
-	margin-right: 330px;
 	word-wrap: break-word;
 }
 
 #frontpage .RightCol
 {
-	position: absolute;
 	width: 270px;
 }
 
@@ -454,6 +466,12 @@ a.PermaLink:hover
 }
 
 /* orthogonal list pages */
+
+#dirpage.Page,
+#datepage.Page,
+#indexpage.Page {
+	max-width: 150ch;
+}
 
 #dirpage .Header,
 #datepage .Header
@@ -637,7 +655,6 @@ a.PermaLink:hover
 
 #uploadpage .QuoteBox
 {
-	max-width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -832,6 +849,10 @@ a.PermaLink:hover
 	font-family: monospace;
 }
 
+#orgpage.Page p, #orgpage.Page li, #orgpage.Page dd, #orgpage.Page code {
+	font-size: 1rem;
+}
+
 /* Style customizations for narrow displays. */
 
 @media screen and (max-width: 960px) {
@@ -851,17 +872,21 @@ a.PermaLink:hover
 	padding: 0.1em 3em 2em 3em;
 }
 
-#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
-{
-	margin-right: 60%;
 }
 
-#frontpage .RightCol
-{
-	position: absolute;
-	width: 40%;
+@media screen and (max-width: 80ch) {
+	.Page, .SysMode .Page.Page {
+		border: none;
+	}
 }
 
+@media screen and (max-width: 150ch) {
+	#frontpage.Page,
+	#dirpage.Page,
+	#datepage.Page,
+	#indexpage.Page {
+		border: none;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -901,6 +926,17 @@ a.PermaLink:hover
 {
 	margin-right: 0px;
 }
+
+	#uploadpage .FormTable,
+	#uploadpage .FormTable tbody,
+	#uploadpage .FormTable tr,
+	#uploadpage .FormTable td {
+		display: block;
+	}
+
+	#uploadpage .FormTable tr {
+		margin-bottom: 0.5em;
+	}
 
 }
 
