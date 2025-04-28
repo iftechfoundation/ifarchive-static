@@ -494,10 +494,18 @@ a.PermaLink:hover
 	margin-bottom: 3em;
 }
 
+#indexpage .Description, 
 #dirpage .Description,
 #datepage .Description
 {
-	XXXwidth: 20% !important; /* overrides later declaration in #indexpage section ### */
+	font-size: 1.2em;
+	line-height: 140%;
+}
+
+#dirpage .Description,
+#datepage .Description
+{
+	width: 200px;
 }
 
 #indexpage .Body, 
@@ -560,13 +568,9 @@ a.PermaLink:hover
 	margin-top: 3em;
 }
 
-#indexpage .Description, 
-#dirpage .Description,
-#datepage .Description
+#indexpage .Description
 {
 	width: 270px;
-	font-size: 1.2em;
-	line-height: 140%;
 }
 
 #indexpage .Description p,
@@ -948,7 +952,7 @@ a.PermaLink:hover
 #dirpage .Body,
 #datepage .Body
 {
-	margin-left: 0px !important; /*###?*/
+	XXXmargin-left: 0px !important; /*###?*/
 }
 
 #frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
