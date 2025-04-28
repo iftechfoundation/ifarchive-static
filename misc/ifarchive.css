@@ -469,11 +469,22 @@ a.PermaLink:hover
 	background-color: #F17545;
 }
 
-/* orthogonal list pages */
+/* the index page types are all similar */
+
+#dirpage .Columns,
+#datepage .Columns,
+#indexpage .Columns
+{
+	display: flex;
+	gap: 2em 6em;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 
 #dirpage.Page,
 #datepage.Page,
-#indexpage.Page {
+#indexpage.Page
+{
 	max-width: 150ch;
 }
 
@@ -486,14 +497,21 @@ a.PermaLink:hover
 #dirpage .Description,
 #datepage .Description
 {
-	width: 20% !important; /* overrides later declaration in #indexpage section */
+	XXXwidth: 20% !important; /* overrides later declaration in #indexpage section ### */
+}
+
+#indexpage .Body, 
+#dirpage .Body,
+#datepage .Body
+{
+	max-width: 80ch;
 }
 
 #dirpage .Body,
 #datepage .Body
 {
 	padding-top: 1px;
-	margin-left: 20% !important; /* overrides later declaration in #indexpage section */
+	XXXmargin-left: 20% !important; /* overrides later declaration in #indexpage section ### */
 }
 
 /* full index pages */
@@ -546,8 +564,7 @@ a.PermaLink:hover
 #dirpage .Description,
 #datepage .Description
 {
-	float: left;
-	width: 35%;
+	width: 270px;
 	font-size: 1.2em;
 	line-height: 140%;
 }
@@ -599,7 +616,6 @@ a.PermaLink:hover
 #dirpage .Body,
 #datepage .Body
 {
-	margin-left: 38%;
 	word-wrap: break-word;
 }
 
@@ -924,15 +940,15 @@ a.PermaLink:hover
 #dirpage .Description,
 #datepage .Description
 {
-	float: none;
-	width: 100% !important;
+	XXXfloat: none;
+	XXXwidth: 100% !important;
 }
 
 #indexpage .Body, 
 #dirpage .Body,
 #datepage .Body
 {
-	margin-left: 0px !important;
+	margin-left: 0px !important; /*###?*/
 }
 
 #frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
