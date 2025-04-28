@@ -116,6 +116,16 @@ hr
 	display: none;
 }
 
+code
+{
+	font: 100% "Courier Prime", "Courier", monospace;
+}
+
+pre
+{
+	font: 140% "Courier Prime", "Courier", monospace;
+}
+
 .RightAlign
 {
 	text-align: right;
@@ -843,8 +853,33 @@ a.PermaLink:hover
 	font-family: monospace;
 }
 
-#orgpage.Page p, #orgpage.Page li, #orgpage.Page dd, #orgpage.Page code {
-	font-size: 1rem;
+#orgpage li p
+{
+	/* handle a quirk of how orgpage markdown is generated */
+	font-size: 1em;
+}
+
+#orgpage li li
+{
+	font-size: 1em;
+}
+
+#orgpage dt code
+{
+	font-size: 1.4em;
+}
+
+#orgpage.Page ul
+{
+    list-style-type: "\B7   ";
+    padding-left: 2em;
+    text-indent: hanging 2em;
+}
+
+#orgpage pre
+{
+    background: #ECE0B0;
+    padding: 1em 2em;
 }
 
 /* Style customizations for narrow displays. */

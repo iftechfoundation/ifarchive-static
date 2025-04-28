@@ -17,7 +17,7 @@ import markdown
 
 template_path = 'md'
 dest_path = 'misc'
-app_css_uri = '/misc/admintool.css'
+app_css_uri = '/misc/ifarchive.css'
 
 jenv = Environment(
     loader = FileSystemLoader(template_path),
