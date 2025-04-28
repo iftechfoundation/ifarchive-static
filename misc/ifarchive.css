@@ -28,7 +28,7 @@ html, body
 body
 {
 	margin: 0px;
-	background-color: #333;
+	background-color: #66645C;
 	font: 62.5% Verdana, sans-serif;
 }
 
@@ -970,7 +970,7 @@ a.PermaLink:hover
 
 body.LightMode
 {
-	background-color: #333;
+	background-color: #66645C;
 }
 
 .LightMode .Page
@@ -1171,7 +1171,7 @@ body.LightMode
 
 body.DarkMode
 {
-	background-color: #666;
+	background-color: #66645C;
 }
 
 .DarkMode .Page
@@ -1374,7 +1374,7 @@ body.DarkMode
 
 body.SysMode
 {
-	background-color: #333;
+	background-color: #66645C;
 }
 
 .SysMode .Page
@@ -1579,7 +1579,7 @@ body.SysMode
 
 body.SysMode
 {
-	background-color: #666;
+	background-color: #66645C;
 }
 
 .SysMode .Page
