@@ -519,7 +519,6 @@ a.PermaLink:hover
 #datepage .Body
 {
 	padding-top: 1px;
-	XXXmargin-left: 20% !important; /* overrides later declaration in #indexpage section ### */
 }
 
 /* full index pages */
@@ -563,9 +562,9 @@ a.PermaLink:hover
 	margin-right: 1.5em;
 }
 
-#indexpage .Description, #indexpage .Body
+#indexpage .Description
 {
-	margin-top: 3em;
+	margin-top: 1em;
 }
 
 #indexpage .Description
@@ -938,21 +937,6 @@ a.PermaLink:hover
 .Page 
 {
 	margin: 0px 0px;
-}
-
-#indexpage .Description, 
-#dirpage .Description,
-#datepage .Description
-{
-	XXXfloat: none;
-	XXXwidth: 100% !important;
-}
-
-#indexpage .Body, 
-#dirpage .Body,
-#datepage .Body
-{
-	XXXmargin-left: 0px !important; /*###?*/
 }
 
 #frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
