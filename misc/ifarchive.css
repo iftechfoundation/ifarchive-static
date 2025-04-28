@@ -871,15 +871,15 @@ a.PermaLink:hover
 
 #orgpage.Page ul
 {
-    list-style-type: "\B7   ";
-    padding-left: 2em;
-    text-indent: hanging 2em;
+	list-style-type: "\B7   ";
+	padding-left: 2em;
+	text-indent: hanging 2em;
 }
 
 #orgpage pre
 {
-    background: #ECE0B0;
-    padding: 1em 2em;
+	background: #ECE0B0;
+	padding: 1em 2em;
 }
 
 /* Style customizations for narrow displays. */
