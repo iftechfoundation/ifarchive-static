@@ -41,7 +41,7 @@ body
 	_height: 100%;
 	border-left: 2px solid #fff;
 	border-right: 1px solid #78714b;
-	max-width: 80ch;
+	max-width: 510px;
 }
 
 a
@@ -340,12 +340,12 @@ a.PermaLink:hover
 
 #frontpage.Page
 {
-	max-width: 150ch;
+	max-width: 875px;
 }
 
 #frontpage .MainCol
 {
-	max-width: 80ch;
+	max-width: 510px;
 }
 
 #frontpage .Description blockquote
@@ -485,7 +485,7 @@ a.PermaLink:hover
 #datepage.Page,
 #indexpage.Page
 {
-	max-width: 150ch;
+	max-width: 875px;
 }
 
 #dirpage .Header,
@@ -512,7 +512,7 @@ a.PermaLink:hover
 #dirpage .Body,
 #datepage .Body
 {
-	max-width: 80ch;
+	max-width: 510px;
 }
 
 #dirpage .Body,
@@ -917,13 +917,13 @@ a.PermaLink:hover
 	}
 }
 
-@media screen and (max-width: 80ch) {
+@media screen and (max-width: 510px) {
 	.Page, .SysMode .Page.Page {
 		border: none;
 	}
 }
 
-@media screen and (max-width: 150ch) {
+@media screen and (max-width: 875px) {
 	#frontpage.Page,
 	#dirpage.Page,
 	#datepage.Page,
