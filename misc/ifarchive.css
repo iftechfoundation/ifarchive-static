@@ -912,23 +912,10 @@ a.PermaLink:hover
     }
 }
 
-@media screen and (max-width: 750px) {
-    .Page {
-        padding: 0.1em 3em 2em 3em;
-    }
-}
-
-@media screen and (max-width: 510px) {
-    .Page, .SysMode .Page.Page {
-        border: none;
-    }
-}
-
 @media screen and (max-width: 875px) {
-    #frontpage.Page,
-    #dirpage.Page,
-    #datepage.Page,
-    #indexpage.Page {
+    .Page {
+        padding-left: 3em;
+        padding-right: 3em;
         border: none;
     }
 }
