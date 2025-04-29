@@ -22,451 +22,451 @@
 
 html, body
 {
-	height: 100%;
+    height: 100%;
 }
 
 body
 {
-	margin: 0px;
-	background-color: #66645C;
-	font: 62.5% Verdana, sans-serif;
+    margin: 0px;
+    background-color: #66645C;
+    font: 62.5% Verdana, sans-serif;
 }
 
 .Page
 {
-	margin: 0px auto;
-	padding: 0.1em 6em 4em 6em;
-	background-color: #faf5e9;
-	color: #060500;
-	_height: 100%;
-	border-left: 2px solid #fff;
-	border-right: 1px solid #78714b;
-	max-width: 610px;
+    margin: 0px auto;
+    padding: 0.1em 6em 4em 6em;
+    background-color: #faf5e9;
+    color: #060500;
+    _height: 100%;
+    border-left: 2px solid #fff;
+    border-right: 1px solid #78714b;
+    max-width: 610px;
 }
 
 a
 {
-	color: #b50000;
+    color: #b50000;
 }
 
 a:visited
-{	
-	color: #803030;
+{    
+    color: #803030;
 }
 
 a:hover
 {
-	color: #d11515;
+    color: #d11515;
 }
 
 blockquote
 {
-	background-color: #f5f0e6;
-	color: #000;
-	font: 120% Georgia, "Times New Roman", serif;
-	padding: 0px 10px;
-	margin: 0px;
-	border: 1px dotted #aaa;
+    background-color: #f5f0e6;
+    color: #000;
+    font: 120% Georgia, "Times New Roman", serif;
+    padding: 0px 10px;
+    margin: 0px;
+    border: 1px dotted #aaa;
 }
 
 p, li, dd, .Paragraph
 {
-	font-size: 1.4em;
-	line-height: 140%;
+    font-size: 1.4em;
+    line-height: 140%;
 }
 
 .Paragraph
 {
-	margin-top: 1em;
-	margin-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 h1, h2, h3, h3
 {
-	color: #382806;
+    color: #382806;
 }
 
 h1
 {
-	font-weight: normal;
-	font-size: 3.8em;
-	font-family: Georgia, "Times New Roman", serif;
-	margin-bottom: 0.4em;
-	text-align: center;
+    font-weight: normal;
+    font-size: 3.8em;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 0.4em;
+    text-align: center;
 }
 
 h3
 {
-	margin: 2em 0px 0px 0px;
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 2.4em;
-	font-weight: normal;
+    margin: 2em 0px 0px 0px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.4em;
+    font-weight: normal;
 }
 
 h4
 {
-	margin: 2em 0px 0px 0px;
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 2.2em;
-	font-weight: normal;
+    margin: 2em 0px 0px 0px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.2em;
+    font-weight: normal;
 }
 
 hr
 {
-	display: none;
+    display: none;
 }
 
 code
 {
-	font: 100% "Courier Prime", "Courier", monospace;
+    font: 100% "Courier Prime", "Courier", monospace;
 }
 
 pre
 {
-	font: 140% "Courier Prime", "Courier", monospace;
+    font: 140% "Courier Prime", "Courier", monospace;
 }
 
 .RightAlign
 {
-	text-align: right;
+    text-align: right;
 }
 
 .LeftFloat, .LeftFloatIfWide
 {
-	float: left;
-	margin-right: 2em;
+    float: left;
+    margin-right: 2em;
 }
 
 .RightFloat
 {
-	float: right;
-	margin-left: 2em;
+    float: right;
+    margin-left: 2em;
 }
 
 .ClearFloat
 {
-	clear: both;
+    clear: both;
 }
 
 .BottomMargin
 {
-	margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .NoBottomMargin
 {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .NoTopMargin
 {
-	margin-top: 0px;
+    margin-top: 0px;
 }
 
 .Hide
 {
-	display: none;
+    display: none;
 }
 
 .Footer
 {
-	clear: both;
-	padding-top: 4em;
-	margin: 0px 5%;
-	font-size: 0.9em;
-	font-style: italic;
-	text-align: center;
+    clear: both;
+    padding-top: 4em;
+    margin: 0px 5%;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
 }
 
 .FootWidget
 {
-	border: 1px dotted #000;
-	background-color: #faf5e9;
-	color: #060500;
-	border-radius: 10px;
-	padding: 2px 6px;
-	font-weight: bold;
-	font-size: 1.0em;
-	cursor: pointer;
+    border: 1px dotted #000;
+    background-color: #faf5e9;
+    color: #060500;
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 1.0em;
+    cursor: pointer;
 }
 
 .FootWidget:hover
 {
-	background-color: #262205;
-	color: #fffdf0;
+    background-color: #262205;
+    color: #fffdf0;
 }
 
 
 .Footer a
 {
-	color: #5a0000;
-	text-decoration: none;
-	font-weight: bold;
-	font-style: normal;
+    color: #5a0000;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .Footer a:hover
 {
-	color: #d11515;
-	text-decoration: underline;
+    color: #d11515;
+    text-decoration: underline;
 }
 
 .Header
 {
-	padding-top: 1em;
+    padding-top: 1em;
 }
 
 .Date
 {
-	font-size: 90%;
-	font-weight: normal;
-	color: #777;
+    font-size: 90%;
+    font-weight: normal;
+    color: #777;
 }
 
 .SymLinkRef
 {
-	font-size: 80%;
-	font-weight: normal;
+    font-size: 80%;
+    font-weight: normal;
 }
 
 a.PermaLink
 {
-	text-decoration: none;
-	color: #DAA;
+    text-decoration: none;
+    color: #DAA;
 }
 a.PermaLink:hover
 {
-	color: #D11515;
+    color: #D11515;
 }
 
 .ItemList dd.FileData
 {
-	font-size: 1.0em;
-	margin-left: 20px;
+    font-size: 1.0em;
+    margin-left: 20px;
 }
 
 .ItemList dd.FileData a
 {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 /* elements that appear on several pages */
 
 #indexlist
 {
-	margin-left: 0px;
-	padding-left: 0px;
-	text-indent: 10px hanging;
+    margin-left: 0px;
+    padding-left: 0px;
+    text-indent: 10px hanging;
 }
 
 #alldirlist a,
 {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 #alldirlist li,
 {
-	font-size: 1.4em;
-	margin-bottom: 0.4em;
+    font-size: 1.4em;
+    margin-bottom: 0.4em;
 }
 
 
 #subdirlist
 {
-	list-style-type: none;
-	padding-left: 0px;
-	margin-left: 0px;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 #subdirlist li
 {
-	font-weight: bold;
-	font-size: 1.4em;
-	margin-bottom: 0.4em;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 0.4em;
 }
 
 .ItemList
 {
-	margin: 0px;
+    margin: 0px;
 }
 
 .ItemList dt
 {
-	font-weight: bold;
-	font-size: 1.4em;
-	margin-top: 0.4em;
-	margin-bottom: 0.4em;
-	text-indent: 20px hanging;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    text-indent: 20px hanging;
 }
 
 .ItemList dd {
-	margin-left: 20px;
+    margin-left: 20px;
 }
 
 .ItemList dd p
 {
-	margin-top: 0.4em;
-	margin-left: 0px;
-	padding-left: 0px;
-	margin-bottom: 0.4em;
-	font-size: 0.9em;
+    margin-top: 0.4em;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 0.4em;
+    font-size: 0.9em;
 }
 
 .ItemList dd ul
 {
-	padding-left: 20px;
+    padding-left: 20px;
 }
 
 .ItemList dd li
 {
-	list-style: circle;
-	font-size: 0.9em;
+    list-style: circle;
+    font-size: 0.9em;
 }
 
 /* home page */
 
 #frontpage .Header
 {
-	margin-bottom: 4em;
+    margin-bottom: 4em;
 }
 
 #frontpage .Columns
 {
-	display: flex;
-	gap: 2em 6em;
-	justify-content: space-around;
-	flex-wrap: wrap;
+    display: flex;
+    gap: 2em 6em;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #frontpage.Page
 {
-	max-width: 875px;
+    max-width: 875px;
 }
 
 #frontpage .MainCol
 {
-	max-width: 510px;
+    max-width: 510px;
 }
 
 #frontpage .Description .QuoteBox
 {
-	max-width: 400px;
+    max-width: 400px;
 }
 
 #frontpage .PrimeLink a
 {
-	font-size: 120%;
-	font-weight: bold;
+    font-size: 120%;
+    font-weight: bold;
 }
 
 #frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
 {
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 #frontpage .RightCol
 {
-	width: 270px;
+    width: 270px;
 }
 
 #frontpage .RightCol h3
 {
-	font-size: 1.8em;
-	font-style: italic;
-	margin: 0px;
-	margin-top: 1em;
-	padding-bottom: 0.1em;
-	border-bottom: 1px dotted #222;
+    font-size: 1.8em;
+    font-style: italic;
+    margin: 0px;
+    margin-top: 1em;
+    padding-bottom: 0.1em;
+    border-bottom: 1px dotted #222;
 }
 
 #frontpage .RightCol p,
 #frontpage .RightCol li
 {
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 #frontpage .RightCol ul
 {
-	list-style: none;
-	padding-left: 0px;
-	margin-left: 0px;
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 #frontpage .RightCol li
 {
-	margin-bottom: 1.2em;
+    margin-bottom: 1.2em;
 }
 
 #frontpage .SearchForm
 {
-	text-align: center;
+    text-align: center;
 }
 
 #frontpage .SearchForm .FormField
 {
-	width: 90%;
-	font-size: 1.3em;
-	padding: 2px 4px;
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    width: 90%;
+    font-size: 1.3em;
+    padding: 2px 4px;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 #frontpage .SearchForm .FormButton
 {
-	font-size: 1.3em;
-	margin: 4px;
-	background-color: white;
-	color: black;
-	border: 1px solid #AAA;
-	border-radius: 6px;
-	padding: 2px 8px;
+    font-size: 1.3em;
+    margin: 4px;
+    background-color: white;
+    color: black;
+    border: 1px solid #AAA;
+    border-radius: 6px;
+    padding: 2px 8px;
 }
 
 #frontpage .Submissions
 {
-	margin-top: 3em;
+    margin-top: 3em;
 }
 
 #frontpage .ColImage
 {
-	max-width: 100%;
-	aspect-ratio: auto 2/3;
+    max-width: 100%;
+    aspect-ratio: auto 2/3;
 }
 
 #frontpage .IFTFLogo
 {
-	margin-top: 8px;
-	margin-bottom: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 #frontpage img
 {
-	filter: none;
+    filter: none;
 }
 
 #frontpage .LogoButtonBlock
 {
-	text-align: center;
+    text-align: center;
 }
 
 #frontpage .Donate
 {
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 1.4em;
-	font-weight: bold;
-	margin: 4px;
-	color: white;
-	background-color: #D16525;
-	border: 1px solid #5A0000;
-	border-radius: 6px;
-	padding: 8px 10px;
-	cursor: pointer;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 4px;
+    color: white;
+    background-color: #D16525;
+    border: 1px solid #5A0000;
+    border-radius: 6px;
+    padding: 8px 10px;
+    cursor: pointer;
 }
 
 #frontpage .Donate:hover
 {
-	background-color: #F17545;
+    background-color: #F17545;
 }
 
 /* the index page types are all similar */
@@ -475,101 +475,101 @@ a.PermaLink:hover
 #datepage .Columns,
 #indexpage .Columns
 {
-	display: flex;
-	gap: 2em 6em;
-	justify-content: space-around;
-	flex-wrap: wrap;
+    display: flex;
+    gap: 2em 6em;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #dirpage.Page,
 #datepage.Page,
 #indexpage.Page
 {
-	max-width: 875px;
+    max-width: 875px;
 }
 
 #dirpage .Header,
 #datepage .Header
 {
-	margin-bottom: 3em;
+    margin-bottom: 3em;
 }
 
 #indexpage .Description, 
 #dirpage .Description,
 #datepage .Description
 {
-	font-size: 1.2em;
-	line-height: 140%;
+    font-size: 1.2em;
+    line-height: 140%;
 }
 
 #dirpage .Description,
 #datepage .Description
 {
-	width: 200px;
+    width: 200px;
 }
 
 #indexpage .Body, 
 #dirpage .Body,
 #datepage .Body
 {
-	max-width: 510px;
+    max-width: 510px;
 }
 
 #dirpage .Body,
 #datepage .Body
 {
-	padding-top: 1px;
+    padding-top: 1px;
 }
 
 /* full index pages */
 
 #indexpage h1
 {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 #indexpage .ParentLinks
 {
-	text-align: center;
+    text-align: center;
 }
 
 #indexpage .ParentLinks a
 {
-	color: #5a0000;
-	text-decoration: none;
-	font-weight: bold;
+    color: #5a0000;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 #indexpage .ParentLinks a:hover
 {
-	color: #d11515;
-	text-decoration: underline;
+    color: #d11515;
+    text-decoration: underline;
 }
 
 #indexpage .ParentLinks ul
 {
-	margin: 0.3em;
-	margin-left: 0px;
-	padding-left: 0px;
+    margin: 0.3em;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
 #indexpage .ParentLinks li
 {
-	display: inline;
-	font-size: 1.3em;
-	margin-left: 0px;
-	padding-left: 0px;
-	margin-right: 1.5em;
+    display: inline;
+    font-size: 1.3em;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 1.5em;
 }
 
 #indexpage .Description
 {
-	margin-top: 1em;
+    margin-top: 1em;
 }
 
 #indexpage .Description
 {
-	width: 270px;
+    width: 270px;
 }
 
 #indexpage .Description p,
@@ -579,382 +579,382 @@ a.PermaLink:hover
 #datepage .Description p,
 #datepage .Description li
 {
-	font-size: 100%;
+    font-size: 100%;
 }
 
 #indexpage .Description a:hover
 {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 #indexpage .Description ul
 {
-	padding-left: 2.1em;
-	margin-left: 0px;
+    padding-left: 2.1em;
+    margin-left: 0px;
 }
 
 #indexpage .Description li
 {
-	margin-bottom: 0.3em;
+    margin-bottom: 0.3em;
 }
 
 #indexpage .Description .PropList
 {
-	list-style: none;
-	padding-left: 0px;
+    list-style: none;
+    padding-left: 0px;
 }
 
 #indexpage .Description .PropList li
 {
-	margin-left: 0px;
+    margin-left: 0px;
 }
 
 #dirpage .Body dl,
 #datepage .Body dl
 {
-	margin-left: 20px;
+    margin-left: 20px;
 }
 
 #indexpage .Body, 
 #dirpage .Body,
 #datepage .Body
 {
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 #indexpage .Body a
 {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 #indexpage h3.ListHeader
 {
-	margin-top: 1em;
-	padding-bottom: 0.1em;
-	margin-bottom: 1em;
-	font-size: 1.8em;
-	font-style: italic;
-	border-bottom: 1px dotted #222;
+    margin-top: 1em;
+    padding-bottom: 0.1em;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+    font-style: italic;
+    border-bottom: 1px dotted #222;
 }
 
 #indexpage h4.ListHeader
 {
-	margin-top: 1em;
-	padding-bottom: 0.1em;
-	margin-bottom: 1em;
-	font-size: 1.6em;
-	font-style: italic;
-	text-decoration: underline #222 dotted;
+    margin-top: 1em;
+    padding-bottom: 0.1em;
+    margin-bottom: 1em;
+    font-size: 1.6em;
+    font-style: italic;
+    text-decoration: underline #222 dotted;
 }
 
 #indexpage .Header a
 {
-	color: #382806;
-	text-decoration: none;
+    color: #382806;
+    text-decoration: none;
 }
 
 #indexpage .Header a:hover
 {
-	color: #d11515;
-	text-decoration: underline;
+    color: #d11515;
+    text-decoration: underline;
 }
 
 /* other pages */
 
 #licensepage blockquote
 {
-	font-family: inherit;
-	border: none;
-	background-color: inherit;
-	margin-left: 40px;
-	padding: 0px;
+    font-family: inherit;
+    border: none;
+    background-color: inherit;
+    margin-left: 40px;
+    padding: 0px;
 }
 
 #licensepage ul
 {
-	font-size: 0.85em;
-	list-style: none;
+    font-size: 0.85em;
+    list-style: none;
 }
 
 #uploadpage .QuoteBox
 {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
 }
 
 #uploadpage code
 {
-	font: 100% "Courier Prime", "Courier", monospace;
+    font: 100% "Courier Prime", "Courier", monospace;
 }
 
 #uploadpage .FormTable
 {
-	font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 #uploadpage .FormTable .FormField
 {
-	width: 100%;
-	font-size: 1.0em;
-	padding: 2px 4px;
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    width: 100%;
+    font-size: 1.0em;
+    padding: 2px 4px;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 #uploadpage .FormButton
 {
-	font-size: 100%;
-	margin: 4px;
-	background-color: white;
-	color: black;
-	border: 1px solid #AAA;
-	border-radius: 6px;
-	padding: 2px 8px;
+    font-size: 100%;
+    margin: 4px;
+    background-color: white;
+    color: black;
+    border: 1px solid #AAA;
+    border-radius: 6px;
+    padding: 2px 8px;
 }
 
 #uploadpage .SubmitPara
 {
-	text-align: center;
+    text-align: center;
 }
 
 #uploadpage .FormUploadWidget
 {
-	font-size: 100%;
+    font-size: 100%;
 }
 
 #searchpage .Examples
 {
-	list-style: none;
-	padding-left: 0px;
-	margin-left: 2em;
-	text-indent: 2em hanging;
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 2em;
+    text-indent: 2em hanging;
 }
 
 #searchpage .ExampleTerm
 {
-	font-weight: bold;
-	font-style: italic;
-	color: #B00;
+    font-weight: bold;
+    font-style: italic;
+    color: #B00;
 }
 
 #searchpage .ExampleOp
 {
-	font-weight: bold;
-	font-family: monospace;
-	font-size: 1.4em;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.4em;
 }
 
 #searchpage dd.ShortDesc
 {
-	font-size: 1.1em;
+    font-size: 1.1em;
 }
 
 #searchpage .RightSpan
 {
-	display: block;
-	float: right;
-	font-size: 0.85em;
+    display: block;
+    float: right;
+    font-size: 0.85em;
 }
 
 #searchpage .FormBox
 {
-	font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 #searchpage .FormBox form
 {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 #searchpage .FormBox .FormField
 {
-	width: 100%;
-	font-size: 1.0em;
-	padding: 2px 4px;
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    width: 100%;
+    font-size: 1.0em;
+    padding: 2px 4px;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 #searchpage .FormButton
 {
-	font-size: 100%;
-	margin: 4px;
-	background-color: white;
-	color: black;
-	border: 1px solid #AAA;
-	border-radius: 6px;
-	padding: 2px 8px;
+    font-size: 100%;
+    margin: 4px;
+    background-color: white;
+    color: black;
+    border: 1px solid #AAA;
+    border-radius: 6px;
+    padding: 2px 8px;
 }
 
 #searchpage .FormButton:disabled
 {
-	color: #AAA;
+    color: #AAA;
 }
 
 #searchpage .PageControlBox
 {
-	font-size: 1.5em;
-	text-align: center;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 #searchpage form.Inline
 {
-	display: inline-block;
+    display: inline-block;
 }
 
 #searchpage .Results
 {
-	list-style: none;
-	padding-left: 0px;
+    list-style: none;
+    padding-left: 0px;
 }
 
 #searchpage .Results dt
 {
-	margin-top: 1em;
-	font-size: 1.5em;
+    margin-top: 1em;
+    font-size: 1.5em;
 }
 
 #searchpage .Results dd
 {
-	margin-left: 1em;
+    margin-left: 1em;
 }
 
 #unboxpage .Header a
 {
-	color: #382806;
-	text-decoration: none;
+    color: #382806;
+    text-decoration: none;
 }
 
 #unboxpage .Description
 {
-	text-align: center;
+    text-align: center;
 }
 
 #unboxpage .StartForm
 {
-	margin: 25px 0;
+    margin: 25px 0;
 }
 
 #unboxpage .InputLine
 {
-	font-size: 175%;
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    font-size: 175%;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 #unboxpage .Button
 {
-	font-size: 175%;
-	border-radius: 6px;
-	border: 1px solid black;
-	background: white;
-	color: black;
+    font-size: 175%;
+    border-radius: 6px;
+    border: 1px solid black;
+    background: white;
+    color: black;
 }
 
 #unboxpage .StartButton
 {
-	padding: 4px 8px;
+    padding: 4px 8px;
 }
 
 #unboxpage .ListBox
 {
-	display: inline-block;
-	margin: 0 auto;
-	text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
 }
 
 #unboxpage .Error
 {
-	font-family: monospace;
+    font-family: monospace;
 }
 
 #orgpage li p
 {
-	/* handle a quirk of how orgpage markdown is generated */
-	font-size: 1em;
+    /* handle a quirk of how orgpage markdown is generated */
+    font-size: 1em;
 }
 
 #orgpage li li
 {
-	font-size: 1em;
+    font-size: 1em;
 }
 
 #orgpage dt code
 {
-	font-size: 1.4em;
+    font-size: 1.4em;
 }
 
 #orgpage.Page ul
 {
-	list-style-type: "\B7   ";
-	padding-left: 2em;
-	text-indent: hanging 2em;
+    list-style-type: "\B7   ";
+    padding-left: 2em;
+    text-indent: hanging 2em;
 }
 
 #orgpage pre
 {
-	background: #ECE0B0;
-	padding: 1em 2em;
+    background: #ECE0B0;
+    padding: 1em 2em;
 }
 
 /* Style customizations for narrow displays. */
 
 @media screen and (max-width: 960px) {
-	.LeftFloatIfWide
-	{
-		float: none;
-		margin-right: 0px;
-	}
+    .LeftFloatIfWide
+    {
+        float: none;
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width: 750px) {
-	.Page {
-		padding: 0.1em 3em 2em 3em;
-	}
+    .Page {
+        padding: 0.1em 3em 2em 3em;
+    }
 }
 
 @media screen and (max-width: 510px) {
-	.Page, .SysMode .Page.Page {
-		border: none;
-	}
+    .Page, .SysMode .Page.Page {
+        border: none;
+    }
 }
 
 @media screen and (max-width: 875px) {
-	#frontpage.Page,
-	#dirpage.Page,
-	#datepage.Page,
-	#indexpage.Page {
-		border: none;
-	}
+    #frontpage.Page,
+    #dirpage.Page,
+    #datepage.Page,
+    #indexpage.Page {
+        border: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
 
-	.Page 
-	{
-		margin: 0px 0px;
-	}
+    .Page 
+    {
+        margin: 0px 0px;
+    }
 
-	#frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
-	{
-		margin-right: 0px;
-	}
+    #frontpage .Description, #frontpage .ArchiveMirrors, #frontpage .Submissions, #frontpage .Introduction
+    {
+        margin-right: 0px;
+    }
 
-	#uploadpage .FormTable,
-	#uploadpage .FormTable tbody,
-	#uploadpage .FormTable tr,
-	#uploadpage .FormTable td {
-		display: block;
-	}
+    #uploadpage .FormTable,
+    #uploadpage .FormTable tbody,
+    #uploadpage .FormTable tr,
+    #uploadpage .FormTable td {
+        display: block;
+    }
 
-	#uploadpage .FormTable tr {
-		margin-bottom: 0.5em;
-	}
+    #uploadpage .FormTable tr {
+        margin-bottom: 0.5em;
+    }
 
 }
 
@@ -975,199 +975,199 @@ a.PermaLink:hover
 
 body.LightMode
 {
-	background-color: #66645C;
+    background-color: #66645C;
 }
 
 .LightMode .Page
 {
-	background-color: #faf5e9;
-	color: #060500;
-	border-left: 2px solid #fff;
-	border-right: 1px solid #78714b;
+    background-color: #faf5e9;
+    color: #060500;
+    border-left: 2px solid #fff;
+    border-right: 1px solid #78714b;
 }
 
 .LightMode a
 {
-	color: #b50000;
+    color: #b50000;
 }
 
 .LightMode a:visited
-{	
-	color: #803030;
+{    
+    color: #803030;
 }
 
 .LightMode a:hover
 {
-	color: #d11515;
+    color: #d11515;
 }
 
 .LightMode blockquote
 {
-	background-color: #f5f0e6;
-	color: #000;
-	border: 1px dotted #aaa;
+    background-color: #f5f0e6;
+    color: #000;
+    border: 1px dotted #aaa;
 }
 
 .LightMode h1, .LightMode h2, .LightMode h3, .LightMode h4
 {
-	color: #382806;
+    color: #382806;
 }
 
 .LightMode .FootWidget
 {
-	border: 1px dotted #000;
-	background-color: #faf5e9;
-	color: #060500;
+    border: 1px dotted #000;
+    background-color: #faf5e9;
+    color: #060500;
 }
 
 .LightMode .FootWidget:hover
 {
-	background-color: #262205;
-	color: #fffdf0;
+    background-color: #262205;
+    color: #fffdf0;
 }
 
 .LightMode .Footer a
 {
-	color: #5a0000;
+    color: #5a0000;
 }
 
 .LightMode .Footer a:hover
 {
-	color: #d11515;
+    color: #d11515;
 }
 
 .LightMode .Date
 {
-	color: #777;
+    color: #777;
 }
 
 .LightMode a.PermaLink
 {
-	color: #DAA;
+    color: #DAA;
 }
 
 .LightMode a.PermaLink:hover
 {
-	color: #D11515;
+    color: #D11515;
 }
 
 .LightMode #frontpage .RightCol h3
 {
-	border-bottom: 1px dotted #222;
+    border-bottom: 1px dotted #222;
 }
 
 .LightMode #frontpage .SearchForm .FormField
 {
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 .LightMode #frontpage .SearchForm .FormButton
 {
-	background-color: white;
-	color: black;
+    background-color: white;
+    color: black;
 }
 
 .LightMode #frontpage img
 {
-	filter: none;
+    filter: none;
 }
 
 .LightMode #frontpage .Donate
 {
-	border: 1px solid #5A0000;
+    border: 1px solid #5A0000;
 }
 
 .LightMode #indexpage .ParentLinks a
 {
-	color: #5a0000;
+    color: #5a0000;
 }
 
 .LightMode #indexpage .ParentLinks a:hover
 {
-	color: #d11515;
+    color: #d11515;
 }
 
 .LightMode #indexpage h3.ListHeader
 {
-	border-bottom: 1px dotted #222;
+    border-bottom: 1px dotted #222;
 }
 
 .LightMode #indexpage h4.ListHeader
 {
-	text-decoration: underline #222 dotted;
+    text-decoration: underline #222 dotted;
 }
 
 .LightMode #indexpage .Header a
 {
-	color: #382806;
+    color: #382806;
 }
 
 .LightMode #indexpage .Header a:hover
 {
-	color: #d11515;
+    color: #d11515;
 }
 
 .LightMode #uploadpage .FormButton
 {
-	background-color: white;
-	color: black;
+    background-color: white;
+    color: black;
 }
 
 .LightMode #uploadpage .FormTable .FormField
 {
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 .LightMode #searchpage .ExampleTerm
 {
-	color: #B00;
+    color: #B00;
 }
 
 .LightMode #searchpage .FormBox .FormField
 {
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 .LightMode #searchpage .FormButton
 {
-	background-color: white;
-	color: black;
-	border: 1px solid #AAA;
+    background-color: white;
+    color: black;
+    border: 1px solid #AAA;
 }
 
 .LightMode #searchpage .FormButton:disabled
 {
-	color: #AAA;
+    color: #AAA;
 }
 
 .LightMode #unboxpage .InputLine
 {
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 .LightMode #unboxpage .Button
 {
-	border: 1px solid black;
-	background: white;
-	color: black;
+    border: 1px solid black;
+    background: white;
+    color: black;
 }
 
 .LightMode #unboxpage .Header a
 {
-	color: #382806;
+    color: #382806;
 }
 
 .LightMode #orgpage pre
 {
-	background: #ECE0B0;
+    background: #ECE0B0;
 }
 
 /* --- end LightMode --- */
@@ -1176,199 +1176,199 @@ body.LightMode
 
 body.DarkMode
 {
-	background-color: #66645C;
+    background-color: #66645C;
 }
 
 .DarkMode .Page
 {
-	background-color: #262205;
-	color: #fffdf0;
-	border-left: 2px solid #000;
-	border-right: 1px solid #946e67;
+    background-color: #262205;
+    color: #fffdf0;
+    border-left: 2px solid #000;
+    border-right: 1px solid #946e67;
 }
 
 .DarkMode a
 {
-	color: #ff6840;
+    color: #ff6840;
 }
 
 .DarkMode a:visited
-{	
-	color: #ff8f70;
+{    
+    color: #ff8f70;
 }
 
 .DarkMode a:hover
 {
-	color: #ff4820;
+    color: #ff4820;
 }
 
 .DarkMode blockquote
 {
-	background-color: #2f2a05;
-	color: #fffdf0;
-	border: 1px dotted #666;
+    background-color: #2f2a05;
+    color: #fffdf0;
+    border: 1px dotted #666;
 }
 
 .DarkMode h1, .DarkMode h2, .DarkMode h3, .DarkMode h4
 {
-	color: #fff8dd;
+    color: #fff8dd;
 }
 
 .DarkMode .FootWidget
 {
-	border: 1px dotted #FFF;
-	background-color: #262205;
-	color: #fffdf0;
+    border: 1px dotted #FFF;
+    background-color: #262205;
+    color: #fffdf0;
 }
 
 .DarkMode .FootWidget:hover
 {
-	background-color: #faf5e9;
-	color: #060500;
+    background-color: #faf5e9;
+    color: #060500;
 }
 
 .DarkMode .Footer a
 {
-	color: #ff8f70;
+    color: #ff8f70;
 }
 
 .DarkMode .Footer a:hover
 {
-	color: #ff4820;
+    color: #ff4820;
 }
 
 .DarkMode .Date
 {
-	color: #987;
+    color: #987;
 }
 
 .DarkMode a.PermaLink
 {
-	color: #984030;
+    color: #984030;
 }
 
 .DarkMode a.PermaLink:hover
 {
-	color: #ff4820;
+    color: #ff4820;
 }
 
 .DarkMode #frontpage .RightCol h3
 {
-	border-bottom: 1px dotted #AAA;
+    border-bottom: 1px dotted #AAA;
 }
 
 .DarkMode #frontpage .SearchForm .FormField
 {
-	background-color: black;
-	color: white;
-	border: 1px solid #555;
+    background-color: black;
+    color: white;
+    border: 1px solid #555;
 }
 
 .DarkMode #frontpage .SearchForm .FormButton
 {
-	background-color: black;
-	color: white;
+    background-color: black;
+    color: white;
 }
 
 .DarkMode #frontpage img
 {
-	filter: invert(100%);
+    filter: invert(100%);
 }
 
 .DarkMode #frontpage .Donate
 {
-	border: 1px solid #FFDD88;
+    border: 1px solid #FFDD88;
 }
 
 .DarkMode #indexpage .ParentLinks a
 {
-	color: #ff8f70;
+    color: #ff8f70;
 }
 
 .DarkMode #indexpage .ParentLinks a:hover
 {
-	color: #ff4820;
+    color: #ff4820;
 }
 
 .DarkMode #indexpage h3.ListHeader
 {
-	border-bottom: 1px dotted #AAA;
+    border-bottom: 1px dotted #AAA;
 }
 
 .DarkMode #indexpage h4.ListHeader
 {
-	text-decoration: underline #DDD dotted;
+    text-decoration: underline #DDD dotted;
 }
 
 .DarkMode #indexpage .Header a
 {
-	color: #fff8dd;
+    color: #fff8dd;
 }
 
 .DarkMode #indexpage .Header a:hover
 {
-	color: #ff4820;
+    color: #ff4820;
 }
 
 .DarkMode #uploadpage .FormButton
 {
-	background-color: black;
-	color: white;
+    background-color: black;
+    color: white;
 }
 
 .DarkMode #uploadpage .FormTable .FormField
 {
-	background-color: black;
-	color: white;
-	border: 1px solid #555;
+    background-color: black;
+    color: white;
+    border: 1px solid #555;
 }
 
 .DarkMode #searchpage .ExampleTerm
 {
-	color: #F88;
+    color: #F88;
 }
 
 .DarkMode #searchpage .FormBox .FormField
 {
-	background-color: black;
-	color: white;
-	border: 1px solid #555;
+    background-color: black;
+    color: white;
+    border: 1px solid #555;
 }
 
 .DarkMode #searchpage .FormButton
 {
-	background-color: black;
-	color: white;
-	border: 1px solid #888;
+    background-color: black;
+    color: white;
+    border: 1px solid #888;
 }
 
 .DarkMode #searchpage .FormButton:disabled
 {
-	color: #666;
+    color: #666;
 }
 
 .DarkMode #unboxpage .InputLine
 {
-	background-color: black;
-	color: white;
-	border: 1px solid #555;
+    background-color: black;
+    color: white;
+    border: 1px solid #555;
 }
 
 .DarkMode #unboxpage .Button
 {
-	border: 1px solid white;
-	background: black;
-	color: white;
+    border: 1px solid white;
+    background: black;
+    color: white;
 }
 
 .DarkMode #unboxpage .Header a
 {
-	color: #fff8dd;
+    color: #fff8dd;
 }
 
 .DarkMode #orgpage pre
 {
-	background: #6C4000;
+    background: #6C4000;
 }
 
 /* --- end DarkMode --- */
@@ -1379,199 +1379,199 @@ body.DarkMode
 
 body.SysMode
 {
-	background-color: #66645C;
+    background-color: #66645C;
 }
 
 .SysMode .Page
 {
-	background-color: #faf5e9;
-	color: #060500;
-	border-left: 2px solid #fff;
-	border-right: 1px solid #78714b;
+    background-color: #faf5e9;
+    color: #060500;
+    border-left: 2px solid #fff;
+    border-right: 1px solid #78714b;
 }
 
 .SysMode a
 {
-	color: #b50000;
+    color: #b50000;
 }
 
 .SysMode a:visited
-{	
-	color: #803030;
+{    
+    color: #803030;
 }
 
 .SysMode a:hover
 {
-	color: #d11515;
+    color: #d11515;
 }
 
 .SysMode blockquote
 {
-	background-color: #f5f0e6;
-	color: #000;
-	border: 1px dotted #aaa;
+    background-color: #f5f0e6;
+    color: #000;
+    border: 1px dotted #aaa;
 }
 
 .SysMode h1, .SysMode h2, .SysMode h3, .SysMode h4
 {
-	color: #382806;
+    color: #382806;
 }
 
 .SysMode .FootWidget
 {
-	border: 1px dotted #000;
-	background-color: #faf5e9;
-	color: #060500;
+    border: 1px dotted #000;
+    background-color: #faf5e9;
+    color: #060500;
 }
 
 .SysMode .FootWidget:hover
 {
-	background-color: #262205;
-	color: #fffdf0;
+    background-color: #262205;
+    color: #fffdf0;
 }
 
 .SysMode .Footer a
 {
-	color: #5a0000;
+    color: #5a0000;
 }
 
 .SysMode .Footer a:hover
 {
-	color: #d11515;
+    color: #d11515;
 }
 
 .SysMode .Date
 {
-	color: #777;
+    color: #777;
 }
 
 .SysMode a.PermaLink
 {
-	color: #DAA;
+    color: #DAA;
 }
 
 .SysMode a.PermaLink:hover
 {
-	color: #D11515;
+    color: #D11515;
 }
 
 .SysMode #frontpage .RightCol h3
 {
-	border-bottom: 1px dotted #222;
+    border-bottom: 1px dotted #222;
 }
 
 .SysMode #frontpage .SearchForm .FormField
 {
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 .SysMode #frontpage .SearchForm .FormButton
 {
-	background-color: white;
-	color: black;
+    background-color: white;
+    color: black;
 }
 
 .SysMode #frontpage img
 {
-	filter: none;
+    filter: none;
 }
 
 .SysMode #frontpage .Donate
 {
-	border: 1px solid #5A0000;
+    border: 1px solid #5A0000;
 }
 
 .SysMode #indexpage .ParentLinks a
 {
-	color: #5a0000;
+    color: #5a0000;
 }
 
 .SysMode #indexpage .ParentLinks a:hover
 {
-	color: #d11515;
+    color: #d11515;
 }
 
 .SysMode #indexpage h3.ListHeader
 {
-	border-bottom: 1px dotted #222;
+    border-bottom: 1px dotted #222;
 }
 
 .SysMode #indexpage h4.ListHeader
 {
-	text-decoration: underline #222 dotted;
+    text-decoration: underline #222 dotted;
 }
 
 .SysMode #indexpage .Header a
 {
-	color: #382806;
+    color: #382806;
 }
 
 .SysMode #indexpage .Header a:hover
 {
-	color: #d11515;
+    color: #d11515;
 }
 
 .SysMode #uploadpage .FormButton
 {
-	background-color: white;
-	color: black;
+    background-color: white;
+    color: black;
 }
 
 .SysMode #uploadpage .FormTable .FormField
 {
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 .SysMode #searchpage .ExampleTerm
 {
-	color: #B00;
+    color: #B00;
 }
 
 .SysMode #searchpage .FormBox .FormField
 {
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 .SysMode #searchpage .FormButton
 {
-	background-color: white;
-	color: black;
-	border: 1px solid #AAA;
+    background-color: white;
+    color: black;
+    border: 1px solid #AAA;
 }
 
 .SysMode #searchpage .FormButton:disabled
 {
-	color: #AAA;
+    color: #AAA;
 }
 
 .SysMode #unboxpage .InputLine
 {
-	background-color: white;
-	color: black;
-	border: 1px solid #BBB;
+    background-color: white;
+    color: black;
+    border: 1px solid #BBB;
 }
 
 .SysMode #unboxpage .Button
 {
-	border: 1px solid black;
-	background: white;
-	color: black;
+    border: 1px solid black;
+    background: white;
+    color: black;
 }
 
 .SysMode #unboxpage .Header a
 {
-	color: #382806;
+    color: #382806;
 }
 
 .SysMode #orgpage pre
 {
-	background: #ECE0B0;
+    background: #ECE0B0;
 }
 
 /* --- end mediaLightMode --- */
@@ -1584,199 +1584,199 @@ body.SysMode
 
 body.SysMode
 {
-	background-color: #66645C;
+    background-color: #66645C;
 }
 
 .SysMode .Page
 {
-	background-color: #262205;
-	color: #fffdf0;
-	border-left: 2px solid #000;
-	border-right: 1px solid #946e67;
+    background-color: #262205;
+    color: #fffdf0;
+    border-left: 2px solid #000;
+    border-right: 1px solid #946e67;
 }
 
 .SysMode a
 {
-	color: #ff6840;
+    color: #ff6840;
 }
 
 .SysMode a:visited
-{	
-	color: #ff8f70;
+{    
+    color: #ff8f70;
 }
 
 .SysMode a:hover
 {
-	color: #ff4820;
+    color: #ff4820;
 }
 
 .SysMode blockquote
 {
-	background-color: #2f2a05;
-	color: #fffdf0;
-	border: 1px dotted #666;
+    background-color: #2f2a05;
+    color: #fffdf0;
+    border: 1px dotted #666;
 }
 
 .SysMode h1, .SysMode h2, .SysMode h3, .SysMode h4
 {
-	color: #fff8dd;
+    color: #fff8dd;
 }
 
 .SysMode .FootWidget
 {
-	border: 1px dotted #FFF;
-	background-color: #262205;
-	color: #fffdf0;
+    border: 1px dotted #FFF;
+    background-color: #262205;
+    color: #fffdf0;
 }
 
 .SysMode .FootWidget:hover
 {
-	background-color: #faf5e9;
-	color: #060500;
+    background-color: #faf5e9;
+    color: #060500;
 }
 
 .SysMode .Footer a
 {
-	color: #ff8f70;
+    color: #ff8f70;
 }
 
 .SysMode .Footer a:hover
 {
-	color: #ff4820;
+    color: #ff4820;
 }
 
 .SysMode .Date
 {
-	color: #987;
+    color: #987;
 }
 
 .SysMode a.PermaLink
 {
-	color: #984030;
+    color: #984030;
 }
 
 .SysMode a.PermaLink:hover
 {
-	color: #ff4820;
+    color: #ff4820;
 }
 
 .SysMode #frontpage .RightCol h3
 {
-	border-bottom: 1px dotted #AAA;
+    border-bottom: 1px dotted #AAA;
 }
 
 .SysMode #frontpage .SearchForm .FormField
 {
-	background-color: black;
-	color: white;
-	border: 1px solid #555;
+    background-color: black;
+    color: white;
+    border: 1px solid #555;
 }
 
 .SysMode #frontpage .SearchForm .FormButton
 {
-	background-color: black;
-	color: white;
+    background-color: black;
+    color: white;
 }
 
 .SysMode #frontpage img
 {
-	filter: invert(100%);
+    filter: invert(100%);
 }
 
 .SysMode #frontpage .Donate
 {
-	border: 1px solid #FFDD88;
+    border: 1px solid #FFDD88;
 }
 
 .SysMode #indexpage .ParentLinks a
 {
-	color: #ff8f70;
+    color: #ff8f70;
 }
 
 .SysMode #indexpage .ParentLinks a:hover
 {
-	color: #ff4820;
+    color: #ff4820;
 }
 
 .SysMode #indexpage h3.ListHeader
 {
-	border-bottom: 1px dotted #AAA;
+    border-bottom: 1px dotted #AAA;
 }
 
 .SysMode #indexpage h4.ListHeader
 {
-	text-decoration: underline #DDD dotted;
+    text-decoration: underline #DDD dotted;
 }
 
 .SysMode #indexpage .Header a
 {
-	color: #fff8dd;
+    color: #fff8dd;
 }
 
 .SysMode #indexpage .Header a:hover
 {
-	color: #ff4820;
+    color: #ff4820;
 }
 
 .SysMode #uploadpage .FormButton
 {
-	background-color: black;
-	color: white;
+    background-color: black;
+    color: white;
 }
 
 .SysMode #uploadpage .FormTable .FormField
 {
-	background-color: black;
-	color: white;
-	border: 1px solid #555;
+    background-color: black;
+    color: white;
+    border: 1px solid #555;
 }
 
 .SysMode #searchpage .ExampleTerm
 {
-	color: #F88;
+    color: #F88;
 }
 
 .SysMode #searchpage .FormBox .FormField
 {
-	background-color: black;
-	color: white;
-	border: 1px solid #555;
+    background-color: black;
+    color: white;
+    border: 1px solid #555;
 }
 
 .SysMode #searchpage .FormButton
 {
-	background-color: black;
-	color: white;
-	border: 1px solid #888;
+    background-color: black;
+    color: white;
+    border: 1px solid #888;
 }
 
 .SysMode #searchpage .FormButton:disabled
 {
-	color: #666;
+    color: #666;
 }
 
 .SysMode #unboxpage .InputLine
 {
-	background-color: black;
-	color: white;
-	border: 1px solid #555;
+    background-color: black;
+    color: white;
+    border: 1px solid #555;
 }
 
 .SysMode #unboxpage .Button
 {
-	border: 1px solid white;
-	background: black;
-	color: white;
+    border: 1px solid white;
+    background: black;
+    color: white;
 }
 
 .SysMode #unboxpage .Header a
 {
-	color: #fff8dd;
+    color: #fff8dd;
 }
 
 .SysMode #orgpage pre
 {
-	background: #6C4000;
+    background: #6C4000;
 }
 
 /* --- end mediaDarkMode --- */
