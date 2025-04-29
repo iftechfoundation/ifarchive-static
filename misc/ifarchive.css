@@ -982,8 +982,8 @@ body.LightMode
 {
     background-color: #faf5e9;
     color: #060500;
-    border-left: 2px solid #fff;
-    border-right: 1px solid #78714b;
+    border-left-color: #fff;
+    border-right-color: #78714b;
 }
 
 .LightMode a
@@ -1053,7 +1053,7 @@ body.LightMode
 
 .LightMode #frontpage .RightCol h3
 {
-    border-bottom: 1px dotted #222;
+    border-bottom-color: #222;
 }
 
 .LightMode #frontpage .SearchForm .FormField
@@ -1091,7 +1091,7 @@ body.LightMode
 
 .LightMode #indexpage h3.ListHeader
 {
-    border-bottom: 1px dotted #222;
+    border-bottom-color: #222;
 }
 
 .LightMode #indexpage h4.ListHeader
@@ -1183,8 +1183,8 @@ body.DarkMode
 {
     background-color: #262205;
     color: #fffdf0;
-    border-left: 2px solid #000;
-    border-right: 1px solid #946e67;
+    border-left-color: #000;
+    border-right-color: #946e67;
 }
 
 .DarkMode a
@@ -1254,7 +1254,7 @@ body.DarkMode
 
 .DarkMode #frontpage .RightCol h3
 {
-    border-bottom: 1px dotted #AAA;
+    border-bottom-color: #AAA;
 }
 
 .DarkMode #frontpage .SearchForm .FormField
@@ -1292,7 +1292,7 @@ body.DarkMode
 
 .DarkMode #indexpage h3.ListHeader
 {
-    border-bottom: 1px dotted #AAA;
+    border-bottom-color: #AAA;
 }
 
 .DarkMode #indexpage h4.ListHeader
@@ -1386,8 +1386,8 @@ body.SysMode
 {
     background-color: #faf5e9;
     color: #060500;
-    border-left: 2px solid #fff;
-    border-right: 1px solid #78714b;
+    border-left-color: #fff;
+    border-right-color: #78714b;
 }
 
 .SysMode a
@@ -1457,7 +1457,7 @@ body.SysMode
 
 .SysMode #frontpage .RightCol h3
 {
-    border-bottom: 1px dotted #222;
+    border-bottom-color: #222;
 }
 
 .SysMode #frontpage .SearchForm .FormField
@@ -1495,7 +1495,7 @@ body.SysMode
 
 .SysMode #indexpage h3.ListHeader
 {
-    border-bottom: 1px dotted #222;
+    border-bottom-color: #222;
 }
 
 .SysMode #indexpage h4.ListHeader
@@ -1591,8 +1591,8 @@ body.SysMode
 {
     background-color: #262205;
     color: #fffdf0;
-    border-left: 2px solid #000;
-    border-right: 1px solid #946e67;
+    border-left-color: #000;
+    border-right-color: #946e67;
 }
 
 .SysMode a
@@ -1662,7 +1662,7 @@ body.SysMode
 
 .SysMode #frontpage .RightCol h3
 {
-    border-bottom: 1px dotted #AAA;
+    border-bottom-color: #AAA;
 }
 
 .SysMode #frontpage .SearchForm .FormField
@@ -1700,7 +1700,7 @@ body.SysMode
 
 .SysMode #indexpage h3.ListHeader
 {
-    border-bottom: 1px dotted #AAA;
+    border-bottom-color: #AAA;
 }
 
 .SysMode #indexpage h4.ListHeader
