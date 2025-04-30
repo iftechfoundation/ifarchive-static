@@ -323,6 +323,21 @@ a.PermaLink:hover
     font-size: 0.9em;
 }
 
+.FormField
+{
+    background-color: white;
+    color: black;
+    border: 1px solid #808080;
+}
+
+.FormButton
+{
+    background-color: white;
+    color: black;
+    border: 1px solid #808080;
+    border-radius: 6px;
+}
+
 /* home page */
 
 #frontpage .Header
@@ -414,19 +429,12 @@ a.PermaLink:hover
     width: 95%;
     font-size: 1.3em;
     padding: 2px 4px;
-    background-color: white;
-    color: black;
-    border: 1px solid #BBB;
 }
 
 #frontpage .SearchBox .FormButton
 {
     font-size: 1.3em;
     margin: 4px;
-    background-color: white;
-    color: black;
-    border: 1px solid #AAA;
-    border-radius: 6px;
     padding: 2px 8px;
 }
 
@@ -593,8 +601,6 @@ a.PermaLink:hover
 {
     font-size: 1.1em;
     margin: 4px;
-    border: 1px solid #888;
-    border-radius: 6px;
     padding: 2px 8px;
 }
 
@@ -604,7 +610,6 @@ a.PermaLink:hover
     font-size: 1.2em;
     margin: 4px;
     padding: 2px 4px;
-    border: 1px solid #888;
 }
 
 #indexpage .Description
@@ -743,19 +748,12 @@ a.PermaLink:hover
     width: 100%;
     font-size: 1.0em;
     padding: 2px 4px;
-    background-color: white;
-    color: black;
-    border: 1px solid #BBB;
 }
 
 #uploadpage .FormButton
 {
     font-size: 100%;
     margin: 4px;
-    background-color: white;
-    color: black;
-    border: 1px solid #AAA;
-    border-radius: 6px;
     padding: 2px 8px;
 }
 
@@ -819,22 +817,16 @@ a.PermaLink:hover
     width: 100%;
     font-size: 1.0em;
     padding: 2px 4px;
-    background-color: white;
-    color: black;
-    border: 1px solid #BBB;
 }
 
 #searchpage .FormButton
 {
     font-size: 100%;
     margin: 4px;
-    background-color: white;
-    color: black;
-    border: 1px solid #AAA;
-    border-radius: 6px;
     padding: 2px 8px;
 }
 
+/*###?*/
 #searchpage .FormButton:disabled
 {
     color: #AAA;
@@ -1075,22 +1067,23 @@ body.LightMode
     color: #D11515;
 }
 
+.LightMode .FormField
+{
+    background-color: white;
+    color: black;
+    border-color: #808080;
+}
+
+.LightMode .FormButton
+{
+    background-color: white;
+    color: black;
+    border-color: #808080;
+}
+
 .LightMode #frontpage .RightCol h3
 {
     border-bottom-color: #222;
-}
-
-.LightMode #frontpage .SearchBox .FormField
-{
-    background-color: white;
-    color: black;
-    border: 1px solid #BBB;
-}
-
-.LightMode #frontpage .SearchBox .FormButton
-{
-    background-color: white;
-    color: black;
 }
 
 .LightMode #frontpage img
@@ -1133,38 +1126,12 @@ body.LightMode
     color: #d11515;
 }
 
-.LightMode #uploadpage .FormButton
-{
-    background-color: white;
-    color: black;
-}
-
-.LightMode #uploadpage .FormTable .FormField
-{
-    background-color: white;
-    color: black;
-    border: 1px solid #BBB;
-}
-
 .LightMode #searchpage .ExampleTerm
 {
     color: #B00;
 }
 
-.LightMode #searchpage .FormBox .FormField
-{
-    background-color: white;
-    color: black;
-    border: 1px solid #BBB;
-}
-
-.LightMode #searchpage .FormButton
-{
-    background-color: white;
-    color: black;
-    border: 1px solid #AAA;
-}
-
+/*###?*/
 .LightMode #searchpage .FormButton:disabled
 {
     color: #AAA;
@@ -1276,22 +1243,23 @@ body.DarkMode
     color: #ff4820;
 }
 
+.DarkMode .FormField
+{
+    background-color: black;
+    color: white;
+    border-color: #808080;
+}
+
+.DarkMode .FormButton
+{
+    background-color: black;
+    color: white;
+    border-color: #808080;
+}
+
 .DarkMode #frontpage .RightCol h3
 {
     border-bottom-color: #AAA;
-}
-
-.DarkMode #frontpage .SearchBox .FormField
-{
-    background-color: black;
-    color: white;
-    border: 1px solid #555;
-}
-
-.DarkMode #frontpage .SearchBox .FormButton
-{
-    background-color: black;
-    color: white;
 }
 
 .DarkMode #frontpage img
@@ -1334,38 +1302,12 @@ body.DarkMode
     color: #ff4820;
 }
 
-.DarkMode #uploadpage .FormButton
-{
-    background-color: black;
-    color: white;
-}
-
-.DarkMode #uploadpage .FormTable .FormField
-{
-    background-color: black;
-    color: white;
-    border: 1px solid #555;
-}
-
 .DarkMode #searchpage .ExampleTerm
 {
     color: #F88;
 }
 
-.DarkMode #searchpage .FormBox .FormField
-{
-    background-color: black;
-    color: white;
-    border: 1px solid #555;
-}
-
-.DarkMode #searchpage .FormButton
-{
-    background-color: black;
-    color: white;
-    border: 1px solid #888;
-}
-
+/*###?*/
 .DarkMode #searchpage .FormButton:disabled
 {
     color: #666;
@@ -1479,22 +1421,23 @@ body.SysMode
     color: #D11515;
 }
 
+.SysMode .FormField
+{
+    background-color: white;
+    color: black;
+    border-color: #808080;
+}
+
+.SysMode .FormButton
+{
+    background-color: white;
+    color: black;
+    border-color: #808080;
+}
+
 .SysMode #frontpage .RightCol h3
 {
     border-bottom-color: #222;
-}
-
-.SysMode #frontpage .SearchBox .FormField
-{
-    background-color: white;
-    color: black;
-    border: 1px solid #BBB;
-}
-
-.SysMode #frontpage .SearchBox .FormButton
-{
-    background-color: white;
-    color: black;
 }
 
 .SysMode #frontpage img
@@ -1537,38 +1480,12 @@ body.SysMode
     color: #d11515;
 }
 
-.SysMode #uploadpage .FormButton
-{
-    background-color: white;
-    color: black;
-}
-
-.SysMode #uploadpage .FormTable .FormField
-{
-    background-color: white;
-    color: black;
-    border: 1px solid #BBB;
-}
-
 .SysMode #searchpage .ExampleTerm
 {
     color: #B00;
 }
 
-.SysMode #searchpage .FormBox .FormField
-{
-    background-color: white;
-    color: black;
-    border: 1px solid #BBB;
-}
-
-.SysMode #searchpage .FormButton
-{
-    background-color: white;
-    color: black;
-    border: 1px solid #AAA;
-}
-
+/*###?*/
 .SysMode #searchpage .FormButton:disabled
 {
     color: #AAA;
@@ -1684,22 +1601,23 @@ body.SysMode
     color: #ff4820;
 }
 
+.SysMode .FormField
+{
+    background-color: black;
+    color: white;
+    border-color: #808080;
+}
+
+.SysMode .FormButton
+{
+    background-color: black;
+    color: white;
+    border-color: #808080;
+}
+
 .SysMode #frontpage .RightCol h3
 {
     border-bottom-color: #AAA;
-}
-
-.SysMode #frontpage .SearchBox .FormField
-{
-    background-color: black;
-    color: white;
-    border: 1px solid #555;
-}
-
-.SysMode #frontpage .SearchBox .FormButton
-{
-    background-color: black;
-    color: white;
 }
 
 .SysMode #frontpage img
@@ -1742,38 +1660,12 @@ body.SysMode
     color: #ff4820;
 }
 
-.SysMode #uploadpage .FormButton
-{
-    background-color: black;
-    color: white;
-}
-
-.SysMode #uploadpage .FormTable .FormField
-{
-    background-color: black;
-    color: white;
-    border: 1px solid #555;
-}
-
 .SysMode #searchpage .ExampleTerm
 {
     color: #F88;
 }
 
-.SysMode #searchpage .FormBox .FormField
-{
-    background-color: black;
-    color: white;
-    border: 1px solid #555;
-}
-
-.SysMode #searchpage .FormButton
-{
-    background-color: black;
-    color: white;
-    border: 1px solid #888;
-}
-
+/*###?*/
 .SysMode #searchpage .FormButton:disabled
 {
     color: #666;
