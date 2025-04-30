@@ -550,6 +550,11 @@ a.PermaLink:hover
     margin-bottom: 0px;
 }
 
+#indexpage .SearchBox
+{
+    text-align: center;
+}
+
 #indexpage .ParentLinks
 {
     text-align: center;
@@ -582,6 +587,24 @@ a.PermaLink:hover
     margin-left: 0px;
     padding-left: 0px;
     margin-right: 1.5em;
+}
+
+#indexpage .SearchBox .FormButton
+{
+    font-size: 1.1em;
+    margin: 4px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    padding: 2px 8px;
+}
+
+#indexpage .SearchBox .FormField
+{
+    width: 160px;
+    font-size: 1.2em;
+    margin: 4px;
+    padding: 2px 4px;
+    border: 1px solid #888;
 }
 
 #indexpage .Description
