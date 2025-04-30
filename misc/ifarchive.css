@@ -97,7 +97,7 @@ h1
 
 h3
 {
-    margin: 2em 0px 0px 0px;
+    margin: 1.5em 0px 0px 0px;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 2.4em;
     font-weight: normal;
@@ -398,14 +398,20 @@ a.PermaLink:hover
     margin-bottom: 1.2em;
 }
 
-#frontpage .SearchForm
+#frontpage .SearchBox .SearchForm
 {
-    text-align: center;
+    text-align: right;
 }
 
-#frontpage .SearchForm .FormField
+#frontpage .SearchBox .SearchGloss
 {
-    width: 90%;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#frontpage .SearchBox .FormField
+{
+    width: 95%;
     font-size: 1.3em;
     padding: 2px 4px;
     background-color: white;
@@ -413,7 +419,7 @@ a.PermaLink:hover
     border: 1px solid #BBB;
 }
 
-#frontpage .SearchForm .FormButton
+#frontpage .SearchBox .FormButton
 {
     font-size: 1.3em;
     margin: 4px;
@@ -1051,14 +1057,14 @@ body.LightMode
     border-bottom-color: #222;
 }
 
-.LightMode #frontpage .SearchForm .FormField
+.LightMode #frontpage .SearchBox .FormField
 {
     background-color: white;
     color: black;
     border: 1px solid #BBB;
 }
 
-.LightMode #frontpage .SearchForm .FormButton
+.LightMode #frontpage .SearchBox .FormButton
 {
     background-color: white;
     color: black;
@@ -1252,14 +1258,14 @@ body.DarkMode
     border-bottom-color: #AAA;
 }
 
-.DarkMode #frontpage .SearchForm .FormField
+.DarkMode #frontpage .SearchBox .FormField
 {
     background-color: black;
     color: white;
     border: 1px solid #555;
 }
 
-.DarkMode #frontpage .SearchForm .FormButton
+.DarkMode #frontpage .SearchBox .FormButton
 {
     background-color: black;
     color: white;
@@ -1455,14 +1461,14 @@ body.SysMode
     border-bottom-color: #222;
 }
 
-.SysMode #frontpage .SearchForm .FormField
+.SysMode #frontpage .SearchBox .FormField
 {
     background-color: white;
     color: black;
     border: 1px solid #BBB;
 }
 
-.SysMode #frontpage .SearchForm .FormButton
+.SysMode #frontpage .SearchBox .FormButton
 {
     background-color: white;
     color: black;
@@ -1660,14 +1666,14 @@ body.SysMode
     border-bottom-color: #AAA;
 }
 
-.SysMode #frontpage .SearchForm .FormField
+.SysMode #frontpage .SearchBox .FormField
 {
     background-color: black;
     color: white;
     border: 1px solid #555;
 }
 
-.SysMode #frontpage .SearchForm .FormButton
+.SysMode #frontpage .SearchBox .FormButton
 {
     background-color: black;
     color: white;
