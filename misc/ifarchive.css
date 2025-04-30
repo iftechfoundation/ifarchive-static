@@ -446,6 +446,20 @@ a.PermaLink:hover
     filter: none;
 }
 
+#frontpage .DonationPairBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em 2em;
+}
+
+#frontpage .DonationTextBlock
+{
+    flex: auto;
+    width: 250px;
+}
+
 #frontpage .LogoButtonBlock
 {
     text-align: center;
@@ -905,14 +919,6 @@ a.PermaLink:hover
 }
 
 /* Style customizations for narrow displays. */
-
-@media screen and (max-width: 960px) {
-    .LeftFloatIfWide
-    {
-        float: none;
-        margin-right: 0px;
-    }
-}
 
 @media screen and (max-width: 875px) {
     .Page {
