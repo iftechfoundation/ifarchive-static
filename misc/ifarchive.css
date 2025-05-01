@@ -558,13 +558,23 @@ a.PermaLink:hover
     margin-bottom: 0px;
 }
 
+#indexpage .Subheader
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    gap: 0em 6em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 #indexpage .SearchBox
 {
-    text-align: center;
 }
 
 #indexpage .ParentLinks
 {
+    flex: auto;
     text-align: center;
 }
 
