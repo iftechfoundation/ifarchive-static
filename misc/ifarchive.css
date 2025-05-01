@@ -35,7 +35,7 @@ body
 .Page
 {
     margin: 0px auto;
-    padding: 0.1em 6em 4em 6em;
+    padding: 0.1em 60px 4em 60px;
     background-color: #faf5e9;
     color: #060500;
     _height: 100%;
@@ -950,8 +950,9 @@ a.PermaLink:hover
 
 @media screen and (max-width: 875px) {
     .Page {
-        padding-left: 3em;
-        padding-right: 3em;
+	/* This calculation eases down from 60px (the default for wide screens) */
+        padding-left: 6.85714%;
+        padding-right: 6.85714%;
         border: none;
     }
 }
