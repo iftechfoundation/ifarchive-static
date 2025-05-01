@@ -570,6 +570,7 @@ a.PermaLink:hover
 
 #indexpage .SearchBox
 {
+    width: 270px;
 }
 
 #indexpage .ParentLinks
@@ -624,12 +625,8 @@ a.PermaLink:hover
 
 #indexpage .Description
 {
-    margin-top: 1em;
-}
-
-#indexpage .Description
-{
     width: 270px;
+    margin-top: 1em;
 }
 
 #indexpage .Description p,
