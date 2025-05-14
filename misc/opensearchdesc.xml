@@ -1,5 +1,4 @@
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
-      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
    <ShortName>IF Archive</ShortName>
    <Description>Search IF Archive</Description>
    <InputEncoding>UTF-8</InputEncoding>
@@ -9,5 +8,5 @@
       <Param name="searchstr" value="{searchTerms}"/>
       <Param name="pagenum" value="{startPage}"/>
    </Url>
-   <moz:SearchForm>https://search.ifarchive.org/search</moz:SearchForm>
+   <SearchForm>https://search.ifarchive.org/search</SearchForm>
 </OpenSearchDescription>
