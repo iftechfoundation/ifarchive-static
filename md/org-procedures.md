@@ -29,7 +29,7 @@ The procedure is:
 
 - Download the file and make sure it's the type it says it is.
 - If it's obviously spam, delete it.
-- If the file is larger than 100MB, start a discussion with the rest of the team. See "Particularly large files", below. Note, as long as it's not spam, it's a good idea to move incoming files to Unprocessed, even if we're not sure we'll keep the file permanently, just to ensure that further uploads don't get blocked.
+- If the file is larger than 1GB, start a discussion with the rest of the team. See "Particularly large files", below. Note, as long as it's not spam, it's a good idea to move incoming files to Unprocessed, even if we're not sure we'll keep the file permanently, just to ensure that further uploads don't get blocked.
 - If it's a Twine game (or any HTML with embedded Javascript), hit the Zip button to zip it up.
 - Rename the file if necessary to clean it up.
     - Remove editorial notes like `-final-release-` or `-this-one-works-`.
@@ -222,7 +222,7 @@ Note that IFComp uploads *do* sometimes come in through the standard upload form
 
 Speaking of enormous...
 
-As of early 2025, the archive contains some 37 gigabytes of files. (Up from 30 gigabytes in 2023!) A file that adds half a gigabyte to that total is a significant bump. The marginal cost of a gigabyte is small, but if we accept large files unthinkingly, we'd be on a path to having ten times as many gigabytes pretty soon.
+As of mid-2025, the archive contains some 41 gigabytes of files. (Up from 30 gigabytes in 2023, and 37 at the beginning of this year!) A file that adds half a gigabyte to that total is a significant bump. The marginal cost of a gigabyte is small, but if we accept large files unthinkingly, we'd be on a path to having ten times as many gigabytes pretty soon.
 
 We should take a closer look at files that are over 1GB, and discuss them with the rest of the team. You can email the webuploaders list, or you can chat about it on Slack. Ask questions like these:
 
