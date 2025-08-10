@@ -1,5 +1,5 @@
 title: Downloading the entire IF Archive
-changedate: April 9, 2024
+changedate: August 10, 2024
 
 Occasionally we hear from someone who wants to download every file we've got.
 
@@ -18,17 +18,17 @@ Instead, we now support `rsync` to fetch Archive files. The `rsync` protocol all
 We offer four rsync sources:
 
 `rsync://rsync.ifarchive.org/if-archive`
-: All the files in the Archive. (32 GB, that's "giga")
+: All the files in the Archive. (41 GB, that's "giga")
 
 `rsync://rsync.ifarchive.org/indexes`
-: HTML index pages for each directory. (58 MB)
+: HTML index pages for each directory. (76 MB)
 
 `rsync://rsync.ifarchive.org/metadata`
-: JSON/XML metadata files for each file with metadata. (68 MB)
+: JSON/XML metadata files for each file with metadata. (101 MB)
 
 `rsync://rsync.ifarchive.org/misc`
 : Miscellaneous files and documentation. (1 MB)
 
-(Sizes are as of early 2024. They all grow from year to year.)
+(Sizes are as of mid-2025. They all grow from year to year.)
 
 Since web use is our primary customer (and `rsync` is not protected by a CDN), the `rsync` service has a modest bandwidth limit. Fetching the entire Archive (the first time!) will take roughly 45 minutes.
