@@ -1,4 +1,4 @@
-title: Downloading the entire IF Archive
+title: Access restricted
 changedate: July 28, 2025
 
 Due to the [UK Online Safety Act][ukosa], all games on the IF Archive are currently unavailable to users in the United Kingdom.
