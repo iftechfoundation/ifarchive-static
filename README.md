@@ -17,7 +17,7 @@ Here may be found:
 - `index.html`: The front page.
 - `misc`: Contents of [https://ifarchive.org/misc/](https://ifarchive.org/misc/). This includes the Archive CSS stylesheet, licenses, the bit of Javascript which handles the dark/light theming, and so on.
 - `md`: Markdown source for some of the files in `misc`. (Older files, including `index.html`, are maintained as raw HTML rather than Markdown. We may convert them to Markdown in the future.)
-- `imagesrc`: The Archive favicon / logo.
+- `imagesrc`: The Archive site logo ("favicon").
 - `tools`: Scripts which help maintain this repo. In particular, `tools/build.py` renders the Markdown files in `md` into HTML. 
 - `csscomp`: Entries in the 2009 web design competition which gave the IF Archive its current look.
 
