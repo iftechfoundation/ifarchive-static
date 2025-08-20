@@ -42,7 +42,7 @@ Files with any of the tags `visual-porn`, `visual-gore`, `self-harm`, `eating-di
 
 [ukerr]: uk-block.html
 
-Note that index pages (like [games/twine][gamestwine]) are not restricted at all, even if some of the listed games *are* restricted. Therefore, game descriptions in the index should always be safe-for-work.
+Index pages (like [games/twine][gamestwine]) are not restricted at all, even if some of the listed games *are* restricted. Therefore, game descriptions in the index should always be safe-for-work.
 
 [gamestwine]: https://ifarchive.org/indexes/if-archive/games/twine/
 
