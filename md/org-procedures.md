@@ -1,5 +1,5 @@
 title: IF Archive volunteer procedures
-changedate: July 26, 2025
+changedate: August 20, 2025
 
 First, have a look at the [Archive uploading info][pubdocs]. This is the public post which explains the upload procedure to our users.
 
@@ -26,7 +26,7 @@ Because of the [UK Online Safety Act][ukosa], we need to tag files that might be
 You should add a `safety` tag to files where needed. The tag values are:
 
 - `text-porn`: [Pornographic (sexual) content][ukporn], text form.
-- `visual-porn`: Pornographic content, image form.
+- `visual-porn`: [Pornographic content][ukporn], image form.
 - `visual-gore`: Violent images or depictions of gore, image form.
 - `self-harm`: Content which encourages or provides instructions for suicide or self-injury.
 - `eating-disorder`: Content which encourages or provides instructions for an eating disorder or behavior associated with same.
@@ -36,13 +36,17 @@ You should add a `safety` tag to files where needed. The tag values are:
 
 You can use more than one value, comma-separated.
 
-Files with any of these tags will have an "interstitial page" gate. That is, when the user clicks on the file link, they will see a warning page: "This file has adult content... are you sure you want to download it?" If they hit YES, the file will be downloaded as usual.
+Files with any of these tags will have an "interstitial page" gate. That is, when the user clicks on the file link, they will see a warning page: "This file has adult content... are you sure you want to download it?" If they hit *yes*, the file will be downloaded as usual.
 
-Files with any of the tags `visual-porn`, `visual-gore`, `self-harm`, `eating-disorder` will be entirely blocked in the UK. No warning page, just an [access restriction error][ukerr].
+Files with any of the tags `visual-porn`, `visual-gore`, `self-harm`, `eating-disorder` will be entirely blocked in the UK. No warning page, just an [access restriction error][ukerr]. (Note that the UK law does not restrict `text-porn`.)
 
 [ukerr]: uk-block.html
 
-*As of August 2025, tags are not yet in use. We are still in the process of adding tags. The interstitial warning page does not yet exist. The UK hard block applies to ALL games, tagged or not.*
+Note that index pages (like [games/twine][gamestwine]) are not restricted at all, even if some of the listed games *are* restricted. Therefore, game descriptions in the index should always be safe-for-work.
+
+[gamestwine]: https://ifarchive.org/indexes/if-archive/games/twine/
+
+*As of August 2025, tags are not yet in use. We are still in the process of tagging files. The interstitial warning page does not yet exist. The UK hard block applies to ALL games, tagged or not.*
 
 ## The Incoming directory
 

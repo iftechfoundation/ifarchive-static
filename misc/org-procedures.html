@@ -28,6 +28,21 @@
 <p><em>We hate to throw away files.</em> We're supposed to be an archive. That means saving stuff.</p>
 <p><em>No live scripting in files directly accessible on the Archive.</em> Twine games, and any other HTML with embedded scripting, should be zipped. That way they can be played via Unbox, but they don't pose a security risk to the Archive itself.</p>
 <p><em>The definition of "interactive fiction" is not rigid.</em></p>
+<h2>Tagging adult content</h2>
+<p>Because of the <a href="https://intfiction.org/t/uk-online-safety-act/75867">UK Online Safety Act</a>, we need to tag files that might be restricted in the UK (or, probably, other jurisdictions that pass similar laws).</p>
+<p>You should add a <code>safety</code> tag to files where needed. The tag values are:</p>
+<ul>
+<li><code>text-porn</code>: <a href="https://onlinesafetyact.co.uk/part_5_pornographic_content/">Pornographic (sexual) content</a>, text form.</li>
+<li><code>visual-porn</code>: <a href="https://onlinesafetyact.co.uk/part_5_pornographic_content/">Pornographic content</a>, image form.</li>
+<li><code>visual-gore</code>: Violent images or depictions of gore, image form.</li>
+<li><code>self-harm</code>: Content which encourages or provides instructions for suicide or self-injury.</li>
+<li><code>eating-disorder</code>: Content which encourages or provides instructions for an eating disorder or behavior associated with same.</li>
+</ul>
+<p>You can use more than one value, comma-separated.</p>
+<p>Files with any of these tags will have an "interstitial page" gate. That is, when the user clicks on the file link, they will see a warning page: "This file has adult content... are you sure you want to download it?" If they hit <em>yes</em>, the file will be downloaded as usual.</p>
+<p>Files with any of the tags <code>visual-porn</code>, <code>visual-gore</code>, <code>self-harm</code>, <code>eating-disorder</code> will be entirely blocked in the UK. No warning page, just an <a href="uk-block.html">access restriction error</a>. (Note that the UK law does not restrict <code>text-porn</code>.)</p>
+<p>Note that index pages (like <a href="https://ifarchive.org/indexes/if-archive/games/twine/">games/twine</a>) are not restricted at all, even if some of the listed games <em>are</em> restricted. Therefore, game descriptions in the index should always be safe-for-work.</p>
+<p><em>As of August 2025, tags are not yet in use. We are still in the process of tagging files. The interstitial warning page does not yet exist. The UK hard block applies to ALL games, tagged or not.</em></p>
 <h2>The Incoming directory</h2>
 <p>Every uploaded file lands in the Incoming directory. If it's valid, it should be moved to the Unprocessed directory. If it's spam, trash, or malware, it should be deleted.</p>
 <p>Our current goal (as stated in the <a href="uploader-docs.html">public info page</a>) is to move files from Incoming to Unprocessed within 24 hours. We'll see if this is workable.</p>
@@ -198,7 +213,7 @@ Archive contains the game and source code.
 <hr>
 
 <p id="footermodified">
-This page last updated July 26, 2025.
+This page last updated August 20, 2025.
 </p>
 
 <p id="footercredits">
