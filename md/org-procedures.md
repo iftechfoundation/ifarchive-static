@@ -19,6 +19,31 @@ First, have a look at the [Archive uploading info][pubdocs]. This is the public 
 
 *The definition of "interactive fiction" is not rigid.*
 
+## Tagging adult content
+
+Because of the [UK Online Safety Act][ukosa], we need to tag files that might be restricted in the UK (or, probably, other jurisdictions that pass similar laws).
+
+You should add a `safety` tag to files where needed. The tag values are:
+
+- `text-porn`: [Pornographic (sexual) content][ukporn], text form.
+- `visual-porn`: Pornographic content, image form.
+- `visual-gore`: Violent images or depictions of gore, image form.
+- `self-harm`: Content which encourages or provides instructions for suicide or self-injury.
+- `eating-disorder`: Content which encourages or provides instructions for an eating disorder or behavior associated with same.
+
+[ukosa]: https://intfiction.org/t/uk-online-safety-act/75867
+[ukporn]: https://onlinesafetyact.co.uk/part_5_pornographic_content/
+
+You can use more than one value, comma-separated.
+
+Files with any of these tags will have an "interstitial page" gate. That is, when the user clicks on the file link, they will see a warning page: "This file has adult content... are you sure you want to download it?" If they hit YES, the file will be downloaded as usual.
+
+Files with any of the tags `visual-porn`, `visual-gore`, `self-harm`, `eating-disorder` will be entirely blocked in the UK. No warning page, just an [access restriction error][ukerr].
+
+[ukerr]: uk-block.html
+
+*As of August 2025, tags are not yet in use. We are still in the process of adding tags. The interstitial warning page does not yet exist. The UK hard block applies to ALL games, tagged or not.*
+
 ## The Incoming directory
 
 Every uploaded file lands in the Incoming directory. If it's valid, it should be moved to the Unprocessed directory. If it's spam, trash, or malware, it should be deleted.
