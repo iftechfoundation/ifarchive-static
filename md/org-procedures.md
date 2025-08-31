@@ -30,6 +30,7 @@ You should add a `safety` tag to files where needed. The tag values are:
 - `visual-gore`: Violent images or depictions of gore, image form.
 - `self-harm`: Content which encourages or provides instructions for suicide or self-injury.
 - `eating-disorder`: Content which encourages or provides instructions for an eating disorder or behavior associated with same.
+- `unknown`: One of the above tags possibly applies, but we haven't been able to verify it. (Use this for suspect items in strange formats that you don't know how to inspect.)
 
 [ukosa]: https://intfiction.org/t/uk-online-safety-act/75867
 [ukporn]: https://onlinesafetyact.co.uk/part_5_pornographic_content/
@@ -38,7 +39,7 @@ You can use more than one value, comma-separated.
 
 Files with any of these tags will have an "interstitial page" gate. That is, when the user clicks on the file link, they will see a warning page: "This file has adult content... are you sure you want to download it?" If they hit *yes*, the file will be downloaded as usual.
 
-Files with any of the tags `visual-porn`, `visual-gore`, `self-harm`, `eating-disorder` will be entirely blocked in the UK. No warning page, just an [access restriction error][ukerr]. (Note that the UK law does not restrict `text-porn`.)
+Files with any of the tags `visual-porn`, `visual-gore`, `self-harm`, `eating-disorder`, `unknown` will be entirely blocked in the UK. No warning page, just an [access restriction error][ukerr]. (Note that the UK law does not restrict `text-porn`.)
 
 [ukerr]: uk-block.html
 
