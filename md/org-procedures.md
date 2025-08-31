@@ -1,5 +1,5 @@
 title: IF Archive volunteer procedures
-changedate: August 20, 2025
+changedate: August 31, 2025
 
 First, have a look at the [Archive uploading info][pubdocs]. This is the public post which explains the upload procedure to our users.
 
