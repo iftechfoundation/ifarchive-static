@@ -18,7 +18,7 @@ export default {
     // Clone the original URL so we can do stuff with it.
     const requesturl = new URL(request.url);
 
-    if (requesturl.hostname != 'unbox.ifarchive.org') {
+    if (requesturl.hostname != 'unbox.ifarchive.org' && !requesturl.hostname.endsWith('.unbox.ifarchive.org')) {
       return fetch(request);
     }
 
