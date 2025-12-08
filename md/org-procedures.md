@@ -31,6 +31,7 @@ You should add a `safety` tag to files where needed. The tag values are:
 - `self-harm`: Content which encourages or provides instructions for suicide or self-injury.
 - `eating-disorder`: Content which encourages or provides instructions for an eating disorder or behavior associated with same.
 - `unknown`: One of the above tags possibly applies, but we haven't been able to verify it. (Use this for suspect items in strange formats that you don't know how to inspect.)
+- `none`: Equivalent to giving the file no tags. This is only useful when dealing with tagged directories; see below.
 
 [ukosa]: https://intfiction.org/t/uk-online-safety-act/75867
 [ukporn]: https://onlinesafetyact.co.uk/part_5_pornographic_content/
@@ -43,11 +44,15 @@ Files with any of the tags `visual-porn`, `visual-gore`, `self-harm`, `eating-di
 
 [ukerr]: uk-block.html
 
-Index pages (like [games/twine][gamestwine]) are not restricted at all, even if some of the listed games *are* restricted. Therefore, game descriptions in the index should always be safe-for-work.
+If you set a `safety` tag for a directory, the tag applies to *all* files in that directory (and subdirectories), *unless otherwise tagged*. File tags always override directory tags. To untag one file in a directory, give it `safety: none`.
+
+You can use `blocktree: yes/no` to block/unblock all files in the directory (and subdirectories). This is equivalent to `safety: unknown` or `safety: none` at the directory level. You can use `blockdir: yes/no` to block all files in the directory but *not* in subdirectories.
+
+Index pages (like [games/twine][gamestwine]) are not restricted at all, even if some (or all!) of the listed games *are* restricted. Therefore, game descriptions in the index should always be safe-for-work.
 
 [gamestwine]: https://ifarchive.org/indexes/if-archive/games/twine/
 
-*As of August 2025, tags are not yet in use. We are still in the process of tagging files. The interstitial warning page does not yet exist. The UK hard block applies to ALL games, tagged or not.*
+*As of December 2025, we are still in the process of tagging files. Some directories entirely blocked; others are controlled by file tags. The interstitial warning page does not exist at all.*
 
 ## The Incoming directory
 
