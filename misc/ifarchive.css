@@ -958,7 +958,7 @@ a.PermaLink:hover
 
 @media screen and (max-width: 875px) {
     .Page {
-	/* This calculation eases down from 60px (the default for wide screens) */
+        /* This calculation eases down from 60px (the default for wide screens) */
         padding-left: 6.85714%;
         padding-right: 6.85714%;
         border: none;
