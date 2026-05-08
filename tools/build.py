@@ -27,7 +27,7 @@ jenv = Environment(
 jenv.globals['appcssuri'] = app_css_uri
 
 mdenv = markdown.Markdown(extensions=[
-    'attr_list', 'def_list', 'fenced_code', 'tables', 'meta',
+    'attr_list', 'def_list', 'fenced_code', 'tables', 'meta', 'toc'
 ])
 
 def build(filename):
