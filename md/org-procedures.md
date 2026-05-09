@@ -196,7 +196,7 @@ I've also updated the link on IFDB at
 
 Thanks again for the submission!
 
-Name
+[VOLUNTEER NAME]
 (Volunteer for the IF Archive)
 ```
 
