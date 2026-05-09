@@ -174,7 +174,7 @@ Fill in the description and metadata.
 - If you're replacing an older version (now in `old`) you can look at its metadata. Copy the `tuid` and `ifwiki` lines if they exist -- those will be the same for the new version.
 - If the file has an "IFDB temp ID" field (it was uploaded via IFDB), hit the "Notify IFDB" button on the "(info)" page. This tells IFDB to update its file links to point at the game's final position. If you get "no pending link" then you may want to update IFDB by hand.
 
-Email the user who uploaded the file, and tell them it's done. (The email address is in the file info.) Provide a link to the index page, a link to the file itself, and, if the file was zipped, the "view contents" link (for playing via Unbox).
+Email the user who uploaded the file, and tell them it's done. (The email address is in the file info.) Provide a link to the index page, a link to the file itself, and, if the file was zipped, the "view contents" link (for playing via Unbox). Copy submit@ifarchive.org on the email, so that the message shows up in the `#ifarchive-uploads` Slack channel.
 
 TO DO: It would be nice if the admintool had a "send email" button which filled in all of that stuff for you.
 
