@@ -21,14 +21,44 @@
   <div id="body" class="StaticDocs">
     <div id="bodycol">
 
+<div class="toc">
+<ul>
+<li><a href="#general-principles">General principles</a></li>
+<li><a href="#tagging-adult-content">Tagging adult content</a></li>
+<li><a href="#the-incoming-directory">The Incoming directory</a><ul>
+<li><a href="#multiple-copies-uploaded">Multiple copies uploaded</a></li>
+</ul>
+</li>
+<li><a href="#the-trash-directory">The Trash directory</a></li>
+<li><a href="#moving-files-to-their-permanent-homes">Moving files to their permanent homes</a><ul>
+<li><a href="#html-games-in-various-dev-systems">HTML games in various dev systems</a></li>
+<li><a href="#files-related-to-other-files">Files related to other files</a></li>
+<li><a href="#files-that-go-in-more-than-one-place">Files that go in more than one place</a></li>
+<li><a href="#after-you-move-a-file">After you move a file</a></li>
+<li><a href="#replacing-old-versions">Replacing old versions</a></li>
+<li><a href="#ifcomp-games">IFComp games</a></li>
+</ul>
+</li>
+<li><a href="#index-files-and-metadata">Index files and metadata</a></li>
+<li><a href="#what-is-interactive-fiction-anyway">What is interactive fiction anyway?</a></li>
+<li><a href="#special-cases">Special cases</a><ul>
+<li><a href="#iftf-service-backups">IFTF service backups</a></li>
+<li><a href="#particularly-large-files">Particularly large files</a></li>
+<li><a href="#files-uploaded-by-someone-other-than-the-author">Files uploaded by someone other than the author</a></li>
+<li><a href="#deletion-requests">Deletion requests</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
 <p>First, have a look at the <a href="uploader-docs.html">Archive uploading info</a>. This is the public post which explains the upload procedure to our users.</p>
-<h2>General principles</h2>
+<h2 id="general-principles">General principles</h2>
 <p><em>Follow the existing patterns.</em> We have a lot of precedent. When in doubt, look for the way it was done last time.</p>
 <p><em>Don't move or rename files without a good reason.</em> Archive URLs are supposed to be permanent. (See <a href="org-overview.html">overview</a>.)</p>
 <p><em>We hate to throw away files.</em> We're supposed to be an archive. That means saving stuff.</p>
 <p><em>No live scripting in files directly accessible on the Archive.</em> Twine games, and any other HTML with embedded scripting, should be zipped. That way they can be played via Unbox, but they don't pose a security risk to the Archive itself.</p>
 <p><em>The definition of "interactive fiction" is not rigid.</em></p>
-<h2>Tagging adult content</h2>
+<h2 id="tagging-adult-content">Tagging adult content</h2>
 <p>Because of the <a href="https://intfiction.org/t/uk-online-safety-act/75867">UK Online Safety Act</a>, we need to tag files that might be restricted in the UK (or, probably, other jurisdictions that pass similar laws).</p>
 <p>You should add a <code>safety</code> tag to files where needed. The tag values are:</p>
 <ul>
@@ -47,7 +77,7 @@
 <p>You can use <code>blocktree: yes/no</code> to block/unblock all files in the directory (and subdirectories). This is equivalent to <code>safety: unknown</code> or <code>safety: none</code> at the directory level. You can use <code>blockdir: yes/no</code> to block all files in the directory but <em>not</em> in subdirectories.</p>
 <p>Index pages (like <a href="https://ifarchive.org/indexes/if-archive/games/twine/">games/twine</a>) are not restricted at all, even if some (or all!) of the listed games <em>are</em> restricted. Therefore, game descriptions in the index should always be safe-for-work.</p>
 <p><em>As of December 2025, we are still in the process of tagging files. Some directories entirely blocked; others are controlled by file tags. The interstitial warning page does not exist at all.</em></p>
-<h2>The Incoming directory</h2>
+<h2 id="the-incoming-directory">The Incoming directory</h2>
 <p>Every uploaded file lands in the Incoming directory. If it's valid, it should be moved to the Unprocessed directory. If it's spam, trash, or malware, it should be deleted.</p>
 <p>Our current goal (as stated in the <a href="uploader-docs.html">public info page</a>) is to move files from Incoming to Unprocessed within 24 hours. We'll see if this is workable.</p>
 <p>The procedure is:</p>
@@ -66,29 +96,29 @@
 <li>Hit the Move button to move it to Unprocessed.</li>
 </ul>
 <p>Note that if there's too much data in Incoming, further uploads are blocked. (We don't advertise the exact limit, but it's measured in total file size, not number of files.) This is a good reason to move files promptly to Unprocessed.</p>
-<h3>Multiple copies uploaded</h3>
+<h3 id="multiple-copies-uploaded">Multiple copies uploaded</h3>
 <p>It's pretty common for someone to upload a file and then say "Whoops, that was the wrong file, here's the right one."</p>
 <ul>
 <li>Keep the right one and trash the wrong one(s).</li>
 <li>If the new filename looks like <code>My Game (correct version!).html</code> then rename it to the intended filename. (See above.)</li>
 <li>If the new filename looks like <code>My Game.html.1701652627.9965498</code>, then trailing bit is a timestamp. (Sorry, it's ugly.) This is what happens if someone uploads the exact same filename twice. Use the latest version, and rename it to remove the timestamp.</li>
 </ul>
-<h2>The Trash directory</h2>
+<h2 id="the-trash-directory">The Trash directory</h2>
 <p>Deleted files go to the Trash directory. This means you can always get them back, if you don't wait too long. Trashed files older than 30 days are deleted forever.</p>
 <p>When you edit an Index file, the old version goes to the Trash directory. So if you screw up an edit, you can get the old version back. (This is why Trash has so many files named <code>Index-foo-bar.1</code>.)</p>
 <p>Similarly, when you zip up an HTML file, the original version goes to the Trash.</p>
-<h2>Moving files to their permanent homes</h2>
+<h2 id="moving-files-to-their-permanent-homes">Moving files to their permanent homes</h2>
 <p>For most uploads, this is easy. The "suggested dir" in the file info is very often correct.</p>
 <p>Games go in the <code>if-archive/games</code> subdirectory appropriate to their format. If they're not in English, there's usually a <code>if-archive/games/format/language</code> directory.</p>
 <p>Development tool uploads are usually new versions of an existing tool. So you can easily find where it's supposed to be.</p>
 <p>If you don't know where something goes, or if the "suggested dir" is clearly wrong, ask on the Slack.</p>
-<h3>HTML games in various dev systems</h3>
+<h3 id="html-games-in-various-dev-systems">HTML games in various dev systems</h3>
 <p>HTML games in Twine, Ink, and Texture should be moved to <code>games/twine</code>, <code>games/ink</code>, and <code>games/texture</code>. All other HTML games should be moved to <code>games/html</code>.</p>
 <p>Most of the games in the archive are organized by <em>output format</em>. Multiple IF dev systems may generate output files in the same output format. For example, Inform, ZIL, and Dialog can all generate Z-Code files. All Z-Code games go into <code>if-archive/games/zcode</code>, regardless of the dev system that was used to create them.</p>
 <p>There are many dev systems that can generate output files in HTML format, including Twine, Adventuron, Ink, Texture, and even Inform. Unfortunately, we didn't make a very clear decision early on between whether to organize HTML files by dev system (<code>games/twine</code>) or by output format (<code>games/html</code>).</p>
 <p>So we're going to follow existing patterns, with Twine, Ink, and Texture games in their own folders, and all other HTML games in <code>games/html</code>.</p>
 <p>(Note that we always organize <code>games/source</code> by <em>dev system</em>. For example, we have separate directories for <code>games/source/inform</code> and <code>games/source/dialog</code> games. We'll continue to follow that pattern too.)</p>
-<h3>Files related to other files</h3>
+<h3 id="files-related-to-other-files">Files related to other files</h3>
 <p>Sometimes we get two related uploads. For example, an author might upload a game file and its source code separately.</p>
 <p>The convention is to put the game in the appropriate <code>if-archive/games/format</code> folder, and the source in <code>if-archive/games/source/format</code>. The description for each one should refer to the other. For example:</p>
 <pre><code># GameName.z5
@@ -102,7 +132,7 @@ Source code for GameName, by Person.
 (the compiled game is in games/zcode/GameName.z5)
 </code></pre>
 <p>You would do something similar if a game is uploaded in two formats, or in a language translation.</p>
-<h3>Files that go in more than one place</h3>
+<h3 id="files-that-go-in-more-than-one-place">Files that go in more than one place</h3>
 <p>An author might upload a zip file which contains the game <em>and</em> its source code.</p>
 <p>In this case, you should put the file in <code>if-archive/games/format</code>, and then create a symlink in <code>if-archive/games/source/format</code> pointing to the file.</p>
 <p>The descriptions would look like:</p>
@@ -119,7 +149,7 @@ Archive contains the game and source code.
 (file is linked to games/zcode/GameName.zip)
 </code></pre>
 <p>(Here the descriptions are exactly the same, except the original says "linked from" and the symlink says "linked to".)</p>
-<h3>After you move a file</h3>
+<h3 id="after-you-move-a-file">After you move a file</h3>
 <p>Fill in the description and metadata.</p>
 <ul>
 <li>For a game, use "GameName, by Person." Add release and version number if available.</li>
@@ -127,9 +157,9 @@ Archive contains the game and source code.
 <li>If you're replacing an older version (now in <code>old</code>) you can look at its metadata. Copy the <code>tuid</code> and <code>ifwiki</code> lines if they exist -- those will be the same for the new version.</li>
 <li>If the file has an "IFDB temp ID" field (it was uploaded via IFDB), hit the "Notify IFDB" button on the "(info)" page. This tells IFDB to update its file links to point at the game's final position. If you get "no pending link" then you may want to update IFDB by hand.</li>
 </ul>
-<p>Email the user who uploaded the file, and tell them it's done. (The email address is in the file info.) Provide a link to the index page, a link to the file itself, and, if the file was zipped, the "view contents" link (for playing via Unbox).</p>
+<p>Email the user who uploaded the file, and tell them it's done. (The email address is in the file info.) Provide a link to the index page, a link to the file itself, and, if the file was zipped, the "view contents" link (for playing via Unbox). Copy submit@ifarchive.org on the email, so that the message shows up in the <code>#ifarchive-uploads</code> Slack channel.</p>
 <p>TO DO: It would be nice if the admintool had a "send email" button which filled in all of that stuff for you.</p>
-<h3>Replacing old versions</h3>
+<h3 id="replacing-old-versions">Replacing old versions</h3>
 <p>We're supposed to be an archive. That means <em>don't delete old versions of files</em>.</p>
 <p>If a new version of an existing file comes in, the old version should be moved to an <code>old</code> subdirectory. For example, if you're replacing a game in <code>if-archive/games/twine</code>, the old version goes to <code>if-archive/games/twine/old</code>.</p>
 <p>After moving the file to <code>old</code>, rename it to include the (old) version number. That way, if <em>another</em> new version comes in, there's no filename collision in the <code>old</code> dir.</p>
@@ -141,12 +171,12 @@ Archive contains the game and source code.
 <li>Hit "Uncache" on the file.</li>
 <li>Wait at least five minutes before visiting the Unbox "View contents" link! (This is the confusing bit. Unbox can take up to five minutes to notice a new file even after you've rebuilt and uncached. If you visit in that period, it might cache and display the <em>old</em> version. If that happens, roll your eyes, wait five minutes, and hit "Uncache" again.) (Or just don't visit "View contents" at all -- you don't really have to.)</li>
 </ul>
-<h3>IFComp games</h3>
+<h3 id="ifcomp-games">IFComp games</h3>
 <p>IFComp is a special case. The <code>if-archive/games/competition20XX</code> folder always preserves the games <em>as they were released during IFComp</em>.</p>
 <p>Mid-comp releases (before the end of voting) go in <code>if-archive/games/competition20XX/Games</code>. The older, start-of-comp release is moved to <code>if-archive/games/competition20XX/Games/old</code>.</p>
 <p>Releases after the end of voting ("post-comp") do <em>not</em> go in <code>competition20XX</code>. We want to preserve <code>competition20XX</code> exactly as it was when the results came out. Therefore, post-comp releases go in the appropriate <code>if-archive/games/format</code> dir. (Include a line in the description saying "Original IFComp release is at ...".)</p>
 <p>(Note that the difference between "mid-comp" and "post-comp" is about when the game was released on the IFComp web site, not when it was uploaded to the IF Archive. It's possible that a mid-comp release gets uploaded late. Check the compile date or serial number to be sure.)</p>
-<h2>Index files and metadata</h2>
+<h2 id="index-files-and-metadata">Index files and metadata</h2>
 <p>Again, see the <a href="org-overview.html">overview</a> for an explanation.</p>
 <p>You can edit the description and metadata for any file (except those in Incoming, Unprocessed, or at the root level of the Archive).</p>
 <p>You do this by hitting the Edit Index button for the file entry. You can also hit the Edit Index button at the top of the page; this edits the description and metadata for the <em>directory</em> (distinct from any of its contents).</p>
@@ -158,7 +188,7 @@ Archive contains the game and source code.
 <li>For post-comp releases of IFComp games, include a line "(the original competition entry is at PATH)".</li>
 </ul>
 <p>Remember that Index file descriptions are <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>. Markdown removes single line breaks. So Index descriptions will appear on the page as one long paragraph, unless you deliberately leave a blank line. (Which we usually don't.)</p>
-<h2>What is interactive fiction anyway?</h2>
+<h2 id="what-is-interactive-fiction-anyway">What is interactive fiction anyway?</h2>
 <p>This is a hard question. There is plenty of fuzzy territory; lots of ways to say "Well, that is <em>similar</em> to stuff we already consider IF."</p>
 <p>IFTF policy is that <em>IFTF is not in charge of nailing down these boundaries</em>. Most of our services are ultimately governed by (moderated) community standards: what games can be discussed on the forum, what games can be entered into IFComp, what games can be listed on IFDB and IFWiki.</p>
 <p>That said, spam is real. If someone uploads a physics textbook or a graphical shoot-em-up game, that's probably not IF.</p>
@@ -171,8 +201,8 @@ Archive contains the game and source code.
 <li>Already discussed on our other services (forum, IFDB, etc).</li>
 </ul>
 <p>None of these are rigid rules. There are always going to be people who try to game the system by uploading a file to the Archive <em>and</em> starting a forum thread <em>and</em> an IFDB entry, all at once. Raise the question on the Slack or mailing list if you're unsure.</p>
-<h2>Special cases</h2>
-<h3>IFTF service backups</h3>
+<h2 id="special-cases">Special cases</h2>
+<h3 id="iftf-service-backups">IFTF service backups</h3>
 <p>A few services (IFWiki, IFDB, the IF Forum) have special privileges to upload files without using the standard upload form. That means files appear in Incoming <em>without any upload info</em>. (If you hit the "info" link, it will say "No upload information recorded for this file.")</p>
 <p>This should happen <em>only</em> for service backup files, which get archived as follows:</p>
 <ul>
@@ -181,7 +211,7 @@ Archive contains the game and source code.
 <li>Forum backups: <a href="https://ifarchive.org/indexes/if-archive/info/intficforum/"><code>if-archive/info/intficforum</code></a></li>
 </ul>
 <p>Note that IFComp uploads <em>do</em> sometimes come in through the standard upload form. These are enormous, so make sure these get moved to Unprocessed right away.</p>
-<h3>Particularly large files</h3>
+<h3 id="particularly-large-files">Particularly large files</h3>
 <p>Speaking of enormous...</p>
 <p>As of mid-2025, the archive contains some 41 gigabytes of files. (Up from 37 gigabytes at the beginning of 2025, and 30GB just two years ago!) A file that adds half a gigabyte to that total is a significant bump. The marginal cost of a gigabyte is small, but if we accept large files unthinkingly, we'd be on a path to having ten times as many gigabytes pretty soon.</p>
 <p>We should take a closer look at files that are over 1GB, and discuss them with the rest of the team. You can email the webuploaders list, or you can chat about it on Slack. Ask questions like these:</p>
@@ -190,14 +220,14 @@ Archive contains the game and source code.
 <li>If the files contain large images or sounds, does the author have the rights to that material? (Always a question, but as a practical matter, we look at images and music harder.)</li>
 <li>Which aspects of interactive fiction apply to this file? (Again, we have to be more strict about large files, simply because there are people who want to leech our storage space for large files.)</li>
 </ul>
-<h3>Files uploaded by someone other than the author</h3>
+<h3 id="files-uploaded-by-someone-other-than-the-author">Files uploaded by someone other than the author</h3>
 <p>In the early days, people uploaded all sorts of IF-related content to the archive. (Back when it was an FTP site!) There was a general agreement to not upload <em>commercial</em> games (like Infocom game files). But we didn't really have a notion of "open-source licensing".</p>
 <p>These days, we try to be more careful. The <a href="https://ifarchive.org/misc/license.html">terms of service</a> say:</p>
 <blockquote>
 <p>We prefer that material be donated by the original author or someone with the legal right to accept these terms. However, we understand that some IF-related material, particularly from the early years, was distributed with no clear license or terms. We host this material as part of the common heritage of interactive fiction. If you donate work which you did not create, you warrant that, to the best of your knowledge, it may be legitimately stored and distributed by the Archive. If you are a copyright owner and wish to dispute our use of your work, please contact us. If you wish to file a DMCA takedown notice, see below <code>[email to dmca@ifarchive.org]</code>.</p>
 </blockquote>
 <p>Do your best. Try to figure out whether the file was originally intended to be freely distributed. If the original author can be contacted, do that.</p>
-<h3>Deletion requests</h3>
+<h3 id="deletion-requests">Deletion requests</h3>
 <p>Very occasionally, someone asks us to delete a file. This happens rarely enough that we should pretty much always discuss it on Slack.</p>
 <p>Ask questions like these:</p>
 <ul>

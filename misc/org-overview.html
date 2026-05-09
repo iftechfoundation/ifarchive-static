@@ -21,12 +21,25 @@
   <div id="body" class="StaticDocs">
     <div id="bodycol">
 
+<div class="toc">
+<ul>
+<li><a href="#symlinks">Symlinks</a></li>
+<li><a href="#persistent-urls">Persistent URLs</a></li>
+<li><a href="#index-files">Index files</a><ul>
+<li><a href="#where-to-put-directory-info">Where to put directory info</a></li>
+<li><a href="#metadata">Metadata</a></li>
+</ul>
+</li>
+<li><a href="#the-problem-with-the-competition-directories">The problem with the Competition directories</a></li>
+</ul>
+</div>
+<hr />
 <p>We store files in directories. That's the job.</p>
 <p>The server is a tree of directories, which you can browse from the <a href="https://ifarchive.org/indexes/if-archive/">top, here</a>. The full directory list is <a href="https://ifarchive.org/indexes/dirlist.html">viewable here</a>. (This <a href="https://ifarchive.org/if-archive/directory-tree"><code>directory-tree</code></a> file is supposed to show a map of the whole thing, but it hasn't been updated since 2013 so it's probably a bit wrong.)</p>
-<h2>Symlinks</h2>
+<h2 id="symlinks">Symlinks</h2>
 <p>Much of the structure dates back to the 1990s. This is why, for example, Inform 6 and 7 are both filed under <a href="https://ifarchive.org/indexes/if-archive/infocom/compilers/"><code>infocom/compilers</code></a> rather than <a href="https://ifarchive.org/indexes/if-archive/programming/"><code>programming</code></a>. Inform only has a distant historic connection to anything Infocom did, but back in 1993 one of the Archive's main goals was "collect everything we know about Infocom before it's all lost." So there's a top-level <code>infocom</code> directory. Similarly, there are top-level directories for <code>level9</code>, <code>scott-adams</code>, and other prominent 1980s studios.</p>
 <p>We've worked around some of the organizational cruft by adding symlinks. A <a href="https://en.wikipedia.org/wiki/Symlink">symlink</a> is a Unix file object that "points at" another file or directory. <code>programming/inform6</code> is a symlink to <code>infocom/compilers/inform6</code>, so someone who browses the <a href="https://ifarchive.org/indexes/if-archive/programming/"><code>programming</code></a> folder will see a reference to follow.</p>
-<h2>Persistent URLs</h2>
+<h2 id="persistent-urls">Persistent URLs</h2>
 <p>Why don't we just reorganize the whole Archive to modern standards? Because <em>Archive URLs are supposed to be permanent</em>. People link to Archive files and directories. (IFDB, for example, has many thousands of such links.) URLs are, de facto, the unique persistent identifiers of Archive items.</p>
 <p>Thus, if a directory was named <code>if-archive/infocom/compilers/inform6/</code> in the 1990s, we'd like it to still have the same name today. Same goes for files.</p>
 <p>Of course there are tradeoffs. That directory <em>wasn't</em> named that in the 1990s; it was just <code>if-archive/infocom/compilers/inform/</code>. We changed it to <code>inform6</code> after Inform 7 came out. But we try to minimize these cases. Our rough rules are:</p>
@@ -36,7 +49,7 @@
 <li>If someone uploads a new version of a file with a <em>new</em> name (e.g. with an updated version number in the filename), move the old one to an <code>old</code> subdirectory and put the new one in place. This is a case where the URL necessarily changes (because it had the version number in it.)</li>
 </ul>
 <p>(Note that <code>old</code> subdirectories are a relatively recent innovation. We used to just delete old versions of files. But throwing away files does not befit the dignity of a historic archive.)</p>
-<h2>Index files</h2>
+<h2 id="index-files">Index files</h2>
 <p>Most Archive directories contain a text file called <code>Index</code>. This describes the contents of that directory. It's not mandatory, and it doesn't have to mention every file, but it's nice to have.</p>
 <p>The <code>Index</code> file information is used to generate the index pages for the Archive. For example, <a href="https://ifarchive.org/if-archive/scott-adams/games/Index"><code>if-archive/scott-adams/games/Index</code></a> becomes the index page for <a href="https://ifarchive.org/indexes/if-archive/scott-adams/games/"><code>if-archive/scott-adams/games</code></a>.</p>
 <p>As you see, the format is very simple:</p>
@@ -53,7 +66,7 @@ Description of another file.
 </code></pre>
 <p>Each file section starts with <code># filename</code>. The descriptions employ Markdown formatting, so you can use <code>*emphasis*</code> or <code>[links][...]</code> or any of the other usual Markdown stuff. (Really <code># filename</code> is just a Markdown header line. You could use <code>##</code> for subheaders if you had a really long description, but we generally don't.)</p>
 <p>The Index file always has UTF-8 formatting and you can use Unicode characters freely.</p>
-<h3>Where to put directory info</h3>
+<h3 id="where-to-put-directory-info">Where to put directory info</h3>
 <p>The <code>Index</code> format allows you to put descriptions on subdirectories as well as files. It looks exactly the same:</p>
 <pre><code># subdirname
 
@@ -63,7 +76,7 @@ Description of that subdir.
 <p><em>Most of the time, put directory info at the top of the <code>Index</code> file in that directory.</em> (Rather than a section in the parent directory.) This makes for tidier listings.</p>
 <p>There are some exceptions to this rule. For example, the <a href="https://ifarchive.org/indexes/if-archive/scott-adams/games/"><code>if-archive/scott-adams/games</code></a> example mentioned earlier. Here, the subdirs (<code>c64</code>, <code>scottfree</code>, <code>ti99</code>, <code>zcode</code>) are described in the parent dir rather than the subdir. This is just the way things were formatted many years ago. We've never gotten around to changing it.</p>
 <p>(We may change it in the future.)</p>
-<h3>Metadata</h3>
+<h3 id="metadata">Metadata</h3>
 <p>Notice the blank line at the beginning of the <code>Index</code> file? That's not a mistake. We use a <a href="https://python-markdown.github.io/extensions/meta_data/">Markdown extension</a> to extract metadata header lines at the top of the file <em>and</em> in each filename section.</p>
 <p>This might look like this:</p>
 <pre><code>ifwiki: WikiDirPage
@@ -103,7 +116,7 @@ Description of another file.
 <li><code>unbox-link: false</code></li>
 </ul>
 <p>This is applied to <code>.zip</code> files which should <em>not</em> have a "View Contents" unbox link. Currently, this is only used for packages like <a href="https://ifarchive.org/indexes/if-archive/games/competition2023/"><code>IFComp2023.zip</code></a> which are (a) very large <em>and</em> (b) already broken out into individual games (in the <code>Games</code> subdir), so there's no need to browse the big zip itself.</p>
-<h2>The problem with the Competition directories</h2>
+<h2 id="the-problem-with-the-competition-directories">The problem with the Competition directories</h2>
 <p>The <code>Index</code> format is pretty simple. It's easy to add new entries while following the existing layout...</p>
 <p>Except for IFComp, which messes everything up.</p>
 <p>IFComp (and the Archive) have evolved over the years (decades!) The way IFComp files have been uploaded has evolved as well. Here's a quick tour:</p>
