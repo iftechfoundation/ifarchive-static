@@ -1,6 +1,10 @@
 title: IF Archive organization and metadata
 changedate: February 18, 2024
 
+[TOC]
+
+-----
+
 We store files in directories. That's the job.
 
 The server is a tree of directories, which you can browse from the [top, here](https://ifarchive.org/indexes/if-archive/). The full directory list is [viewable here](https://ifarchive.org/indexes/dirlist.html). (This [`directory-tree`](https://ifarchive.org/if-archive/directory-tree) file is supposed to show a map of the whole thing, but it hasn't been updated since 2013 so it's probably a bit wrong.)

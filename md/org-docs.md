@@ -1,5 +1,9 @@
 title: Using the Archive Admin Tool
 
+[TOC]
+
+-----
+
 The Admin Tool allows Archive volunteers to file Archive uploads and edit their descriptions. It's a fairly straightforward web interface.
 
 Note that there is no public login to the Admin Tool. Only Archive volunteers have accounts.
