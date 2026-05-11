@@ -176,6 +176,30 @@ Fill in the description and metadata.
 
 Email the user who uploaded the file, and tell them it's done. (The email address is in the file info.) Provide a link to the index page, a link to the file itself, and, if the file was zipped, the "view contents" link (for playing via Unbox). Copy submit@ifarchive.org on the email, so that the message shows up in the `#ifarchive-uploads` Slack channel.
 
+A suggested email template:
+```
+Subject: [IF Archive] [GAME NAME] published on the IF Archive
+-----
+
+We're happy to say that your upload [ORIGINAL FILE NAME] has been processed.
+You can find it in its new home at
+[IF ARCHIVE INDEX ANCHOR]
+
+The game can be downloaded directly at
+[IF ARCHIVE LINK]
+
+and you can view/play the game file online by clicking "View contents" or visiting
+[UNBOX LINK]
+
+I've also updated the link on IFDB at
+[IFDB LINK]
+
+Thanks again for the submission!
+
+[VOLUNTEER NAME]
+(Volunteer for the IF Archive)
+```
+
 TO DO: It would be nice if the admintool had a "send email" button which filled in all of that stuff for you.
 
 ### Replacing old versions
