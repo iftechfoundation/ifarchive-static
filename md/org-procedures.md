@@ -1,5 +1,5 @@
 title: IF Archive volunteer procedures
-changedate: May 8, 2026
+changedate: May 11, 2026
 
 [TOC]
 
@@ -189,7 +189,7 @@ The game can be downloaded directly at
 [IF ARCHIVE LINK]
 
 and you can view/play the game file online by clicking "View contents" or visiting
-[UNBOX LINK]
+[UNBOX LINK (for zipped Twine games)]
 
 I've also updated the link on IFDB at
 [IFDB LINK]
