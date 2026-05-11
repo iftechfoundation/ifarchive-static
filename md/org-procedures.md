@@ -178,17 +178,20 @@ Email the user who uploaded the file, and tell them it's done. (The email addres
 
 A suggested email template:
 ```
+To: [SUBMITTER]
 Subject: [IF Archive] [GAME NAME] published on the IF Archive
+CC: submit@ifarchive.org
 -----
 
-We're happy to say that your upload [ORIGINAL FILE NAME] has been processed.
-You can find it in its new home at
+We're happy to say that your upload [ORIGINAL FILE NAME] has
+been processed. You can find it in its new home at
 [IF ARCHIVE INDEX ANCHOR]
 
 The game can be downloaded directly at
 [IF ARCHIVE LINK]
 
-and you can view/play the game file online by clicking "View contents" or visiting
+and you can view/play the game file online by clicking "View
+contents" or visiting
 [UNBOX LINK (for zipped Twine games)]
 
 I've also updated the link on IFDB at
