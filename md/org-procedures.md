@@ -274,10 +274,13 @@ None of these are rigid rules. There are always going to be people who try to ga
 
 ### IFTF service backups
 
-A few services (IFWiki, IFDB, the IF Forum) have special privileges to upload files without using the standard upload form. That means files appear in Incoming *without any upload info*. (If you hit the "info" link, it will say "No upload information recorded for this file.")
+A few services (IFComp, IFWiki, IFDB, the IF Forum) have special privileges to upload files without using the standard upload form. That means files appear in Incoming *without any upload info*. (If you hit the "info" link, it will say "No upload information recorded for this file.")
 
 This should happen *only* for service backup files, which get archived as follows:
 
+- IFComp zips: We get two of these, one at the start of the comp, and one at the end of the comp.
+    - We archive the start-of-comp zip in `ifarchive/games/competitionYYYY` (without extracting it)
+    - We unzip the end-of-comp zip into the `competitionYYYY` directory and then discard the end-of-comp zip
 - IFDB backups: [`if-archive/info/ifdb`](https://ifarchive.org/indexes/if-archive/info/ifdb/)
 - IFWiki backups: [`if-archive/info/ifwiki`](https://ifarchive.org/indexes/if-archive/info/ifwiki/)
 - Forum backups: [`if-archive/info/intficforum`](https://ifarchive.org/indexes/if-archive/info/intficforum/)
