@@ -198,9 +198,10 @@ Thanks again for the submission!
 </ul>
 <h3 id="ifcomp-games">IFComp games</h3>
 <p>IFComp is a special case. The <code>if-archive/games/competition20XX</code> folder always preserves the games <em>as they were released during IFComp</em>.</p>
-<p>Mid-comp releases (before the end of voting) go in <code>if-archive/games/competition20XX/Games</code>. The older, start-of-comp release is moved to <code>if-archive/games/competition20XX/Games/old</code>.</p>
+<p>The <code>/Games</code> subdirectory preserves the games as they were presented on the <em>last day</em> of IFComp. That is, mid-comp releases (before the end of voting) go in <code>if-archive/games/competition20XX/Games</code>. The older, start-of-comp release is moved to <code>if-archive/games/competition20XX/Games/old</code>.</p>
 <p>Releases after the end of voting ("post-comp") do <em>not</em> go in <code>competition20XX</code>. We want to preserve <code>competition20XX</code> exactly as it was when the results came out. Therefore, post-comp releases go in the appropriate <code>if-archive/games/format</code> dir. (Include a line in the description saying "Original IFComp release is at ...".)</p>
 <p>(Note that the difference between "mid-comp" and "post-comp" is about when the game was released on the IFComp web site, not when it was uploaded to the IF Archive. It's possible that a mid-comp release gets uploaded late. Check the compile date or serial number to be sure.)</p>
+<p>(Also note that the file <code>if-archive/games/competition20XX/IFComp20XX.zip</code> is an exception: it is the <em>start-of-comp</em> package, and preserves the games as they were released on day 1. See <a href="#iftf-service-backups">IFTF service backups</a>, below.)</p>
 <h2 id="index-files-and-metadata">Index files and metadata</h2>
 <p>Again, see the <a href="org-overview.html">overview</a> for an explanation.</p>
 <p>You can edit the description and metadata for any file (except those in Incoming, Unprocessed, or at the root level of the Archive).</p>
@@ -228,9 +229,14 @@ Thanks again for the submission!
 <p>None of these are rigid rules. There are always going to be people who try to game the system by uploading a file to the Archive <em>and</em> starting a forum thread <em>and</em> an IFDB entry, all at once. Raise the question on the Slack or mailing list if you're unsure.</p>
 <h2 id="special-cases">Special cases</h2>
 <h3 id="iftf-service-backups">IFTF service backups</h3>
-<p>A few services (IFWiki, IFDB, the IF Forum) have special privileges to upload files without using the standard upload form. That means files appear in Incoming <em>without any upload info</em>. (If you hit the "info" link, it will say "No upload information recorded for this file.")</p>
+<p>A few services (IFComp, IFWiki, IFDB, the IF Forum) have special privileges to upload files without using the standard upload form. That means files appear in Incoming <em>without any upload info</em>. (If you hit the "info" link, it will say "No upload information recorded for this file.")</p>
 <p>This should happen <em>only</em> for service backup files, which get archived as follows:</p>
 <ul>
+<li>IFComp zips: We get two of these, one at the start of the comp, and one at the end of the comp. See <a href="#ifcomp-games">IFComp games</a>, above.<ul>
+<li>We archive the start-of-comp zip in <code>ifarchive/games/competitionYYYY</code> (as is, without extracting it).</li>
+<li>We unzip the end-of-comp zip into the <code>competitionYYYY</code> directory (producing the now-standard <a href="https://ifarchive.org/indexes/if-archive/games/competition2025/">directory structure</a>), and then discard the end-of-comp zip. We keep the start-of-comp zip permanently.</li>
+</ul>
+</li>
 <li>IFDB backups: <a href="https://ifarchive.org/indexes/if-archive/info/ifdb/"><code>if-archive/info/ifdb</code></a></li>
 <li>IFWiki backups: <a href="https://ifarchive.org/indexes/if-archive/info/ifwiki/"><code>if-archive/info/ifwiki</code></a></li>
 <li>Forum backups: <a href="https://ifarchive.org/indexes/if-archive/info/intficforum/"><code>if-archive/info/intficforum</code></a></li>
@@ -272,7 +278,7 @@ Thanks again for the submission!
 <hr>
 
 <p id="footermodified">
-This page last updated May 11, 2026.
+This page last updated June 17, 2026.
 </p>
 
 <p id="footercredits">
