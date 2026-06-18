@@ -226,11 +226,13 @@ Replacing a `.zip` file takes a certain amount of care, because zip files are *a
 
 IFComp is a special case. The `if-archive/games/competition20XX` folder always preserves the games *as they were released during IFComp*.
 
-Mid-comp releases (before the end of voting) go in `if-archive/games/competition20XX/Games`. The older, start-of-comp release is moved to `if-archive/games/competition20XX/Games/old`.
+The `/Games` subdirectory preserves the games as they were presented on the *last day* of IFComp. That is, mid-comp releases (before the end of voting) go in `if-archive/games/competition20XX/Games`. The older, start-of-comp release is moved to `if-archive/games/competition20XX/Games/old`.
 
 Releases after the end of voting ("post-comp") do *not* go in `competition20XX`. We want to preserve `competition20XX` exactly as it was when the results came out. Therefore, post-comp releases go in the appropriate `if-archive/games/format` dir. (Include a line in the description saying "Original IFComp release is at ...".)
 
 (Note that the difference between "mid-comp" and "post-comp" is about when the game was released on the IFComp web site, not when it was uploaded to the IF Archive. It's possible that a mid-comp release gets uploaded late. Check the compile date or serial number to be sure.)
+
+(Also note that the file `if-archive/games/competition20XX/IFComp20XX.zip` is an exception: it is the *start-of-comp* package, and preserves the games as they were released on day 1. See [IFTF service backups](#iftf-service-backups), below.)
 
 ## Index files and metadata
 
@@ -278,7 +280,7 @@ A few services (IFComp, IFWiki, IFDB, the IF Forum) have special privileges to u
 
 This should happen *only* for service backup files, which get archived as follows:
 
-- IFComp zips: We get two of these, one at the start of the comp, and one at the end of the comp.
+- IFComp zips: We get two of these, one at the start of the comp, and one at the end of the comp. See [IFComp games](#ifcomp-games), above.
     - We archive the start-of-comp zip in `ifarchive/games/competitionYYYY` (as is, without extracting it).
     - We unzip the end-of-comp zip into the `competitionYYYY` directory (producing the now-standard [directory structure](https://ifarchive.org/indexes/if-archive/games/competition2025/)), and then discard the end-of-comp zip. We keep the start-of-comp zip permanently.
 - IFDB backups: [`if-archive/info/ifdb`](https://ifarchive.org/indexes/if-archive/info/ifdb/)
