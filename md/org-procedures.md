@@ -279,8 +279,8 @@ A few services (IFComp, IFWiki, IFDB, the IF Forum) have special privileges to u
 This should happen *only* for service backup files, which get archived as follows:
 
 - IFComp zips: We get two of these, one at the start of the comp, and one at the end of the comp.
-    - We archive the start-of-comp zip in `ifarchive/games/competitionYYYY` (without extracting it)
-    - We unzip the end-of-comp zip into the `competitionYYYY` directory and then discard the end-of-comp zip
+    - We archive the start-of-comp zip in `ifarchive/games/competitionYYYY` (as is, without extracting it).
+    - We unzip the end-of-comp zip into the `competitionYYYY` directory (producing the now-standard [directory structure](https://ifarchive.org/indexes/if-archive/games/competition2025/)), and then discard the end-of-comp zip. We keep the start-of-comp zip permanently.
 - IFDB backups: [`if-archive/info/ifdb`](https://ifarchive.org/indexes/if-archive/info/ifdb/)
 - IFWiki backups: [`if-archive/info/ifwiki`](https://ifarchive.org/indexes/if-archive/info/ifwiki/)
 - Forum backups: [`if-archive/info/intficforum`](https://ifarchive.org/indexes/if-archive/info/intficforum/)
