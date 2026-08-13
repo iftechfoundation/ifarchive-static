@@ -112,6 +112,8 @@ This button is hidden away on the file's info page! Hit the "(info)" button to f
 
 Wipe the Cloudflare cache for this file. If you replace a file with a different file of the same name (say, because a new version was uploaded), you should push this. You don't need to push it for newly-arrived files.
 
+You can also use this button if Cloudflare has cached a "404 Not Found" error for the URL of a newly-arrived file.
+
 ### Create Subdirectory
 
 Create a subdirectory of a directory. This is not available in Incoming, Unprocessed, or Trash.
